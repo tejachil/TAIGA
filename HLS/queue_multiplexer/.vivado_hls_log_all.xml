@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Port 'tx_ready' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.423-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'tx_valid_b' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.421-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'tx_data_b' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.419-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'tx_valid_a' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.417-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'tx_data_a' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.415-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'rx_valid' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.412-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'rx_data' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.410-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'rx_ready_b' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.404-0400" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'rx_ready_a' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="queue_multiplexer" solutionName="solution1" date="2015-03-17T14:16:12.401-0400" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

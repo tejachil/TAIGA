@@ -15,8 +15,11 @@ preplace inst axi_wdt_IOI -pg 1 -lvl 5 -y 1080 -defaultsOSRD
 preplace inst axi_quad_spi_plant -pg 1 -lvl 5 -y 580 -defaultsOSRD
 preplace inst axi_intc_IOI -pg 1 -lvl 2 -y 630 -defaultsOSRD
 preplace inst local_memory_IOI -pg 1 -lvl 4 -y 200 -defaultsOSRD
+preplace inst axi_fifo_backup_enqueue -pg 1 -lvl 3 -y 1960 -defaultsOSRD
+preplace inst axi_fifo_IOI_enqueue -pg 1 -lvl 3 -y 1200 -defaultsOSRD
 preplace inst fifo_IOI_to_production -pg 1 -lvl 4 -y 1410 -defaultsOSRD
-preplace inst axi_fifo_backup_dequeue -pg 1 -lvl 3 -y 1570 -defaultsOSRD
+preplace inst axi_fifo_production_enqueue -pg 1 -lvl 3 -y 1580 -defaultsOSRD
+preplace inst axi_fifo_backup_dequeue -pg 1 -lvl 3 -y 1790 -defaultsOSRD
 preplace inst axi_gpio_IOI_in -pg 1 -lvl 5 -y 890 -defaultsOSRD
 preplace inst IO_Intermediary -pg 1 -lvl 3 -y 210 -defaultsOSRD
 preplace inst axi_periph_IOI -pg 1 -lvl 4 -y 630 -defaultsOSRD
@@ -26,38 +29,38 @@ preplace inst rst_production_controller_100M -pg 1 -lvl 1 -y 460 -defaultsOSRD
 preplace inst axi_gpio_IOI_out -pg 1 -lvl 5 -y 750 -defaultsOSRD
 preplace inst fifo_production_to_IOI -pg 1 -lvl 4 -y 1280 -defaultsOSRD
 preplace inst production_controller -pg 1 -lvl 5 -y 130 -defaultsOSRD
-preplace inst axi_fifo_IOI_dequeue -pg 1 -lvl 3 -y 1270 -defaultsOSRD
+preplace inst axi_fifo_IOI_dequeue -pg 1 -lvl 3 -y 1020 -defaultsOSRD
 preplace inst fifo_backup_to_IOI -pg 1 -lvl 4 -y 1710 -defaultsOSRD
 preplace inst fifo_IOI_to_backup -pg 1 -lvl 4 -y 1580 -defaultsOSRD
-preplace netloc axi_gpio_IOI_in_GPIO2 1 5 1 2220
-preplace netloc axi_periph_IOI_M03_AXI 1 4 1 1770
-preplace netloc IO_Intermediary_axi_dp 1 3 1 1420
-preplace netloc io1_i_1 1 0 6 170 550 NJ 520 NJ 520 NJ 420 NJ 420 2210
+preplace netloc axi_gpio_IOI_in_GPIO2 1 5 1 2250
+preplace netloc axi_periph_IOI_M03_AXI 1 4 1 1780
+preplace netloc IO_Intermediary_axi_dp 1 3 1 1430
+preplace netloc io1_i_1 1 0 6 170 850 NJ 850 NJ 850 NJ 850 NJ 820 2230
 preplace netloc production_controller_DDR 1 5 1 N
-preplace netloc rst_production_controller_100M_peripheral_aresetn 1 1 4 540 740 NJ 740 1460 840 1790
-preplace netloc IO_Intermediary_intc_axi 1 1 4 590 530 NJ 530 NJ 430 1760
+preplace netloc rst_production_controller_100M_peripheral_aresetn 1 1 4 550 740 NJ 740 1450 830 1810
+preplace netloc IO_Intermediary_intc_axi 1 1 4 600 510 NJ 510 NJ 430 1770
 preplace netloc production_controller_FIXED_IO 1 5 1 N
-preplace netloc production_controller_FCLK_RESET0_N 1 0 6 200 370 NJ 410 NJ 410 NJ 410 NJ 410 2210
-preplace netloc axi_quad_spi_plant_sck_o 1 5 1 2220
-preplace netloc rst_production_controller_100M_bus_struct_reset 1 1 3 NJ 730 NJ 730 1440
-preplace netloc IO_Intermediary_Clk 1 0 6 190 360 570 400 880 300 1450 830 1780 260 2220
+preplace netloc production_controller_FCLK_RESET0_N 1 0 6 200 370 NJ 420 NJ 420 NJ 410 NJ 410 2220
+preplace netloc axi_quad_spi_plant_sck_o 1 5 1 2260
+preplace netloc rst_production_controller_100M_bus_struct_reset 1 1 3 NJ 440 NJ 440 1410
+preplace netloc IO_Intermediary_Clk 1 0 6 190 550 590 400 900 520 1440 420 1790 260 2230
 preplace netloc axi_gpio_IOI_in_GPIO 1 5 1 N
-preplace netloc IO_Intermediary_axi_periph_M01_AXI 1 4 1 1770
-preplace netloc axi_quad_spi_plant_ss_o 1 5 1 2210
-preplace netloc axi_wdt_IOI_wdt_interrupt 1 0 6 200 850 NJ 850 NJ 850 NJ 850 NJ 820 2210
-preplace netloc axi_periph_IOI_M04_AXI 1 4 1 1760
-preplace netloc axi_gpio_IOI_out_GPIO 1 5 1 2200
-preplace netloc rst_production_controller_100M_interconnect_aresetn 1 1 3 NJ 480 NJ 480 1430
+preplace netloc IO_Intermediary_axi_periph_M01_AXI 1 4 1 1780
+preplace netloc axi_quad_spi_plant_ss_o 1 5 1 2250
+preplace netloc axi_wdt_IOI_wdt_interrupt 1 0 6 200 580 NJ 840 NJ 840 NJ 840 NJ 680 2220
+preplace netloc axi_periph_IOI_M04_AXI 1 4 1 1770
+preplace netloc axi_gpio_IOI_out_GPIO 1 5 1 2240
+preplace netloc rst_production_controller_100M_interconnect_aresetn 1 1 3 560 730 NJ 530 NJ
 preplace netloc IO_Intermediary_dlmb_1 1 3 1 N
-preplace netloc rst_production_controller_100M_mb_reset 1 1 2 580 420 890
+preplace netloc rst_production_controller_100M_mb_reset 1 1 2 570 410 NJ
 preplace netloc IO_Intermediary_intr 1 1 1 N
-preplace netloc IO_Intermediary_interrupt 1 2 1 870
+preplace netloc IO_Intermediary_interrupt 1 2 1 880
 preplace netloc IO_Intermediary_ilmb_1 1 3 1 N
-preplace netloc mdm_1_debug_sys_rst 1 0 3 180 350 NJ 390 860
-preplace netloc axi_periph_IOI_M02_AXI 1 4 1 1800
-preplace netloc IO_Intermediary_debug 1 2 1 860
-preplace netloc axi_quad_spi_plant_io0_o 1 5 1 2220
-levelinfo -pg 1 150 370 750 1170 1610 2000 2240
+preplace netloc mdm_1_debug_sys_rst 1 0 3 180 360 NJ 390 870
+preplace netloc axi_periph_IOI_M02_AXI 1 4 1 1820
+preplace netloc IO_Intermediary_debug 1 2 1 870
+preplace netloc axi_quad_spi_plant_io0_o 1 5 1 2260
+levelinfo -pg 1 150 370 760 1180 1620 2020 2280
 ",
 }
 {

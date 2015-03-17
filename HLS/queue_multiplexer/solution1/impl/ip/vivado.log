@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Mar 17 14:16:21 2015
+# Process ID: 28912
+# Log file: /home/teja/Documents/TAIGA/HLS/queue_multiplexer/solution1/impl/ip/vivado.log
+# Journal file: /home/teja/Documents/TAIGA/HLS/queue_multiplexer/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/teja/.Xilinx/Vivado/2014.4/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 17 14:16:27 2015...

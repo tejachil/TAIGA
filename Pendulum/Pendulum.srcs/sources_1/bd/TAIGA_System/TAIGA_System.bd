@@ -292,6 +292,36 @@
           <spirit:configurableElementValue spirit:referenceId="C_USE_TX_DATA">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_fifo_IOI_enqueue</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_fifo_mm_s" spirit:vendor="xilinx.com" spirit:version="4.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_axi_fifo_IOI_dequeue_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_DATA_INTERFACE_TYPE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_TX_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_RX_DATA">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_fifo_backup_enqueue</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_fifo_mm_s" spirit:vendor="xilinx.com" spirit:version="4.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_axi_fifo_backup_dequeue_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_DATA_INTERFACE_TYPE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_TX_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_RX_DATA">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_fifo_production_enqueue</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_fifo_mm_s" spirit:vendor="xilinx.com" spirit:version="4.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_axi_fifo_production_dequeue_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_DATA_INTERFACE_TYPE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_TX_DATA">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_RX_DATA">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
       <spirit:interconnection>
