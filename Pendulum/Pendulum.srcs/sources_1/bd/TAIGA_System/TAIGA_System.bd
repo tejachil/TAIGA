@@ -26,7 +26,7 @@
         <spirit:abstractionType spirit:library="display_processing_system7" spirit:name="fixedio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>gpio_led_IOI</spirit:name>
+        <spirit:name>gpio_led_ioi</spirit:name>
         <spirit:master/>
         <spirit:busType spirit:library="interface" spirit:name="gpio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:abstractionType spirit:library="interface" spirit:name="gpio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -51,12 +51,6 @@
       </spirit:busInterface>
       <spirit:busInterface>
         <spirit:name>gpio_led_production</spirit:name>
-        <spirit:master/>
-        <spirit:busType spirit:library="interface" spirit:name="gpio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="interface" spirit:name="gpio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-      </spirit:busInterface>
-      <spirit:busInterface>
-        <spirit:name>gpio_trigger</spirit:name>
         <spirit:master/>
         <spirit:busType spirit:library="interface" spirit:name="gpio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:abstractionType spirit:library="interface" spirit:name="gpio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -99,6 +93,16 @@
             </spirit:vector>
           </spirit:wire>
         </spirit:port>
+        <spirit:port>
+          <spirit:name>gpio_trigger</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
       </spirit:ports>
     </spirit:model>
   </spirit:component>
@@ -133,10 +137,8 @@
           <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DEBUG_ENABLED">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_CACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_DCACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
         <bd:hdl_attributes/>
       </spirit:componentInstance>
@@ -363,10 +365,8 @@
           <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DEBUG_ENABLED">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_CACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_DCACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
         <bd:hdl_attributes/>
       </spirit:componentInstance>
@@ -423,6 +423,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_axi_gpio_0_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -856,6 +857,7 @@
       <spirit:adHocConnection>
         <spirit:name>axi_gpio_trigger_gpio_io_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_trigger" spirit:portRef="gpio_io_o"/>
+        <spirit:externalPortReference spirit:portRef="gpio_trigger"/>
         <spirit:internalPortReference spirit:componentRef="queue_multiplexer_0" spirit:portRef="switch_select"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
@@ -866,7 +868,7 @@
       <spirit:hierConnection spirit:interfaceRef="FIXED_IO/production_controller_FIXED_IO">
         <spirit:activeInterface spirit:busRef="FIXED_IO" spirit:componentRef="production_controller"/>
       </spirit:hierConnection>
-      <spirit:hierConnection spirit:interfaceRef="gpio_led_IOI/axi_gpio_IOI_out_GPIO">
+      <spirit:hierConnection spirit:interfaceRef="gpio_led_ioi/axi_gpio_IOI_out_GPIO">
         <spirit:activeInterface spirit:busRef="GPIO" spirit:componentRef="axi_gpio_IOI_out"/>
       </spirit:hierConnection>
       <spirit:hierConnection spirit:interfaceRef="gpio_btn/axi_gpio_IOI_in_GPIO">
@@ -880,9 +882,6 @@
       </spirit:hierConnection>
       <spirit:hierConnection spirit:interfaceRef="gpio_led_production/axi_gpio_production_controller_out_GPIO">
         <spirit:activeInterface spirit:busRef="GPIO" spirit:componentRef="axi_gpio_production_controller_out"/>
-      </spirit:hierConnection>
-      <spirit:hierConnection spirit:interfaceRef="gpio_trigger/axi_gpio_trigger_GPIO">
-        <spirit:activeInterface spirit:busRef="GPIO" spirit:componentRef="axi_gpio_trigger"/>
       </spirit:hierConnection>
     </spirit:hierConnections>
   </spirit:design>

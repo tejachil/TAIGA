@@ -1,0 +1,2 @@
+21:49:12 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+21:49:18 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
