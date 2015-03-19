@@ -1,0 +1,16 @@
+/*
+ * fifo_queue.c
+ *
+ *  Created on: Mar 17, 2015
+ *      Author: teja
+ */
+
+#include "xstreamer.h"
+#include "xil_cache.h"
+#include "xllfifo.h"
+
+int init_fifo_queues();
+
+int enqueue(int data);
+
+int dequeue();

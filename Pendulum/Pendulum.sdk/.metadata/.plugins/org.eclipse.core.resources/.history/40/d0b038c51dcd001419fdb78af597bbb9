@@ -1,0 +1,17 @@
+/*
+ * fifo_queue.h
+ *
+ *  Created on: Mar 17, 2015
+ *      Author: teja
+ */
+
+#ifndef FIFO_QUEUE_H_
+#define FIFO_QUEUE_H_
+
+int init_fifo_queues();
+
+int enqueue(int data);
+
+int dequeue();
+
+#endif /* FIFO_QUEUE_H_ */

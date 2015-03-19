@@ -1,0 +1,40 @@
+/*
+ * axi_gpio.h
+ *
+ *  Created on: Sep 30, 2014
+ *      Author: teja
+ */
+
+#ifndef AXI_GPIO_H_
+#define AXI_GPIO_H_
+
+#include "xgpio.h"
+
+#define GUARD_TRIGGER_DEVICE_ID	1
+#define GUARD_TRIGGER_CHANNEL	1
+#define LED_DEVICE_ID			2
+#define LED_CHANNEL				1
+#define BTN_DEVICE_ID			0
+#define BTN_CHANNEL				1
+#define SW_DEVICE_ID			3
+#define SW_CHANNEL				1
+
+#define LED1			0x1
+
+typedef enum {false, true} bool;
+
+typedef enum {PRODUCTION = 0, BACKUP = 1} controller;
+
+typedef enum {BTN0 = 0x1, BTN1 = 0x2, BTN2 = 0x4, BTN3 = 0x8} btn;
+
+int init_axi_gpio();
+
+void set_led(u8 leds, bool state);
+
+void select_controller(controller control);
+
+bool read_btn(u8 btn);
+
+u8 read_sw_raw();
+
+#endif /* AXI_GPIO_H_ */
