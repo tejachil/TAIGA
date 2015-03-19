@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Tue Mar 17 17:27:55 2015
+| Date             : Thu Mar 19 19:04:08 2015
 | Host             : CRS running 64-bit Ubuntu 14.04.2 LTS
 | Command          : report_power -file TAIGA_System_wrapper_power_routed.rpt -pb TAIGA_System_wrapper_power_summary_routed.pb
 | Design           : TAIGA_System_wrapper
@@ -30,9 +30,9 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.948 |
-| Dynamic (W)              | 1.806 |
-| Device Static (W)        | 0.141 |
+| Total On-Chip Power (W)  | 1.953 |
+| Dynamic (W)              | 1.811 |
+| Device Static (W)        | 0.142 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 62.5  |
 | Junction Temperature (C) | 47.5  |
@@ -49,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.073 |        5 |       --- |             --- |
-| Slice Logic              |     0.035 |    22048 |       --- |             --- |
-|   LUT as Logic           |     0.029 |     8510 |     17600 |           48.35 |
+| Clocks                   |     0.075 |        5 |       --- |             --- |
+| Slice Logic              |     0.035 |    22337 |       --- |             --- |
+|   LUT as Logic           |     0.030 |     8614 |     17600 |           48.94 |
 |   CARRY4                 |     0.003 |      575 |      4400 |           13.06 |
-|   Register               |     0.001 |     8363 |     35200 |           23.75 |
+|   Register               |     0.001 |     8465 |     35200 |           24.04 |
 |   LUT as Distributed RAM |     0.001 |      372 |      6000 |            6.20 |
-|   F7/F8 Muxes            |    <0.001 |      232 |     17600 |            1.31 |
-|   LUT as Shift Register  |    <0.001 |      192 |      6000 |            3.20 |
-|   Others                 |     0.000 |     2166 |       --- |             --- |
-| Signals                  |     0.057 |    15646 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      233 |     17600 |            1.32 |
+|   LUT as Shift Register  |    <0.001 |      202 |      6000 |            3.36 |
+|   Others                 |     0.000 |     2189 |       --- |             --- |
+| Signals                  |     0.058 |    15837 |       --- |             --- |
 | Block RAM                |     0.047 |       48 |        60 |           80.00 |
 | DSPs                     |     0.016 |       10 |        80 |           12.50 |
-| I/O                      |     0.020 |       19 |       100 |           19.00 |
+| I/O                      |     0.022 |       25 |       100 |           25.00 |
 | PS7                      |     1.557 |        1 |       --- |             --- |
-| Static Power             |     0.141 |          |           |                 |
-| Total                    |     1.948 |          |           |                 |
+| Static Power             |     0.142 |          |           |                 |
+| Total                    |     1.953 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.236 |       0.226 |      0.010 |
+| Vccint    |       1.000 |     0.239 |       0.229 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.012 |
 | Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -152,19 +152,19 @@ Table of Contents
 +-----------------------------------------------------------------------------------+-----------+
 | Name                                                                              | Power (W) |
 +-----------------------------------------------------------------------------------+-----------+
-| TAIGA_System_wrapper                                                              |     1.806 |
-|   TAIGA_System_i                                                                  |     1.786 |
-|     IO_Intermediary                                                               |     0.061 |
-|       U0                                                                          |     0.061 |
-|         MicroBlaze_Core_I                                                         |     0.061 |
-|           Performance.Core                                                        |     0.060 |
-|             Data_Flow_I                                                           |     0.042 |
+| TAIGA_System_wrapper                                                              |     1.811 |
+|   TAIGA_System_i                                                                  |     1.789 |
+|     IO_Intermediary                                                               |     0.062 |
+|       U0                                                                          |     0.062 |
+|         MicroBlaze_Core_I                                                         |     0.062 |
+|           Performance.Core                                                        |     0.061 |
+|             Data_Flow_I                                                           |     0.043 |
 |               ALU_I                                                               |     0.005 |
-|                 ALL_Bits[0].ALU_Bit_I1                                            |     0.004 |
+|                 ALL_Bits[0].ALU_Bit_I1                                            |     0.005 |
 |                   Last_Bit.I_ALU_LUT_2                                            |    <0.001 |
 |                   Last_Bit.I_ALU_LUT_V5                                           |    <0.001 |
 |                   Last_Bit.MULT_AND_I                                             |    <0.001 |
-|                   Last_Bit.MUXCY_XOR_I                                            |     0.004 |
+|                   Last_Bit.MUXCY_XOR_I                                            |     0.005 |
 |                 ALL_Bits[10].ALU_Bit_I1                                           |    <0.001 |
 |                   Not_Last_Bit.I_ALU_LUT_V5                                       |    <0.001 |
 |                     Using_FPGA.Native                                             |    <0.001 |
@@ -325,11 +325,11 @@ Table of Contents
 |                 Gen_Bits[8].MEM_EX_Result_Inst                                    |    <0.001 |
 |                 Gen_Bits[9].MEM_EX_Result_Inst                                    |    <0.001 |
 |               FPU_I                                                               |     0.022 |
-|                 Use_FPU.FPU_ADDSUB_I                                              |     0.006 |
+|                 Use_FPU.FPU_ADDSUB_I                                              |     0.007 |
 |                 Use_FPU.FPU_DIV_I                                                 |     0.001 |
 |                 Use_FPU.FPU_MUL_I                                                 |     0.005 |
 |                   Use_DSP48E1.dsp_module_lower                                    |     0.001 |
-|                   Use_DSP48E1.dsp_module_upper                                    |     0.004 |
+|                   Use_DSP48E1.dsp_module_upper                                    |     0.003 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].AddSub_MULT_AND |     0.000 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].I_ALU_LUT       |     0.000 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].MUXCY_XOR_I     |     0.000 |
@@ -1136,7 +1136,7 @@ Table of Contents
 |                 MUXCY_I                                                           |     0.000 |
 |               if_pc_incr_carry_and_3                                              |     0.000 |
 |                 MUXCY_I                                                           |     0.000 |
-|               jump_logic_I1                                                       |     0.006 |
+|               jump_logic_I1                                                       |     0.007 |
 |                 MUXCY_JUMP_CARRY                                                  |     0.000 |
 |                 MUXCY_JUMP_CARRY2                                                 |    <0.001 |
 |                 MUXCY_JUMP_CARRY3                                                 |     0.000 |
@@ -1604,11 +1604,11 @@ Table of Contents
 |             ram_reg_0_15_7_7                                                      |    <0.001 |
 |             ram_reg_0_15_8_8                                                      |    <0.001 |
 |             ram_reg_0_15_9_9                                                      |    <0.001 |
-|     axi_periph_IOI                                                                |     0.002 |
-|       xbar                                                                        |     0.002 |
-|         inst                                                                      |     0.002 |
-|           gen_sasd.crossbar_sasd_0                                                |     0.002 |
-|             addr_arbiter_inst                                                     |     0.001 |
+|     axi_periph_IOI                                                                |     0.003 |
+|       xbar                                                                        |     0.003 |
+|         inst                                                                      |     0.003 |
+|           gen_sasd.crossbar_sasd_0                                                |     0.003 |
+|             addr_arbiter_inst                                                     |     0.002 |
 |             gen_decerr.decerr_slave_inst                                          |    <0.001 |
 |             reg_slice_r                                                           |    <0.001 |
 |             splitter_ar                                                           |    <0.001 |
@@ -1622,7 +1622,7 @@ Table of Contents
 |             reg_slice_r                                                           |    <0.001 |
 |             splitter_ar                                                           |    <0.001 |
 |             splitter_aw                                                           |    <0.001 |
-|     axi_periph_production_controller                                              |     0.013 |
+|     axi_periph_production_controller                                              |     0.014 |
 |       s00_couplers                                                                |     0.011 |
 |         auto_pc                                                                   |     0.011 |
 |           inst                                                                    |     0.011 |
@@ -1637,7 +1637,7 @@ Table of Contents
 |                 transaction_fifo_0                                                |    <0.001 |
 |               SI_REG                                                              |     0.003 |
 |                 ar_pipe                                                           |    <0.001 |
-|                 aw_pipe                                                           |    <0.001 |
+|                 aw_pipe                                                           |     0.001 |
 |                 b_pipe                                                            |    <0.001 |
 |                 r_pipe                                                            |    <0.001 |
 |               WR.aw_channel_0                                                     |     0.002 |
@@ -1656,8 +1656,8 @@ Table of Contents
 |             reg_slice_r                                                           |    <0.001 |
 |             splitter_ar                                                           |    <0.001 |
 |             splitter_aw                                                           |    <0.001 |
-|     axi_quad_spi_plant                                                            |     0.004 |
-|       U0                                                                          |     0.004 |
+|     axi_quad_spi_plant                                                            |     0.005 |
+|       U0                                                                          |     0.005 |
 |         QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I                                        |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
 |             I_DECODER                                                             |    <0.001 |
@@ -1670,6 +1670,26 @@ Table of Contents
 |           RESET_SYNC_AXI_SPI_CLK_INST                                             |    <0.001 |
 |           SOFT_RESET_I                                                            |    <0.001 |
 |           STATUS_REG_MODE_0_GEN.STATUS_SLAVE_SEL_REG_I                            |    <0.001 |
+|     axi_supervisory_uart                                                          |     0.002 |
+|       U0                                                                          |     0.002 |
+|         AXI_LITE_IPIF_I                                                           |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
+|             I_DECODER                                                             |    <0.001 |
+|         UARTLITE_CORE_I                                                           |     0.001 |
+|           BAUD_RATE_I                                                             |    <0.001 |
+|           UARTLITE_RX_I                                                           |    <0.001 |
+|             DELAY_16_I                                                            |    <0.001 |
+|             INPUT_DOUBLE_REGS3                                                    |    <0.001 |
+|             SRL_FIFO_I                                                            |    <0.001 |
+|               I_SRL_FIFO_RBU_F                                                    |    <0.001 |
+|                 CNTR_INCR_DECR_ADDN_F_I                                           |    <0.001 |
+|                 DYNSHREG_F_I                                                      |    <0.001 |
+|           UARTLITE_TX_I                                                           |    <0.001 |
+|             MID_START_BIT_SRL16_I                                                 |    <0.001 |
+|             SRL_FIFO_I                                                            |    <0.001 |
+|               I_SRL_FIFO_RBU_F                                                    |    <0.001 |
+|                 CNTR_INCR_DECR_ADDN_F_I                                           |    <0.001 |
+|                 DYNSHREG_F_I                                                      |    <0.001 |
 |     axi_timer_backup_controller                                                   |     0.004 |
 |       U0                                                                          |     0.004 |
 |         AXI4_LITE_I                                                               |     0.001 |
@@ -1688,12 +1708,12 @@ Table of Contents
 |             I_DECODER                                                             |    <0.001 |
 |         TIMEBASE_WDT_CORE_I                                                       |    <0.001 |
 |           INPUT_DOUBLE_REGS3                                                      |     0.000 |
-|     backup_controller                                                             |     0.052 |
-|       U0                                                                          |     0.052 |
-|         MicroBlaze_Core_I                                                         |     0.052 |
-|           Performance.Core                                                        |     0.051 |
+|     backup_controller                                                             |     0.051 |
+|       U0                                                                          |     0.051 |
+|         MicroBlaze_Core_I                                                         |     0.051 |
+|           Performance.Core                                                        |     0.050 |
 |             Data_Flow_I                                                           |     0.038 |
-|               ALU_I                                                               |     0.002 |
+|               ALU_I                                                               |     0.001 |
 |                 ALL_Bits[0].ALU_Bit_I1                                            |     0.001 |
 |                   Last_Bit.I_ALU_LUT_2                                            |    <0.001 |
 |                   Last_Bit.I_ALU_LUT_V5                                           |    <0.001 |
@@ -1858,8 +1878,8 @@ Table of Contents
 |                 Gen_Bits[7].MEM_EX_Result_Inst                                    |    <0.001 |
 |                 Gen_Bits[8].MEM_EX_Result_Inst                                    |    <0.001 |
 |                 Gen_Bits[9].MEM_EX_Result_Inst                                    |    <0.001 |
-|               FPU_I                                                               |     0.022 |
-|                 Use_FPU.FPU_ADDSUB_I                                              |     0.007 |
+|               FPU_I                                                               |     0.021 |
+|                 Use_FPU.FPU_ADDSUB_I                                              |     0.006 |
 |                 Use_FPU.FPU_DIV_I                                                 |     0.001 |
 |                 Use_FPU.FPU_MUL_I                                                 |     0.005 |
 |                   Use_DSP48E1.dsp_module_lower                                    |     0.001 |
@@ -2670,7 +2690,7 @@ Table of Contents
 |                 MUXCY_I                                                           |     0.000 |
 |               if_pc_incr_carry_and_3                                              |     0.000 |
 |                 MUXCY_I                                                           |     0.000 |
-|               jump_logic_I1                                                       |     0.002 |
+|               jump_logic_I1                                                       |     0.001 |
 |                 MUXCY_JUMP_CARRY                                                  |     0.000 |
 |                 MUXCY_JUMP_CARRY2                                                 |    <0.001 |
 |                 MUXCY_JUMP_CARRY3                                                 |     0.000 |
@@ -3018,7 +3038,7 @@ Table of Contents
 |           JTAG_CONTROL_I                                                          |    <0.001 |
 |     production_controller                                                         |     1.559 |
 |       inst                                                                        |     1.559 |
-|     queue_multiplexer_0                                                           |    <0.001 |
+|     queue_multiplexer                                                             |    <0.001 |
 |       inst                                                                        |    <0.001 |
 |     rst_production_controller_100M                                                |    <0.001 |
 |       U0                                                                          |    <0.001 |

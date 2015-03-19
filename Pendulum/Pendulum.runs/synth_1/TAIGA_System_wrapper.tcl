@@ -6,8 +6,6 @@ set_param gui.test TreeTableDev
 debug::add_scope template.lib 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 create_project -in_memory -part xc7z010clg400-1
 set_param project.compositeFile.enableAutoGeneration 0
@@ -90,6 +88,9 @@ set_property used_in_implementation false [get_files -all /home/teja/Documents/T
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4_board.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4.xdc]
+set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/TAIGA_System_ooc.xdc]
 set_property is_locked true [get_files /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/TAIGA_System.bd]

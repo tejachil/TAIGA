@@ -8,6 +8,8 @@ BEGIN OS
  PARAMETER OS_NAME = standalone
  PARAMETER OS_VER = 4.2
  PARAMETER PROC_INSTANCE = IO_Intermediary
+ PARAMETER stdin = axi_supervisory_uart
+ PARAMETER stdout = axi_supervisory_uart
 END
 
 
@@ -76,6 +78,12 @@ BEGIN DRIVER
  PARAMETER DRIVER_NAME = bram
  PARAMETER DRIVER_VER = 4.0
  PARAMETER HW_INSTANCE = local_memory_IOI_ilmb_bram_if_cntlr
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = uartlite
+ PARAMETER DRIVER_VER = 3.0
+ PARAMETER HW_INSTANCE = axi_supervisory_uart
 END
 
 

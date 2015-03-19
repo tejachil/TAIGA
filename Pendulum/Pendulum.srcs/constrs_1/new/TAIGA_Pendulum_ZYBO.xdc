@@ -197,26 +197,26 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_led_production_tri_o[0]}]
 ##IO_L15N_T2_DQS_34
 #set_property PACKAGE_PIN U20 [get_ports {jb_n[0]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[0]}]
-#set_property PACKAGE_PIN U20 [get_ports {gpio_taiga_debug_tri_o[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_taiga_debug_tri_o[1]}]
+set_property PACKAGE_PIN U20 [get_ports {gpio_debug_ioi_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_ioi_tri_o[1]}]
 
 ###IO_L15P_T2_DQS_34
 ##set_property PACKAGE_PIN T20 [get_ports {jb_p[0]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[0]}]
-#set_property PACKAGE_PIN T20 [get_ports {gpio_taiga_debug_tri_o[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_taiga_debug_tri_o[0]}]
+set_property PACKAGE_PIN T20 [get_ports {gpio_debug_ioi_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_ioi_tri_o[0]}]
 
 ###IO_L16N_T2_34
 ##set_property PACKAGE_PIN W20 [get_ports {jb_n[1]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[1]}]
-#set_property PACKAGE_PIN W20 [get_ports {gpio_taiga_debug_tri_o[3]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_taiga_debug_tri_o[3]}]
+set_property PACKAGE_PIN W20 [get_ports {gpio_debug_ioi_tri_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_ioi_tri_o[3]}]
 
 ###IO_L16P_T2_34
 ##set_property PACKAGE_PIN V20 [get_ports {jb_p[1]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[1]}]
-#set_property PACKAGE_PIN V20 [get_ports {gpio_taiga_debug_tri_o[2]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_taiga_debug_tri_o[2]}]
+set_property PACKAGE_PIN V20 [get_ports {gpio_debug_ioi_tri_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_ioi_tri_o[2]}]
 
 ###IO_L17N_T2_34
 ##set_property PACKAGE_PIN Y19 [get_ports {jb_n[2]}]
@@ -296,10 +296,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_led_production_tri_o[0]}]
 #set_property PACKAGE_PIN U15 [get_ports {jd_n[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jd_n[2]}]
 
-## TAIGA RXD ############################################
-#set_property PACKAGE_PIN U15 [get_ports {taiga_rxd}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {taiga_rxd}]
-#######################################################
+set_property PACKAGE_PIN U15 [get_ports {ioi_uart_rx}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_rx}]
 
 
 ##IO_L11P_T1_SRCC_34
@@ -314,10 +312,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_led_production_tri_o[0]}]
 #set_property PACKAGE_PIN V17 [get_ports {jd_p[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jd_p[3]}]
 
-## TAIGA TXD ############################################
-#set_property PACKAGE_PIN V17 [get_ports {taiga_txd}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {taiga_txd}]
-#######################################################
+set_property PACKAGE_PIN V17 [get_ports {ioi_uart_tx}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_tx}]
 
 ##Pmod Header JE
 ##IO_L4P_T0_34

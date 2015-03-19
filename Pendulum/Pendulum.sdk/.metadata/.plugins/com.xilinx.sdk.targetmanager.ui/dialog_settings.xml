@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="TAIGA_System_wrapper_hw_platform_0-TAIGA_System_i/IO_Intermediary-initElf"/>
+	<item value="Auto Detect" key="TAIGA_System_wrapper_hw_platform_0-device"/>
+	<item value="TAIGA_System_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="bootloop" key="TAIGA_System_wrapper_hw_platform_0-TAIGA_System_i/backup_controller-initElf"/>
+	<item value="TAIGA_System_wrapper.bit" key="TAIGA_System_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="TAIGA_System_wrapper_hw_platform_0-target"/>
+	<item value="TAIGA_System_wrapper.mmi" key="TAIGA_System_wrapper_hw_platform_0-bmmFile"/>
+</section>

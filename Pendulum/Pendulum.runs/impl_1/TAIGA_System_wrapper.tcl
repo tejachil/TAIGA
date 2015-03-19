@@ -44,8 +44,6 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set rc [catch {
@@ -127,6 +125,10 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4_board.xdc]
   read_xdc -ref TAIGA_System_axi_gpio_0_4 -cells U0 /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4.xdc
   set_property processing_order EARLY [get_files /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4.xdc]
+  read_xdc -prop_thru_buffers -ref TAIGA_System_axi_uartlite_0_0 -cells U0 /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0_board.xdc
+  set_property processing_order EARLY [get_files /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0_board.xdc]
+  read_xdc -ref TAIGA_System_axi_uartlite_0_0 -cells U0 /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xdc
+  set_property processing_order EARLY [get_files /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xdc]
   read_xdc /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/constrs_1/new/TAIGA_Pendulum_ZYBO.xdc
   read_xdc -ref TAIGA_System_IO_Intermediary_axi_intc_0 -cells U0 /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_IO_Intermediary_axi_intc_0/TAIGA_System_IO_Intermediary_axi_intc_0_clocks.xdc
   set_property processing_order LATE [get_files /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_IO_Intermediary_axi_intc_0/TAIGA_System_IO_Intermediary_axi_intc_0_clocks.xdc]

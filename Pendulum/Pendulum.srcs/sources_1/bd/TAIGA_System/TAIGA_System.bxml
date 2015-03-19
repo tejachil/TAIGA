@@ -223,7 +223,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/TAIGA_System_queue_multiplexer_0_0/TAIGA_System_queue_multiplexer_0_0.xci" Type="IP">
-        <Instance HierarchyPath="queue_multiplexer_0"/>
+        <Instance HierarchyPath="queue_multiplexer"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -352,6 +352,14 @@
       </File>
       <File Name="hdl/TAIGA_System.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_supervisory_uart"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>

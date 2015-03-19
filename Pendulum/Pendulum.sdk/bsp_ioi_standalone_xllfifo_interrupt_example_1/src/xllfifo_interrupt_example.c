@@ -411,6 +411,7 @@ static void FifoRecvHandler(XLlFifo *InstancePtr)
 	//while(XLlFifo_iRxOccupancy(InstancePtr)) {
 		for (i=0; i < ReceiveLength; i++) {
 				RxWord = XLlFifo_RxGetWord(InstancePtr);
+				xil_printf("%d\n", RxWord);
 				*(DestinationBuffer+i) = RxWord;
 		}
 	//}

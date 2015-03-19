@@ -409,6 +409,8 @@
 
 /******************************************************************/
 
+#define STDIN_BASEADDRESS 0x40600000
+#define STDOUT_BASEADDRESS 0x40600000
 
 /******************************************************************/
 
@@ -502,7 +504,7 @@
 #define XPAR_AXI_GPIO_IOI_OUT_HIGHADDR 0x4000FFFF
 #define XPAR_AXI_GPIO_IOI_OUT_DEVICE_ID 1
 #define XPAR_AXI_GPIO_IOI_OUT_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_IOI_OUT_IS_DUAL 0
+#define XPAR_AXI_GPIO_IOI_OUT_IS_DUAL 1
 
 
 /* Definitions for peripheral AXI_GPIO_TRIGGER */
@@ -527,7 +529,7 @@
 #define XPAR_GPIO_1_HIGHADDR 0x4000FFFF
 #define XPAR_GPIO_1_DEVICE_ID XPAR_AXI_GPIO_IOI_OUT_DEVICE_ID
 #define XPAR_GPIO_1_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_1_IS_DUAL 0
+#define XPAR_GPIO_1_IS_DUAL 1
 
 /* Canonical definitions for peripheral AXI_GPIO_TRIGGER */
 #define XPAR_GPIO_2_BASEADDR 0x40020000
@@ -661,6 +663,33 @@
 #define XPAR_SPI_0_XIP_MODE 0
 #define XPAR_SPI_0_USE_STARTUP 0
 
+
+
+/******************************************************************/
+
+/* Definitions for driver UARTLITE */
+#define XPAR_XUARTLITE_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_SUPERVISORY_UART */
+#define XPAR_AXI_SUPERVISORY_UART_BASEADDR 0x40600000
+#define XPAR_AXI_SUPERVISORY_UART_HIGHADDR 0x4060FFFF
+#define XPAR_AXI_SUPERVISORY_UART_DEVICE_ID 0
+#define XPAR_AXI_SUPERVISORY_UART_BAUDRATE 921600
+#define XPAR_AXI_SUPERVISORY_UART_USE_PARITY 0
+#define XPAR_AXI_SUPERVISORY_UART_ODD_PARITY 0
+#define XPAR_AXI_SUPERVISORY_UART_DATA_BITS 8
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_SUPERVISORY_UART */
+#define XPAR_UARTLITE_0_DEVICE_ID XPAR_AXI_SUPERVISORY_UART_DEVICE_ID
+#define XPAR_UARTLITE_0_BASEADDR 0x40600000
+#define XPAR_UARTLITE_0_HIGHADDR 0x4060FFFF
+#define XPAR_UARTLITE_0_BAUDRATE 921600
+#define XPAR_UARTLITE_0_USE_PARITY 0
+#define XPAR_UARTLITE_0_ODD_PARITY 0
+#define XPAR_UARTLITE_0_DATA_BITS 8
 
 
 /******************************************************************/
