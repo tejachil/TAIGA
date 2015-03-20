@@ -5202,3 +5202,1180 @@ make: Nothing to be done for `all'.
 20:19:22 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
 make: Nothing to be done for `all'.
+20:24:11 **** Build of project bsp_backup_standalone ****
+make -k all 
+Running Make include in backup_controller/libsrc/bram_v4_0/src
+make -C backup_controller/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in backup_controller/libsrc/cpu_v2_2/src
+make -C backup_controller/libsrc/cpu_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in backup_controller/libsrc/gpio_v4_0/src
+make -C backup_controller/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in backup_controller/libsrc/intc_v3_2/src
+make -C backup_controller/libsrc/intc_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in backup_controller/libsrc/llfifo_v4_0/src
+make -C backup_controller/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in backup_controller/libsrc/standalone_v4_2/src
+make -C backup_controller/libsrc/standalone_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in backup_controller/libsrc/tmrctr_v3_0/src
+make -C backup_controller/libsrc/tmrctr_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make libs in backup_controller/libsrc/bram_v4_0/src
+make -C backup_controller/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in backup_controller/libsrc/cpu_v2_2/src
+make -C backup_controller/libsrc/cpu_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling cpu
+Running Make libs in backup_controller/libsrc/gpio_v4_0/src
+make -C backup_controller/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling gpio
+Running Make libs in backup_controller/libsrc/intc_v3_2/src
+make -C backup_controller/libsrc/intc_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling intc
+Running Make libs in backup_controller/libsrc/llfifo_v4_0/src
+make -C backup_controller/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling llfifo
+Running Make libs in backup_controller/libsrc/standalone_v4_2/src
+make -C backup_controller/libsrc/standalone_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling standalone
+Running Make libs in backup_controller/libsrc/tmrctr_v3_0/src
+make -C backup_controller/libsrc/tmrctr_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling tmrctr
+Finished building libraries
+20:25:02 **** Build of project app_backup_controller_bsp ****
+make -k all 
+Running Make include in IO_Intermediary/libsrc/bram_v4_0/src
+make -C IO_Intermediary/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/cpu_v2_2/src
+make -C IO_Intermediary/libsrc/cpu_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/gpio_v4_0/src
+make -C IO_Intermediary/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/intc_v3_2/src
+make -C IO_Intermediary/libsrc/intc_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/llfifo_v4_0/src
+make -C IO_Intermediary/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/spi_v4_1/src
+make -C IO_Intermediary/libsrc/spi_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/standalone_v4_2/src
+make -C IO_Intermediary/libsrc/standalone_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/uartlite_v3_0/src
+make -C IO_Intermediary/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make include in IO_Intermediary/libsrc/wdttb_v3_0/src
+make -C IO_Intermediary/libsrc/wdttb_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Running Make libs in IO_Intermediary/libsrc/bram_v4_0/src
+make -C IO_Intermediary/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in IO_Intermediary/libsrc/cpu_v2_2/src
+make -C IO_Intermediary/libsrc/cpu_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling cpu
+Running Make libs in IO_Intermediary/libsrc/gpio_v4_0/src
+make -C IO_Intermediary/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling gpio
+Running Make libs in IO_Intermediary/libsrc/intc_v3_2/src
+make -C IO_Intermediary/libsrc/intc_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling intc
+Running Make libs in IO_Intermediary/libsrc/llfifo_v4_0/src
+make -C IO_Intermediary/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling llfifo
+Running Make libs in IO_Intermediary/libsrc/spi_v4_1/src
+make -C IO_Intermediary/libsrc/spi_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling spi
+Running Make libs in IO_Intermediary/libsrc/standalone_v4_2/src
+make -C IO_Intermediary/libsrc/standalone_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling standalone
+Running Make libs in IO_Intermediary/libsrc/uartlite_v3_0/src
+make -C IO_Intermediary/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling uartlite
+Running Make libs in IO_Intermediary/libsrc/wdttb_v3_0/src
+make -C IO_Intermediary/libsrc/wdttb_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+Compiling wdttb
+Finished building libraries
+20:25:05 **** Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../app_backup_controller_bsp/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../app_backup_controller_bsp/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../app_backup_controller_bsp/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2654	    316	   2084	   5054	   13be	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+
+**** Build of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+20:27:43 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:28:03 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+../src/main_backup.c: In function 'main':
+../src/main_backup.c:14:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1898	    308	   2090	   4296	   10c8	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:28:09 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1902	    308	   2084	   4294	   10c6	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:28:59 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:29:09 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:29:10 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:29:10 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:29:10 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:29:10 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:29:29 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:29:37 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+In file included from ../src/utilities/fifo_queue.c:8:0:
+../src/utilities/fifo_queue.c: In function 'init_fifo_queues':
+../src/utilities/fifo_queue.h:13:24: error: 'XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID' undeclared (first use in this function)
+ #define ENQUEUE_DEV_ID XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID
+                        ^
+../src/utilities/fifo_queue.c:24:32: note: in expansion of macro 'ENQUEUE_DEV_ID'
+  Config = XLlFfio_LookupConfig(ENQUEUE_DEV_ID);
+                                ^
+../src/utilities/fifo_queue.h:13:24: note: each undeclared identifier is reported only once for each function it appears in
+ #define ENQUEUE_DEV_ID XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID
+                        ^
+../src/utilities/fifo_queue.c:24:32: note: in expansion of macro 'ENQUEUE_DEV_ID'
+  Config = XLlFfio_LookupConfig(ENQUEUE_DEV_ID);
+                                ^
+../src/utilities/fifo_queue.c:20:6: warning: unused variable 'Error' [-Wunused-variable]
+  int Error;
+      ^
+../src/utilities/fifo_queue.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/utilities/fifo_queue.o] Error 1
+20:29:52 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+../src/main_backup.c:8:22: fatal error: axi_gpio.h: No such file or directory
+ #include "axi_gpio.h"
+                      ^
+compilation terminated.
+make: *** [src/main_backup.o] Error 1
+20:30:14 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+In file included from ../src/utilities/fifo_queue.c:8:0:
+../src/utilities/fifo_queue.c: In function 'init_fifo_queues':
+../src/utilities/fifo_queue.h:13:24: error: 'XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID' undeclared (first use in this function)
+ #define ENQUEUE_DEV_ID XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID
+                        ^
+../src/utilities/fifo_queue.c:24:32: note: in expansion of macro 'ENQUEUE_DEV_ID'
+  Config = XLlFfio_LookupConfig(ENQUEUE_DEV_ID);
+                                ^
+../src/utilities/fifo_queue.h:13:24: note: each undeclared identifier is reported only once for each function it appears in
+ #define ENQUEUE_DEV_ID XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID
+                        ^
+../src/utilities/fifo_queue.c:24:32: note: in expansion of macro 'ENQUEUE_DEV_ID'
+  Config = XLlFfio_LookupConfig(ENQUEUE_DEV_ID);
+                                ^
+../src/utilities/fifo_queue.c:20:6: warning: unused variable 'Error' [-Wunused-variable]
+  int Error;
+      ^
+../src/utilities/fifo_queue.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/utilities/fifo_queue.o] Error 1
+20:30:29 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c: In function 'init_fifo_queues':
+../src/utilities/fifo_queue.c:20:6: warning: unused variable 'Error' [-Wunused-variable]
+  int Error;
+      ^
+../src/utilities/fifo_queue.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1902	    308	   2084	   4294	   10c6	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:34:39 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:9:29: fatal error: pendulum_system.h: No such file or directory
+ #include "pendulum_system.h"
+                             ^
+compilation terminated.
+make: *** [src/backup_controller.o] Error 1
+20:35:40 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:9:29: fatal error: pendulum_system.h: No such file or directory
+ #include "pendulum_system.h"
+                             ^
+compilation terminated.
+make: *** [src/backup_controller.o] Error 1
+20:35:50 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:9:29: fatal error: pendulum_system.h: No such file or directory
+ #include "pendulum_system.h"
+                             ^
+compilation terminated.
+make: *** [src/backup_controller.o] Error 1
+20:35:51 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:35:51 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:35:51 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:36:02 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:9:29: fatal error: pendulum_system.h: No such file or directory
+ #include "pendulum_system.h"
+                             ^
+compilation terminated.
+make: *** [src/backup_controller.o] Error 1
+20:36:10 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:16:36: error: unknown type name 'ControlParameters'
+ float calculateKalmanControlSignal(ControlParameters *params);
+                                    ^
+../src/backup_controller.c:34:1: error: unknown type name 'ControlParameters'
+ static ControlParameters plantParams;
+ ^
+../src/backup_controller.c: In function 'startBackupControl':
+../src/backup_controller.c:38:2: warning: implicit declaration of function 'getStateInformation' [-Wimplicit-function-declaration]
+  getStateInformation(plantParams.xpre);
+  ^
+../src/backup_controller.c:38:33: error: request for member 'xpre' in something not a structure or union
+  getStateInformation(plantParams.xpre);
+                                 ^
+../src/backup_controller.c: In function 'backup_control_timer':
+../src/backup_controller.c:82:13: error: request for member 'theta_des' in something not a structure or union
+  plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
+             ^
+../src/backup_controller.c:82:48: error: 'pi' undeclared (first use in this function)
+  plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
+                                                ^
+../src/backup_controller.c:82:48: note: each undeclared identifier is reported only once for each function it appears in
+../src/backup_controller.c:84:2: warning: implicit declaration of function 'encoderRead' [-Wimplicit-function-declaration]
+  int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+  ^
+../src/backup_controller.c:84:26: error: 'SS_ENCODER_S' undeclared (first use in this function)
+  int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+                          ^
+../src/backup_controller.c:85:13: error: request for member 'thetaR' in something not a structure or union
+  plantParams.thetaR = enc1*Kenc;
+             ^
+../src/backup_controller.c:85:28: error: 'Kenc' undeclared (first use in this function)
+  plantParams.thetaR = enc1*Kenc;
+                            ^
+../src/backup_controller.c:87:25: error: 'SS_ENCODER_P' undeclared (first use in this function)
+  int enc2 = encoderRead(SS_ENCODER_P) % 4096;
+                         ^
+../src/backup_controller.c:88:13: error: request for member 'alphaR' in something not a structure or union
+  plantParams.alphaR = enc2*Kenc-pi;
+             ^
+../src/backup_controller.c:90:17: error: request for member 'alphaR' in something not a structure or union
+  if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+                 ^
+../src/backup_controller.c:90:43: error: request for member 'alphaR' in something not a structure or union
+  if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+                                           ^
+../src/backup_controller.c:90:63: error: request for member 'alphaR' in something not a structure or union
+  if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+                                                               ^
+../src/backup_controller.c:91:14: error: request for member 'u' in something not a structure or union
+   plantParams.u = -calculateKalmanControlSignal(&plantParams);
+              ^
+../src/backup_controller.c:91:3: warning: implicit declaration of function 'calculateKalmanControlSignal' [-Wimplicit-function-declaration]
+   plantParams.u = -calculateKalmanControlSignal(&plantParams);
+   ^
+../src/backup_controller.c:93:18: error: request for member 'u' in something not a structure or union
+  else plantParams.u = 0;
+                  ^
+../src/backup_controller.c:95:2: warning: implicit declaration of function 'writeDAC' [-Wimplicit-function-declaration]
+  writeDAC(plantParams.u);
+  ^
+../src/backup_controller.c:95:22: error: request for member 'u' in something not a structure or union
+  writeDAC(plantParams.u);
+                      ^
+../src/backup_controller.c: At top level:
+../src/backup_controller.c:100:36: error: unknown type name 'ControlParameters'
+ float calculateKalmanControlSignal(ControlParameters *params){
+                                    ^
+../src/backup_controller.c: In function 'TmrCtrSetupIntrSystem':
+../src/backup_controller.c:181:76: error: 'INTC_HANDLER' undeclared (first use in this function)
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler) INTC_HANDLER, IntcInstancePtr);
+                                                                            ^
+make: *** [src/backup_controller.o] Error 1
+20:36:17 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:34:1: error: unknown type name 'ControlParameters'
+ static ControlParameters plantParams;
+ ^
+../src/backup_controller.c: In function 'startBackupControl':
+../src/backup_controller.c:38:2: warning: implicit declaration of function 'getStateInformation' [-Wimplicit-function-declaration]
+  getStateInformation(plantParams.xpre);
+  ^
+../src/backup_controller.c:38:33: error: request for member 'xpre' in something not a structure or union
+  getStateInformation(plantParams.xpre);
+                                 ^
+../src/backup_controller.c: In function 'backup_control_timer':
+../src/backup_controller.c:82:13: error: request for member 'theta_des' in something not a structure or union
+  plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
+             ^
+../src/backup_controller.c:82:48: error: 'pi' undeclared (first use in this function)
+  plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
+                                                ^
+../src/backup_controller.c:82:48: note: each undeclared identifier is reported only once for each function it appears in
+../src/backup_controller.c:84:2: warning: implicit declaration of function 'encoderRead' [-Wimplicit-function-declaration]
+  int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+  ^
+../src/backup_controller.c:84:26: error: 'SS_ENCODER_S' undeclared (first use in this function)
+  int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+                          ^
+../src/backup_controller.c:85:13: error: request for member 'thetaR' in something not a structure or union
+  plantParams.thetaR = enc1*Kenc;
+             ^
+../src/backup_controller.c:85:28: error: 'Kenc' undeclared (first use in this function)
+  plantParams.thetaR = enc1*Kenc;
+                            ^
+../src/backup_controller.c:87:25: error: 'SS_ENCODER_P' undeclared (first use in this function)
+  int enc2 = encoderRead(SS_ENCODER_P) % 4096;
+                         ^
+../src/backup_controller.c:88:13: error: request for member 'alphaR' in something not a structure or union
+  plantParams.alphaR = enc2*Kenc-pi;
+             ^
+../src/backup_controller.c:90:17: error: request for member 'alphaR' in something not a structure or union
+  if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+                 ^
+../src/backup_controller.c:90:43: error: request for member 'alphaR' in something not a structure or union
+  if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+                                           ^
+../src/backup_controller.c:90:63: error: request for member 'alphaR' in something not a structure or union
+  if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+                                                               ^
+../src/backup_controller.c:91:14: error: request for member 'u' in something not a structure or union
+   plantParams.u = -calculateKalmanControlSignal(&plantParams);
+              ^
+../src/backup_controller.c:91:3: warning: implicit declaration of function 'calculateKalmanControlSignal' [-Wimplicit-function-declaration]
+   plantParams.u = -calculateKalmanControlSignal(&plantParams);
+   ^
+../src/backup_controller.c:93:18: error: request for member 'u' in something not a structure or union
+  else plantParams.u = 0;
+                  ^
+../src/backup_controller.c:95:2: warning: implicit declaration of function 'writeDAC' [-Wimplicit-function-declaration]
+  writeDAC(plantParams.u);
+  ^
+../src/backup_controller.c:95:22: error: request for member 'u' in something not a structure or union
+  writeDAC(plantParams.u);
+                      ^
+../src/backup_controller.c: At top level:
+../src/backup_controller.c:100:36: error: unknown type name 'ControlParameters'
+ float calculateKalmanControlSignal(ControlParameters *params){
+                                    ^
+../src/backup_controller.c: In function 'TmrCtrSetupIntrSystem':
+../src/backup_controller.c:181:76: error: 'INTC_HANDLER' undeclared (first use in this function)
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler) INTC_HANDLER, IntcInstancePtr);
+                                                                            ^
+make: *** [src/backup_controller.o] Error 1
+20:36:25 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c: In function 'backup_control_timer':
+../src/backup_controller.c:82:2: error: 'plantParams' undeclared (first use in this function)
+  plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
+  ^
+../src/backup_controller.c:82:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/backup_controller.c:82:48: error: 'pi' undeclared (first use in this function)
+  plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
+                                                ^
+../src/backup_controller.c:84:2: warning: implicit declaration of function 'encoderRead' [-Wimplicit-function-declaration]
+  int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+  ^
+../src/backup_controller.c:84:26: error: 'SS_ENCODER_S' undeclared (first use in this function)
+  int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+                          ^
+../src/backup_controller.c:85:28: error: 'Kenc' undeclared (first use in this function)
+  plantParams.thetaR = enc1*Kenc;
+                            ^
+../src/backup_controller.c:87:25: error: 'SS_ENCODER_P' undeclared (first use in this function)
+  int enc2 = encoderRead(SS_ENCODER_P) % 4096;
+                         ^
+../src/backup_controller.c:91:3: warning: implicit declaration of function 'calculateKalmanControlSignal' [-Wimplicit-function-declaration]
+   plantParams.u = -calculateKalmanControlSignal(&plantParams);
+   ^
+../src/backup_controller.c:95:2: warning: implicit declaration of function 'writeDAC' [-Wimplicit-function-declaration]
+  writeDAC(plantParams.u);
+  ^
+../src/backup_controller.c: At top level:
+../src/backup_controller.c:100:36: error: unknown type name 'ControlParameters'
+ float calculateKalmanControlSignal(ControlParameters *params){
+                                    ^
+../src/backup_controller.c: In function 'TmrCtrSetupIntrSystem':
+../src/backup_controller.c:181:76: error: 'INTC_HANDLER' undeclared (first use in this function)
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler) INTC_HANDLER, IntcInstancePtr);
+                                                                            ^
+make: *** [src/backup_controller.o] Error 1
+20:36:38 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:103:36: error: unknown type name 'ControlParameters'
+ float calculateKalmanControlSignal(ControlParameters *params){
+                                    ^
+../src/backup_controller.c: In function 'TmrCtrSetupIntrSystem':
+../src/backup_controller.c:184:76: error: 'INTC_HANDLER' undeclared (first use in this function)
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler) INTC_HANDLER, IntcInstancePtr);
+                                                                            ^
+../src/backup_controller.c:184:76: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/backup_controller.o] Error 1
+20:36:52 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c:103:36: error: unknown type name 'ControlParameters'
+ float calculateKalmanControlSignal(ControlParameters *params){
+                                    ^
+make: *** [src/backup_controller.o] Error 1
+20:37:18 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1902	    308	   2084	   4294	   10c6	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:37:46 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c: In function 'backup_control_timer':
+../src/backup_controller.c:79:10: error: 'LED3' undeclared (first use in this function)
+  set_led(LED3, state);
+          ^
+../src/backup_controller.c:79:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/backup_controller.o] Error 1
+20:37:54 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1902	    308	   2084	   4294	   10c6	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:38:05 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1902	    308	   2084	   4294	   10c6	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:39:04 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:39:04 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:05 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:05 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:39:31 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:39:31 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:32 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:32 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:39:50 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:39:50 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:51 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:39:51 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:49:19 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:49:20 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:20 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:20 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:49:32 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:49:32 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:33 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:33 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:49:48 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:49:48 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:48 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:49:48 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:50:21 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1902	    308	   2084	   4294	   10c6	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:50:40 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7044	    332	   2424	   9800	   2648	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:50:58 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:51:03 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:51:06 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:51:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:07 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:51:21 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:51:21 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:22 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:22 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:51:28 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7020	    332	   2424	   9776	   2630	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:51:28 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:51:28 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:29 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:51:29 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:51:31 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:51:55 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7656	    348	   2420	  10424	   28b8	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:51:59 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7020	    332	   2424	   9776	   2630	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:52:00 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:52:04 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7020	    332	   2424	   9776	   2630	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:52:08 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7656	    348	   2420	  10424	   28b8	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:52:10 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:52:14 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7656	    348	   2420	  10424	   28b8	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:52:18 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:52:19 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:52:19 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:52:19 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:52:21 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:52:24 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7656	    348	   2420	  10424	   28b8	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:52:30 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `padding.part.0':
+(.text+0x2c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `outnum':
+(.text+0x170): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x244): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x3e8): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o): In function `xil_printf':
+(.text+0x47c): undefined reference to `outbyte'
+../../bsp_backup_standalone/backup_controller/lib/libgloss.a(xil_printf.o):(.text+0x4b0): more undefined references to `outbyte' follow
+collect2: error: ld returned 1 exit status
+make: *** [app_backup_controller.elf] Error 1
+20:53:12 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c: In function 'init_fifo_queues':
+../src/utilities/fifo_queue.c:20:6: warning: unused variable 'Error' [-Wunused-variable]
+  int Error;
+      ^
+../src/utilities/fifo_queue.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9352	    380	   2420	  12152	   2f78	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:53:12 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:53:13 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:13 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:13 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:53:21 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_backup.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9352	    380	   2420	  12152	   2f78	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+20:53:29 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:53:30 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:30 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:30 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:53:37 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:53:37 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:37 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:53:38 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.

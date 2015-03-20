@@ -1,0 +1,3 @@
+THIRPARTY=false
+PROCESSOR=backup_controller
+MSS_FILE=system.mss
