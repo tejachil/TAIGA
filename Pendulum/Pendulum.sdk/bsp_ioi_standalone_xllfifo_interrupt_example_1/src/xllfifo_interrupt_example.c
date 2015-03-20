@@ -67,6 +67,11 @@
 #include "xllfifo.h"
 #include "xstatus.h"
 #include "axi_gpio.h"
+#include "xuartlite.h"
+
+#define UARTLITE_DEVICE_ID		XPAR_UARTLITE_0_DEVICE_ID
+
+XUartLite UartLite;		 /* Instance of the UartLite device */
 
 #ifdef XPAR_UARTNS550_0_BASEADDR
 #include "xuartns550_l.h"       /* to use uartns550 */
@@ -169,6 +174,13 @@ int main()
 	//xil_printf("--- Entering main() ---\n\r");
 	init_axi_gpio();
 
+	/*
+	 * Initialize the UartLite driver so that it is ready to use.
+	 */
+	Status = XUartLite_Initialize(&UartLite, UARTLITE_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
 	Status = XLlFifoInterruptExample(&FifoInstance, FIFO_DEV_ID);
 	if (Status != XST_SUCCESS) {
@@ -398,7 +410,7 @@ static void FifoRecvHandler(XLlFifo *InstancePtr)
 	int i;
 	u32 RxWord;
 	static u32 ReceiveLength;
-
+	xil_printf("Receiving Data...\n");
 	//xil_printf("Receiving Data... \n\r");
 
 	/* Read Recieve Length */

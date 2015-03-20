@@ -296,8 +296,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_ioi_tri_o[2]}]
 #set_property PACKAGE_PIN U15 [get_ports {jd_n[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jd_n[2]}]
 
-set_property PACKAGE_PIN U15 [get_ports {ioi_uart_rx}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_rx}]
+set_property PACKAGE_PIN U15 [get_ports {ioi_uart_tx}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_tx}]
 
 
 ##IO_L11P_T1_SRCC_34
@@ -312,8 +312,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_rx}]
 #set_property PACKAGE_PIN V17 [get_ports {jd_p[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jd_p[3]}]
 
-set_property PACKAGE_PIN V17 [get_ports {ioi_uart_tx}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_tx}]
+set_property PACKAGE_PIN V17 [get_ports {ioi_uart_rx}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_rx}]
 
 ##Pmod Header JE
 ##IO_L4P_T0_34

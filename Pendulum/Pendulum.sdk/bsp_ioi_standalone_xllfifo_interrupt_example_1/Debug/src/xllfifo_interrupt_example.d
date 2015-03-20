@@ -22,6 +22,7 @@ src/xllfifo_interrupt_example.o src/xllfifo_interrupt_example.d: \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xstatus.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h \
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xintc.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xintc_l.h
 
@@ -68,6 +69,8 @@ src/xllfifo_interrupt_example.o src/xllfifo_interrupt_example.d: \
 ../../bsp_ioi_standalone/IO_Intermediary/include/xstatus.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h:
+
+../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xintc.h:
 

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Thu Mar 19 19:04:08 2015
+| Date             : Thu Mar 19 19:48:34 2015
 | Host             : CRS running 64-bit Ubuntu 14.04.2 LTS
 | Command          : report_power -file TAIGA_System_wrapper_power_routed.rpt -pb TAIGA_System_wrapper_power_summary_routed.pb
 | Design           : TAIGA_System_wrapper
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 1.953 |
-| Dynamic (W)              | 1.811 |
+| Dynamic (W)              | 1.812 |
 | Device Static (W)        | 0.142 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 62.5  |
@@ -49,16 +49,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.075 |        5 |       --- |             --- |
+| Clocks                   |     0.074 |        5 |       --- |             --- |
 | Slice Logic              |     0.035 |    22337 |       --- |             --- |
-|   LUT as Logic           |     0.030 |     8614 |     17600 |           48.94 |
+|   LUT as Logic           |     0.030 |     8615 |     17600 |           48.94 |
 |   CARRY4                 |     0.003 |      575 |      4400 |           13.06 |
 |   Register               |     0.001 |     8465 |     35200 |           24.04 |
 |   LUT as Distributed RAM |     0.001 |      372 |      6000 |            6.20 |
 |   F7/F8 Muxes            |    <0.001 |      233 |     17600 |            1.32 |
 |   LUT as Shift Register  |    <0.001 |      202 |      6000 |            3.36 |
 |   Others                 |     0.000 |     2189 |       --- |             --- |
-| Signals                  |     0.058 |    15837 |       --- |             --- |
+| Signals                  |     0.059 |    15823 |       --- |             --- |
 | Block RAM                |     0.047 |       48 |        60 |           80.00 |
 | DSPs                     |     0.016 |       10 |        80 |           12.50 |
 | I/O                      |     0.022 |       25 |       100 |           25.00 |
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.239 |       0.229 |      0.010 |
+| Vccint    |       1.000 |     0.239 |       0.230 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.012 |
 | Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -152,12 +152,12 @@ Table of Contents
 +-----------------------------------------------------------------------------------+-----------+
 | Name                                                                              | Power (W) |
 +-----------------------------------------------------------------------------------+-----------+
-| TAIGA_System_wrapper                                                              |     1.811 |
-|   TAIGA_System_i                                                                  |     1.789 |
-|     IO_Intermediary                                                               |     0.062 |
-|       U0                                                                          |     0.062 |
-|         MicroBlaze_Core_I                                                         |     0.062 |
-|           Performance.Core                                                        |     0.061 |
+| TAIGA_System_wrapper                                                              |     1.812 |
+|   TAIGA_System_i                                                                  |     1.790 |
+|     IO_Intermediary                                                               |     0.063 |
+|       U0                                                                          |     0.063 |
+|         MicroBlaze_Core_I                                                         |     0.063 |
+|           Performance.Core                                                        |     0.062 |
 |             Data_Flow_I                                                           |     0.043 |
 |               ALU_I                                                               |     0.005 |
 |                 ALL_Bits[0].ALU_Bit_I1                                            |     0.005 |
@@ -325,11 +325,11 @@ Table of Contents
 |                 Gen_Bits[8].MEM_EX_Result_Inst                                    |    <0.001 |
 |                 Gen_Bits[9].MEM_EX_Result_Inst                                    |    <0.001 |
 |               FPU_I                                                               |     0.022 |
-|                 Use_FPU.FPU_ADDSUB_I                                              |     0.007 |
+|                 Use_FPU.FPU_ADDSUB_I                                              |     0.006 |
 |                 Use_FPU.FPU_DIV_I                                                 |     0.001 |
-|                 Use_FPU.FPU_MUL_I                                                 |     0.005 |
+|                 Use_FPU.FPU_MUL_I                                                 |     0.006 |
 |                   Use_DSP48E1.dsp_module_lower                                    |     0.001 |
-|                   Use_DSP48E1.dsp_module_upper                                    |     0.003 |
+|                   Use_DSP48E1.dsp_module_upper                                    |     0.004 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].AddSub_MULT_AND |     0.000 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].I_ALU_LUT       |     0.000 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].MUXCY_XOR_I     |     0.000 |
@@ -428,7 +428,7 @@ Table of Contents
 |                   abs_op1.fconv_op1_abs_GEN[7].MUXCY_XOR_I                        |     0.000 |
 |                   abs_op1.fconv_op1_abs_GEN[8].MUXCY_XOR_I                        |     0.000 |
 |                   abs_op1.fconv_op1_abs_GEN[9].MUXCY_XOR_I                        |     0.000 |
-|                 Use_FPU.Using_FPU_Extended.fpu_sqrt_I1                            |     0.001 |
+|                 Use_FPU.Using_FPU_Extended.fpu_sqrt_I1                            |     0.002 |
 |                   AddSub_Gen[0].MUXCY_XOR_I                                       |    <0.001 |
 |                   AddSub_Gen[10].MUXCY_XOR_I                                      |    <0.001 |
 |                   AddSub_Gen[11].MUXCY_XOR_I                                      |     0.000 |
@@ -1136,7 +1136,7 @@ Table of Contents
 |                 MUXCY_I                                                           |     0.000 |
 |               if_pc_incr_carry_and_3                                              |     0.000 |
 |                 MUXCY_I                                                           |     0.000 |
-|               jump_logic_I1                                                       |     0.007 |
+|               jump_logic_I1                                                       |     0.006 |
 |                 MUXCY_JUMP_CARRY                                                  |     0.000 |
 |                 MUXCY_JUMP_CARRY2                                                 |    <0.001 |
 |                 MUXCY_JUMP_CARRY3                                                 |     0.000 |
@@ -1629,7 +1629,7 @@ Table of Contents
 |             gen_axilite.gen_b2s_conv.axilite_b2s                                  |     0.011 |
 |               RD.ar_channel_0                                                     |     0.001 |
 |                 ar_cmd_fsm_0                                                      |    <0.001 |
-|                 cmd_translator_0                                                  |    <0.001 |
+|                 cmd_translator_0                                                  |     0.001 |
 |                   incr_cmd_0                                                      |    <0.001 |
 |                   wrap_cmd_0                                                      |    <0.001 |
 |               RD.r_channel_0                                                      |     0.004 |
@@ -1637,7 +1637,7 @@ Table of Contents
 |                 transaction_fifo_0                                                |    <0.001 |
 |               SI_REG                                                              |     0.003 |
 |                 ar_pipe                                                           |    <0.001 |
-|                 aw_pipe                                                           |     0.001 |
+|                 aw_pipe                                                           |    <0.001 |
 |                 b_pipe                                                            |    <0.001 |
 |                 r_pipe                                                            |    <0.001 |
 |               WR.aw_channel_0                                                     |     0.002 |
@@ -1656,8 +1656,8 @@ Table of Contents
 |             reg_slice_r                                                           |    <0.001 |
 |             splitter_ar                                                           |    <0.001 |
 |             splitter_aw                                                           |    <0.001 |
-|     axi_quad_spi_plant                                                            |     0.005 |
-|       U0                                                                          |     0.005 |
+|     axi_quad_spi_plant                                                            |     0.004 |
+|       U0                                                                          |     0.004 |
 |         QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I                                        |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
 |             I_DECODER                                                             |    <0.001 |
@@ -1878,12 +1878,12 @@ Table of Contents
 |                 Gen_Bits[7].MEM_EX_Result_Inst                                    |    <0.001 |
 |                 Gen_Bits[8].MEM_EX_Result_Inst                                    |    <0.001 |
 |                 Gen_Bits[9].MEM_EX_Result_Inst                                    |    <0.001 |
-|               FPU_I                                                               |     0.021 |
+|               FPU_I                                                               |     0.022 |
 |                 Use_FPU.FPU_ADDSUB_I                                              |     0.006 |
 |                 Use_FPU.FPU_DIV_I                                                 |     0.001 |
 |                 Use_FPU.FPU_MUL_I                                                 |     0.005 |
 |                   Use_DSP48E1.dsp_module_lower                                    |     0.001 |
-|                   Use_DSP48E1.dsp_module_upper                                    |     0.003 |
+|                   Use_DSP48E1.dsp_module_upper                                    |     0.004 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].AddSub_MULT_AND |     0.000 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].I_ALU_LUT       |     0.000 |
 |                 Use_FPU.Stage3_Add_Sub_With_Const.AddSub_Pass[10].MUXCY_XOR_I     |     0.000 |
@@ -1982,7 +1982,7 @@ Table of Contents
 |                   abs_op1.fconv_op1_abs_GEN[7].MUXCY_XOR_I                        |     0.000 |
 |                   abs_op1.fconv_op1_abs_GEN[8].MUXCY_XOR_I                        |     0.000 |
 |                   abs_op1.fconv_op1_abs_GEN[9].MUXCY_XOR_I                        |     0.000 |
-|                 Use_FPU.Using_FPU_Extended.fpu_sqrt_I1                            |     0.001 |
+|                 Use_FPU.Using_FPU_Extended.fpu_sqrt_I1                            |     0.002 |
 |                   AddSub_Gen[0].MUXCY_XOR_I                                       |    <0.001 |
 |                   AddSub_Gen[10].MUXCY_XOR_I                                      |    <0.001 |
 |                   AddSub_Gen[11].MUXCY_XOR_I                                      |     0.000 |

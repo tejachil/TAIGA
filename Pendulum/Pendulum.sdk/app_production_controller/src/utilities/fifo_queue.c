@@ -49,13 +49,14 @@ int init_fifo_queues(){
 	return 0;
 }
 
-int enqueue(int data){
+int enqueue(int header, int data){
 	if( XLlFifo_iTxVacancy(&fifo_enqueue) ){
+		XLlFifo_TxPutWord(&fifo_enqueue, header);
 		XLlFifo_TxPutWord(&fifo_enqueue, data);
 	}
 
 	/* Start Transmission by writing transmission length into the TLR */
-	XLlFifo_iTxSetLen(&fifo_enqueue, WORD_SIZE);
+	XLlFifo_iTxSetLen(&fifo_enqueue, WORD_SIZE*2);
 
 	/* Check for Transmission completion */
 	while( !(XLlFifo_IsTxDone(&fifo_enqueue)));

@@ -16,7 +16,7 @@
 
 int init_fifo_queues();
 
-int enqueue(int data);
+int enqueue(int header, int data);
 
 int dequeue();
 
