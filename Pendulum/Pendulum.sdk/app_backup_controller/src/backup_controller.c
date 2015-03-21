@@ -74,18 +74,18 @@ int startBackupControl(){
 }
 
 void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
-
 	static bool state = true;
 	set_led(LED2, state);
 	state = !state;
+	static int buffer[2];
 
 	static int count = 3;
-
+	buffer[0] = 23;
+	buffer[1] = count;
 	//if(count < 22){
-		enqueue(11, count);
+		enqueue(buffer, sizeof(buffer)/WORD_SIZE);
 		++count;
 	//}
-
 	/*
 	set_led(LED2, true);
 

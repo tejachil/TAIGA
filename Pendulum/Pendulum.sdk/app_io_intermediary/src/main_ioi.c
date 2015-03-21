@@ -64,12 +64,6 @@ XUartLite UartLite;		 /* Instance of the UartLite device */
 #include "xintc.h"
 
 
-#define DEQUEUE_DEV_ID	   	XPAR_AXI_FIFO_0_DEVICE_ID
-
-
-#define WORD_SIZE 4			/* Size of words in bytes */
-
-
 int XLlFifoInterruptExample(XLlFifo *InstancePtr1, u16 DeviceId2);
 
 volatile int Done;
@@ -81,12 +75,9 @@ int main()
 {
 	int Status;
 
-	//xil_printf("--- Entering main() ---\n\r");
 	init_axi_gpio();
 
-	/*
-	 * Initialize the UartLite driver so that it is ready to use.
-	 */
+	// Initialize the UartLite driver so that it is ready to use.
 	Status = XUartLite_Initialize(&UartLite, UARTLITE_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
@@ -94,15 +85,16 @@ int main()
 
 	init_fifo_queues();
 
-	//Status = XLlFifoInterruptExample(&fifo_dequeue, DEQUEUE_DEV_ID);
+	Status = init_interrupt_system();
 	if (Status != XST_SUCCESS) {
-		//xil_printf("Axi Streaming FIFO Interrupt Example Test Failed");
-		//xil_printf("--- Exiting main() ---\n\r");
+		xil_printf("Failed intr setup\r\n");
 		return XST_FAILURE;
 	}
 
-	//xil_printf("Axi Streaming FIFO Interrupt Example Test passed\n\r");
-	//xil_printf("--- Exiting main() ---\n\r");
+
+	while(1){
+		select_controller(read_sw_raw());
+	}
 
 	return XST_SUCCESS;
 }

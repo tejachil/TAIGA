@@ -16582,3 +16582,692 @@ make: Nothing to be done for `all'.
 21:18:40 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
 make: Nothing to be done for `all'.
+21:34:00 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:176:5: error: conflicting types for 'SetupInterruptSystem'
+ int SetupInterruptSystem(XIntc *IntcInstancePtr1, XLlFifo *InstancePtr2,
+     ^
+../src/utilities/fifo_queue.c:177:5: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+     u16 FifoIntrId2){
+     ^
+../src/utilities/fifo_queue.c:21:5: note: previous declaration of 'SetupInterruptSystem' was here
+ int SetupInterruptSystem();
+     ^
+../src/utilities/fifo_queue.c:218:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+make: *** [src/utilities/fifo_queue.o] Error 1
+21:34:08 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:217:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12204	    424	   2596	  15224	   3b78	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:34:29 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:211:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11732	    424	   2596	  14752	   39a0	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:34:37 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:218:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12204	    424	   2596	  15224	   3b78	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:34:41 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:217:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12204	    424	   2596	  15224	   3b78	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:01 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:217:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12184	    424	   2592	  15200	   3b60	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:06 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:211:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9232	    420	   2444	  12096	   2f40	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:16 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c:67:0: warning: "DEQUEUE_DEV_ID" redefined [enabled by default]
+ #define DEQUEUE_DEV_ID     XPAR_AXI_FIFO_0_DEVICE_ID
+ ^
+In file included from ../src/main_ioi.c:57:0:
+../src/utilities/fifo_queue.h:14:0: note: this is the location of the previous definition
+ #define DEQUEUE_DEV_ID XPAR_AXI_FIFO_IOI_DEQUEUE_DEVICE_ID
+ ^
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:97:2: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem();
+  ^
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:24 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:91:2: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem();
+  ^
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:32 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:210:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:41 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:210:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:35:44 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:35:44 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:35:46 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:35:46 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:35:46 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:35:51 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:35:51 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:35:51 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:35:51 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:35:52 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:35:58 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:35:58 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:35:58 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:35:59 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:35:59 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:36:32 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:210:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:91:2: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem();
+  ^
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:36:42 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main_ioi.o: In function `main':
+/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/app_io_intermediary/Debug/../src/main_ioi.c:91: undefined reference to `init_interrupt_system'
+collect2: error: ld returned 1 exit status
+make: *** [app_io_intermediary.elf] Error 1
+21:36:48 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:210:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:36:52 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:206:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11752	    424	   2592	  14768	   39b0	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:37:04 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:37:05 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:37:05 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:37:05 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:37:05 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:37:06 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:37:15 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12168	    424	   2592	  15184	   3b50	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:37:27 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:109:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12208	    424	   2592	  15224	   3b78	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:37:44 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_ioi.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'XLlFifoInterruptExample':
+../src/main_ioi.c:106:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12208	    424	   2592	  15224	   3b78	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:37:45 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:37:45 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:37:46 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:37:46 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:37:47 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:38:27 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:38:28 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:38:28 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:38:28 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:38:28 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:38:34 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:38:34 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:38:36 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:38:37 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:38:37 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:39:29 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c: In function 'backup_control_timer':
+../src/backup_controller.c:78:10: error: 'LED3' undeclared (first use in this function)
+  set_led(LED3, state);
+          ^
+../src/backup_controller.c:78:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/backup_controller.o] Error 1
+21:39:32 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c: In function 'backup_control_timer':
+../src/backup_controller.c:78:10: error: 'LED3' undeclared (first use in this function)
+  set_led(LED3, state);
+          ^
+../src/backup_controller.c:78:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/backup_controller.o] Error 1
+21:39:33 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:39:33 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:39:33 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:39:33 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:40:15 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/backup_controller.o" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9572	    380	   2528	  12480	   30c0	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+21:40:16 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:40:17 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:40:18 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:40:18 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:40:18 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:43:42 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_ioi_standalone/IO_Intermediary/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+../src/utilities/fifo_queue.c:206:13: warning: 'DisableIntrSystem' defined but not used [-Wunused-function]
+ static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+             ^
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o ./src/utilities/interrupt_controller.o  ./src/main_ioi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12136	    424	   2592	  15152	   3b30	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+21:43:44 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:43:44 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:43:44 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:44 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:43:45 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:44:33 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:44:33 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:44:33 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:44:33 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:44:34 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:44:42 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:44:43 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:44:43 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:44:43 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:44:43 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:44:54 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+21:44:55 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+21:44:55 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:44:55 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+21:44:55 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.

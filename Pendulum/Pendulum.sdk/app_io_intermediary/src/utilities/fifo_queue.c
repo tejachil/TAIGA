@@ -18,8 +18,6 @@ static XLlFifo fifo_dequeue;
 
 static void fifo_handler(XLlFifo *Fifo);
 static void FifoRecvHandler(XLlFifo *Fifo);
-int SetupInterruptSystem(XIntc *IntcInstancePtr, XLlFifo *InstancePtr,
-				u16 FifoIntrId);
 static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId);
 
 
@@ -82,18 +80,6 @@ int init_fifo_queues(){
 
 	//-----------------------------INterrupt
 
-	Status = SetupInterruptSystem(&interrupt_controller, &fifo_dequeue, FIFO_INTR_ID);
-	if (Status != XST_SUCCESS) {
-		//xil_printf("Failed intr setup\r\n");
-		return XST_FAILURE;
-	}
-
-	XLlFifo_IntEnable(&fifo_dequeue, XLLF_INT_RFPE_MASK);
-
-	while(1){
-		select_controller(read_sw_raw());
-	}
-
 	return XST_SUCCESS;
 }
 
@@ -140,12 +126,12 @@ static void fifo_handler(XLlFifo *InstancePtr)
 	Pending = XLlFifo_IntPending(InstancePtr);
 	while (Pending) {
 		if (Pending & XLLF_INT_RFPE_MASK) {
-			xil_printf("RFPE: %d\n", Pending);
+			//xil_printf("RFPE: %d\n", Pending);
 			FifoRecvHandler(InstancePtr);
 			XLlFifo_IntClear(InstancePtr, XLLF_INT_RFPE_MASK);
 		}
 		else {
-			xil_printf("else: %d\n", Pending);
+			//xil_printf("else: %d\n", Pending);
 			XLlFifo_IntClear(InstancePtr, Pending);
 		}
 		Pending = XLlFifo_IntPending(InstancePtr);
@@ -174,8 +160,7 @@ static void FifoRecvHandler(XLlFifo *InstancePtr)
 }
 
 
-int SetupInterruptSystem(XIntc *IntcInstancePtr1, XLlFifo *InstancePtr2,
-				u16 FifoIntrId2){
+int init_interrupt_system(){
 
 	int Status;
 
@@ -212,6 +197,8 @@ int SetupInterruptSystem(XIntc *IntcInstancePtr1, XLlFifo *InstancePtr2,
 
 	// Enable exceptions.
 	Xil_ExceptionEnable();
+
+	XLlFifo_IntEnable(&fifo_dequeue, XLLF_INT_RFPE_MASK);
 
 	return XST_SUCCESS;
 }

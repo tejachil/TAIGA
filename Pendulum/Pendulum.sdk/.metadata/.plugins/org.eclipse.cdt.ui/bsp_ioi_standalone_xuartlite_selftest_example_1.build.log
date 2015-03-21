@@ -1,6 +1,6 @@
-21:18:40 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+21:44:55 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
 make all 
 make: Nothing to be done for `all'.
 
-21:18:40 Build Finished (took 64ms)
+21:44:55 Build Finished (took 60ms)
 
