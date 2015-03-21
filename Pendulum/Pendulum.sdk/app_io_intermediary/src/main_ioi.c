@@ -54,6 +54,7 @@
 #include "xllfifo.h"
 #include "xstatus.h"
 #include "utilities/axi_gpio.h"
+#include "utilities/fifo_queue.h"
 #include "xuartlite.h"
 
 #define UARTLITE_DEVICE_ID		XPAR_UARTLITE_0_DEVICE_ID
@@ -63,45 +64,18 @@ XUartLite UartLite;		 /* Instance of the UartLite device */
 #include "xintc.h"
 
 
-#define FIFO_DEV_ID	   	XPAR_AXI_FIFO_0_DEVICE_ID
-
-#define INTC_DEVICE_ID          XPAR_INTC_0_DEVICE_ID
-#define FIFO_INTR_ID		XPAR_INTC_0_LLFIFO_0_VEC_ID
-
-#define INTC           XIntc
-#define INTC_HANDLER   XIntc_InterruptHandler
-
+#define DEQUEUE_DEV_ID	   	XPAR_AXI_FIFO_0_DEVICE_ID
 
 
 #define WORD_SIZE 4			/* Size of words in bytes */
 
-#define MAX_PACKET_LEN 1
 
-#define NO_OF_PACKETS 1
-
-#define MAX_DATA_BUFFER_SIZE NO_OF_PACKETS*MAX_PACKET_LEN
-
-#undef DEBUG
-
-int XLlFifoInterruptExample(XLlFifo *InstancePtr, u16 DeviceId);
-int TxSend(XLlFifo *InstancePtr, u32 *SourceAddr);
-static void FifoHandler(XLlFifo *Fifo);
-static void FifoRecvHandler(XLlFifo *Fifo);
-static void FifoSendHandler(XLlFifo *Fifo);
-static void FifoErrorHandler(XLlFifo *InstancePtr, u32 Pending);
-int SetupInterruptSystem(INTC *IntcInstancePtr, XLlFifo *InstancePtr,
-				u16 FifoIntrId);
-static void DisableIntrSystem(INTC *IntcInstancePtr, u16 FifoIntrId);
+int XLlFifoInterruptExample(XLlFifo *InstancePtr1, u16 DeviceId2);
 
 volatile int Done;
 volatile int Error;
 
-XLlFifo FifoInstance;
 
-static INTC Intc;
-
-u32 SourceBuffer[MAX_DATA_BUFFER_SIZE * WORD_SIZE];
-u32 DestinationBuffer[MAX_DATA_BUFFER_SIZE * WORD_SIZE];
 
 int main()
 {
@@ -118,7 +92,9 @@ int main()
 		return XST_FAILURE;
 	}
 
-	Status = XLlFifoInterruptExample(&FifoInstance, FIFO_DEV_ID);
+	init_fifo_queues();
+
+	//Status = XLlFifoInterruptExample(&fifo_dequeue, DEQUEUE_DEV_ID);
 	if (Status != XST_SUCCESS) {
 		//xil_printf("Axi Streaming FIFO Interrupt Example Test Failed");
 		//xil_printf("--- Exiting main() ---\n\r");
@@ -132,152 +108,7 @@ int main()
 }
 
 
-int XLlFifoInterruptExample(XLlFifo *InstancePtr, u16 DeviceId)
-{
-	XLlFifo_Config *Config;
-	int Status;
-	int i;
-	int err;
-	Status = XST_SUCCESS;
-
-	/* Initialize the Device Configuration Interface driver */
-	Config = XLlFfio_LookupConfig(DeviceId);
-	if (!Config) {
-		//xil_printf("No config found for %d\r\n", DeviceId);
-		return XST_FAILURE;
-	}
-
-	/*
-	 * This is where the virtual address would be used, this example
-	 * uses physical address.
-	 */
-	Status = XLlFifo_CfgInitialize(InstancePtr, Config, Config->BaseAddress);
-	if (Status != XST_SUCCESS) {
-		//xil_printf("Initialization failed\n\r");
-		return Status;
-	}
-
-	/* Check for the Reset value */
-	Status = XLlFifo_Status(InstancePtr);
-	XLlFifo_IntClear(InstancePtr,0xffffffff);
-	Status = XLlFifo_Status(InstancePtr);
-	if(Status != 0x0) {
-		//xil_printf("\n ERROR : Reset value of ISR0 : 0x%x\t"
-			   // "Expected : 0x0\n\r",
-			   // XLlFifo_Status(InstancePtr));
-		return XST_FAILURE;
-	}
-
-	/*
-	 * Connect the Axi Streaming FIFO to the interrupt subsystem such
-	 * that interrupts can occur. This function is application specific.
-	 */
-	Status = SetupInterruptSystem(&Intc, InstancePtr, FIFO_INTR_ID);
-	if (Status != XST_SUCCESS) {
-		//xil_printf("Failed intr setup\r\n");
-		return XST_FAILURE;
-	}
-
-	XLlFifo_IntEnable(InstancePtr, XLLF_INT_ALL_MASK);
-
-	Done = 0;
-
-	while(1){
-		select_controller(read_sw_raw());
-	}
-
-	return Status;
-}
-
-static void FifoHandler(XLlFifo *InstancePtr)
-{
-	u32 Pending;
-
-	Pending = XLlFifo_IntPending(InstancePtr);
-	while (Pending) {
-		if (Pending & XLLF_INT_RFPE_MASK) {
-			xil_printf("RFPE: %d\n", Pending);
-			FifoRecvHandler(InstancePtr);
-			XLlFifo_IntClear(InstancePtr, XLLF_INT_RFPE_MASK);
-		}
-		else {
-			xil_printf("else: %d\n", Pending);
-			XLlFifo_IntClear(InstancePtr, Pending);
-		}
-		Pending = XLlFifo_IntPending(InstancePtr);
-	}
-}
-
-
-static void FifoRecvHandler(XLlFifo *InstancePtr)
-{
-	int i;
-	u32 RxWord;
-	static u32 ReceiveLength;
-	xil_printf("Receiving Data...\n");
-
-	// Read Recieve Length
-	ReceiveLength = (XLlFifo_iRxGetLen(InstancePtr))/WORD_SIZE;
-
-	static bool ledState = true;
-	set_led(LED1, ledState);
-	ledState = !ledState;
-
-	for (i=0; i < ReceiveLength; i++) {
-			RxWord = XLlFifo_RxGetWord(InstancePtr);
-			xil_printf("%d\n", RxWord);
-			*(DestinationBuffer+i) = RxWord;
-	}
-}
-
-
-int SetupInterruptSystem(INTC *IntcInstancePtr, XLlFifo *InstancePtr,
-				u16 FifoIntrId)
+int XLlFifoInterruptExample(XLlFifo *InstancePtr1, u16 DeviceId2)
 {
 
-	int Status;
-
-	// Initialize the interrupt controller driver so that it is ready to use.
-	Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-
-	// Connect a device driver handler that will be called when an interrupt for the device occurs,
-	Status = XIntc_Connect(IntcInstancePtr, FifoIntrId,
-			   (XInterruptHandler)FifoHandler,
-			   (void *)InstancePtr);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-	// Start the interrupt controller such that interrupts are enabled for all devices that cause interrupts
-	Status = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-	// Enable the interrupt for the AXI FIFO device.
-	XIntc_Enable(IntcInstancePtr, FifoIntrId);
-
-
-	// Initialize the exception table.
-	Xil_ExceptionInit();
-
-	// Register the interrupt controller handler with the exception table.
-	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
-		(Xil_ExceptionHandler)INTC_HANDLER,
-		(void *)IntcInstancePtr);;
-
-	// Enable exceptions.
-	Xil_ExceptionEnable();
-
-	return XST_SUCCESS;
-}
-
-static void DisableIntrSystem(INTC *IntcInstancePtr, u16 FifoIntrId)
-{
-	/* Disconnect the interrupts */
-	XIntc_Disconnect(IntcInstancePtr, FifoIntrId);
 }

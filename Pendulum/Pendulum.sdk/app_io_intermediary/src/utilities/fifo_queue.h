@@ -9,11 +9,11 @@
 #define FIFO_QUEUE_H_
 
 #include "xparameters.h"
-#include "xllfifo.h"
 
 #define ENQUEUE_DEV_ID	XPAR_AXI_FIFO_IOI_ENQUEUE_DEVICE_ID
 #define DEQUEUE_DEV_ID	XPAR_AXI_FIFO_IOI_DEQUEUE_DEVICE_ID
-#define FIFO_INTR_ID	XPAR_INTC_0_LLFIFO_0_VEC_ID
+#define INTC_DEVICE_ID		XPAR_INTC_0_DEVICE_ID
+#define FIFO_INTR_ID		XPAR_INTC_0_LLFIFO_0_VEC_ID
 
 #define WORD_SIZE 		4 // Size of words in bytes
 
