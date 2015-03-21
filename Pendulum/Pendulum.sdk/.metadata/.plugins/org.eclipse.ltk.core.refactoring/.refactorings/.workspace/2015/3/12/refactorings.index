@@ -4,3 +4,6 @@
 1426810939537	Delete resource 'bsp_backup_xilkernel'
 1426811142044	Delete resource 'app_backup_controller'
 1426811144961	Delete resource 'app_backup_controller_bsp'
+1426889372849	Delete resource 'bsp_production_freertos_xllfifo_polling_example_1'
+1426889869223	Delete 3 resources
+1426891043537	Delete resource 'app_production_controller/src/utilities/interrupt_controller.h'

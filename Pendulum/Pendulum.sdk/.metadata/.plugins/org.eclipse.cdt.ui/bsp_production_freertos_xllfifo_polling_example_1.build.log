@@ -1,4 +1,4 @@
-23:35:37 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+18:04:51 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
 make all 
 Building target: bsp_production_freertos_xllfifo_polling_example_1.elf
 Invoking: ARM gcc linker
@@ -10,5 +10,5 @@ arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos
 collect2: error: ld returned 1 exit status
 make: *** [bsp_production_freertos_xllfifo_polling_example_1.elf] Error 1
 
-23:35:37 Build Finished (took 64ms)
+18:04:51 Build Finished (took 60ms)
 

@@ -41,11 +41,13 @@ void production_control_timer(xTimerHandle pxTimer){
 	static bool state = true;
 	set_led(LED3, state);
 	state = !state;
+	static int buffer[2];
 
 	static int count = 3;
-
+	buffer[0] = 23;
+	buffer[1] = count;
 	//if(count < 22){
-		enqueue(23, count);
+		enqueue(buffer, sizeof(buffer)/WORD_SIZE);
 		++count;
 	//}
 	/*if(plantParams.iteration > 10000)	return;

@@ -8,6 +8,9 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="outbyte"/>
+			<item value="INTC"/>
+			<item value="XPAR_TMRCTR_0_DEVICE_ID"/>
 			<item value="main"/>
 			<item value="FIFO_INTR_ID"/>
 		</list>

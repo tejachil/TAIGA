@@ -1,0 +1,19 @@
+/*
+ * interrupt_controller.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: teja
+ */
+
+#ifndef INTERRUPT_CONTROLLER_H_
+#define INTERRUPT_CONTROLLER_H_
+
+#define FIFO_DEV_ID	   	XPAR_AXI_FIFO_0_DEVICE_ID
+#define INTC_DEVICE_ID	XPAR_INTC_0_DEVICE_ID
+#define FIFO_INTR_ID	XPAR_INTC_0_LLFIFO_0_VEC_ID
+
+#define INTC           XIntc
+#define INTC_HANDLER   XIntc_InterruptHandler
+
+
+#endif /* INTERRUPT_CONTROLLER_H_ */

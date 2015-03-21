@@ -1,0 +1,76 @@
+/*
+ * interrupt_controller.c
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: teja
+ */
+
+#include "interrupt_controller.h"
+#include "xintc.h"
+#include "fifo_queue.h"
+#include "axi_gpio.h"
+
+static XIntc interrupt_controller;
+
+static void fifo_handler(XLlFifo *InstancePtr);
+
+int init_interrupt_controller(){
+	int Status;
+
+	// Initialize the FIFO Interrupt -----------------------------
+
+	// Initialize the interrupt controller driver so that it is ready to use.
+	Status = XIntc_Initialize(&interrupt_controller, INTC_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// Connect a device driver handler that will be called when an interrupt occurs
+	Status = XIntc_Connect(&interrupt_controller, FIFO_INTR_ID, (XInterruptHandler)fifo_handler, (void *)&fifo_dequeue);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// Start the interrupt controller such that interrupts are enabled for all devices that cause interrupts
+	Status = XIntc_Start(&interrupt_controller, XIN_REAL_MODE);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// Enable the interrupt for the AXI FIFO device.
+	XIntc_Enable(&interrupt_controller, FIFO_INTR_ID);
+
+	// Initialize the exception table.
+	Xil_ExceptionInit();
+
+	// Register the interrupt controller handler with the exception table.
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XIntc_InterruptHandler, (void *)&interrupt_controller);;
+
+	// Enable exceptions.
+	Xil_ExceptionEnable();
+
+	XLlFifo_IntEnable(&fifo_dequeue, XLLF_INT_ALL_MASK);
+}
+
+static void fifo_handler(XLlFifo *InstancePtr){
+	u32 Pending;
+	int buffer[20];
+
+	Pending = XLlFifo_IntPending(InstancePtr);
+	while (Pending) {
+		static bool ledState = true;
+		set_led(LED1, ledState);
+		ledState = !ledState;
+		if (Pending & XLLF_INT_RFPE_MASK) {
+			//FifoRecvHandler(InstancePtr);
+			dequeue(buffer);
+			XLlFifo_IntClear(InstancePtr, XLLF_INT_RFPE_MASK);
+			xil_printf("%dhi\n",buffer[0]);
+		}
+		else {
+			XLlFifo_IntClear(InstancePtr, Pending);
+		}
+		Pending = XLlFifo_IntPending(InstancePtr);
+	}
+}
+

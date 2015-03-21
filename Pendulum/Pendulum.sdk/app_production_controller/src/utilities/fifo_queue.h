@@ -11,13 +11,14 @@
 #include "xparameters.h"
 
 #define ENQUEUE_DEV_ID	XPAR_AXI_FIFO_PRODUCTION_ENQUEUE_DEVICE_ID
+#define DEQUEUE_DEV_ID	XPAR_AXI_FIFO_PRODUCTION_DEQUEUE_DEVICE_ID
 
 #define WORD_SIZE 		4 // Size of words in bytes
 
 int init_fifo_queues();
 
-int enqueue(int header, int data);
+int enqueue(int* data, int size);
 
-int dequeue();
+int dequeue(int* buffer);
 
 #endif /* FIFO_QUEUE_H_ */

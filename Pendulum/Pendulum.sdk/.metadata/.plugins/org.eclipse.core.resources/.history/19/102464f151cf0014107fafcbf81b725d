@@ -1,0 +1,13 @@
+/*
+ * interrupt_controller.h
+ *
+ *  Created on: Mar 20, 2015
+ *      Author: teja
+ */
+
+#ifndef INTERRUPT_CONTROLLER_H_
+#define INTERRUPT_CONTROLLER_H_
+
+
+
+#endif /* INTERRUPT_CONTROLLER_H_ */

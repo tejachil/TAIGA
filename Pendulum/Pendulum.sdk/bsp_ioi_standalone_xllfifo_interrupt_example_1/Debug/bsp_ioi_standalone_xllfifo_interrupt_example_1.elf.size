@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  12140	    424	   2532	  15096	   3af8	bsp_ioi_standalone_xllfifo_interrupt_example_1.elf
+  12368	    424	   2528	  15320	   3bd8	bsp_ioi_standalone_xllfifo_interrupt_example_1.elf
