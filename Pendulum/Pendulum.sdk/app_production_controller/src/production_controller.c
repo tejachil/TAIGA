@@ -43,6 +43,10 @@ void production_control_timer(xTimerHandle pxTimer){
 	state = !state;
 	static int buffer[2];
 
+	int buffer2[40];
+	dequeue(buffer2,false);
+
+
 	static int count = 3;
 	buffer[0] = 23;
 	buffer[1] = count;

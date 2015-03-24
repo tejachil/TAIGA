@@ -23,6 +23,4 @@ int init_interrupt_system();
 
 int enqueue(int* data, int size);
 
-int dequeue(int* buffer);
-
 #endif /* FIFO_QUEUE_H_ */

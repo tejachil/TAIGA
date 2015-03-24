@@ -16,10 +16,7 @@
 static XLlFifo fifo_enqueue;
 static XLlFifo fifo_dequeue;
 
-static void fifo_handler(XLlFifo *Fifo);
-static void FifoRecvHandler(XLlFifo *Fifo);
-static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId);
-
+static void dequeue_handler(XLlFifo *Fifo);
 
 static XIntc interrupt_controller;
 
@@ -78,8 +75,6 @@ int init_fifo_queues(){
 		return XST_FAILURE;
 	}
 
-	//-----------------------------INterrupt
-
 	return XST_SUCCESS;
 }
 
@@ -99,67 +94,6 @@ int enqueue(int* data, int size){
 	return 0;
 }
 
-int dequeue(int* buffer){
-	int ReceiveLength = 0;
-	int RxWord = 0;
-
-	ReceiveLength = (XLlFifo_iRxGetLen(&fifo_dequeue))/WORD_SIZE;
-
-	if(sizeof(buffer)/WORD_SIZE < ReceiveLength)	return -1;
-
-	int i = 0;
-	// Start Receiving
-	for ( i=0; i < ReceiveLength; i++){
-		RxWord = 0;
-		RxWord = XLlFifo_RxGetWord(&fifo_dequeue);
-		buffer[i] = RxWord;
-	}
-
-	return ReceiveLength;
-}
-
-
-static void fifo_handler(XLlFifo *InstancePtr)
-{
-	u32 Pending;
-
-	Pending = XLlFifo_IntPending(InstancePtr);
-	while (Pending) {
-		if (Pending & XLLF_INT_RFPE_MASK) {
-			//xil_printf("RFPE: %d\n", Pending);
-			FifoRecvHandler(InstancePtr);
-			XLlFifo_IntClear(InstancePtr, XLLF_INT_RFPE_MASK);
-		}
-		else {
-			//xil_printf("else: %d\n", Pending);
-			XLlFifo_IntClear(InstancePtr, Pending);
-		}
-		Pending = XLlFifo_IntPending(InstancePtr);
-	}
-}
-
-
-static void FifoRecvHandler(XLlFifo *InstancePtr)
-{
-	int i;
-	u32 RxWord;
-	static u32 ReceiveLength;
-	xil_printf("Receiving Data...\n");
-
-	// Read Recieve Length
-	ReceiveLength = (XLlFifo_iRxGetLen(InstancePtr))/WORD_SIZE;
-
-	static bool ledState = true;
-	set_led(LED1, ledState);
-	ledState = !ledState;
-
-	for (i=0; i < ReceiveLength; i++) {
-			RxWord = XLlFifo_RxGetWord(InstancePtr);
-			xil_printf("%d\n", RxWord);
-	}
-}
-
-
 int init_interrupt_system(){
 
 	int Status;
@@ -172,7 +106,7 @@ int init_interrupt_system(){
 
 
 	// Connect a device driver handler that will be called when an interrupt for the device occurs,
-	Status = XIntc_Connect(&interrupt_controller, FIFO_INTR_ID,(XInterruptHandler)fifo_handler,(void *)&fifo_dequeue);
+	Status = XIntc_Connect(&interrupt_controller, FIFO_INTR_ID,(XInterruptHandler)dequeue_handler,(void *)&fifo_dequeue);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -203,8 +137,30 @@ int init_interrupt_system(){
 	return XST_SUCCESS;
 }
 
-static void DisableIntrSystem(XIntc *IntcInstancePtr, u16 FifoIntrId)
+static void dequeue_handler(XLlFifo *InstancePtr)
 {
-	/* Disconnect the interrupts */
-	XIntc_Disconnect(IntcInstancePtr, FifoIntrId);
+	u32 Pending;
+	int i;
+	u32 RxWord;
+	static u32 ReceiveLength;
+	xil_printf("Receiving Data...\n");
+
+	Pending = XLlFifo_IntPending(InstancePtr);
+	while (Pending) {
+		// Read Recieve Length
+		ReceiveLength = (XLlFifo_iRxGetLen(InstancePtr))/WORD_SIZE;
+
+		static bool ledState = true;
+		set_led(LED1, ledState);
+		ledState = !ledState;
+
+		for (i=0; i < ReceiveLength; i++) {
+				RxWord = XLlFifo_RxGetWord(InstancePtr);
+				xil_printf("%d\n", RxWord);
+		}
+
+		// Clear Interrupt and check if there is another
+		XLlFifo_IntClear(InstancePtr, Pending);
+		Pending = XLlFifo_IntPending(InstancePtr);
+	}
 }

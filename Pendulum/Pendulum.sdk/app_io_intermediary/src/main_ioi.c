@@ -61,15 +61,6 @@
 
 XUartLite UartLite;		 /* Instance of the UartLite device */
 
-#include "xintc.h"
-
-
-int XLlFifoInterruptExample(XLlFifo *InstancePtr1, u16 DeviceId2);
-
-volatile int Done;
-volatile int Error;
-
-
 
 int main()
 {
@@ -85,6 +76,10 @@ int main()
 
 	init_fifo_queues();
 
+	int buffer[5] = {21, 22, 23, 24, 25};
+
+	enqueue(buffer, sizeof(buffer)/WORD_SIZE);
+
 	Status = init_interrupt_system();
 	if (Status != XST_SUCCESS) {
 		xil_printf("Failed intr setup\r\n");
@@ -99,8 +94,3 @@ int main()
 	return XST_SUCCESS;
 }
 
-
-int XLlFifoInterruptExample(XLlFifo *InstancePtr1, u16 DeviceId2)
-{
-
-}

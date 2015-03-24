@@ -22,9 +22,7 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xstatus.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h \
  ../src/utilities/fifo_queue.h \
- ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h \
- ../../bsp_ioi_standalone/IO_Intermediary/include/xintc.h \
- ../../bsp_ioi_standalone/IO_Intermediary/include/xintc_l.h
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xparameters.h:
 
@@ -73,7 +71,3 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
 ../src/utilities/fifo_queue.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h:
-
-../../bsp_ioi_standalone/IO_Intermediary/include/xintc.h:
-
-../../bsp_ioi_standalone/IO_Intermediary/include/xintc_l.h:

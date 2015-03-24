@@ -88,11 +88,14 @@ int enqueue(int* data, int size){
 	return 0;
 }
 
-int dequeue(int* buffer){
+int dequeue(int* buffer, int blocking){
 	int ReceiveLength = 0;
 	int RxWord = 0;
 
-	ReceiveLength = (XLlFifo_iRxGetLen(&fifo_dequeue))/WORD_SIZE;
+	if(blocking)
+		while((ReceiveLength = (XLlFifo_iRxGetLen(&fifo_dequeue))/WORD_SIZE));
+	else
+		ReceiveLength = (XLlFifo_iRxGetLen(&fifo_dequeue))/WORD_SIZE;
 
 	if(sizeof(buffer)/WORD_SIZE < ReceiveLength)	return -1;
 

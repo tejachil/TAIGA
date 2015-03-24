@@ -19,6 +19,6 @@ int init_fifo_queues();
 
 int enqueue(int* data, int size);
 
-int dequeue(int* buffer);
+int dequeue(int* buffer, int blocking);
 
 #endif /* FIFO_QUEUE_H_ */

@@ -1,6 +1,6 @@
-21:44:55 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+12:31:48 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
 make all 
 make: Nothing to be done for `all'.
 
-21:44:55 Build Finished (took 62ms)
+12:31:49 Build Finished (took 64ms)
 
