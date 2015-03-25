@@ -86,6 +86,9 @@ void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 		enqueue(buffer, sizeof(buffer)/WORD_SIZE);
 		++count;
 	//}
+
+	dequeue(buffer);
+
 	/*
 	set_led(LED2, true);
 

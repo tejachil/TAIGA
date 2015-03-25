@@ -2,130 +2,128 @@
    guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
 preplace port ioi_uart_rx -pg 1 -y 1880 -defaultsOSRD
-preplace port gpio_led_production -pg 1 -y 1010 -defaultsOSRD
+preplace port gpio_led_production -pg 1 -y 1020 -defaultsOSRD
 preplace port DDR -pg 1 -y 1140 -defaultsOSRD
 preplace port gpio_led_backup -pg 1 -y 410 -defaultsOSRD
 preplace port gpio_led_ioi -pg 1 -y 1340 -defaultsOSRD
-preplace port spi_plant_sck_o -pg 1 -y 1859 -defaultsOSRD
-preplace port spi_plant_mosi_o -pg 1 -y 1839 -defaultsOSRD
-preplace port gpio_sw -pg 1 -y 1579 -defaultsOSRD
+preplace port spi_plant_sck_o -pg 1 -y 1950 -defaultsOSRD
+preplace port spi_plant_mosi_o -pg 1 -y 1930 -defaultsOSRD
+preplace port gpio_sw -pg 1 -y 1670 -defaultsOSRD
 preplace port gpio_debug_ioi -pg 1 -y 1360 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y 1160 -defaultsOSRD
-preplace port ioi_uart_tx -pg 1 -y 2059 -defaultsOSRD
-preplace port gpio_btn -pg 1 -y 1559 -defaultsOSRD
+preplace port ioi_uart_tx -pg 1 -y 2150 -defaultsOSRD
+preplace port gpio_btn -pg 1 -y 1560 -defaultsOSRD
 preplace port spi_plant_miso_i -pg 1 -y 1860 -defaultsOSRD
-preplace portBus spi_plant_ss_o -pg 1 -y 1879 -defaultsOSRD
+preplace portBus spi_plant_ss_o -pg 1 -y 1970 -defaultsOSRD
 preplace portBus gpio_trigger -pg 1 -y 1320 -defaultsOSRD
-preplace inst queue_multiplexer -pg 1 -lvl 7 -y 650 -defaultsOSRD
-preplace inst axi_fifo_production_dequeue -pg 1 -lvl 9 -y 700 -defaultsOSRD
-preplace inst axi_supervisory_uart -pg 1 -lvl 5 -y 2049 -defaultsOSRD
-preplace inst axi_wdt_IOI -pg 1 -lvl 5 -y 1279 -defaultsOSRD
-preplace inst axi_gpio_trigger -pg 1 -lvl 5 -y 1699 -defaultsOSRD
+preplace inst queue_multiplexer -pg 1 -lvl 7 -y 630 -defaultsOSRD
+preplace inst axi_supervisory_uart -pg 1 -lvl 5 -y 2140 -defaultsOSRD
+preplace inst axi_wdt_IOI -pg 1 -lvl 5 -y 1290 -defaultsOSRD
+preplace inst axi_gpio_trigger -pg 1 -lvl 5 -y 1790 -defaultsOSRD
 preplace inst axi_periph_production_controller -pg 1 -lvl 8 -y 980 -defaultsOSRD
-preplace inst axi_quad_spi_plant -pg 1 -lvl 5 -y 1869 -defaultsOSRD
-preplace inst axi_intc_IOI -pg 1 -lvl 2 -y 1140 -defaultsOSRD
-preplace inst local_memory_IOI -pg 1 -lvl 4 -y 1110 -defaultsOSRD
-preplace inst axi_fifo_backup_enqueue -pg 1 -lvl 5 -y 1100 -defaultsOSRD
-preplace inst axi_fifo_IOI_enqueue -pg 1 -lvl 5 -y 580 -defaultsOSRD
-preplace inst fifo_IOI_to_production -pg 1 -lvl 8 -y 690 -defaultsOSRD
-preplace inst axi_fifo_production_enqueue -pg 1 -lvl 9 -y 880 -defaultsOSRD
+preplace inst axi_quad_spi_plant -pg 1 -lvl 5 -y 1960 -defaultsOSRD
+preplace inst axi_intc_IOI -pg 1 -lvl 2 -y 1090 -defaultsOSRD
+preplace inst local_memory_IOI -pg 1 -lvl 4 -y 1090 -defaultsOSRD
+preplace inst axi_fifo_backup_enqueue -pg 1 -lvl 5 -y 1120 -defaultsOSRD
+preplace inst axi_fifo_IOI_enqueue -pg 1 -lvl 5 -y 670 -defaultsOSRD
+preplace inst fifo_IOI_to_production -pg 1 -lvl 8 -y 680 -defaultsOSRD
 preplace inst axi_fifo_backup_dequeue -pg 1 -lvl 5 -y 270 -defaultsOSRD
-preplace inst axi_gpio_IOI_in -pg 1 -lvl 5 -y 1569 -defaultsOSRD
-preplace inst IO_Intermediary -pg 1 -lvl 3 -y 1100 -defaultsOSRD
-preplace inst axi_periph_IOI -pg 1 -lvl 4 -y 1569 -defaultsOSRD
+preplace inst axi_fifo_production -pg 1 -lvl 9 -y 690 -defaultsOSRD
+preplace inst axi_gpio_IOI_in -pg 1 -lvl 5 -y 1570 -defaultsOSRD
+preplace inst IO_Intermediary -pg 1 -lvl 3 -y 1080 -defaultsOSRD
+preplace inst axi_periph_IOI -pg 1 -lvl 4 -y 1570 -defaultsOSRD
 preplace inst axi_periph_backup_controller -pg 1 -lvl 4 -y 390 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 2 -y 940 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 2 -y 860 -defaultsOSRD
 preplace inst axi_gpio_backup_controller_out -pg 1 -lvl 5 -y 410 -defaultsOSRD
 preplace inst backup_controller_axi_intc -pg 1 -lvl 2 -y 680 -defaultsOSRD
 preplace inst backup_controller_local_memory -pg 1 -lvl 4 -y 830 -defaultsOSRD
-preplace inst IO_Intermediary_xlconcat -pg 1 -lvl 1 -y 1140 -defaultsOSRD
-preplace inst rst_production_controller_100M -pg 1 -lvl 1 -y 1000 -defaultsOSRD
-preplace inst axi_gpio_IOI_out -pg 1 -lvl 5 -y 1439 -defaultsOSRD
+preplace inst IO_Intermediary_xlconcat -pg 1 -lvl 1 -y 1100 -defaultsOSRD
+preplace inst rst_production_controller_100M -pg 1 -lvl 1 -y 930 -defaultsOSRD
+preplace inst axi_gpio_IOI_out -pg 1 -lvl 5 -y 1440 -defaultsOSRD
 preplace inst axi_timer_backup_controller -pg 1 -lvl 5 -y 100 -defaultsOSRD
 preplace inst backup_controller -pg 1 -lvl 3 -y 820 -defaultsOSRD
 preplace inst fifo_production_to_IOI -pg 1 -lvl 10 -y 790 -defaultsOSRD
 preplace inst production_controller -pg 1 -lvl 7 -y 1200 -defaultsOSRD
-preplace inst axi_gpio_production_controller_out -pg 1 -lvl 9 -y 1010 -defaultsOSRD
-preplace inst axi_fifo_IOI_dequeue -pg 1 -lvl 5 -y 850 -defaultsOSRD
-preplace inst fifo_backup_to_IOI -pg 1 -lvl 6 -y 1100 -defaultsOSRD
+preplace inst axi_gpio_production_controller_out -pg 1 -lvl 9 -y 1020 -defaultsOSRD
+preplace inst axi_fifo_IOI_dequeue -pg 1 -lvl 5 -y 920 -defaultsOSRD
+preplace inst fifo_backup_to_IOI -pg 1 -lvl 6 -y 1120 -defaultsOSRD
 preplace inst fifo_IOI_to_backup -pg 1 -lvl 4 -y 110 -defaultsOSRD
-preplace netloc queue_multiplexer_0_rx_ready_a 1 7 4 NJ 820 NJ 790 NJ 710 4400
-preplace netloc IO_Intermediary_debug 1 2 1 830
-preplace netloc queue_multiplexer_0_rx_ready_b 1 6 2 2760 790 3230
-preplace netloc queue_multiplexer_0_tx_valid_a 1 7 1 3270
-preplace netloc axi_fifo_IOI_enqueue_axi_str_txd_tvalid 1 5 2 2330 740 NJ
-preplace netloc axi_gpio_IOI_in_GPIO2 1 5 6 N 1579 NJ 1579 NJ 1579 NJ 1579 NJ 1579 NJ
-preplace netloc queue_multiplexer_0_tx_valid_b 1 3 5 1430 720 NJ 720 NJ 820 NJ 820 3200
-preplace netloc queue_multiplexer_0_rx_valid 1 4 4 1880 970 NJ 870 NJ 870 3240
-preplace netloc fifo_backup_to_IOI_m_axis_tdata 1 6 1 2710
-preplace netloc fifo_IOI_to_production_s_axis_tready 1 6 2 2790 800 3250
+preplace netloc queue_multiplexer_0_rx_ready_a 1 7 4 NJ 800 NJ 800 NJ 710 4420
+preplace netloc IO_Intermediary_debug 1 2 1 850
+preplace netloc queue_multiplexer_0_rx_ready_b 1 6 2 2780 780 3250
+preplace netloc queue_multiplexer_0_tx_valid_a 1 7 1 3300
+preplace netloc axi_fifo_IOI_enqueue_axi_str_txd_tvalid 1 5 2 NJ 840 2760
+preplace netloc axi_gpio_IOI_in_GPIO2 1 5 6 2340 1670 NJ 1670 NJ 1670 NJ 1670 NJ 1670 NJ
+preplace netloc queue_multiplexer_0_tx_valid_b 1 3 5 1420 610 NJ 570 NJ 810 NJ 810 3220
+preplace netloc queue_multiplexer_0_rx_valid 1 4 4 1890 1030 NJ 930 NJ 930 3260
+preplace netloc fifo_backup_to_IOI_m_axis_tdata 1 6 1 2730
+preplace netloc fifo_IOI_to_production_s_axis_tready 1 6 2 2810 790 3280
 preplace netloc axi_periph_IOI_M06_AXI 1 4 1 1860
-preplace netloc axi_gpio_trigger_gpio_io_o 1 5 6 NJ 1709 2730 1340 NJ 1320 NJ 1320 NJ 1320 NJ
-preplace netloc fifo_production_to_IOI_m_axis_tvalid 1 6 5 2780 850 NJ 810 NJ 780 NJ 700 4420
-preplace netloc backup_controller_debug 1 2 1 840
+preplace netloc axi_gpio_trigger_gpio_io_o 1 5 6 NJ 1800 2750 1340 NJ 1320 NJ 1320 NJ 1320 NJ
+preplace netloc fifo_production_to_IOI_m_axis_tvalid 1 6 5 2800 850 NJ 790 NJ 790 NJ 700 4440
+preplace netloc backup_controller_debug 1 2 1 860
 preplace netloc axi_gpio_backup_controller_out_GPIO 1 5 6 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 N
-preplace netloc axi_periph_IOI_M07_AXI 1 4 1 1800
+preplace netloc axi_periph_IOI_M07_AXI 1 4 1 1810
 preplace netloc backup_controller_ilmb_1 1 3 1 N
-preplace netloc axi_periph_IOI_M04_AXI 1 4 1 1830
+preplace netloc axi_periph_IOI_M04_AXI 1 4 1 1800
 preplace netloc axi_periph_IOI_M03_AXI 1 4 1 N
 preplace netloc IO_Intermediary_axi_periph_M01_AXI 1 4 1 1820
-preplace netloc axi_periph_IOI_M02_AXI 1 4 1 1880
+preplace netloc axi_periph_IOI_M02_AXI 1 4 1 1890
 preplace netloc IO_Intermediary_dlmb_1 1 3 1 N
-preplace netloc axi_fifo_IOI_dequeue_interrupt 1 0 6 170 860 NJ 860 NJ 960 NJ 960 NJ 960 2280
-preplace netloc rst_production_controller_100M_peripheral_aresetn 1 1 9 580 870 NJ 970 1380 1849 1850 1030 2300 1020 NJ 1020 3220 1150 3690 810 N
-preplace netloc rst_production_controller_100M_bus_struct_reset 1 1 3 NJ 1020 NJ 1000 1440
+preplace netloc axi_fifo_IOI_dequeue_interrupt 1 0 6 180 830 NJ 940 NJ 940 NJ 940 NJ 810 2300
+preplace netloc rst_production_controller_100M_peripheral_aresetn 1 1 9 590 970 NJ 970 1380 1860 1840 1040 2360 1040 NJ 1040 3270 1130 3700 820 4080
+preplace netloc rst_production_controller_100M_bus_struct_reset 1 1 3 NJ 950 NJ 950 1430
 preplace netloc axi_fifo_backup_enqueue_AXI_STR_TXD 1 5 1 N
-preplace netloc axi_gpio_production_controller_out_GPIO 1 9 2 NJ 1010 N
-preplace netloc axi_periph_production_controller_M02_AXI 1 8 1 3700
+preplace netloc axi_gpio_production_controller_out_GPIO 1 9 2 NJ 1020 N
 preplace netloc axi_periph_backup_controller_M04_AXI 1 4 1 1800
 preplace netloc IO_Intermediary_ilmb_1 1 3 1 N
-preplace netloc production_controller_FCLK_RESET0_N 1 0 8 190 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1359 NJ 1330 NJ 1330 3200
-preplace netloc axi_fifo_IOI_dequeue_axi_str_rxd_tready 1 4 3 1880 700 NJ 720 NJ
-preplace netloc axi_quad_spi_plant_ss_o 1 5 6 2350 1879 NJ 1879 NJ 1879 NJ 1879 NJ 1879 NJ
-preplace netloc mdm_1_debug_sys_rst 1 0 3 180 900 NJ 1010 820
+preplace netloc production_controller_FCLK_RESET0_N 1 0 8 190 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1330 NJ 1330 3210
+preplace netloc axi_fifo_IOI_dequeue_axi_str_rxd_tready 1 4 3 1880 530 NJ 640 NJ
+preplace netloc axi_quad_spi_plant_ss_o 1 5 6 2380 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 NJ
+preplace netloc mdm_1_debug_sys_rst 1 0 3 170 820 NJ 930 830
 preplace netloc fifo_IOI_to_production_M_AXIS 1 8 1 N
-preplace netloc backup_controller_interrupt 1 2 1 900
+preplace netloc backup_controller_interrupt 1 2 1 860
 preplace netloc axi_periph_backup_controller_M02_AXI 1 4 1 N
-preplace netloc rst_production_controller_100M_interconnect_aresetn 1 1 7 NJ 1030 NJ 1010 1410 980 NJ 980 NJ 920 NJ 920 NJ
-preplace netloc fifo_backup_to_IOI_m_axis_tvalid 1 6 1 2750
-preplace netloc backup_controller_Clk 1 0 10 190 910 550 830 890 740 1370 1260 1840 1199 2350 1199 2790 1070 3270 1140 3670 800 4060
-preplace netloc backup_controller_intc_axi 1 1 4 590 580 NJ 580 NJ 730 1790
-preplace netloc IO_Intermediary_intr 1 1 1 540
-preplace netloc axi_periph_production_controller_M01_AXI 1 8 1 3650
+preplace netloc rst_production_controller_100M_interconnect_aresetn 1 1 7 NJ 960 NJ 960 1400 970 NJ 1050 NJ 940 NJ 940 NJ
+preplace netloc fifo_backup_to_IOI_m_axis_tvalid 1 6 1 2770
+preplace netloc backup_controller_Clk 1 0 10 190 840 560 990 870 740 1370 1850 1830 1190 2380 1200 2810 1070 3300 1120 3690 810 4070
+preplace netloc backup_controller_intc_axi 1 1 4 600 580 NJ 580 NJ 620 1780
+preplace netloc IO_Intermediary_intr 1 1 1 N
+preplace netloc axi_periph_production_controller_M01_AXI 1 8 1 3670
 preplace netloc axi_periph_IOI_M08_AXI 1 4 1 1790
-preplace netloc rx_1 1 0 6 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1969 2280
-preplace netloc axi_fifo_IOI_enqueue_axi_str_txd_tdata 1 5 2 2350 730 NJ
+preplace netloc rx_1 1 0 6 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 2060 2300
+preplace netloc axi_fifo_IOI_enqueue_axi_str_txd_tdata 1 5 2 NJ 820 2740
 preplace netloc backup_controller_dlmb_1 1 3 1 N
-preplace netloc axi_wdt_IOI_wdt_interrupt 1 0 6 200 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1369 2280
-preplace netloc axi_quad_spi_plant_io0_o 1 5 6 N 1839 NJ 1839 NJ 1839 NJ 1839 NJ 1839 NJ
-preplace netloc axi_gpio_IOI_out_GPIO2 1 5 6 2350 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
-preplace netloc axi_periph_IOI_M05_AXI 1 4 1 1790
-preplace netloc fifo_IOI_to_backup_s_axis_tready 1 3 4 1440 590 NJ 480 NJ 700 NJ
+preplace netloc axi_wdt_IOI_wdt_interrupt 1 0 6 200 1290 NJ 1290 NJ 1290 NJ 1290 NJ 1370 2300
+preplace netloc axi_quad_spi_plant_io0_o 1 5 6 N 1930 NJ 1930 NJ 1930 NJ 1930 NJ 1930 NJ
+preplace netloc axi_gpio_IOI_out_GPIO2 1 5 6 2360 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
+preplace netloc axi_periph_IOI_M05_AXI 1 4 1 1780
+preplace netloc fifo_IOI_to_backup_s_axis_tready 1 3 4 1430 590 NJ 540 NJ 680 NJ
 preplace netloc axi_periph_production_controller_M00_AXI 1 8 1 3680
-preplace netloc production_controller_M_AXI_GP0 1 7 1 3300
-preplace netloc production_controller_FIXED_IO 1 7 4 3190 1170 NJ 1160 NJ 1160 NJ
-preplace netloc production_controller_DDR 1 7 4 3230 1160 NJ 1140 NJ 1140 NJ
-preplace netloc fifo_production_to_IOI_m_axis_tdata 1 6 5 2770 840 NJ 800 NJ 620 NJ 620 4410
-preplace netloc axi_quad_spi_plant_sck_o 1 5 6 2310 1859 NJ 1859 NJ 1859 NJ 1859 NJ 1859 NJ
-preplace netloc IO_Intermediary_interrupt 1 2 1 900
+preplace netloc production_controller_M_AXI_GP0 1 7 1 3330
+preplace netloc axi_fifo_production_AXI_STR_TXD 1 9 1 4050
+preplace netloc production_controller_FIXED_IO 1 7 4 N 1160 NJ 1160 NJ 1160 NJ
+preplace netloc production_controller_DDR 1 7 4 N 1140 NJ 1140 NJ 1140 NJ
+preplace netloc fifo_production_to_IOI_m_axis_tdata 1 6 5 2790 840 NJ 780 NJ 780 NJ 690 4430
+preplace netloc axi_quad_spi_plant_sck_o 1 5 6 2340 1950 NJ 1950 NJ 1950 NJ 1950 NJ 1950 NJ
+preplace netloc IO_Intermediary_interrupt 1 2 1 860
 preplace netloc axi_periph_backup_controller_M03_AXI 1 4 1 1810
-preplace netloc fifo_IOI_to_backup_M_AXIS 1 4 1 1860
-preplace netloc axi_timer_backup_controller_interrupt 1 1 5 590 780 NJ 730 NJ 740 NJ 730 2280
-preplace netloc rst_production_controller_100M_mb_reset 1 1 2 560 850 860
-preplace netloc axi_supervisory_uart_tx 1 5 6 N 2059 NJ 2059 NJ 2059 NJ 2059 NJ 2059 NJ
-preplace netloc IO_Intermediary_intc_axi 1 1 4 590 1040 NJ 1020 NJ 1020 1810
-preplace netloc axi_gpio_IOI_in_GPIO 1 5 6 N 1559 NJ 1559 NJ 1559 NJ 1559 NJ 1559 NJ
+preplace netloc fifo_IOI_to_backup_M_AXIS 1 4 1 1890
+preplace netloc axi_timer_backup_controller_interrupt 1 1 5 600 780 NJ 730 NJ 730 NJ 770 2300
+preplace netloc rst_production_controller_100M_mb_reset 1 1 2 570 790 840
+preplace netloc axi_supervisory_uart_tx 1 5 6 N 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 NJ
+preplace netloc IO_Intermediary_intc_axi 1 1 4 600 980 NJ 980 NJ 980 1790
+preplace netloc axi_gpio_IOI_in_GPIO 1 5 6 N 1560 NJ 1560 NJ 1560 NJ 1560 NJ 1560 NJ
 preplace netloc backup_controller_axi_dp 1 3 1 1360
-preplace netloc queue_multiplexer_0_tx_data_a 1 7 1 3300
-preplace netloc axi_fifo_production_enqueue_AXI_STR_TXD 1 9 1 4050
-preplace netloc queue_multiplexer_0_tx_data_b 1 3 5 1420 710 NJ 710 NJ 810 NJ 810 3210
-preplace netloc queue_multiplexer_0_rx_data 1 4 4 1870 690 NJ 710 NJ 510 3240
+preplace netloc queue_multiplexer_0_tx_data_a 1 7 1 3330
+preplace netloc queue_multiplexer_0_tx_data_b 1 3 5 1410 600 NJ 560 NJ 800 NJ 800 3230
+preplace netloc queue_multiplexer_0_rx_data 1 4 4 1890 550 NJ 770 NJ 770 3240
 preplace netloc axi_gpio_IOI_out_GPIO 1 5 6 2320 1350 NJ 1350 NJ 1340 NJ 1340 NJ 1340 NJ
-preplace netloc axi_periph_backup_controller_M01_AXI 1 4 1 1800
+preplace netloc axi_periph_backup_controller_M01_AXI 1 4 1 1790
 preplace netloc IO_Intermediary_axi_dp 1 3 1 1360
-preplace netloc queue_multiplexer_0_tx_ready 1 5 3 2310 830 NJ 830 3190
-preplace netloc io1_i_1 1 0 6 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1769 2280
-levelinfo -pg 1 150 370 710 1130 1610 2080 2530 2990 3470 3870 4230 4440
+preplace netloc queue_multiplexer_0_tx_ready 1 5 3 NJ 830 NJ 830 3210
+preplace netloc io1_i_1 1 0 6 NJ 1860 NJ 1860 NJ 1860 NJ 1870 NJ 1860 2300
+levelinfo -pg 1 150 370 720 1130 1610 2100 2560 3010 3500 3870 4250 4460
 ",
 }
 {

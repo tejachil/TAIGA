@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 19 18:52:53 2015" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 25 16:22:55 2015" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="TAIGA_System_imp" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -30,6 +30,7 @@
     <PORT DIR="I" LEFT="3" NAME="gpio_sw_tri_i" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="0" NAME="gpio_led_backup_tri_o" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="0" NAME="gpio_led_production_tri_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="gpio_debug_ioi_tri_o" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" NAME="spi_plant_mosi_o" SIGIS="undef" SIGNAME="axi_quad_spi_plant_io0_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_quad_spi_plant" PORT="io0_o"/>
@@ -65,7 +66,6 @@
         <CONNECTION INSTANCE="axi_supervisory_uart" PORT="tx"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="gpio_debug_ioi_tri_o" RIGHT="0" SIGIS="undef"/>
   </EXTERNALPORTS>
 
   <MODULES>
@@ -1396,198 +1396,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/axi_fifo_production_dequeue" HWVERSION="4.1" INSTANCE="axi_fifo_production_dequeue" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fifo_mm_s" VLNV="xilinx.com:ip:axi_fifo_mm_s:4.1">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_fifo_mm_s;v=v4_1;d=pg080-axi-fifo-mm-s.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
-        <PARAMETER NAME="C_S_AXI_ID_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_S_AXI4_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_TX_FIFO_DEPTH" VALUE="512"/>
-        <PARAMETER NAME="C_RX_FIFO_DEPTH" VALUE="512"/>
-        <PARAMETER NAME="C_TX_FIFO_PF_THRESHOLD" VALUE="507"/>
-        <PARAMETER NAME="C_TX_FIFO_PE_THRESHOLD" VALUE="2"/>
-        <PARAMETER NAME="C_RX_FIFO_PF_THRESHOLD" VALUE="507"/>
-        <PARAMETER NAME="C_RX_FIFO_PE_THRESHOLD" VALUE="2"/>
-        <PARAMETER NAME="C_USE_TX_CUT_THROUGH" VALUE="0"/>
-        <PARAMETER NAME="C_DATA_INTERFACE_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_AXI4_BASEADDR" VALUE="0x80001000"/>
-        <PARAMETER NAME="C_AXI4_HIGHADDR" VALUE="0x80002FFF"/>
-        <PARAMETER NAME="C_HAS_AXIS_TID" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_AXIS_TDEST" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_AXIS_TUSER" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_AXIS_TSTRB" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_AXIS_TKEEP" VALUE="0"/>
-        <PARAMETER NAME="C_AXIS_TID_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_AXIS_TDEST_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_AXIS_TUSER_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_USE_RX_CUT_THROUGH" VALUE="0"/>
-        <PARAMETER NAME="C_USE_TX_DATA" VALUE="0"/>
-        <PARAMETER NAME="C_USE_TX_CTRL" VALUE="0"/>
-        <PARAMETER NAME="C_USE_RX_DATA" VALUE="1"/>
-        <PARAMETER NAME="C_S_AXI_PROTOCOL" VALUE="AXI4LITE"/>
-        <PARAMETER NAME="C_AXI_STR_TXC_PROTOCOL" VALUE="XIL_AXI_STREAM_ETH_CTRL"/>
-        <PARAMETER NAME="C_AXI_STR_TXD_PROTOCOL" VALUE="XIL_AXI_STREAM_ETH_DATA"/>
-        <PARAMETER NAME="C_AXI_STR_RXD_PROTOCOL" VALUE="XIL_AXI_STREAM_ETH_DATA"/>
-        <PARAMETER NAME="Component_Name" VALUE="TAIGA_System_axi_fifo_IOI_dequeue_0"/>
-        <PARAMETER NAME="C_AXI_STR_TXC_TDATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_AXI_STR_TXD_TDATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_AXI_STR_RXD_TDATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-        <PARAMETER NAME="C_BASEADDR" VALUE="0x43C00000"/>
-        <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C0FFFF"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="production_controller_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axi_aresetn" SIGIS="rst" SIGNAME="rst_production_controller_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="s2mm_prmry_reset_out_n" SIGIS="rst"/>
-        <PORT DIR="I" NAME="axi_str_rxd_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_axi_str_rxd_tvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="axi_str_rxd_tready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_axi_str_rxd_tready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="axi_str_rxd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_axi_str_rxd_tdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tdata"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="axi_periph_production_controller_M01_AXI" NAME="S_AXI" TYPE="SLAVE">
-          <PORTMAPS>
-            <PORTMAP PHYSICAL="s_axi_araddr"/>
-            <PORTMAP PHYSICAL="s_axi_arready"/>
-            <PORTMAP PHYSICAL="s_axi_arvalid"/>
-            <PORTMAP PHYSICAL="s_axi_awaddr"/>
-            <PORTMAP PHYSICAL="s_axi_awready"/>
-            <PORTMAP PHYSICAL="s_axi_awvalid"/>
-            <PORTMAP PHYSICAL="s_axi_bready"/>
-            <PORTMAP PHYSICAL="s_axi_bresp"/>
-            <PORTMAP PHYSICAL="s_axi_bvalid"/>
-            <PORTMAP PHYSICAL="s_axi_rdata"/>
-            <PORTMAP PHYSICAL="s_axi_rready"/>
-            <PORTMAP PHYSICAL="s_axi_rresp"/>
-            <PORTMAP PHYSICAL="s_axi_rvalid"/>
-            <PORTMAP PHYSICAL="s_axi_wdata"/>
-            <PORTMAP PHYSICAL="s_axi_wready"/>
-            <PORTMAP PHYSICAL="s_axi_wstrb"/>
-            <PORTMAP PHYSICAL="s_axi_wvalid"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="fifo_IOI_to_production_M_AXIS" NAME="AXI_STR_RXD" TYPE="TARGET">
-          <PORTMAPS>
-            <PORTMAP PHYSICAL="axi_str_rxd_tdata"/>
-            <PORTMAP PHYSICAL="axi_str_rxd_tlast"/>
-            <PORTMAP PHYSICAL="axi_str_rxd_tready"/>
-            <PORTMAP PHYSICAL="axi_str_rxd_tvalid"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE FULLNAME="/axi_fifo_production_enqueue" HWVERSION="4.1" INSTANCE="axi_fifo_production_enqueue" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fifo_mm_s" VLNV="xilinx.com:ip:axi_fifo_mm_s:4.1">
+    <MODULE FULLNAME="/axi_fifo_production" HWVERSION="4.1" INSTANCE="axi_fifo_production" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fifo_mm_s" VLNV="xilinx.com:ip:axi_fifo_mm_s:4.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_fifo_mm_s;v=v4_1;d=pg080-axi-fifo-mm-s.pdf"/>
       </DOCUMENTS>
@@ -1618,18 +1427,18 @@
         <PARAMETER NAME="C_USE_RX_CUT_THROUGH" VALUE="0"/>
         <PARAMETER NAME="C_USE_TX_DATA" VALUE="1"/>
         <PARAMETER NAME="C_USE_TX_CTRL" VALUE="0"/>
-        <PARAMETER NAME="C_USE_RX_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_RX_DATA" VALUE="1"/>
         <PARAMETER NAME="C_S_AXI_PROTOCOL" VALUE="AXI4LITE"/>
         <PARAMETER NAME="C_AXI_STR_TXC_PROTOCOL" VALUE="XIL_AXI_STREAM_ETH_CTRL"/>
         <PARAMETER NAME="C_AXI_STR_TXD_PROTOCOL" VALUE="XIL_AXI_STREAM_ETH_DATA"/>
         <PARAMETER NAME="C_AXI_STR_RXD_PROTOCOL" VALUE="XIL_AXI_STREAM_ETH_DATA"/>
-        <PARAMETER NAME="Component_Name" VALUE="TAIGA_System_axi_fifo_production_dequeue_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="TAIGA_System_axi_fifo_IOI_dequeue_0"/>
         <PARAMETER NAME="C_AXI_STR_TXC_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_AXI_STR_TXD_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_AXI_STR_RXD_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-        <PARAMETER NAME="C_BASEADDR" VALUE="0x43C10000"/>
-        <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C1FFFF"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x43C00000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
         <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
@@ -1643,111 +1452,128 @@
             <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_awaddr">
+        <PORT DIR="I" LEFT="31" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_awaddr"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_awvalid">
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_awvalid"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_awready">
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_awready"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wdata">
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_wdata"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wstrb">
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_wstrb"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wvalid">
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_wvalid"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wready">
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_wready"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_bresp">
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_bresp"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_bvalid">
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_bvalid"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_bready">
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_bready"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_araddr">
+        <PORT DIR="I" LEFT="31" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_araddr"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_arvalid">
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_arvalid"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_arready">
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_arready"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rdata">
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_rdata"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rresp">
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_rresp"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rvalid">
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_rvalid"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rready">
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_AXI_rready"/>
+            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M01_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="mm2s_prmry_reset_out_n" SIGIS="rst"/>
-        <PORT DIR="O" NAME="axi_str_txd_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_axi_str_txd_tvalid">
+        <PORT DIR="O" NAME="axi_str_txd_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="axi_str_txd_tready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_axi_str_txd_tready">
+        <PORT DIR="I" NAME="axi_str_txd_tready" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="axi_str_txd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_axi_str_txd_tdata">
+        <PORT DIR="O" LEFT="31" NAME="axi_str_txd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="s2mm_prmry_reset_out_n" SIGIS="rst"/>
+        <PORT DIR="I" NAME="axi_str_rxd_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="axi_str_rxd_tready" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="axi_str_rxd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="axi_periph_production_controller_M02_AXI" NAME="S_AXI" TYPE="SLAVE">
+        <BUSINTERFACE BUSNAME="axi_periph_production_controller_M01_AXI" NAME="S_AXI" TYPE="SLAVE">
           <PORTMAPS>
             <PORTMAP PHYSICAL="s_axi_araddr"/>
             <PORTMAP PHYSICAL="s_axi_arready"/>
@@ -1768,12 +1594,20 @@
             <PORTMAP PHYSICAL="s_axi_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axi_fifo_production_enqueue_AXI_STR_TXD" NAME="AXI_STR_TXD" TYPE="INITIATOR">
+        <BUSINTERFACE BUSNAME="axi_fifo_production_AXI_STR_TXD" NAME="AXI_STR_TXD" TYPE="INITIATOR">
           <PORTMAPS>
             <PORTMAP PHYSICAL="axi_str_txd_tdata"/>
             <PORTMAP PHYSICAL="axi_str_txd_tlast"/>
             <PORTMAP PHYSICAL="axi_str_txd_tready"/>
             <PORTMAP PHYSICAL="axi_str_txd_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="fifo_IOI_to_production_M_AXIS" NAME="AXI_STR_RXD" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="axi_str_rxd_tdata"/>
+            <PORTMAP PHYSICAL="axi_str_rxd_tlast"/>
+            <PORTMAP PHYSICAL="axi_str_rxd_tready"/>
+            <PORTMAP PHYSICAL="axi_str_rxd_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -3178,6 +3012,16 @@
             <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="M08_ACLK" SIGIS="clk" SIGNAME="production_controller_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M08_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="rst_production_controller_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="IO_Intermediary_M_AXI_DP_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="IO_Intermediary" PORT="M_AXI_DP_ARADDR"/>
@@ -3953,14 +3797,19 @@
             <CONNECTION INSTANCE="axi_gpio_trigger" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="M08_ACLK" SIGIS="clk" SIGNAME="production_controller_FCLK_CLK0">
+        <PORT DIR="O" LEFT="3" NAME="M08_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M08_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="rst_production_controller_100M_peripheral_aresetn">
+        <PORT DIR="I" NAME="M08_AXI_arready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M08_AXI_arvalid" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="M08_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_awaddr">
@@ -3968,35 +3817,19 @@
             <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M08_AXI_awvalid" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="M08_AXI_awready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M08_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wdata">
+        <PORT DIR="O" NAME="M08_AXI_awvalid" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M08_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wstrb">
+        <PORT DIR="O" NAME="M08_AXI_bready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M08_AXI_wvalid" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M08_AXI_wready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M08_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_bresp">
@@ -4009,30 +3842,14 @@
             <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_bready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M08_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M08_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M08_AXI_arvalid" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M08_AXI_arready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="31" NAME="M08_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M08_AXI_rready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M08_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_rresp">
@@ -4045,9 +3862,24 @@
             <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M08_AXI_rready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_rready">
+        <PORT DIR="O" LEFT="31" NAME="M08_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M08_AXI_wready" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M08_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M08_AXI_wvalid" SIGIS="undef" SIGNAME="axi_periph_IOI_M08_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4245,25 +4077,23 @@
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="axi_periph_IOI_M08_AXI" NAME="M08_AXI" TYPE="MASTER">
           <PORTMAPS>
+            <PORTMAP PHYSICAL="M08_AXI_araddr"/>
+            <PORTMAP PHYSICAL="M08_AXI_arready"/>
+            <PORTMAP PHYSICAL="M08_AXI_arvalid"/>
             <PORTMAP PHYSICAL="M08_AXI_awaddr"/>
-            <PORTMAP PHYSICAL="M08_AXI_awprot"/>
-            <PORTMAP PHYSICAL="M08_AXI_awvalid"/>
             <PORTMAP PHYSICAL="M08_AXI_awready"/>
-            <PORTMAP PHYSICAL="M08_AXI_wdata"/>
-            <PORTMAP PHYSICAL="M08_AXI_wstrb"/>
-            <PORTMAP PHYSICAL="M08_AXI_wvalid"/>
-            <PORTMAP PHYSICAL="M08_AXI_wready"/>
+            <PORTMAP PHYSICAL="M08_AXI_awvalid"/>
+            <PORTMAP PHYSICAL="M08_AXI_bready"/>
             <PORTMAP PHYSICAL="M08_AXI_bresp"/>
             <PORTMAP PHYSICAL="M08_AXI_bvalid"/>
-            <PORTMAP PHYSICAL="M08_AXI_bready"/>
-            <PORTMAP PHYSICAL="M08_AXI_araddr"/>
-            <PORTMAP PHYSICAL="M08_AXI_arprot"/>
-            <PORTMAP PHYSICAL="M08_AXI_arvalid"/>
-            <PORTMAP PHYSICAL="M08_AXI_arready"/>
             <PORTMAP PHYSICAL="M08_AXI_rdata"/>
+            <PORTMAP PHYSICAL="M08_AXI_rready"/>
             <PORTMAP PHYSICAL="M08_AXI_rresp"/>
             <PORTMAP PHYSICAL="M08_AXI_rvalid"/>
-            <PORTMAP PHYSICAL="M08_AXI_rready"/>
+            <PORTMAP PHYSICAL="M08_AXI_wdata"/>
+            <PORTMAP PHYSICAL="M08_AXI_wready"/>
+            <PORTMAP PHYSICAL="M08_AXI_wstrb"/>
+            <PORTMAP PHYSICAL="M08_AXI_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -5303,7 +5133,7 @@
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="NUM_SI" VALUE="1"/>
-        <PARAMETER NAME="NUM_MI" VALUE="3"/>
+        <PARAMETER NAME="NUM_MI" VALUE="2"/>
         <PARAMETER NAME="STRATEGY" VALUE="0"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
@@ -5644,16 +5474,6 @@
             <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="200000000" DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="production_controller_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="rst_production_controller_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="axi_periph_production_controller_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="production_controller" PORT="M_AXI_GP0_ARVALID"/>
@@ -5929,174 +5749,89 @@
             <CONNECTION INSTANCE="axi_gpio_production_controller_out" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_arready">
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_arvalid">
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_awready">
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_awvalid">
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_bready">
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_bvalid">
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rready">
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_rvalid">
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wready">
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_s_axi_wvalid">
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M02_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6183,27 +5918,6 @@
             <PORTMAP PHYSICAL="M01_AXI_wready"/>
             <PORTMAP PHYSICAL="M01_AXI_wstrb"/>
             <PORTMAP PHYSICAL="M01_AXI_wvalid"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axi_periph_production_controller_M02_AXI" NAME="M02_AXI" TYPE="MASTER">
-          <PORTMAPS>
-            <PORTMAP PHYSICAL="M02_AXI_araddr"/>
-            <PORTMAP PHYSICAL="M02_AXI_arready"/>
-            <PORTMAP PHYSICAL="M02_AXI_arvalid"/>
-            <PORTMAP PHYSICAL="M02_AXI_awaddr"/>
-            <PORTMAP PHYSICAL="M02_AXI_awready"/>
-            <PORTMAP PHYSICAL="M02_AXI_awvalid"/>
-            <PORTMAP PHYSICAL="M02_AXI_bready"/>
-            <PORTMAP PHYSICAL="M02_AXI_bresp"/>
-            <PORTMAP PHYSICAL="M02_AXI_bvalid"/>
-            <PORTMAP PHYSICAL="M02_AXI_rdata"/>
-            <PORTMAP PHYSICAL="M02_AXI_rready"/>
-            <PORTMAP PHYSICAL="M02_AXI_rresp"/>
-            <PORTMAP PHYSICAL="M02_AXI_rvalid"/>
-            <PORTMAP PHYSICAL="M02_AXI_wdata"/>
-            <PORTMAP PHYSICAL="M02_AXI_wready"/>
-            <PORTMAP PHYSICAL="M02_AXI_wstrb"/>
-            <PORTMAP PHYSICAL="M02_AXI_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -9349,19 +9063,19 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_axi_str_rxd_tvalid">
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="axi_str_rxd_tvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_rxd_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_axi_str_rxd_tready">
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="axi_str_rxd_tready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_rxd_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_dequeue_axi_str_rxd_tdata">
+        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="axi_str_rxd_tdata"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_rxd_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef"/>
@@ -10197,19 +9911,19 @@
             <CONNECTION INSTANCE="rst_production_controller_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_axi_str_txd_tvalid">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="axi_str_txd_tvalid"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_txd_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_axi_str_txd_tready">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="axi_str_txd_tready"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_txd_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_enqueue_axi_str_txd_tdata">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="axi_str_txd_tdata"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_txd_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef"/>
@@ -10239,7 +9953,7 @@
             <PORTMAP PHYSICAL="m_axis_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="axi_fifo_production_enqueue_AXI_STR_TXD" NAME="S_AXIS" TYPE="TARGET">
+        <BUSINTERFACE BUSNAME="axi_fifo_production_AXI_STR_TXD" NAME="S_AXIS" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="s_axis_tdata"/>
             <PORTMAP PHYSICAL="s_axis_tready"/>
@@ -11473,7 +11187,7 @@
             <CONNECTION INSTANCE="axi_wdt_IOI" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_fifo_backup_dequeue" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_fifo_IOI_dequeue" PORT="s_axi_aresetn"/>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="backup_controller_axi_intc" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_timer_backup_controller" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_gpio_backup_controller_out" PORT="s_axi_aresetn"/>
@@ -11483,9 +11197,9 @@
             <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="s_aresetn"/>
             <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="s_aresetn"/>
             <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="s_aresetn"/>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_aresetn"/>
             <CONNECTION INSTANCE="axi_gpio_trigger" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M01_ARESETN"/>
@@ -11502,10 +11216,8 @@
             <CONNECTION INSTANCE="axi_periph_backup_controller" PORT="M03_ARESETN"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M06_ARESETN"/>
             <CONNECTION INSTANCE="axi_periph_backup_controller" PORT="M04_ARESETN"/>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="axi_periph_production_controller" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M07_ARESETN"/>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M08_ARESETN"/>
           </CONNECTIONS>
         </PORT>
@@ -11552,13 +11264,12 @@
             <CONNECTION INSTANCE="axi_gpio_IOI_in" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_wdt_IOI" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_fifo_backup_dequeue" PORT="s_axi_aclk"/>
-            <CONNECTION INSTANCE="axi_fifo_production_dequeue" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_fifo_IOI_dequeue" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="s_aclk"/>
             <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="s_aclk"/>
             <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="s_aclk"/>
             <CONNECTION INSTANCE="axi_fifo_IOI_enqueue" PORT="s_axi_aclk"/>
-            <CONNECTION INSTANCE="axi_fifo_production_enqueue" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_aclk"/>
             <CONNECTION INSTANCE="axi_fifo_backup_enqueue" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_quad_spi_plant" PORT="ext_spi_clk"/>
@@ -11573,6 +11284,7 @@
             <CONNECTION INSTANCE="axi_gpio_backup_controller_out" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_gpio_production_controller_out" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_gpio_trigger" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M00_ACLK"/>
@@ -11591,11 +11303,9 @@
             <CONNECTION INSTANCE="axi_periph_backup_controller" PORT="M03_ACLK"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M06_ACLK"/>
             <CONNECTION INSTANCE="axi_periph_backup_controller" PORT="M04_ACLK"/>
-            <CONNECTION INSTANCE="axi_periph_production_controller" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="axi_periph_production_controller" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_periph_production_controller" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M07_ACLK"/>
-            <CONNECTION INSTANCE="axi_supervisory_uart" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_periph_IOI" PORT="M08_ACLK"/>
           </CONNECTIONS>
         </PORT>
@@ -13832,8 +13542,7 @@
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0002FFFF" INSTANCE="ps7_ram_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x1FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="axi_gpio_production_controller_out" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
-        <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="axi_fifo_production_dequeue" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
-        <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_BASEADDR" BASEVALUE="0x43C10000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C1FFFF" INSTANCE="axi_fifo_production_enqueue" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="axi_fifo_production" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0002000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0002FFF" INSTANCE="ps7_usb_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0004000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0004FFF" INSTANCE="ps7_i2c_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
@@ -13872,8 +13581,7 @@
         <PERIPHERAL INSTANCE="ps7_ram_0"/>
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
         <PERIPHERAL INSTANCE="axi_gpio_production_controller_out"/>
-        <PERIPHERAL INSTANCE="axi_fifo_production_dequeue"/>
-        <PERIPHERAL INSTANCE="axi_fifo_production_enqueue"/>
+        <PERIPHERAL INSTANCE="axi_fifo_production"/>
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_usb_0"/>
         <PERIPHERAL INSTANCE="ps7_i2c_0"/>
@@ -14063,8 +13771,7 @@
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0002FFFF" INSTANCE="ps7_ram_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x1FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="axi_gpio_production_controller_out" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
-        <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="axi_fifo_production_dequeue" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
-        <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_BASEADDR" BASEVALUE="0x43C10000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C1FFFF" INSTANCE="axi_fifo_production_enqueue" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="axi_fifo_production" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0002000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0002FFF" INSTANCE="ps7_usb_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0004000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0004FFF" INSTANCE="ps7_i2c_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
@@ -14103,8 +13810,7 @@
         <PERIPHERAL INSTANCE="ps7_ram_0"/>
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
         <PERIPHERAL INSTANCE="axi_gpio_production_controller_out"/>
-        <PERIPHERAL INSTANCE="axi_fifo_production_dequeue"/>
-        <PERIPHERAL INSTANCE="axi_fifo_production_enqueue"/>
+        <PERIPHERAL INSTANCE="axi_fifo_production"/>
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_usb_0"/>
         <PERIPHERAL INSTANCE="ps7_i2c_0"/>

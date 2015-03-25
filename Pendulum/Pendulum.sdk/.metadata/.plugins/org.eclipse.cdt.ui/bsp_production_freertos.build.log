@@ -1,4 +1,4 @@
-11:31:00 **** Auto Build of project bsp_production_freertos ****
+16:59:05 **** Auto Build of project bsp_production_freertos ****
 make -k all 
 Running Make include in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src
 make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -101,5 +101,5 @@ Running Make libs in ps7_cortexa9_1/libsrc/xilmfs_v2_0/src
 make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Finished building libraries
 
-11:31:16 Build Finished (took 15s.732ms)
+16:59:19 Build Finished (took 14s.644ms)
 

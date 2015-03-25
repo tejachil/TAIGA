@@ -84,9 +84,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_ax
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_fifo_backup_dequeue_0/TAIGA_System_axi_fifo_backup_dequeue_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_fifo_backup_dequeue_0 || ORIG_REF_NAME==TAIGA_System_axi_fifo_backup_dequeue_0}]
 
-# IP: bd/TAIGA_System/ip/TAIGA_System_axi_fifo_production_dequeue_0/TAIGA_System_axi_fifo_production_dequeue_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_fifo_production_dequeue_0 || ORIG_REF_NAME==TAIGA_System_axi_fifo_production_dequeue_0}]
-
 # IP: bd/TAIGA_System/ip/TAIGA_System_queue_multiplexer_0_0/TAIGA_System_queue_multiplexer_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_queue_multiplexer_0_0 || ORIG_REF_NAME==TAIGA_System_queue_multiplexer_0_0}]
 
@@ -249,8 +246,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_2/TAIGA_System_axi_fifo_IOI_dequeue_2_ooc.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_fifo_backup_dequeue_0/TAIGA_System_axi_fifo_backup_dequeue_0_ooc.xdc
-
-# XDC: bd/TAIGA_System/ip/TAIGA_System_axi_fifo_production_dequeue_0/TAIGA_System_axi_fifo_production_dequeue_0_ooc.xdc
 
 # XDC: ipshared/xilinx.com/queue_multiplexer_v1_0/89731f10/constraints/queue_multiplexer_ooc.xdc
 
