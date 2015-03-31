@@ -71,6 +71,21 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 5 \
+    name rx_tlast_a \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_rx_tlast_a \
+    op interface \
+    ports { rx_tlast_a { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 6 \
     name rx_data_b \
     type other \
     dir I \
@@ -85,7 +100,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 6 \
+    id 7 \
     name rx_ready_b \
     type other \
     dir O \
@@ -100,7 +115,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 8 \
     name rx_valid_b \
     type other \
     dir I \
@@ -115,7 +130,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 9 \
+    name rx_tlast_b \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_rx_tlast_b \
+    op interface \
+    ports { rx_tlast_b { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10 \
     name rx_data \
     type other \
     dir O \
@@ -130,7 +160,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
+    id 11 \
     name rx_ready \
     type other \
     dir I \
@@ -145,7 +175,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 12 \
     name rx_valid \
     type other \
     dir O \
@@ -160,7 +190,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 13 \
+    name rx_tlast \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_rx_tlast \
+    op interface \
+    ports { rx_tlast { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 14 \
     name tx_data_a \
     type other \
     dir O \
@@ -175,7 +220,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 15 \
     name tx_ready_a \
     type other \
     dir I \
@@ -190,7 +235,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 13 \
+    id 16 \
     name tx_valid_a \
     type other \
     dir O \
@@ -205,7 +250,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 14 \
+    id 17 \
+    name tx_tlast_a \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tx_tlast_a \
+    op interface \
+    ports { tx_tlast_a { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 18 \
     name tx_data_b \
     type other \
     dir O \
@@ -220,7 +280,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 19 \
     name tx_ready_b \
     type other \
     dir I \
@@ -235,7 +295,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 16 \
+    id 20 \
     name tx_valid_b \
     type other \
     dir O \
@@ -250,7 +310,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 17 \
+    id 21 \
+    name tx_tlast_b \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tx_tlast_b \
+    op interface \
+    ports { tx_tlast_b { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 22 \
     name tx_data \
     type other \
     dir I \
@@ -265,7 +340,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 23 \
     name tx_ready \
     type other \
     dir O \
@@ -280,7 +355,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 19 \
+    id 24 \
     name tx_valid \
     type other \
     dir I \
@@ -289,6 +364,21 @@ eval "cg_default_interface_gen_dc { \
     corename dc_tx_valid \
     op interface \
     ports { tx_valid { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 25 \
+    name tx_tlast \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_tx_tlast \
+    op interface \
+    ports { tx_tlast { I 1 bit } } \
 } "
 }
 

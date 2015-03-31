@@ -68,7 +68,7 @@ int dequeue(int* buffer){
 	RxWord = XLlFifo_iRxOccupancy(&fifo_queue);
 
 	if(RxWord == 0)	return 0;
-
+	xil_printf("We win! %d \n", RxWord);
 	ReceiveLength = (XLlFifo_iRxGetLen(&fifo_queue))/WORD_SIZE;
 
 	//if(sizeof(buffer)/WORD_SIZE < ReceiveLength)	return -1;

@@ -124,6 +124,35 @@
 			</spirit:parameters>
 		</spirit:busInterface>
 		<spirit:busInterface>
+			<spirit:name>rx_tlast_a</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data_rtl"
+					spirit:version="1.0"/>
+			<spirit:slave/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>DATA</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>rx_tlast_a</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>LAYERED_METADATA</spirit:name>
+					<spirit:value spirit:resolve="generated"
+							spirit:id="BUSIFPARAM_VALUE.RX_TLAST_A.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+				</spirit:parameter>
+			</spirit:parameters>
+		</spirit:busInterface>
+		<spirit:busInterface>
 			<spirit:name>rx_data_b</spirit:name>
 			<spirit:busType spirit:vendor="xilinx.com"
 					spirit:library="signal"
@@ -207,6 +236,35 @@
 					<spirit:name>LAYERED_METADATA</spirit:name>
 					<spirit:value spirit:resolve="generated"
 							spirit:id="BUSIFPARAM_VALUE.RX_VALID_B.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+				</spirit:parameter>
+			</spirit:parameters>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>rx_tlast_b</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data_rtl"
+					spirit:version="1.0"/>
+			<spirit:slave/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>DATA</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>rx_tlast_b</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>LAYERED_METADATA</spirit:name>
+					<spirit:value spirit:resolve="generated"
+							spirit:id="BUSIFPARAM_VALUE.RX_TLAST_B.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
 				</spirit:parameter>
 			</spirit:parameters>
 		</spirit:busInterface>
@@ -298,6 +356,35 @@
 			</spirit:parameters>
 		</spirit:busInterface>
 		<spirit:busInterface>
+			<spirit:name>rx_tlast</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data_rtl"
+					spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>DATA</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>rx_tlast</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>LAYERED_METADATA</spirit:name>
+					<spirit:value spirit:resolve="generated"
+							spirit:id="BUSIFPARAM_VALUE.RX_TLAST.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+				</spirit:parameter>
+			</spirit:parameters>
+		</spirit:busInterface>
+		<spirit:busInterface>
 			<spirit:name>tx_data_a</spirit:name>
 			<spirit:busType spirit:vendor="xilinx.com"
 					spirit:library="signal"
@@ -381,6 +468,35 @@
 					<spirit:name>LAYERED_METADATA</spirit:name>
 					<spirit:value spirit:resolve="generated"
 							spirit:id="BUSIFPARAM_VALUE.TX_VALID_A.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+				</spirit:parameter>
+			</spirit:parameters>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>tx_tlast_a</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data_rtl"
+					spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>DATA</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>tx_tlast_a</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>LAYERED_METADATA</spirit:name>
+					<spirit:value spirit:resolve="generated"
+							spirit:id="BUSIFPARAM_VALUE.TX_TLAST_A.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
 				</spirit:parameter>
 			</spirit:parameters>
 		</spirit:busInterface>
@@ -472,6 +588,35 @@
 			</spirit:parameters>
 		</spirit:busInterface>
 		<spirit:busInterface>
+			<spirit:name>tx_tlast_b</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data_rtl"
+					spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>DATA</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>tx_tlast_b</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>LAYERED_METADATA</spirit:name>
+					<spirit:value spirit:resolve="generated"
+							spirit:id="BUSIFPARAM_VALUE.TX_TLAST_B.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+				</spirit:parameter>
+			</spirit:parameters>
+		</spirit:busInterface>
+		<spirit:busInterface>
 			<spirit:name>tx_data</spirit:name>
 			<spirit:busType spirit:vendor="xilinx.com"
 					spirit:library="signal"
@@ -555,6 +700,35 @@
 					<spirit:name>LAYERED_METADATA</spirit:name>
 					<spirit:value spirit:resolve="generated"
 							spirit:id="BUSIFPARAM_VALUE.TX_VALID.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+				</spirit:parameter>
+			</spirit:parameters>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>tx_tlast</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="data_rtl"
+					spirit:version="1.0"/>
+			<spirit:slave/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>DATA</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>tx_tlast</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>LAYERED_METADATA</spirit:name>
+					<spirit:value spirit:resolve="generated"
+							spirit:id="BUSIFPARAM_VALUE.TX_TLAST.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
 				</spirit:parameter>
 			</spirit:parameters>
 		</spirit:busInterface>
@@ -704,6 +878,23 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
+				<spirit:name>rx_tlast_a</spirit:name>
+				<spirit:wire>
+					<spirit:direction>in</spirit:direction>
+					<spirit:vector>
+						<spirit:left>0</spirit:left>
+						<spirit:right>0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
 				<spirit:name>rx_data_b</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
@@ -739,6 +930,23 @@
 			</spirit:port>
 			<spirit:port>
 				<spirit:name>rx_valid_b</spirit:name>
+				<spirit:wire>
+					<spirit:direction>in</spirit:direction>
+					<spirit:vector>
+						<spirit:left>0</spirit:left>
+						<spirit:right>0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
+				<spirit:name>rx_tlast_b</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
@@ -806,6 +1014,23 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
+				<spirit:name>rx_tlast</spirit:name>
+				<spirit:wire>
+					<spirit:direction>out</spirit:direction>
+					<spirit:vector>
+						<spirit:left>0</spirit:left>
+						<spirit:right>0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
 				<spirit:name>tx_data_a</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
@@ -841,6 +1066,23 @@
 			</spirit:port>
 			<spirit:port>
 				<spirit:name>tx_valid_a</spirit:name>
+				<spirit:wire>
+					<spirit:direction>out</spirit:direction>
+					<spirit:vector>
+						<spirit:left>0</spirit:left>
+						<spirit:right>0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
+				<spirit:name>tx_tlast_a</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
@@ -908,6 +1150,23 @@
 				</spirit:wire>
 			</spirit:port>
 			<spirit:port>
+				<spirit:name>tx_tlast_b</spirit:name>
+				<spirit:wire>
+					<spirit:direction>out</spirit:direction>
+					<spirit:vector>
+						<spirit:left>0</spirit:left>
+						<spirit:right>0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
 				<spirit:name>tx_data</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
@@ -943,6 +1202,23 @@
 			</spirit:port>
 			<spirit:port>
 				<spirit:name>tx_valid</spirit:name>
+				<spirit:wire>
+					<spirit:direction>in</spirit:direction>
+					<spirit:vector>
+						<spirit:left>0</spirit:left>
+						<spirit:right>0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+							<spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
+				<spirit:name>tx_tlast</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
@@ -994,7 +1270,7 @@
 			<spirit:file>
 				<spirit:name>hdl/vhdl/queue_multiplexer.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
-				<spirit:userFileType>CHECKSUM_791db599</spirit:userFileType>
+				<spirit:userFileType>CHECKSUM_53d607c6</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -1084,8 +1360,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Queue_multiplexer</xilinx:displayName>
-			<xilinx:coreRevision>1503171416</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2015-03-17T18:16:27Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1503311926</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2015-03-31T23:26:42Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>

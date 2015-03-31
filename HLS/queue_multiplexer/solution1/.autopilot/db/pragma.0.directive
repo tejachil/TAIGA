@@ -27,6 +27,12 @@
 <directive functionLabel="" functionName="queue_multiplexer" label="">
 <pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="rx_tlast_a"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="queue_multiplexer" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="rx_data_b"/>
 </pragma>
 </directive>
@@ -40,6 +46,12 @@
 <pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="rx_valid_b"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="queue_multiplexer" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="rx_tlast_b"/>
 </pragma>
 </directive>
 <directive functionLabel="" functionName="queue_multiplexer" label="">
@@ -63,6 +75,12 @@
 <directive functionLabel="" functionName="queue_multiplexer" label="">
 <pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="rx_tlast"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="queue_multiplexer" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="tx_data_a"/>
 </pragma>
 </directive>
@@ -76,6 +94,12 @@
 <pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="tx_valid_a"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="queue_multiplexer" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tx_tlast_a"/>
 </pragma>
 </directive>
 <directive functionLabel="" functionName="queue_multiplexer" label="">
@@ -99,6 +123,12 @@
 <directive functionLabel="" functionName="queue_multiplexer" label="">
 <pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tx_tlast_b"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="queue_multiplexer" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="tx_data"/>
 </pragma>
 </directive>
@@ -112,6 +142,12 @@
 <pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="tx_valid"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="queue_multiplexer" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tx_tlast"/>
 </pragma>
 </directive>
 <directive functionLabel="" functionName="queue_multiplexer" label="">

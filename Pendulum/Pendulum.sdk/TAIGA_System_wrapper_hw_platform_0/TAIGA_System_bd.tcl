@@ -397,19 +397,19 @@ proc create_root_design { parentCell } {
 
   # Create instance: fifo_IOI_to_backup, and set properties
   set fifo_IOI_to_backup [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_IOI_to_backup ]
-  set_property -dict [ list CONFIG.Enable_TLAST {false} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {512} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_backup
+  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_backup
 
   # Create instance: fifo_IOI_to_production, and set properties
   set fifo_IOI_to_production [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_IOI_to_production ]
-  set_property -dict [ list CONFIG.Enable_TLAST {false} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {512} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_production
+  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_production
 
   # Create instance: fifo_backup_to_IOI, and set properties
   set fifo_backup_to_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_backup_to_IOI ]
-  set_property -dict [ list CONFIG.Enable_TLAST {false} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {512} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_backup_to_IOI
+  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_backup_to_IOI
 
   # Create instance: fifo_production_to_IOI, and set properties
   set fifo_production_to_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_production_to_IOI ]
-  set_property -dict [ list CONFIG.Enable_TLAST {false} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {512} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_production_to_IOI
+  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_production_to_IOI
 
   # Create instance: local_memory_IOI
   create_hier_cell_local_memory_IOI [current_bd_instance .] local_memory_IOI
@@ -473,6 +473,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi_fifo_IOI_dequeue_axi_str_rxd_tready [get_bd_pins axi_fifo_IOI_dequeue/axi_str_rxd_tready] [get_bd_pins queue_multiplexer/rx_ready]
   connect_bd_net -net axi_fifo_IOI_dequeue_interrupt [get_bd_pins IO_Intermediary_xlconcat/In1] [get_bd_pins axi_fifo_IOI_dequeue/interrupt]
   connect_bd_net -net axi_fifo_IOI_enqueue_axi_str_txd_tdata [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tdata] [get_bd_pins queue_multiplexer/tx_data]
+  connect_bd_net -net axi_fifo_IOI_enqueue_axi_str_txd_tlast [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tlast] [get_bd_pins queue_multiplexer/tx_tlast]
   connect_bd_net -net axi_fifo_IOI_enqueue_axi_str_txd_tvalid [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tvalid] [get_bd_pins queue_multiplexer/tx_valid]
   connect_bd_net -net axi_gpio_trigger_gpio_io_o [get_bd_ports gpio_trigger] [get_bd_pins axi_gpio_trigger/gpio_io_o] [get_bd_pins queue_multiplexer/switch_select]
   connect_bd_net -net axi_quad_spi_plant_io0_o [get_bd_ports spi_plant_mosi_o] [get_bd_pins axi_quad_spi_plant/io0_o]
@@ -485,8 +486,10 @@ proc create_root_design { parentCell } {
   connect_bd_net -net fifo_IOI_to_backup_s_axis_tready [get_bd_pins fifo_IOI_to_backup/s_axis_tready] [get_bd_pins queue_multiplexer/tx_ready_b]
   connect_bd_net -net fifo_IOI_to_production_s_axis_tready [get_bd_pins fifo_IOI_to_production/s_axis_tready] [get_bd_pins queue_multiplexer/tx_ready_a]
   connect_bd_net -net fifo_backup_to_IOI_m_axis_tdata [get_bd_pins fifo_backup_to_IOI/m_axis_tdata] [get_bd_pins queue_multiplexer/rx_data_b]
+  connect_bd_net -net fifo_backup_to_IOI_m_axis_tlast [get_bd_pins fifo_backup_to_IOI/m_axis_tlast] [get_bd_pins queue_multiplexer/rx_tlast_b]
   connect_bd_net -net fifo_backup_to_IOI_m_axis_tvalid [get_bd_pins fifo_backup_to_IOI/m_axis_tvalid] [get_bd_pins queue_multiplexer/rx_valid_b]
   connect_bd_net -net fifo_production_to_IOI_m_axis_tdata [get_bd_pins fifo_production_to_IOI/m_axis_tdata] [get_bd_pins queue_multiplexer/rx_data_a]
+  connect_bd_net -net fifo_production_to_IOI_m_axis_tlast [get_bd_pins fifo_production_to_IOI/m_axis_tlast] [get_bd_pins queue_multiplexer/rx_tlast_a]
   connect_bd_net -net fifo_production_to_IOI_m_axis_tvalid [get_bd_pins fifo_production_to_IOI/m_axis_tvalid] [get_bd_pins queue_multiplexer/rx_valid_a]
   connect_bd_net -net io1_i_1 [get_bd_ports spi_plant_miso_i] [get_bd_pins axi_quad_spi_plant/io1_i]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_production_controller_100M/mb_debug_sys_rst]
@@ -500,6 +503,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net queue_multiplexer_0_tx_ready [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tready] [get_bd_pins queue_multiplexer/tx_ready]
   connect_bd_net -net queue_multiplexer_0_tx_valid_a [get_bd_pins fifo_IOI_to_production/s_axis_tvalid] [get_bd_pins queue_multiplexer/tx_valid_a]
   connect_bd_net -net queue_multiplexer_0_tx_valid_b [get_bd_pins fifo_IOI_to_backup/s_axis_tvalid] [get_bd_pins queue_multiplexer/tx_valid_b]
+  connect_bd_net -net queue_multiplexer_rx_tlast [get_bd_pins axi_fifo_IOI_dequeue/axi_str_rxd_tlast] [get_bd_pins queue_multiplexer/rx_tlast]
+  connect_bd_net -net queue_multiplexer_tx_tlast_a [get_bd_pins fifo_IOI_to_production/s_axis_tlast] [get_bd_pins queue_multiplexer/tx_tlast_a]
+  connect_bd_net -net queue_multiplexer_tx_tlast_b [get_bd_pins fifo_IOI_to_backup/s_axis_tlast] [get_bd_pins queue_multiplexer/tx_tlast_b]
   connect_bd_net -net rst_production_controller_100M_bus_struct_reset [get_bd_pins backup_controller_local_memory/LMB_Rst] [get_bd_pins local_memory_IOI/LMB_Rst] [get_bd_pins rst_production_controller_100M/bus_struct_reset]
   connect_bd_net -net rst_production_controller_100M_interconnect_aresetn [get_bd_pins axi_periph_IOI/ARESETN] [get_bd_pins axi_periph_backup_controller/ARESETN] [get_bd_pins axi_periph_production_controller/ARESETN] [get_bd_pins rst_production_controller_100M/interconnect_aresetn]
   connect_bd_net -net rst_production_controller_100M_mb_reset [get_bd_pins IO_Intermediary/Reset] [get_bd_pins axi_intc_IOI/processor_rst] [get_bd_pins backup_controller/Reset] [get_bd_pins backup_controller_axi_intc/processor_rst] [get_bd_pins rst_production_controller_100M/mb_reset]

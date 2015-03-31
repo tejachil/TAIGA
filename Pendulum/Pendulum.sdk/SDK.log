@@ -789,3 +789,51 @@ If this project was a BSP referenced by other C/C++ applications, then those app
 18:39:16 INFO  : ps7_post_config is completed.
 18:39:16 INFO  : Processor reset is completed for IO_Intermediary
 18:39:24 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:41:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:21:41 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+19:21:42 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+19:21:42 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+19:21:42 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+19:21:43 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1427843970000,  Project:1427840302000
+19:21:43 INFO  : The hardware specification for project 'TAIGA_System_wrapper_hw_platform_0' is different from /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+19:21:43 INFO  : Copied contents of /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf into /TAIGA_System_wrapper_hw_platform_0/system.hdf.
+19:21:44 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:21:47 INFO  : 
+19:21:48 INFO  : 
+19:21:50 INFO  : 
+19:21:55 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+19:21:56 INFO  : Updating hardware inferred compiler options for app_io_intermediary.
+19:21:57 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xllfifo_interrupt_example_1.
+19:21:57 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xuartlite_selftest_example_1.
+19:21:58 INFO  : Updating hardware inferred compiler options for app_production_controller.
+19:21:59 INFO  : Updating hardware inferred compiler options for bsp_production_freertos_xllfifo_polling_example_1.
+19:21:59 INFO  : Clearing existing target manager status.
+19:22:01 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:24:34 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+19:25:10 INFO  : ps7_init is completed.
+19:25:10 INFO  : ps7_post_config is completed.
+19:25:11 INFO  : Processor reset is completed for IO_Intermediary
+19:25:20 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:45:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1427845482000,  Project:1427843970000
+19:45:22 INFO  : Project TAIGA_System_wrapper_hw_platform_0's source hardware specification located at /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:45:24 INFO  : Copied contents of /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf into /TAIGA_System_wrapper_hw_platform_0/system.hdf.
+19:45:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:45:31 INFO  : 
+19:45:35 INFO  : 
+19:45:37 INFO  : 
+19:45:41 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+19:45:42 INFO  : Updating hardware inferred compiler options for app_io_intermediary.
+19:45:43 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xllfifo_interrupt_example_1.
+19:45:43 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xuartlite_selftest_example_1.
+19:45:44 INFO  : Updating hardware inferred compiler options for app_production_controller.
+19:45:45 INFO  : Updating hardware inferred compiler options for bsp_production_freertos_xllfifo_polling_example_1.
+19:45:45 INFO  : Clearing existing target manager status.
+19:45:45 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:47:14 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+19:47:40 INFO  : ps7_init is completed.
+19:47:40 INFO  : ps7_post_config is completed.
+19:47:41 INFO  : Processor reset is completed for IO_Intermediary
+19:47:50 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:49:58 INFO  : Processor reset is completed for backup_controller

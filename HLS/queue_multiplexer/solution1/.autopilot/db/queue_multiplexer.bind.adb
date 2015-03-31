@@ -8,7 +8,7 @@
 		<name>queue_multiplexer</name>
 		<ret_bitwidth>0</ret_bitwidth>
 		<ports class_id="2" tracking_level="0" version="0">
-			<count>19</count>
+			<count>25</count>
 			<item_version>0</item_version>
 			<item class_id="3" tracking_level="1" version="0" object_id="_1">
 				<Value class_id="4" tracking_level="0" version="0">
@@ -127,6 +127,34 @@
 					<Obj>
 						<type>1</type>
 						<id>5</id>
+						<name>rx_tlast_a</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>rx_tlast_a</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_6">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>6</id>
 						<name>rx_data_b</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -150,11 +178,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_6">
+			<item class_id_reference="3" object_id="_7">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>6</id>
+						<id>7</id>
 						<name>rx_ready_b</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -178,11 +206,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_7">
+			<item class_id_reference="3" object_id="_8">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>7</id>
+						<id>8</id>
 						<name>rx_valid_b</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -206,11 +234,39 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_8">
+			<item class_id_reference="3" object_id="_9">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>8</id>
+						<id>9</id>
+						<name>rx_tlast_b</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>rx_tlast_b</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_10">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>10</id>
 						<name>rx_data</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -234,11 +290,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_9">
+			<item class_id_reference="3" object_id="_11">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>9</id>
+						<id>11</id>
 						<name>rx_ready</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -262,11 +318,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_10">
+			<item class_id_reference="3" object_id="_12">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>10</id>
+						<id>12</id>
 						<name>rx_valid</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -290,11 +346,39 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_11">
+			<item class_id_reference="3" object_id="_13">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>11</id>
+						<id>13</id>
+						<name>rx_tlast</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>rx_tlast</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_14">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>14</id>
 						<name>tx_data_a</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -318,11 +402,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_12">
+			<item class_id_reference="3" object_id="_15">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>12</id>
+						<id>15</id>
 						<name>tx_ready_a</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -346,11 +430,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_13">
+			<item class_id_reference="3" object_id="_16">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>13</id>
+						<id>16</id>
 						<name>tx_valid_a</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -374,11 +458,39 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_14">
+			<item class_id_reference="3" object_id="_17">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>14</id>
+						<id>17</id>
+						<name>tx_tlast_a</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>tx_tlast_a</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_18">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>18</id>
 						<name>tx_data_b</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -402,11 +514,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_15">
+			<item class_id_reference="3" object_id="_19">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>15</id>
+						<id>19</id>
 						<name>tx_ready_b</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -430,11 +542,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_16">
+			<item class_id_reference="3" object_id="_20">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>16</id>
+						<id>20</id>
 						<name>tx_valid_b</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -458,11 +570,39 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_17">
+			<item class_id_reference="3" object_id="_21">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>17</id>
+						<id>21</id>
+						<name>tx_tlast_b</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>tx_tlast_b</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_22">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>22</id>
 						<name>tx_data</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -486,11 +626,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_18">
+			<item class_id_reference="3" object_id="_23">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>18</id>
+						<id>23</id>
 						<name>tx_ready</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -514,11 +654,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_19">
+			<item class_id_reference="3" object_id="_24">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>19</id>
+						<id>24</id>
 						<name>tx_valid</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -542,19 +682,47 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
+			<item class_id_reference="3" object_id="_25">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>25</id>
+						<name>tx_tlast</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName>tx_tlast</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<direction>0</direction>
+				<if_type>0</if_type>
+				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>29</count>
+			<count>37</count>
 			<item_version>0</item_version>
-			<item class_id="9" tracking_level="1" version="0" object_id="_20">
+			<item class_id="9" tracking_level="1" version="0" object_id="_26">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>60</id>
+						<id>78</id>
 						<name>switch_select_read</name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -569,261 +737,6 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>49</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>94</item>
-					<item>95</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>61</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>49</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>49</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>96</item>
-					<item>97</item>
-					<item>98</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>63</id>
-						<name>rx_data_a_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>133</item>
-					<item>134</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>64</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>135</item>
-					<item>136</item>
-					<item>137</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_24">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>65</id>
-						<name>rx_valid_a_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>138</item>
-					<item>139</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_25">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>66</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>140</item>
-					<item>141</item>
-					<item>142</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_26">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>67</id>
-						<name>rx_ready_read_1</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>61</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
 										<second>61</second>
 									</item>
 								</second>
@@ -838,8 +751,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>143</item>
-					<item>144</item>
+					<item>120</item>
+					<item>121</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 			</item>
@@ -847,7 +760,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>68</id>
+						<id>79</id>
 						<name></name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
@@ -880,21 +793,21 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>145</item>
-					<item>146</item>
-					<item>147</item>
+					<item>122</item>
+					<item>123</item>
+					<item>124</item>
 				</oprand_edges>
-				<opcode>write</opcode>
+				<opcode>br</opcode>
 			</item>
 			<item class_id_reference="9" object_id="_28">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>69</id>
-						<name>tx_data_read_1</name>
+						<id>81</id>
+						<name>rx_data_a_read</name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -909,7 +822,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>63</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -923,8 +836,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>148</item>
-					<item>149</item>
+					<item>169</item>
+					<item>170</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 			</item>
@@ -932,11 +845,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>70</id>
+						<id>82</id>
 						<name></name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -951,7 +864,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>63</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -965,9 +878,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>150</item>
-					<item>151</item>
-					<item>152</item>
+					<item>171</item>
+					<item>172</item>
+					<item>173</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 			</item>
@@ -975,11 +888,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>71</id>
-						<name>tx_valid_read_1</name>
+						<id>83</id>
+						<name>rx_valid_a_read</name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -994,7 +907,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>64</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -1008,8 +921,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>153</item>
-					<item>154</item>
+					<item>174</item>
+					<item>175</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 			</item>
@@ -1017,11 +930,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>72</id>
+						<id>84</id>
 						<name></name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1036,7 +949,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>64</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -1050,9 +963,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>155</item>
-					<item>156</item>
-					<item>157</item>
+					<item>176</item>
+					<item>177</item>
+					<item>178</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 			</item>
@@ -1060,11 +973,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>73</id>
-						<name>tx_ready_a_read</name>
+						<id>85</id>
+						<name>rx_ready_read_1</name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>75</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1079,7 +992,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>65</second>
+										<second>75</second>
 									</item>
 								</second>
 							</item>
@@ -1093,8 +1006,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>158</item>
-					<item>159</item>
+					<item>179</item>
+					<item>180</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 			</item>
@@ -1102,11 +1015,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>74</id>
+						<id>86</id>
 						<name></name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>65</lineNumber>
+						<lineNumber>75</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1121,7 +1034,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>65</second>
+										<second>75</second>
 									</item>
 								</second>
 							</item>
@@ -1135,9 +1048,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>160</item>
-					<item>161</item>
-					<item>162</item>
+					<item>181</item>
+					<item>182</item>
+					<item>183</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 			</item>
@@ -1145,7 +1058,432 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>75</id>
+						<id>87</id>
+						<name>rx_tlast_a_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>184</item>
+					<item>185</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_35">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>88</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>76</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>76</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>186</item>
+					<item>187</item>
+					<item>188</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_36">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>89</id>
+						<name>tx_data_read_1</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>78</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>78</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>189</item>
+					<item>190</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_37">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>90</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>78</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>78</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>191</item>
+					<item>192</item>
+					<item>193</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_38">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>91</id>
+						<name>tx_valid_read_1</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>79</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>79</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>194</item>
+					<item>195</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_39">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>92</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>79</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>79</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>196</item>
+					<item>197</item>
+					<item>198</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_40">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>93</id>
+						<name>tx_ready_a_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>80</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>80</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>199</item>
+					<item>200</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_41">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>94</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>80</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>80</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>201</item>
+					<item>202</item>
+					<item>203</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_42">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>95</id>
+						<name>tx_tlast_read_1</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>81</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>81</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>204</item>
+					<item>205</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_43">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>96</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>81</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>81</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>206</item>
+					<item>207</item>
+					<item>208</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_44">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>97</id>
 						<name></name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1164,444 +1502,19 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>163</item>
+					<item>209</item>
 				</oprand_edges>
 				<opcode>br</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_35">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>77</id>
-						<name>rx_data_b_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>100</item>
-					<item>101</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_36">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>78</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>103</item>
-					<item>104</item>
-					<item>105</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_37">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>79</id>
-						<name>rx_valid_b_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>51</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>51</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>106</item>
-					<item>107</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_38">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>80</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>51</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>51</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>109</item>
-					<item>110</item>
-					<item>111</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_39">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>81</id>
-						<name>rx_ready_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>52</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>52</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>112</item>
-					<item>113</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_40">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>82</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>52</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>52</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>114</item>
-					<item>115</item>
-					<item>116</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_41">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>83</id>
-						<name>tx_data_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>117</item>
-					<item>118</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_42">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>84</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>119</item>
-					<item>120</item>
-					<item>121</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_43">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>85</id>
-						<name>tx_valid_read</name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>122</item>
-					<item>123</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_44">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>86</id>
-						<name></name>
-						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
-						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>queue_multiplexer</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/teja/Documents/TAIGA/HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
-											<second>queue_multiplexer</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>124</item>
-					<item>125</item>
-					<item>126</item>
-				</oprand_edges>
-				<opcode>write</opcode>
 			</item>
 			<item class_id_reference="9" object_id="_45">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>87</id>
-						<name>tx_ready_b_read</name>
+						<id>99</id>
+						<name>rx_data_b_read</name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1616,7 +1529,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>56</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -1625,13 +1538,13 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
+					<item>126</item>
 					<item>127</item>
-					<item>128</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 			</item>
@@ -1639,11 +1552,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>88</id>
+						<id>100</id>
 						<name></name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1658,7 +1571,7 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>56</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -1682,11 +1595,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>89</id>
-						<name></name>
+						<id>101</id>
+						<name>rx_valid_b_read</name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
-						<lineNumber>57</lineNumber>
+						<lineNumber>63</lineNumber>
 						<contextFuncName>queue_multiplexer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1701,7 +1614,49 @@
 											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
 											<second>queue_multiplexer</second>
 										</first>
-										<second>57</second>
+										<second>63</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>132</item>
+					<item>133</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_48">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>102</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>63</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>63</second>
 									</item>
 								</second>
 							</item>
@@ -1713,17 +1668,316 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>132</item>
+					<item>135</item>
+					<item>136</item>
+					<item>137</item>
 				</oprand_edges>
-				<opcode>br</opcode>
+				<opcode>write</opcode>
 			</item>
-			<item class_id_reference="9" object_id="_48">
+			<item class_id_reference="9" object_id="_49">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>91</id>
+						<id>103</id>
+						<name>rx_ready_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>138</item>
+					<item>139</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_50">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>104</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>140</item>
+					<item>141</item>
+					<item>142</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_51">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>105</id>
+						<name>rx_tlast_b_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>65</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>65</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>143</item>
+					<item>144</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_52">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>106</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>65</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>65</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>145</item>
+					<item>146</item>
+					<item>147</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_53">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>107</id>
+						<name>tx_data_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>67</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>67</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>148</item>
+					<item>149</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_54">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>108</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>67</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>67</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>150</item>
+					<item>151</item>
+					<item>152</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_55">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>109</id>
+						<name>tx_valid_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>68</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>68</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>153</item>
+					<item>154</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_56">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>110</id>
 						<name></name>
 						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
 						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
@@ -1754,6 +2008,260 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>155</item>
+					<item>156</item>
+					<item>157</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_57">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>111</id>
+						<name>tx_ready_b_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>158</item>
+					<item>159</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_58">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>112</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>160</item>
+					<item>161</item>
+					<item>162</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_59">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>113</id>
+						<name>tx_tlast_read</name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>70</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>163</item>
+					<item>164</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_60">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>114</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>70</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>70</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>165</item>
+					<item>166</item>
+					<item>167</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_61">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>115</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>71</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>71</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>168</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_62">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>117</id>
+						<name></name>
+						<fileName>queue_multiplexer/.apc/queue_multiplexer.cpp</fileName>
+						<fileDirectory>/home/teja/Documents/TAIGA/HLS</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>queue_multiplexer</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/teja/Documents/TAIGA/HLS</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>queue_multiplexer/.apc/queue_multiplexer.cpp</first>
+											<second>queue_multiplexer</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
 					<count>0</count>
 					<item_version>0</item_version>
 				</oprand_edges>
@@ -1767,10 +2275,10 @@
 		<blocks class_id="16" tracking_level="0" version="0">
 			<count>4</count>
 			<item_version>0</item_version>
-			<item class_id="17" tracking_level="1" version="0" object_id="_49">
+			<item class_id="17" tracking_level="1" version="0" object_id="_63">
 				<Obj>
 					<type>3</type>
-					<id>62</id>
+					<id>80</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1787,69 +2295,30 @@
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>60</item>
-					<item>61</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="17" object_id="_50">
-				<Obj>
-					<type>3</type>
-					<id>76</id>
-					<name></name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<coreName></coreName>
-				</Obj>
-				<node_objs>
-					<count>13</count>
-					<item_version>0</item_version>
-					<item>63</item>
-					<item>64</item>
-					<item>65</item>
-					<item>66</item>
-					<item>67</item>
-					<item>68</item>
-					<item>69</item>
-					<item>70</item>
-					<item>71</item>
-					<item>72</item>
-					<item>73</item>
-					<item>74</item>
-					<item>75</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="17" object_id="_51">
-				<Obj>
-					<type>3</type>
-					<id>90</id>
-					<name></name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<coreName></coreName>
-				</Obj>
-				<node_objs>
-					<count>13</count>
-					<item_version>0</item_version>
-					<item>77</item>
 					<item>78</item>
 					<item>79</item>
-					<item>80</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="17" object_id="_64">
+				<Obj>
+					<type>3</type>
+					<id>98</id>
+					<name></name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<coreName></coreName>
+				</Obj>
+				<node_objs>
+					<count>17</count>
+					<item_version>0</item_version>
 					<item>81</item>
 					<item>82</item>
 					<item>83</item>
@@ -1859,12 +2328,59 @@
 					<item>87</item>
 					<item>88</item>
 					<item>89</item>
+					<item>90</item>
+					<item>91</item>
+					<item>92</item>
+					<item>93</item>
+					<item>94</item>
+					<item>95</item>
+					<item>96</item>
+					<item>97</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="17" object_id="_52">
+			<item class_id_reference="17" object_id="_65">
 				<Obj>
 					<type>3</type>
-					<id>92</id>
+					<id>116</id>
+					<name></name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<coreName></coreName>
+				</Obj>
+				<node_objs>
+					<count>17</count>
+					<item_version>0</item_version>
+					<item>99</item>
+					<item>100</item>
+					<item>101</item>
+					<item>102</item>
+					<item>103</item>
+					<item>104</item>
+					<item>105</item>
+					<item>106</item>
+					<item>107</item>
+					<item>108</item>
+					<item>109</item>
+					<item>110</item>
+					<item>111</item>
+					<item>112</item>
+					<item>113</item>
+					<item>114</item>
+					<item>115</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="17" object_id="_66">
+				<Obj>
+					<type>3</type>
+					<id>118</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1881,295 +2397,367 @@
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>91</item>
+					<item>117</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="18" tracking_level="0" version="0">
-			<count>46</count>
+			<count>58</count>
 			<item_version>0</item_version>
-			<item class_id="19" tracking_level="1" version="0" object_id="_53">
-				<id>95</id>
+			<item class_id="19" tracking_level="1" version="0" object_id="_67">
+				<id>121</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>60</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_54">
-				<id>96</id>
-				<edge_type>1</edge_type>
-				<source_obj>60</source_obj>
-				<sink_obj>61</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_55">
-				<id>97</id>
-				<edge_type>2</edge_type>
-				<source_obj>76</source_obj>
-				<sink_obj>61</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_56">
-				<id>98</id>
-				<edge_type>2</edge_type>
-				<source_obj>90</source_obj>
-				<sink_obj>61</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_57">
-				<id>101</id>
-				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
-				<sink_obj>77</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_58">
-				<id>104</id>
-				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
 				<sink_obj>78</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_59">
-				<id>105</id>
+			<item class_id_reference="19" object_id="_68">
+				<id>122</id>
 				<edge_type>1</edge_type>
-				<source_obj>77</source_obj>
-				<sink_obj>78</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_60">
-				<id>107</id>
-				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
+				<source_obj>78</source_obj>
 				<sink_obj>79</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_61">
-				<id>110</id>
-				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>80</sink_obj>
+			<item class_id_reference="19" object_id="_69">
+				<id>123</id>
+				<edge_type>2</edge_type>
+				<source_obj>98</source_obj>
+				<sink_obj>79</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_62">
-				<id>111</id>
-				<edge_type>1</edge_type>
-				<source_obj>79</source_obj>
-				<sink_obj>80</sink_obj>
+			<item class_id_reference="19" object_id="_70">
+				<id>124</id>
+				<edge_type>2</edge_type>
+				<source_obj>116</source_obj>
+				<sink_obj>79</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_63">
-				<id>113</id>
-				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>81</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_64">
-				<id>115</id>
+			<item class_id_reference="19" object_id="_71">
+				<id>127</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
+				<sink_obj>99</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_72">
+				<id>130</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
+				<sink_obj>100</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_73">
+				<id>131</id>
+				<edge_type>1</edge_type>
+				<source_obj>99</source_obj>
+				<sink_obj>100</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_74">
+				<id>133</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>101</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_75">
+				<id>136</id>
+				<edge_type>1</edge_type>
+				<source_obj>12</source_obj>
+				<sink_obj>102</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_76">
+				<id>137</id>
+				<edge_type>1</edge_type>
+				<source_obj>101</source_obj>
+				<sink_obj>102</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_77">
+				<id>139</id>
+				<edge_type>1</edge_type>
+				<source_obj>11</source_obj>
+				<sink_obj>103</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_78">
+				<id>141</id>
+				<edge_type>1</edge_type>
+				<source_obj>7</source_obj>
+				<sink_obj>104</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_79">
+				<id>142</id>
+				<edge_type>1</edge_type>
+				<source_obj>103</source_obj>
+				<sink_obj>104</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_80">
+				<id>144</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>105</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_81">
+				<id>146</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>106</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_82">
+				<id>147</id>
+				<edge_type>1</edge_type>
+				<source_obj>105</source_obj>
+				<sink_obj>106</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_83">
+				<id>149</id>
+				<edge_type>1</edge_type>
+				<source_obj>22</source_obj>
+				<sink_obj>107</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_84">
+				<id>151</id>
+				<edge_type>1</edge_type>
+				<source_obj>18</source_obj>
+				<sink_obj>108</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_85">
+				<id>152</id>
+				<edge_type>1</edge_type>
+				<source_obj>107</source_obj>
+				<sink_obj>108</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_86">
+				<id>154</id>
+				<edge_type>1</edge_type>
+				<source_obj>24</source_obj>
+				<sink_obj>109</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_87">
+				<id>156</id>
+				<edge_type>1</edge_type>
+				<source_obj>20</source_obj>
+				<sink_obj>110</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_88">
+				<id>157</id>
+				<edge_type>1</edge_type>
+				<source_obj>109</source_obj>
+				<sink_obj>110</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_89">
+				<id>159</id>
+				<edge_type>1</edge_type>
+				<source_obj>19</source_obj>
+				<sink_obj>111</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_90">
+				<id>161</id>
+				<edge_type>1</edge_type>
+				<source_obj>23</source_obj>
+				<sink_obj>112</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_91">
+				<id>162</id>
+				<edge_type>1</edge_type>
+				<source_obj>111</source_obj>
+				<sink_obj>112</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_92">
+				<id>164</id>
+				<edge_type>1</edge_type>
+				<source_obj>25</source_obj>
+				<sink_obj>113</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_93">
+				<id>166</id>
+				<edge_type>1</edge_type>
+				<source_obj>21</source_obj>
+				<sink_obj>114</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_94">
+				<id>167</id>
+				<edge_type>1</edge_type>
+				<source_obj>113</source_obj>
+				<sink_obj>114</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_95">
+				<id>168</id>
+				<edge_type>2</edge_type>
+				<source_obj>118</source_obj>
+				<sink_obj>115</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_96">
+				<id>170</id>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>81</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_97">
+				<id>172</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
 				<sink_obj>82</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_65">
-				<id>116</id>
+			<item class_id_reference="19" object_id="_98">
+				<id>173</id>
 				<edge_type>1</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>82</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_66">
-				<id>118</id>
+			<item class_id_reference="19" object_id="_99">
+				<id>175</id>
 				<edge_type>1</edge_type>
-				<source_obj>17</source_obj>
+				<source_obj>4</source_obj>
 				<sink_obj>83</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_67">
-				<id>120</id>
+			<item class_id_reference="19" object_id="_100">
+				<id>177</id>
 				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
+				<source_obj>12</source_obj>
 				<sink_obj>84</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_68">
-				<id>121</id>
+			<item class_id_reference="19" object_id="_101">
+				<id>178</id>
 				<edge_type>1</edge_type>
 				<source_obj>83</source_obj>
 				<sink_obj>84</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_69">
-				<id>123</id>
+			<item class_id_reference="19" object_id="_102">
+				<id>180</id>
 				<edge_type>1</edge_type>
-				<source_obj>19</source_obj>
+				<source_obj>11</source_obj>
 				<sink_obj>85</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_70">
-				<id>125</id>
+			<item class_id_reference="19" object_id="_103">
+				<id>182</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
+				<source_obj>3</source_obj>
 				<sink_obj>86</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_71">
-				<id>126</id>
+			<item class_id_reference="19" object_id="_104">
+				<id>183</id>
 				<edge_type>1</edge_type>
 				<source_obj>85</source_obj>
 				<sink_obj>86</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_72">
-				<id>128</id>
+			<item class_id_reference="19" object_id="_105">
+				<id>185</id>
 				<edge_type>1</edge_type>
-				<source_obj>15</source_obj>
+				<source_obj>5</source_obj>
 				<sink_obj>87</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_73">
-				<id>130</id>
+			<item class_id_reference="19" object_id="_106">
+				<id>187</id>
 				<edge_type>1</edge_type>
-				<source_obj>18</source_obj>
+				<source_obj>13</source_obj>
 				<sink_obj>88</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_74">
-				<id>131</id>
+			<item class_id_reference="19" object_id="_107">
+				<id>188</id>
 				<edge_type>1</edge_type>
 				<source_obj>87</source_obj>
 				<sink_obj>88</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_75">
-				<id>132</id>
-				<edge_type>2</edge_type>
-				<source_obj>92</source_obj>
+			<item class_id_reference="19" object_id="_108">
+				<id>190</id>
+				<edge_type>1</edge_type>
+				<source_obj>22</source_obj>
 				<sink_obj>89</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_76">
-				<id>134</id>
+			<item class_id_reference="19" object_id="_109">
+				<id>192</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>63</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_77">
-				<id>136</id>
-				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
-				<sink_obj>64</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_78">
-				<id>137</id>
-				<edge_type>1</edge_type>
-				<source_obj>63</source_obj>
-				<sink_obj>64</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_79">
-				<id>139</id>
-				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
-				<sink_obj>65</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_80">
-				<id>141</id>
-				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>66</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_81">
-				<id>142</id>
-				<edge_type>1</edge_type>
-				<source_obj>65</source_obj>
-				<sink_obj>66</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_82">
-				<id>144</id>
-				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>67</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_83">
-				<id>146</id>
-				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
-				<sink_obj>68</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_84">
-				<id>147</id>
-				<edge_type>1</edge_type>
-				<source_obj>67</source_obj>
-				<sink_obj>68</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_85">
-				<id>149</id>
-				<edge_type>1</edge_type>
-				<source_obj>17</source_obj>
-				<sink_obj>69</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_86">
-				<id>151</id>
-				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
-				<sink_obj>70</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_87">
-				<id>152</id>
-				<edge_type>1</edge_type>
-				<source_obj>69</source_obj>
-				<sink_obj>70</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_88">
-				<id>154</id>
-				<edge_type>1</edge_type>
-				<source_obj>19</source_obj>
-				<sink_obj>71</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_89">
-				<id>156</id>
-				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
-				<sink_obj>72</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_90">
-				<id>157</id>
-				<edge_type>1</edge_type>
-				<source_obj>71</source_obj>
-				<sink_obj>72</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_91">
-				<id>159</id>
-				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
-				<sink_obj>73</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_92">
-				<id>161</id>
-				<edge_type>1</edge_type>
-				<source_obj>18</source_obj>
-				<sink_obj>74</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_93">
-				<id>162</id>
-				<edge_type>1</edge_type>
-				<source_obj>73</source_obj>
-				<sink_obj>74</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_94">
-				<id>163</id>
-				<edge_type>2</edge_type>
-				<source_obj>92</source_obj>
-				<sink_obj>75</sink_obj>
-			</item>
-			<item class_id_reference="19" object_id="_95">
-				<id>412</id>
-				<edge_type>2</edge_type>
-				<source_obj>62</source_obj>
+				<source_obj>14</source_obj>
 				<sink_obj>90</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_96">
-				<id>413</id>
-				<edge_type>2</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>76</sink_obj>
+			<item class_id_reference="19" object_id="_110">
+				<id>193</id>
+				<edge_type>1</edge_type>
+				<source_obj>89</source_obj>
+				<sink_obj>90</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_97">
-				<id>414</id>
-				<edge_type>2</edge_type>
-				<source_obj>76</source_obj>
+			<item class_id_reference="19" object_id="_111">
+				<id>195</id>
+				<edge_type>1</edge_type>
+				<source_obj>24</source_obj>
+				<sink_obj>91</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_112">
+				<id>197</id>
+				<edge_type>1</edge_type>
+				<source_obj>16</source_obj>
 				<sink_obj>92</sink_obj>
 			</item>
-			<item class_id_reference="19" object_id="_98">
-				<id>415</id>
-				<edge_type>2</edge_type>
-				<source_obj>90</source_obj>
+			<item class_id_reference="19" object_id="_113">
+				<id>198</id>
+				<edge_type>1</edge_type>
+				<source_obj>91</source_obj>
 				<sink_obj>92</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_114">
+				<id>200</id>
+				<edge_type>1</edge_type>
+				<source_obj>15</source_obj>
+				<sink_obj>93</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_115">
+				<id>202</id>
+				<edge_type>1</edge_type>
+				<source_obj>23</source_obj>
+				<sink_obj>94</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_116">
+				<id>203</id>
+				<edge_type>1</edge_type>
+				<source_obj>93</source_obj>
+				<sink_obj>94</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_117">
+				<id>205</id>
+				<edge_type>1</edge_type>
+				<source_obj>25</source_obj>
+				<sink_obj>95</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_118">
+				<id>207</id>
+				<edge_type>1</edge_type>
+				<source_obj>17</source_obj>
+				<sink_obj>96</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_119">
+				<id>208</id>
+				<edge_type>1</edge_type>
+				<source_obj>95</source_obj>
+				<sink_obj>96</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_120">
+				<id>209</id>
+				<edge_type>2</edge_type>
+				<source_obj>118</source_obj>
+				<sink_obj>97</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_121">
+				<id>530</id>
+				<edge_type>2</edge_type>
+				<source_obj>80</source_obj>
+				<sink_obj>116</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_122">
+				<id>531</id>
+				<edge_type>2</edge_type>
+				<source_obj>80</source_obj>
+				<sink_obj>98</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_123">
+				<id>532</id>
+				<edge_type>2</edge_type>
+				<source_obj>98</source_obj>
+				<sink_obj>118</sink_obj>
+			</item>
+			<item class_id_reference="19" object_id="_124">
+				<id>533</id>
+				<edge_type>2</edge_type>
+				<source_obj>116</source_obj>
+				<sink_obj>118</sink_obj>
 			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="20" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="21" tracking_level="1" version="0" object_id="_99">
+		<item class_id="21" tracking_level="1" version="0" object_id="_125">
 			<mId>1</mId>
 			<mTag>queue_multiplexer</mTag>
 			<mType>0</mType>
@@ -2180,10 +2768,10 @@
 			<basic_blocks>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>62</item>
-				<item>76</item>
-				<item>90</item>
-				<item>92</item>
+				<item>80</item>
+				<item>98</item>
+				<item>116</item>
+				<item>118</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -2195,357 +2783,457 @@
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
 	</cdfg_regions>
-	<fsm class_id="23" tracking_level="1" version="0" object_id="_100">
+	<fsm class_id="23" tracking_level="1" version="0" object_id="_126">
 		<states class_id="24" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="25" tracking_level="1" version="0" object_id="_101">
+			<item class_id="25" tracking_level="1" version="0" object_id="_127">
 				<id>1</id>
 				<operations class_id="26" tracking_level="0" version="0">
-					<count>69</count>
+					<count>89</count>
 					<item_version>0</item_version>
-					<item class_id="27" tracking_level="1" version="0" object_id="_102">
-						<id>20</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_103">
-						<id>21</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_104">
-						<id>22</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_105">
-						<id>23</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_106">
-						<id>24</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_107">
-						<id>25</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_108">
+					<item class_id="27" tracking_level="1" version="0" object_id="_128">
 						<id>26</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_109">
+					<item class_id_reference="27" object_id="_129">
 						<id>27</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_110">
+					<item class_id_reference="27" object_id="_130">
 						<id>28</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_111">
+					<item class_id_reference="27" object_id="_131">
 						<id>29</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_112">
+					<item class_id_reference="27" object_id="_132">
 						<id>30</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_113">
+					<item class_id_reference="27" object_id="_133">
 						<id>31</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_114">
+					<item class_id_reference="27" object_id="_134">
 						<id>32</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_115">
+					<item class_id_reference="27" object_id="_135">
 						<id>33</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_116">
+					<item class_id_reference="27" object_id="_136">
 						<id>34</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_117">
+					<item class_id_reference="27" object_id="_137">
 						<id>35</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_118">
+					<item class_id_reference="27" object_id="_138">
 						<id>36</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_119">
+					<item class_id_reference="27" object_id="_139">
 						<id>37</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_120">
+					<item class_id_reference="27" object_id="_140">
 						<id>38</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_121">
+					<item class_id_reference="27" object_id="_141">
 						<id>39</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_122">
+					<item class_id_reference="27" object_id="_142">
 						<id>40</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_123">
+					<item class_id_reference="27" object_id="_143">
 						<id>41</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_124">
+					<item class_id_reference="27" object_id="_144">
 						<id>42</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_125">
+					<item class_id_reference="27" object_id="_145">
 						<id>43</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_126">
+					<item class_id_reference="27" object_id="_146">
 						<id>44</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_127">
+					<item class_id_reference="27" object_id="_147">
 						<id>45</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_128">
+					<item class_id_reference="27" object_id="_148">
 						<id>46</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_129">
+					<item class_id_reference="27" object_id="_149">
 						<id>47</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_130">
+					<item class_id_reference="27" object_id="_150">
 						<id>48</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_131">
+					<item class_id_reference="27" object_id="_151">
 						<id>49</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_132">
+					<item class_id_reference="27" object_id="_152">
 						<id>50</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_133">
+					<item class_id_reference="27" object_id="_153">
 						<id>51</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_134">
+					<item class_id_reference="27" object_id="_154">
 						<id>52</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_135">
+					<item class_id_reference="27" object_id="_155">
 						<id>53</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_136">
+					<item class_id_reference="27" object_id="_156">
 						<id>54</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_137">
+					<item class_id_reference="27" object_id="_157">
 						<id>55</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_138">
+					<item class_id_reference="27" object_id="_158">
 						<id>56</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_139">
+					<item class_id_reference="27" object_id="_159">
 						<id>57</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_140">
+					<item class_id_reference="27" object_id="_160">
 						<id>58</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_141">
+					<item class_id_reference="27" object_id="_161">
 						<id>59</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_142">
+					<item class_id_reference="27" object_id="_162">
 						<id>60</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_143">
+					<item class_id_reference="27" object_id="_163">
 						<id>61</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="27" object_id="_144">
-						<id>63</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_145">
-						<id>64</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_146">
-						<id>65</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_147">
-						<id>66</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_148">
-						<id>67</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_149">
-						<id>68</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_150">
-						<id>69</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_151">
-						<id>70</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_152">
-						<id>71</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_153">
-						<id>72</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_154">
-						<id>73</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_155">
-						<id>74</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_156">
-						<id>75</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_157">
-						<id>77</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_158">
-						<id>78</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_159">
-						<id>79</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_160">
-						<id>80</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_161">
-						<id>81</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_162">
-						<id>82</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="27" object_id="_163">
-						<id>83</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
 					<item class_id_reference="27" object_id="_164">
-						<id>84</id>
+						<id>62</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="27" object_id="_165">
-						<id>85</id>
+						<id>63</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="27" object_id="_166">
-						<id>86</id>
+						<id>64</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="27" object_id="_167">
-						<id>87</id>
+						<id>65</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="27" object_id="_168">
-						<id>88</id>
+						<id>66</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="27" object_id="_169">
-						<id>89</id>
+						<id>67</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="27" object_id="_170">
+						<id>68</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_171">
+						<id>69</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_172">
+						<id>70</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_173">
+						<id>71</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_174">
+						<id>72</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_175">
+						<id>73</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_176">
+						<id>74</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_177">
+						<id>75</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_178">
+						<id>76</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_179">
+						<id>77</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_180">
+						<id>78</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_181">
+						<id>79</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_182">
+						<id>81</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_183">
+						<id>82</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_184">
+						<id>83</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_185">
+						<id>84</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_186">
+						<id>85</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_187">
+						<id>86</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_188">
+						<id>87</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_189">
+						<id>88</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_190">
+						<id>89</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_191">
+						<id>90</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_192">
 						<id>91</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_193">
+						<id>92</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_194">
+						<id>93</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_195">
+						<id>94</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_196">
+						<id>95</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_197">
+						<id>96</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_198">
+						<id>97</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_199">
+						<id>99</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_200">
+						<id>100</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_201">
+						<id>101</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_202">
+						<id>102</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_203">
+						<id>103</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_204">
+						<id>104</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_205">
+						<id>105</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_206">
+						<id>106</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_207">
+						<id>107</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_208">
+						<id>108</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_209">
+						<id>109</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_210">
+						<id>110</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_211">
+						<id>111</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_212">
+						<id>112</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_213">
+						<id>113</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_214">
+						<id>114</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_215">
+						<id>115</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="27" object_id="_216">
+						<id>117</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
@@ -2557,7 +3245,7 @@
 			<item_version>0</item_version>
 		</transitions>
 	</fsm>
-	<res class_id="29" tracking_level="1" version="0" object_id="_171">
+	<res class_id="29" tracking_level="1" version="0" object_id="_217">
 		<dp_component_resource class_id="30" tracking_level="0" version="0">
 			<count>0</count>
 			<item_version>0</item_version>
@@ -2600,136 +3288,17 @@
 		</dp_memory_map>
 	</res>
 	<node_label_latency class_id="32" tracking_level="0" version="0">
-		<count>29</count>
+		<count>37</count>
 		<item_version>0</item_version>
 		<item class_id="33" tracking_level="0" version="0">
-			<first>60</first>
+			<first>78</first>
 			<second class_id="34" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>61</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>63</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>64</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>65</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>66</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>67</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>68</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>69</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>70</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>71</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>72</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>73</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>74</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>75</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>77</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>78</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
 			<first>79</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>80</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
@@ -2799,32 +3368,14 @@
 			</second>
 		</item>
 		<item>
-			<first>91</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-	</node_label_latency>
-	<bblk_ent_exit class_id="35" tracking_level="0" version="0">
-		<count>4</count>
-		<item_version>0</item_version>
-		<item class_id="36" tracking_level="0" version="0">
-			<first>62</first>
-			<second class_id="37" tracking_level="0" version="0">
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>76</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
 			<first>90</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>91</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
@@ -2837,158 +3388,260 @@
 				<second>0</second>
 			</second>
 		</item>
+		<item>
+			<first>93</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>94</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>95</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>96</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>97</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>99</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>100</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>101</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>102</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>103</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>104</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>105</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>106</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>107</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>108</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>109</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>110</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>111</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>112</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>113</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>114</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>115</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>117</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+	</node_label_latency>
+	<bblk_ent_exit class_id="35" tracking_level="0" version="0">
+		<count>4</count>
+		<item_version>0</item_version>
+		<item class_id="36" tracking_level="0" version="0">
+			<first>80</first>
+			<second class_id="37" tracking_level="0" version="0">
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>98</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>116</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>118</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
 	</bblk_ent_exit>
 	<regions class_id="38" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</regions>
 	<dp_fu_nodes class_id="39" tracking_level="0" version="0">
-		<count>19</count>
+		<count>25</count>
 		<item_version>0</item_version>
 		<item class_id="40" tracking_level="0" version="0">
-			<first>62</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>60</item>
-			</second>
-		</item>
-		<item>
-			<first>68</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>63</item>
-			</second>
-		</item>
-		<item>
 			<first>74</first>
 			<second>
-				<count>2</count>
+				<count>1</count>
 				<item_version>0</item_version>
-				<item>64</item>
 				<item>78</item>
 			</second>
 		</item>
 		<item>
-			<first>82</first>
+			<first>80</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>65</item>
-			</second>
-		</item>
-		<item>
-			<first>88</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>66</item>
-				<item>80</item>
-			</second>
-		</item>
-		<item>
-			<first>96</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>67</item>
 				<item>81</item>
 			</second>
 		</item>
 		<item>
-			<first>102</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>68</item>
-			</second>
-		</item>
-		<item>
-			<first>110</first>
+			<first>86</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>69</item>
+				<item>82</item>
+				<item>100</item>
+			</second>
+		</item>
+		<item>
+			<first>94</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
 				<item>83</item>
 			</second>
 		</item>
 		<item>
-			<first>116</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>70</item>
-			</second>
-		</item>
-		<item>
-			<first>124</first>
+			<first>100</first>
 			<second>
 				<count>2</count>
-				<item_version>0</item_version>
-				<item>71</item>
-				<item>85</item>
-			</second>
-		</item>
-		<item>
-			<first>130</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>72</item>
-			</second>
-		</item>
-		<item>
-			<first>138</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>73</item>
-			</second>
-		</item>
-		<item>
-			<first>144</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>74</item>
-				<item>88</item>
-			</second>
-		</item>
-		<item>
-			<first>152</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>77</item>
-			</second>
-		</item>
-		<item>
-			<first>159</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>79</item>
-			</second>
-		</item>
-		<item>
-			<first>166</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>82</item>
-			</second>
-		</item>
-		<item>
-			<first>174</first>
-			<second>
-				<count>1</count>
 				<item_version>0</item_version>
 				<item>84</item>
+				<item>102</item>
 			</second>
 		</item>
 		<item>
-			<first>182</first>
+			<first>108</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>85</item>
+				<item>103</item>
+			</second>
+		</item>
+		<item>
+			<first>114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2996,11 +3649,152 @@
 			</second>
 		</item>
 		<item>
-			<first>190</first>
+			<first>122</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>87</item>
+			</second>
+		</item>
+		<item>
+			<first>128</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>88</item>
+				<item>106</item>
+			</second>
+		</item>
+		<item>
+			<first>136</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>89</item>
+				<item>107</item>
+			</second>
+		</item>
+		<item>
+			<first>142</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>90</item>
+			</second>
+		</item>
+		<item>
+			<first>150</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>91</item>
+				<item>109</item>
+			</second>
+		</item>
+		<item>
+			<first>156</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>92</item>
+			</second>
+		</item>
+		<item>
+			<first>164</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>93</item>
+			</second>
+		</item>
+		<item>
+			<first>170</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>94</item>
+				<item>112</item>
+			</second>
+		</item>
+		<item>
+			<first>178</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>95</item>
+				<item>113</item>
+			</second>
+		</item>
+		<item>
+			<first>184</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>96</item>
+			</second>
+		</item>
+		<item>
+			<first>192</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>99</item>
+			</second>
+		</item>
+		<item>
+			<first>199</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>101</item>
+			</second>
+		</item>
+		<item>
+			<first>206</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>104</item>
+			</second>
+		</item>
+		<item>
+			<first>214</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>105</item>
+			</second>
+		</item>
+		<item>
+			<first>221</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>108</item>
+			</second>
+		</item>
+		<item>
+			<first>229</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>110</item>
+			</second>
+		</item>
+		<item>
+			<first>237</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>111</item>
+			</second>
+		</item>
+		<item>
+			<first>244</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>114</item>
 			</second>
 		</item>
 	</dp_fu_nodes>
@@ -3013,136 +3807,130 @@
 		<item_version>0</item_version>
 	</dp_fu_nodes_module>
 	<dp_fu_nodes_io>
-		<count>19</count>
+		<count>25</count>
 		<item_version>0</item_version>
 		<item class_id="43" tracking_level="0" version="0">
-			<first>grp_read_fu_110</first>
+			<first>grp_read_fu_108</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>69</item>
-				<item>83</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_read_fu_124</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>71</item>
 				<item>85</item>
+				<item>103</item>
 			</second>
 		</item>
 		<item>
-			<first>grp_read_fu_96</first>
+			<first>grp_read_fu_136</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>67</item>
+				<item>89</item>
+				<item>107</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_read_fu_150</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>91</item>
+				<item>109</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_read_fu_178</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>95</item>
+				<item>113</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_write_fu_100</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>84</item>
+				<item>102</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_write_fu_128</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>88</item>
+				<item>106</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_write_fu_170</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>94</item>
+				<item>112</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_write_fu_86</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>82</item>
+				<item>100</item>
+			</second>
+		</item>
+		<item>
+			<first>rx_data_a_read_read_fu_80</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
 				<item>81</item>
 			</second>
 		</item>
 		<item>
-			<first>grp_write_fu_144</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>74</item>
-				<item>88</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_write_fu_74</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>64</item>
-				<item>78</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_write_fu_88</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>66</item>
-				<item>80</item>
-			</second>
-		</item>
-		<item>
-			<first>rx_data_a_read_read_fu_68</first>
+			<first>rx_data_b_read_read_fu_192</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>63</item>
+				<item>99</item>
 			</second>
 		</item>
 		<item>
-			<first>rx_data_b_read_read_fu_152</first>
+			<first>rx_tlast_a_read_read_fu_122</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>77</item>
+				<item>87</item>
 			</second>
 		</item>
 		<item>
-			<first>rx_valid_a_read_read_fu_82</first>
+			<first>rx_tlast_b_read_read_fu_214</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>65</item>
+				<item>105</item>
 			</second>
 		</item>
 		<item>
-			<first>rx_valid_b_read_read_fu_159</first>
+			<first>rx_valid_a_read_read_fu_94</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>79</item>
+				<item>83</item>
 			</second>
 		</item>
 		<item>
-			<first>stg_49_write_fu_102</first>
+			<first>rx_valid_b_read_read_fu_199</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>68</item>
+				<item>101</item>
 			</second>
 		</item>
 		<item>
-			<first>stg_51_write_fu_116</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>70</item>
-			</second>
-		</item>
-		<item>
-			<first>stg_53_write_fu_130</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>72</item>
-			</second>
-		</item>
-		<item>
-			<first>stg_62_write_fu_166</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>82</item>
-			</second>
-		</item>
-		<item>
-			<first>stg_64_write_fu_174</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>84</item>
-			</second>
-		</item>
-		<item>
-			<first>stg_66_write_fu_182</first>
+			<first>stg_61_write_fu_114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3150,27 +3938,83 @@
 			</second>
 		</item>
 		<item>
-			<first>switch_select_read_read_fu_62</first>
+			<first>stg_65_write_fu_142</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>60</item>
+				<item>90</item>
 			</second>
 		</item>
 		<item>
-			<first>tx_ready_a_read_read_fu_138</first>
+			<first>stg_67_write_fu_156</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>73</item>
+				<item>92</item>
 			</second>
 		</item>
 		<item>
-			<first>tx_ready_b_read_read_fu_190</first>
+			<first>stg_71_write_fu_184</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>87</item>
+				<item>96</item>
+			</second>
+		</item>
+		<item>
+			<first>stg_78_write_fu_206</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>104</item>
+			</second>
+		</item>
+		<item>
+			<first>stg_82_write_fu_221</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>108</item>
+			</second>
+		</item>
+		<item>
+			<first>stg_84_write_fu_229</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>110</item>
+			</second>
+		</item>
+		<item>
+			<first>stg_88_write_fu_244</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>114</item>
+			</second>
+		</item>
+		<item>
+			<first>switch_select_read_read_fu_74</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>78</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_ready_a_read_read_fu_164</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>93</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_ready_b_read_read_fu_237</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>111</item>
 			</second>
 		</item>
 	</dp_fu_nodes_io>
@@ -3199,7 +4043,7 @@
 		<item_version>0</item_version>
 	</dp_regname_phi>
 	<dp_port_io_nodes class_id="45" tracking_level="0" version="0">
-		<count>19</count>
+		<count>25</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
 			<first>rx_data</first>
@@ -3211,8 +4055,8 @@
 					<second>
 						<count>2</count>
 						<item_version>0</item_version>
-						<item>78</item>
-						<item>64</item>
+						<item>100</item>
+						<item>82</item>
 					</second>
 				</item>
 			</second>
@@ -3227,7 +4071,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>63</item>
+						<item>81</item>
 					</second>
 				</item>
 			</second>
@@ -3242,7 +4086,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>77</item>
+						<item>99</item>
 					</second>
 				</item>
 			</second>
@@ -3257,8 +4101,8 @@
 					<second>
 						<count>2</count>
 						<item_version>0</item_version>
-						<item>81</item>
-						<item>67</item>
+						<item>103</item>
+						<item>85</item>
 					</second>
 				</item>
 			</second>
@@ -3273,7 +4117,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>68</item>
+						<item>86</item>
 					</second>
 				</item>
 			</second>
@@ -3288,13 +4132,13 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>82</item>
+						<item>104</item>
 					</second>
 				</item>
 			</second>
 		</item>
 		<item>
-			<first>rx_valid</first>
+			<first>rx_tlast</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3303,136 +4147,14 @@
 					<second>
 						<count>2</count>
 						<item_version>0</item_version>
-						<item>80</item>
-						<item>66</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>rx_valid_a</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>read</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>65</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>rx_valid_b</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>read</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>79</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>switch_select</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>read</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>60</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>tx_data</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>read</first>
-					<second>
-						<count>2</count>
-						<item_version>0</item_version>
-						<item>83</item>
-						<item>69</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>tx_data_a</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>write</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>70</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>tx_data_b</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>write</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>84</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>tx_ready</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>write</first>
-					<second>
-						<count>2</count>
-						<item_version>0</item_version>
+						<item>106</item>
 						<item>88</item>
-						<item>74</item>
 					</second>
 				</item>
 			</second>
 		</item>
 		<item>
-			<first>tx_ready_a</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>read</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>73</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>tx_ready_b</first>
+			<first>rx_tlast_a</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3447,6 +4169,220 @@
 			</second>
 		</item>
 		<item>
+			<first>rx_tlast_b</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>105</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>rx_valid</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>2</count>
+						<item_version>0</item_version>
+						<item>102</item>
+						<item>84</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>rx_valid_a</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>83</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>rx_valid_b</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>101</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>switch_select</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>78</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_data</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>2</count>
+						<item_version>0</item_version>
+						<item>107</item>
+						<item>89</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_data_a</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>90</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_data_b</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>108</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_ready</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>2</count>
+						<item_version>0</item_version>
+						<item>112</item>
+						<item>94</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_ready_a</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>93</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_ready_b</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>111</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_tlast</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>read</first>
+					<second>
+						<count>2</count>
+						<item_version>0</item_version>
+						<item>113</item>
+						<item>95</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_tlast_a</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>96</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>tx_tlast_b</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>write</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>114</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
 			<first>tx_valid</first>
 			<second>
 				<count>1</count>
@@ -3456,8 +4392,8 @@
 					<second>
 						<count>2</count>
 						<item_version>0</item_version>
-						<item>85</item>
-						<item>71</item>
+						<item>109</item>
+						<item>91</item>
 					</second>
 				</item>
 			</second>
@@ -3472,7 +4408,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>72</item>
+						<item>92</item>
 					</second>
 				</item>
 			</second>
@@ -3487,7 +4423,7 @@
 					<second>
 						<count>1</count>
 						<item_version>0</item_version>
-						<item>86</item>
+						<item>110</item>
 					</second>
 				</item>
 			</second>

@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Tue Mar 31 18:04:55 2015
+//Date        : Tue Mar 31 19:30:54 2015
 //Host        : CRS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System.bd
 //Design      : TAIGA_System
@@ -168,11 +168,14 @@ module TAIGA_System
   wire axi_fifo_IOI_dequeue_axi_str_rxd_tready;
   wire axi_fifo_IOI_dequeue_interrupt;
   wire [31:0]axi_fifo_IOI_enqueue_axi_str_txd_tdata;
+  wire axi_fifo_IOI_enqueue_axi_str_txd_tlast;
   wire axi_fifo_IOI_enqueue_axi_str_txd_tvalid;
   wire [31:0]axi_fifo_backup_dequeue_AXI_STR_TXD_TDATA;
+  wire axi_fifo_backup_dequeue_AXI_STR_TXD_TLAST;
   wire axi_fifo_backup_dequeue_AXI_STR_TXD_TREADY;
   wire axi_fifo_backup_dequeue_AXI_STR_TXD_TVALID;
   wire [31:0]axi_fifo_production_AXI_STR_TXD_TDATA;
+  wire axi_fifo_production_AXI_STR_TXD_TLAST;
   wire axi_fifo_production_AXI_STR_TXD_TREADY;
   wire axi_fifo_production_AXI_STR_TXD_TVALID;
   wire [3:0]axi_gpio_IOI_in_GPIO2_TRI_I;
@@ -460,16 +463,20 @@ module TAIGA_System
   wire [31:0]backup_controller_interrupt_ADDRESS;
   wire backup_controller_interrupt_INTERRUPT;
   wire [31:0]fifo_IOI_to_backup_M_AXIS_TDATA;
+  wire fifo_IOI_to_backup_M_AXIS_TLAST;
   wire fifo_IOI_to_backup_M_AXIS_TREADY;
   wire fifo_IOI_to_backup_M_AXIS_TVALID;
   wire fifo_IOI_to_backup_s_axis_tready;
   wire [31:0]fifo_IOI_to_production_M_AXIS_TDATA;
+  wire fifo_IOI_to_production_M_AXIS_TLAST;
   wire fifo_IOI_to_production_M_AXIS_TREADY;
   wire fifo_IOI_to_production_M_AXIS_TVALID;
   wire fifo_IOI_to_production_s_axis_tready;
   wire [31:0]fifo_backup_to_IOI_m_axis_tdata;
+  wire fifo_backup_to_IOI_m_axis_tlast;
   wire fifo_backup_to_IOI_m_axis_tvalid;
   wire [31:0]fifo_production_to_IOI_m_axis_tdata;
+  wire fifo_production_to_IOI_m_axis_tlast;
   wire fifo_production_to_IOI_m_axis_tvalid;
   wire io1_i_1;
   wire mdm_1_debug_sys_rst;
@@ -542,6 +549,9 @@ module TAIGA_System
   wire [0:0]queue_multiplexer_0_tx_ready;
   wire [0:0]queue_multiplexer_0_tx_valid_a;
   wire [0:0]queue_multiplexer_0_tx_valid_b;
+  wire [0:0]queue_multiplexer_rx_tlast;
+  wire [0:0]queue_multiplexer_tx_tlast_a;
+  wire [0:0]queue_multiplexer_tx_tlast_b;
   wire [0:0]rst_production_controller_100M_bus_struct_reset;
   wire [0:0]rst_production_controller_100M_interconnect_aresetn;
   wire rst_production_controller_100M_mb_reset;
@@ -625,7 +635,7 @@ VCC VCC
        (.P(VCC_1));
 TAIGA_System_axi_fifo_mm_s_0_0 axi_fifo_IOI_dequeue
        (.axi_str_rxd_tdata(queue_multiplexer_0_rx_data),
-        .axi_str_rxd_tlast(GND_1),
+        .axi_str_rxd_tlast(queue_multiplexer_rx_tlast),
         .axi_str_rxd_tready(axi_fifo_IOI_dequeue_axi_str_rxd_tready),
         .axi_str_rxd_tvalid(queue_multiplexer_0_rx_valid),
         .interrupt(axi_fifo_IOI_dequeue_interrupt),
@@ -650,6 +660,7 @@ TAIGA_System_axi_fifo_mm_s_0_0 axi_fifo_IOI_dequeue
         .s_axi_wvalid(axi_periph_IOI_M05_AXI_WVALID));
 TAIGA_System_axi_fifo_IOI_dequeue_2 axi_fifo_IOI_enqueue
        (.axi_str_txd_tdata(axi_fifo_IOI_enqueue_axi_str_txd_tdata),
+        .axi_str_txd_tlast(axi_fifo_IOI_enqueue_axi_str_txd_tlast),
         .axi_str_txd_tready(queue_multiplexer_0_tx_ready),
         .axi_str_txd_tvalid(axi_fifo_IOI_enqueue_axi_str_txd_tvalid),
         .s_axi_aclk(backup_controller_Clk),
@@ -673,10 +684,11 @@ TAIGA_System_axi_fifo_IOI_dequeue_2 axi_fifo_IOI_enqueue
         .s_axi_wvalid(axi_periph_IOI_M06_AXI_WVALID));
 TAIGA_System_axi_fifo_IOI_dequeue_1 axi_fifo_backup
        (.axi_str_rxd_tdata(fifo_IOI_to_backup_M_AXIS_TDATA),
-        .axi_str_rxd_tlast(GND_1),
+        .axi_str_rxd_tlast(fifo_IOI_to_backup_M_AXIS_TLAST),
         .axi_str_rxd_tready(fifo_IOI_to_backup_M_AXIS_TREADY),
         .axi_str_rxd_tvalid(fifo_IOI_to_backup_M_AXIS_TVALID),
         .axi_str_txd_tdata(axi_fifo_backup_dequeue_AXI_STR_TXD_TDATA),
+        .axi_str_txd_tlast(axi_fifo_backup_dequeue_AXI_STR_TXD_TLAST),
         .axi_str_txd_tready(axi_fifo_backup_dequeue_AXI_STR_TXD_TREADY),
         .axi_str_txd_tvalid(axi_fifo_backup_dequeue_AXI_STR_TXD_TVALID),
         .s_axi_aclk(backup_controller_Clk),
@@ -700,10 +712,11 @@ TAIGA_System_axi_fifo_IOI_dequeue_1 axi_fifo_backup
         .s_axi_wvalid(axi_periph_backup_controller_M03_AXI_WVALID));
 TAIGA_System_axi_fifo_IOI_dequeue_0 axi_fifo_production
        (.axi_str_rxd_tdata(fifo_IOI_to_production_M_AXIS_TDATA),
-        .axi_str_rxd_tlast(GND_1),
+        .axi_str_rxd_tlast(fifo_IOI_to_production_M_AXIS_TLAST),
         .axi_str_rxd_tready(fifo_IOI_to_production_M_AXIS_TREADY),
         .axi_str_rxd_tvalid(fifo_IOI_to_production_M_AXIS_TVALID),
         .axi_str_txd_tdata(axi_fifo_production_AXI_STR_TXD_TDATA),
+        .axi_str_txd_tlast(axi_fifo_production_AXI_STR_TXD_TLAST),
         .axi_str_txd_tready(axi_fifo_production_AXI_STR_TXD_TREADY),
         .axi_str_txd_tvalid(axi_fifo_production_AXI_STR_TXD_TVALID),
         .s_axi_aclk(backup_controller_Clk),
@@ -1434,41 +1447,49 @@ backup_controller_local_memory_imp_2FVAXH backup_controller_local_memory
         .LMB_Rst(rst_production_controller_100M_bus_struct_reset));
 TAIGA_System_fifo_IOI_to_production_0 fifo_IOI_to_backup
        (.m_axis_tdata(fifo_IOI_to_backup_M_AXIS_TDATA),
+        .m_axis_tlast(fifo_IOI_to_backup_M_AXIS_TLAST),
         .m_axis_tready(fifo_IOI_to_backup_M_AXIS_TREADY),
         .m_axis_tvalid(fifo_IOI_to_backup_M_AXIS_TVALID),
         .s_aclk(backup_controller_Clk),
         .s_aresetn(rst_production_controller_100M_peripheral_aresetn),
         .s_axis_tdata(queue_multiplexer_0_tx_data_b),
+        .s_axis_tlast(queue_multiplexer_tx_tlast_b),
         .s_axis_tready(fifo_IOI_to_backup_s_axis_tready),
         .s_axis_tuser({GND_1,GND_1,GND_1,GND_1}),
         .s_axis_tvalid(queue_multiplexer_0_tx_valid_b));
 TAIGA_System_fifo_production_to_IOI_0 fifo_IOI_to_production
        (.m_axis_tdata(fifo_IOI_to_production_M_AXIS_TDATA),
+        .m_axis_tlast(fifo_IOI_to_production_M_AXIS_TLAST),
         .m_axis_tready(fifo_IOI_to_production_M_AXIS_TREADY),
         .m_axis_tvalid(fifo_IOI_to_production_M_AXIS_TVALID),
         .s_aclk(backup_controller_Clk),
         .s_aresetn(rst_production_controller_100M_peripheral_aresetn),
         .s_axis_tdata(queue_multiplexer_0_tx_data_a),
+        .s_axis_tlast(queue_multiplexer_tx_tlast_a),
         .s_axis_tready(fifo_IOI_to_production_s_axis_tready),
         .s_axis_tuser({GND_1,GND_1,GND_1,GND_1}),
         .s_axis_tvalid(queue_multiplexer_0_tx_valid_a));
 TAIGA_System_fifo_production_to_IOI_1 fifo_backup_to_IOI
        (.m_axis_tdata(fifo_backup_to_IOI_m_axis_tdata),
+        .m_axis_tlast(fifo_backup_to_IOI_m_axis_tlast),
         .m_axis_tready(queue_multiplexer_0_rx_ready_b),
         .m_axis_tvalid(fifo_backup_to_IOI_m_axis_tvalid),
         .s_aclk(backup_controller_Clk),
         .s_aresetn(rst_production_controller_100M_peripheral_aresetn),
         .s_axis_tdata(axi_fifo_backup_dequeue_AXI_STR_TXD_TDATA),
+        .s_axis_tlast(axi_fifo_backup_dequeue_AXI_STR_TXD_TLAST),
         .s_axis_tready(axi_fifo_backup_dequeue_AXI_STR_TXD_TREADY),
         .s_axis_tuser({GND_1,GND_1,GND_1,GND_1}),
         .s_axis_tvalid(axi_fifo_backup_dequeue_AXI_STR_TXD_TVALID));
 TAIGA_System_fifo_generator_0_0 fifo_production_to_IOI
        (.m_axis_tdata(fifo_production_to_IOI_m_axis_tdata),
+        .m_axis_tlast(fifo_production_to_IOI_m_axis_tlast),
         .m_axis_tready(queue_multiplexer_0_rx_ready_a),
         .m_axis_tvalid(fifo_production_to_IOI_m_axis_tvalid),
         .s_aclk(backup_controller_Clk),
         .s_aresetn(rst_production_controller_100M_peripheral_aresetn),
         .s_axis_tdata(axi_fifo_production_AXI_STR_TXD_TDATA),
+        .s_axis_tlast(axi_fifo_production_AXI_STR_TXD_TLAST),
         .s_axis_tready(axi_fifo_production_AXI_STR_TXD_TREADY),
         .s_axis_tuser({GND_1,GND_1,GND_1,GND_1}),
         .s_axis_tvalid(axi_fifo_production_AXI_STR_TXD_TVALID));
@@ -1586,6 +1607,9 @@ TAIGA_System_queue_multiplexer_0_0 queue_multiplexer
         .rx_ready(axi_fifo_IOI_dequeue_axi_str_rxd_tready),
         .rx_ready_a(queue_multiplexer_0_rx_ready_a),
         .rx_ready_b(queue_multiplexer_0_rx_ready_b),
+        .rx_tlast(queue_multiplexer_rx_tlast),
+        .rx_tlast_a(fifo_production_to_IOI_m_axis_tlast),
+        .rx_tlast_b(fifo_backup_to_IOI_m_axis_tlast),
         .rx_valid(queue_multiplexer_0_rx_valid),
         .rx_valid_a(fifo_production_to_IOI_m_axis_tvalid),
         .rx_valid_b(fifo_backup_to_IOI_m_axis_tvalid),
@@ -1596,6 +1620,9 @@ TAIGA_System_queue_multiplexer_0_0 queue_multiplexer
         .tx_ready(queue_multiplexer_0_tx_ready),
         .tx_ready_a(fifo_IOI_to_production_s_axis_tready),
         .tx_ready_b(fifo_IOI_to_backup_s_axis_tready),
+        .tx_tlast(axi_fifo_IOI_enqueue_axi_str_txd_tlast),
+        .tx_tlast_a(queue_multiplexer_tx_tlast_a),
+        .tx_tlast_b(queue_multiplexer_tx_tlast_b),
         .tx_valid(axi_fifo_IOI_enqueue_axi_str_txd_tvalid),
         .tx_valid_a(queue_multiplexer_0_tx_valid_a),
         .tx_valid_b(queue_multiplexer_0_tx_valid_b));

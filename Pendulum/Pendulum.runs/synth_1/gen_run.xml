@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1427839507">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1427844662">
   <File Type="VDS-TIMING-PB" Name="TAIGA_System_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="TAIGA_System_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="TAIGA_System_wrapper.dcp"/>
@@ -28,6 +28,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_queue_multiplexer_0_0/TAIGA_System_queue_multiplexer_0_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="TAIGA_System_wrapper"/>

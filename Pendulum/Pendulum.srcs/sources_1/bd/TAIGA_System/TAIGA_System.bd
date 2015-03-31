@@ -254,12 +254,12 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_fifo_generator_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="INTERFACE_TYPE">AXI_STREAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="TDATA_NUM_BYTES">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">true</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_TKEEP">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wrch">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_rach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">512</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">1024</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -269,12 +269,12 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_fifo_production_to_IOI_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="INTERFACE_TYPE">AXI_STREAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="TDATA_NUM_BYTES">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">true</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_TKEEP">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wrch">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_rach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">512</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">1024</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -284,12 +284,12 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_fifo_IOI_to_production_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="INTERFACE_TYPE">AXI_STREAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="TDATA_NUM_BYTES">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">true</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_TKEEP">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wrch">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_rach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">512</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">1024</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -299,12 +299,12 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_fifo_production_to_IOI_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="INTERFACE_TYPE">AXI_STREAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="TDATA_NUM_BYTES">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_TLAST">true</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_TKEEP">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_wrch">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="FIFO_Implementation_rach">Common_Clock_Distributed_RAM</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">512</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Input_Depth_axis">1024</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -342,13 +342,6 @@
           <spirit:configurableElementValue spirit:referenceId="C_DATA_INTERFACE_TYPE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_TX_DATA">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_RX_DATA">0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>queue_multiplexer</spirit:instanceName>
-        <spirit:componentRef spirit:library="hls" spirit:name="queue_multiplexer" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_queue_multiplexer_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -443,6 +436,13 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_axi_uartlite_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_BAUDRATE">921600</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>queue_multiplexer</spirit:instanceName>
+        <spirit:componentRef spirit:library="hls" spirit:name="queue_multiplexer" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_queue_multiplexer_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -869,6 +869,36 @@
         <spirit:name>axi_supervisory_uart_tx</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_supervisory_uart" spirit:portRef="tx"/>
         <spirit:externalPortReference spirit:portRef="ioi_uart_tx"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>fifo_production_to_IOI_m_axis_tlast</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="fifo_production_to_IOI" spirit:portRef="m_axis_tlast"/>
+        <spirit:internalPortReference spirit:componentRef="queue_multiplexer" spirit:portRef="rx_tlast_a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>fifo_backup_to_IOI_m_axis_tlast</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="fifo_backup_to_IOI" spirit:portRef="m_axis_tlast"/>
+        <spirit:internalPortReference spirit:componentRef="queue_multiplexer" spirit:portRef="rx_tlast_b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>queue_multiplexer_rx_tlast</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="queue_multiplexer" spirit:portRef="rx_tlast"/>
+        <spirit:internalPortReference spirit:componentRef="axi_fifo_IOI_dequeue" spirit:portRef="axi_str_rxd_tlast"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>queue_multiplexer_tx_tlast_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="queue_multiplexer" spirit:portRef="tx_tlast_a"/>
+        <spirit:internalPortReference spirit:componentRef="fifo_IOI_to_production" spirit:portRef="s_axis_tlast"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>queue_multiplexer_tx_tlast_b</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="queue_multiplexer" spirit:portRef="tx_tlast_b"/>
+        <spirit:internalPortReference spirit:componentRef="fifo_IOI_to_backup" spirit:portRef="s_axis_tlast"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_fifo_IOI_enqueue_axi_str_txd_tlast</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_fifo_IOI_enqueue" spirit:portRef="axi_str_txd_tlast"/>
+        <spirit:internalPortReference spirit:componentRef="queue_multiplexer" spirit:portRef="tx_tlast"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

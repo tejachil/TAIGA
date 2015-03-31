@@ -2372,21 +2372,27 @@ void queue_multiplexer(
  volatile int *rx_data_a,
  volatile bool *rx_ready_a,
  volatile bool *rx_valid_a,
+ volatile bool *rx_tlast_a,
  volatile int *rx_data_b,
  volatile bool *rx_ready_b,
  volatile bool *rx_valid_b,
+ volatile bool *rx_tlast_b,
  volatile int *rx_data,
  volatile bool *rx_ready,
  volatile bool *rx_valid,
+ volatile bool *rx_tlast,
  volatile int *tx_data_a,
  volatile bool *tx_ready_a,
  volatile bool *tx_valid_a,
+ volatile bool *tx_tlast_a,
  volatile int *tx_data_b,
  volatile bool *tx_ready_b,
  volatile bool *tx_valid_b,
+ volatile bool *tx_tlast_b,
  volatile int *tx_data,
  volatile bool *tx_ready,
- volatile bool *tx_valid
+ volatile bool *tx_valid,
+ volatile bool *tx_tlast
 ){
 
 _ssdm_op_SpecInterface(switch_select, "ap_none", 0, 0, 0, 0, "", "", "");
@@ -2394,22 +2400,28 @@ _ssdm_op_SpecInterface(switch_select, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_data_a, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_ready_a, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_valid_a, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(rx_tlast_a, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_data_b, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_ready_b, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_valid_b, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(rx_tlast_b, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_data, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_ready, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(rx_valid, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(rx_tlast, "ap_none", 0, 0, 0, 0, "", "", "");
 
 _ssdm_op_SpecInterface(tx_data_a, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_ready_a, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_valid_a, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(tx_tlast_a, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_data_b, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_ready_b, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_valid_b, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(tx_tlast_b, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_data, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_ready, "ap_none", 0, 0, 0, 0, "", "", "");
 _ssdm_op_SpecInterface(tx_valid, "ap_none", 0, 0, 0, 0, "", "", "");
+_ssdm_op_SpecInterface(tx_tlast, "ap_none", 0, 0, 0, 0, "", "", "");
 
 _ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, 0, 0, "", "", "");
 
@@ -2417,19 +2429,23 @@ _ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, 0, 0, "", "", "");
   *rx_data = *rx_data_b;
   *rx_valid = *rx_valid_b;
   *rx_ready_b = *rx_ready;
+  *rx_tlast = *rx_tlast_b;
 
   *tx_data_b = *tx_data;
   *tx_valid_b = *tx_valid;
   *tx_ready = *tx_ready_b;
+  *tx_tlast_b = *tx_tlast;
  }
  else{
   *rx_data = *rx_data_a;
   *rx_valid = *rx_valid_a;
   *rx_ready_a = *rx_ready;
+  *rx_tlast = *rx_tlast_a;
 
   *tx_data_a = *tx_data;
   *tx_valid_a = *tx_valid;
   *tx_ready = *tx_ready_a;
+  *tx_tlast_a = *tx_tlast;
  }
 
 }

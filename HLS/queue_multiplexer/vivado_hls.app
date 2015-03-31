@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="queue_multiplexer" name="queue_multiplexer">
+<project xmlns="com.autoesl.autopilot.project" name="queue_multiplexer" top="queue_multiplexer">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

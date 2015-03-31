@@ -53,8 +53,8 @@ void production_control_timer(xTimerHandle pxTimer){
 
 	static int buffer2[5];
 		int test = dequeue(buffer2);
-		if(test)
-			xil_printf("%d %d\n", test, buffer2[0]);
+		//if(test)
+			//xil_printf("%d %d\n", test, buffer2[0]);
 
 	/*if(plantParams.iteration > 10000)	return;
 

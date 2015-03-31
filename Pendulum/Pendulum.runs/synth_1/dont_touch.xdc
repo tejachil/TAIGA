@@ -242,7 +242,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_2/TAIGA_System_axi_fifo_IOI_dequeue_2_ooc.xdc
 
-# XDC: ipshared/xilinx.com/queue_multiplexer_v1_0/89731f10/constraints/queue_multiplexer_ooc.xdc
+# XDC: ipshared/xilinx.com/queue_multiplexer_v1_0/680e8b2b/constraints/queue_multiplexer_ooc.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_microblaze_0_1 || ORIG_REF_NAME==TAIGA_System_microblaze_0_1}] {/U0 }]/U0 ]]

@@ -15,26 +15,32 @@
 namespace ap_rtl {
 
 struct queue_multiplexer : public sc_module {
-    // Port declarations 19
+    // Port declarations 25
     sc_in< sc_logic > switch_select;
     sc_in< sc_lv<32> > rx_data_a;
     sc_out< sc_logic > rx_ready_a;
     sc_in< sc_logic > rx_valid_a;
+    sc_in< sc_logic > rx_tlast_a;
     sc_in< sc_lv<32> > rx_data_b;
     sc_out< sc_logic > rx_ready_b;
     sc_in< sc_logic > rx_valid_b;
+    sc_in< sc_logic > rx_tlast_b;
     sc_out< sc_lv<32> > rx_data;
     sc_in< sc_logic > rx_ready;
     sc_out< sc_logic > rx_valid;
+    sc_out< sc_logic > rx_tlast;
     sc_out< sc_lv<32> > tx_data_a;
     sc_in< sc_logic > tx_ready_a;
     sc_out< sc_logic > tx_valid_a;
+    sc_out< sc_logic > tx_tlast_a;
     sc_out< sc_lv<32> > tx_data_b;
     sc_in< sc_logic > tx_ready_b;
     sc_out< sc_logic > tx_valid_b;
+    sc_out< sc_logic > tx_tlast_b;
     sc_in< sc_lv<32> > tx_data;
     sc_out< sc_logic > tx_ready;
     sc_in< sc_logic > tx_valid;
+    sc_in< sc_logic > tx_tlast;
     // Port declarations for the virtual clock. 
     sc_in_clk ap_virtual_clock;
 
@@ -49,7 +55,7 @@ struct queue_multiplexer : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    sc_signal< sc_lv<1> > switch_select_read_read_fu_62_p2;
+    sc_signal< sc_lv<1> > switch_select_read_read_fu_74_p2;
     static const bool ap_true;
     static const sc_lv<1> ap_const_lv1_0;
     static const sc_logic ap_const_logic_1;
@@ -58,11 +64,14 @@ struct queue_multiplexer : public sc_module {
     void thread_rx_data();
     void thread_rx_ready_a();
     void thread_rx_ready_b();
+    void thread_rx_tlast();
     void thread_rx_valid();
-    void thread_switch_select_read_read_fu_62_p2();
+    void thread_switch_select_read_read_fu_74_p2();
     void thread_tx_data_a();
     void thread_tx_data_b();
     void thread_tx_ready();
+    void thread_tx_tlast_a();
+    void thread_tx_tlast_b();
     void thread_tx_valid_a();
     void thread_tx_valid_b();
     void thread_hdltv_gen();

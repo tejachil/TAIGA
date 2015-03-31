@@ -22,44 +22,57 @@ queue_multiplexer::queue_multiplexer(sc_module_name name) : sc_module(name), mVc
     SC_METHOD(thread_rx_data);
     sensitive << ( rx_data_a );
     sensitive << ( rx_data_b );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_rx_ready_a);
     sensitive << ( rx_ready );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_rx_ready_b);
     sensitive << ( rx_ready );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
+
+    SC_METHOD(thread_rx_tlast);
+    sensitive << ( rx_tlast_a );
+    sensitive << ( rx_tlast_b );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_rx_valid);
     sensitive << ( rx_valid_a );
     sensitive << ( rx_valid_b );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
-    SC_METHOD(thread_switch_select_read_read_fu_62_p2);
+    SC_METHOD(thread_switch_select_read_read_fu_74_p2);
     sensitive << ( switch_select );
 
     SC_METHOD(thread_tx_data_a);
     sensitive << ( tx_data );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_tx_data_b);
     sensitive << ( tx_data );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_tx_ready);
     sensitive << ( tx_ready_a );
     sensitive << ( tx_ready_b );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
+
+    SC_METHOD(thread_tx_tlast_a);
+    sensitive << ( tx_tlast );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
+
+    SC_METHOD(thread_tx_tlast_b);
+    sensitive << ( tx_tlast );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_tx_valid_a);
     sensitive << ( tx_valid );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_METHOD(thread_tx_valid_b);
     sensitive << ( tx_valid );
-    sensitive << ( switch_select_read_read_fu_62_p2 );
+    sensitive << ( switch_select_read_read_fu_74_p2 );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_virtual_clock.pos() );
@@ -76,24 +89,30 @@ queue_multiplexer::queue_multiplexer(sc_module_name name) : sc_module(name), mVc
     sc_trace(mVcdFile, rx_data_a, "(port)rx_data_a");
     sc_trace(mVcdFile, rx_ready_a, "(port)rx_ready_a");
     sc_trace(mVcdFile, rx_valid_a, "(port)rx_valid_a");
+    sc_trace(mVcdFile, rx_tlast_a, "(port)rx_tlast_a");
     sc_trace(mVcdFile, rx_data_b, "(port)rx_data_b");
     sc_trace(mVcdFile, rx_ready_b, "(port)rx_ready_b");
     sc_trace(mVcdFile, rx_valid_b, "(port)rx_valid_b");
+    sc_trace(mVcdFile, rx_tlast_b, "(port)rx_tlast_b");
     sc_trace(mVcdFile, rx_data, "(port)rx_data");
     sc_trace(mVcdFile, rx_ready, "(port)rx_ready");
     sc_trace(mVcdFile, rx_valid, "(port)rx_valid");
+    sc_trace(mVcdFile, rx_tlast, "(port)rx_tlast");
     sc_trace(mVcdFile, tx_data_a, "(port)tx_data_a");
     sc_trace(mVcdFile, tx_ready_a, "(port)tx_ready_a");
     sc_trace(mVcdFile, tx_valid_a, "(port)tx_valid_a");
+    sc_trace(mVcdFile, tx_tlast_a, "(port)tx_tlast_a");
     sc_trace(mVcdFile, tx_data_b, "(port)tx_data_b");
     sc_trace(mVcdFile, tx_ready_b, "(port)tx_ready_b");
     sc_trace(mVcdFile, tx_valid_b, "(port)tx_valid_b");
+    sc_trace(mVcdFile, tx_tlast_b, "(port)tx_tlast_b");
     sc_trace(mVcdFile, tx_data, "(port)tx_data");
     sc_trace(mVcdFile, tx_ready, "(port)tx_ready");
     sc_trace(mVcdFile, tx_valid, "(port)tx_valid");
+    sc_trace(mVcdFile, tx_tlast, "(port)tx_tlast");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, switch_select_read_read_fu_62_p2, "switch_select_read_read_fu_62_p2");
+    sc_trace(mVcdFile, switch_select_read_read_fu_74_p2, "switch_select_read_read_fu_74_p2");
 #endif
 
     }
@@ -112,9 +131,9 @@ queue_multiplexer::~queue_multiplexer() {
 }
 
 void queue_multiplexer::thread_rx_data() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_62_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
         rx_data = rx_data_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_62_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
         rx_data = rx_data_a.read();
     } else {
         rx_data = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
@@ -129,18 +148,28 @@ void queue_multiplexer::thread_rx_ready_b() {
     rx_ready_b = rx_ready.read();
 }
 
+void queue_multiplexer::thread_rx_tlast() {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+        rx_tlast = rx_tlast_b.read();
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+        rx_tlast = rx_tlast_a.read();
+    } else {
+        rx_tlast = sc_logic('X');
+    }
+}
+
 void queue_multiplexer::thread_rx_valid() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_62_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
         rx_valid = rx_valid_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_62_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
         rx_valid = rx_valid_a.read();
     } else {
         rx_valid = sc_logic('X');
     }
 }
 
-void queue_multiplexer::thread_switch_select_read_read_fu_62_p2() {
-    switch_select_read_read_fu_62_p2 =  (sc_lv<1>) (switch_select.read());
+void queue_multiplexer::thread_switch_select_read_read_fu_74_p2() {
+    switch_select_read_read_fu_74_p2 =  (sc_lv<1>) (switch_select.read());
 }
 
 void queue_multiplexer::thread_tx_data_a() {
@@ -152,13 +181,21 @@ void queue_multiplexer::thread_tx_data_b() {
 }
 
 void queue_multiplexer::thread_tx_ready() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_62_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
         tx_ready = tx_ready_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_62_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
         tx_ready = tx_ready_a.read();
     } else {
         tx_ready = sc_logic('X');
     }
+}
+
+void queue_multiplexer::thread_tx_tlast_a() {
+    tx_tlast_a = tx_tlast.read();
+}
+
+void queue_multiplexer::thread_tx_tlast_b() {
+    tx_tlast_b = tx_tlast.read();
 }
 
 void queue_multiplexer::thread_tx_valid_a() {
@@ -185,21 +222,27 @@ void queue_multiplexer::thread_hdltv_gen() {
         mHdltvinHandle << " , " <<  " \"rx_data_a\" :  \"" << rx_data_a.read() << "\" ";
         mHdltvoutHandle << mComma << "{"  <<  " \"rx_ready_a\" :  \"" << rx_ready_a.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"rx_valid_a\" :  \"" << rx_valid_a.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"rx_tlast_a\" :  \"" << rx_tlast_a.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"rx_data_b\" :  \"" << rx_data_b.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"rx_ready_b\" :  \"" << rx_ready_b.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"rx_valid_b\" :  \"" << rx_valid_b.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"rx_tlast_b\" :  \"" << rx_tlast_b.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"rx_data\" :  \"" << rx_data.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"rx_ready\" :  \"" << rx_ready.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"rx_valid\" :  \"" << rx_valid.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"rx_tlast\" :  \"" << rx_tlast.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"tx_data_a\" :  \"" << tx_data_a.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"tx_ready_a\" :  \"" << tx_ready_a.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"tx_valid_a\" :  \"" << tx_valid_a.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"tx_tlast_a\" :  \"" << tx_tlast_a.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"tx_data_b\" :  \"" << tx_data_b.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"tx_ready_b\" :  \"" << tx_ready_b.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"tx_valid_b\" :  \"" << tx_valid_b.read() << "\" ";
+        mHdltvoutHandle << " , " <<  " \"tx_tlast_b\" :  \"" << tx_tlast_b.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"tx_data\" :  \"" << tx_data.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"tx_ready\" :  \"" << tx_ready.read() << "\" ";
         mHdltvinHandle << " , " <<  " \"tx_valid\" :  \"" << tx_valid.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"tx_tlast\" :  \"" << tx_tlast.read() << "\" ";
         mHdltvinHandle << "}" << std::endl;
         mHdltvoutHandle << "}" << std::endl;
         ap_cycleNo++;

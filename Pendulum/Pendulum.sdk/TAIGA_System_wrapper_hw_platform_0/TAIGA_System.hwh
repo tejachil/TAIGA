@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 31 18:04:53 2015" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 31 19:30:50 2015" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="TAIGA_System_imp" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -781,7 +781,11 @@
             <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_ready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef"/>
+        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef" SIGNAME="queue_multiplexer_rx_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="axi_str_rxd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="queue_multiplexer_rx_data">
           <CONNECTIONS>
             <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_data"/>
@@ -975,7 +979,11 @@
             <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_ready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef"/>
+        <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef" SIGNAME="axi_fifo_IOI_enqueue_axi_str_txd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="axi_str_txd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_IOI_enqueue_axi_str_txd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_data"/>
@@ -1166,7 +1174,11 @@
             <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef"/>
+        <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_txd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="axi_str_txd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_txd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="s_axis_tdata"/>
@@ -1183,7 +1195,11 @@
             <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef"/>
+        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_rxd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="m_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="axi_str_rxd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_rxd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="m_axis_tdata"/>
@@ -1382,7 +1398,11 @@
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef"/>
+        <PORT DIR="O" NAME="axi_str_txd_tlast" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="axi_str_txd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="s_axis_tdata"/>
@@ -1399,7 +1419,11 @@
             <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef"/>
+        <PORT DIR="I" NAME="axi_str_rxd_tlast" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="axi_str_rxd_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="m_axis_tdata"/>
@@ -8051,7 +8075,7 @@
         <PARAMETER NAME="C_HAS_AXIS_TDEST" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TUSER" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TREADY" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TSTRB" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TKEEP" VALUE="0"/>
         <PARAMETER NAME="C_AXIS_TDATA_WIDTH" VALUE="32"/>
@@ -8083,7 +8107,7 @@
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WRCH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RACH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RDCH" VALUE="1kx36"/>
-        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="512x36"/>
+        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="1kx36"/>
         <PARAMETER NAME="C_USE_ECC_WACH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WRCH" VALUE="0"/>
@@ -8101,19 +8125,19 @@
         <PARAMETER NAME="C_DIN_WIDTH_WRCH" VALUE="2"/>
         <PARAMETER NAME="C_DIN_WIDTH_RACH" VALUE="32"/>
         <PARAMETER NAME="C_DIN_WIDTH_RDCH" VALUE="64"/>
-        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="36"/>
+        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="37"/>
         <PARAMETER NAME="C_WR_DEPTH_WACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_WDCH" VALUE="1024"/>
         <PARAMETER NAME="C_WR_DEPTH_WRCH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RDCH" VALUE="1024"/>
-        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="512"/>
+        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="1024"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WDCH" VALUE="10"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WRCH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RDCH" VALUE="10"/>
-        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="9"/>
+        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="10"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WACH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WRCH" VALUE="0"/>
@@ -8137,7 +8161,7 @@
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WRCH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RACH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RDCH" VALUE="1023"/>
-        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="511"/>
+        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WRCH" VALUE="0"/>
@@ -8149,7 +8173,7 @@
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH" VALUE="1022"/>
-        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="510"/>
+        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="1022"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WRCH" VALUE="0"/>
@@ -8223,7 +8247,7 @@
         <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
         <PARAMETER NAME="TUSER_WIDTH" VALUE="4"/>
         <PARAMETER NAME="Enable_TREADY" VALUE="true"/>
-        <PARAMETER NAME="Enable_TLAST" VALUE="false"/>
+        <PARAMETER NAME="Enable_TLAST" VALUE="true"/>
         <PARAMETER NAME="HAS_TSTRB" VALUE="false"/>
         <PARAMETER NAME="TSTRB_WIDTH" VALUE="4"/>
         <PARAMETER NAME="HAS_TKEEP" VALUE="false"/>
@@ -8294,12 +8318,12 @@
         <PARAMETER NAME="Enable_ECC_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Sbit_Error_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Dbit_Error_axis" VALUE="false"/>
-        <PARAMETER NAME="Input_Depth_axis" VALUE="512"/>
+        <PARAMETER NAME="Input_Depth_axis" VALUE="1024"/>
         <PARAMETER NAME="Enable_Data_Counts_axis" VALUE="false"/>
         <PARAMETER NAME="Programmable_Full_Type_axis" VALUE="No_Programmable_Full_Threshold"/>
-        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="511"/>
+        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="1023"/>
         <PARAMETER NAME="Programmable_Empty_Type_axis" VALUE="No_Programmable_Empty_Threshold"/>
-        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="510"/>
+        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="1022"/>
         <PARAMETER NAME="Register_Slice_Mode_wach" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wdch" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wrch" VALUE="Fully_Registered"/>
@@ -8346,6 +8370,11 @@
             <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_data_b"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="queue_multiplexer_tx_tlast_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_tlast_b"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_rxd_tvalid">
           <CONNECTIONS>
@@ -8362,12 +8391,18 @@
             <CONNECTION INSTANCE="axi_fifo_backup" PORT="axi_str_rxd_tdata"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_rxd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_fifo_backup" PORT="axi_str_rxd_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="3" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="fifo_IOI_to_backup_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR">
           <PORTMAPS>
             <PORTMAP PHYSICAL="m_axis_tdata"/>
+            <PORTMAP PHYSICAL="m_axis_tlast"/>
             <PORTMAP PHYSICAL="m_axis_tready"/>
             <PORTMAP PHYSICAL="m_axis_tuser"/>
             <PORTMAP PHYSICAL="m_axis_tvalid"/>
@@ -8376,6 +8411,7 @@
         <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="s_axis_tdata"/>
+            <PORTMAP PHYSICAL="s_axis_tlast"/>
             <PORTMAP PHYSICAL="s_axis_tready"/>
             <PORTMAP PHYSICAL="s_axis_tuser"/>
             <PORTMAP PHYSICAL="s_axis_tvalid"/>
@@ -8483,7 +8519,7 @@
         <PARAMETER NAME="C_HAS_AXIS_TDEST" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TUSER" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TREADY" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TSTRB" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TKEEP" VALUE="0"/>
         <PARAMETER NAME="C_AXIS_TDATA_WIDTH" VALUE="32"/>
@@ -8515,7 +8551,7 @@
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WRCH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RACH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RDCH" VALUE="1kx36"/>
-        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="512x36"/>
+        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="1kx36"/>
         <PARAMETER NAME="C_USE_ECC_WACH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WRCH" VALUE="0"/>
@@ -8533,19 +8569,19 @@
         <PARAMETER NAME="C_DIN_WIDTH_WRCH" VALUE="2"/>
         <PARAMETER NAME="C_DIN_WIDTH_RACH" VALUE="32"/>
         <PARAMETER NAME="C_DIN_WIDTH_RDCH" VALUE="64"/>
-        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="36"/>
+        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="37"/>
         <PARAMETER NAME="C_WR_DEPTH_WACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_WDCH" VALUE="1024"/>
         <PARAMETER NAME="C_WR_DEPTH_WRCH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RDCH" VALUE="1024"/>
-        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="512"/>
+        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="1024"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WDCH" VALUE="10"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WRCH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RDCH" VALUE="10"/>
-        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="9"/>
+        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="10"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WACH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WRCH" VALUE="0"/>
@@ -8569,7 +8605,7 @@
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WRCH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RACH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RDCH" VALUE="1023"/>
-        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="511"/>
+        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WRCH" VALUE="0"/>
@@ -8581,7 +8617,7 @@
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH" VALUE="1022"/>
-        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="510"/>
+        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="1022"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WRCH" VALUE="0"/>
@@ -8655,7 +8691,7 @@
         <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
         <PARAMETER NAME="TUSER_WIDTH" VALUE="4"/>
         <PARAMETER NAME="Enable_TREADY" VALUE="true"/>
-        <PARAMETER NAME="Enable_TLAST" VALUE="false"/>
+        <PARAMETER NAME="Enable_TLAST" VALUE="true"/>
         <PARAMETER NAME="HAS_TSTRB" VALUE="false"/>
         <PARAMETER NAME="TSTRB_WIDTH" VALUE="4"/>
         <PARAMETER NAME="HAS_TKEEP" VALUE="false"/>
@@ -8726,12 +8762,12 @@
         <PARAMETER NAME="Enable_ECC_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Sbit_Error_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Dbit_Error_axis" VALUE="false"/>
-        <PARAMETER NAME="Input_Depth_axis" VALUE="512"/>
+        <PARAMETER NAME="Input_Depth_axis" VALUE="1024"/>
         <PARAMETER NAME="Enable_Data_Counts_axis" VALUE="false"/>
         <PARAMETER NAME="Programmable_Full_Type_axis" VALUE="No_Programmable_Full_Threshold"/>
-        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="511"/>
+        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="1023"/>
         <PARAMETER NAME="Programmable_Empty_Type_axis" VALUE="No_Programmable_Empty_Threshold"/>
-        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="510"/>
+        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="1022"/>
         <PARAMETER NAME="Register_Slice_Mode_wach" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wdch" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wrch" VALUE="Fully_Registered"/>
@@ -8778,6 +8814,11 @@
             <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_data_a"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="queue_multiplexer_tx_tlast_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="queue_multiplexer" PORT="tx_tlast_a"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tvalid">
           <CONNECTIONS>
@@ -8794,12 +8835,18 @@
             <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_rxd_tdata"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_rxd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_rxd_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="3" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="fifo_IOI_to_production_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR">
           <PORTMAPS>
             <PORTMAP PHYSICAL="m_axis_tdata"/>
+            <PORTMAP PHYSICAL="m_axis_tlast"/>
             <PORTMAP PHYSICAL="m_axis_tready"/>
             <PORTMAP PHYSICAL="m_axis_tuser"/>
             <PORTMAP PHYSICAL="m_axis_tvalid"/>
@@ -8808,6 +8855,7 @@
         <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="s_axis_tdata"/>
+            <PORTMAP PHYSICAL="s_axis_tlast"/>
             <PORTMAP PHYSICAL="s_axis_tready"/>
             <PORTMAP PHYSICAL="s_axis_tuser"/>
             <PORTMAP PHYSICAL="s_axis_tvalid"/>
@@ -8915,7 +8963,7 @@
         <PARAMETER NAME="C_HAS_AXIS_TDEST" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TUSER" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TREADY" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TSTRB" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TKEEP" VALUE="0"/>
         <PARAMETER NAME="C_AXIS_TDATA_WIDTH" VALUE="32"/>
@@ -8947,7 +8995,7 @@
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WRCH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RACH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RDCH" VALUE="1kx36"/>
-        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="512x36"/>
+        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="1kx36"/>
         <PARAMETER NAME="C_USE_ECC_WACH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WRCH" VALUE="0"/>
@@ -8965,19 +9013,19 @@
         <PARAMETER NAME="C_DIN_WIDTH_WRCH" VALUE="2"/>
         <PARAMETER NAME="C_DIN_WIDTH_RACH" VALUE="32"/>
         <PARAMETER NAME="C_DIN_WIDTH_RDCH" VALUE="64"/>
-        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="36"/>
+        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="37"/>
         <PARAMETER NAME="C_WR_DEPTH_WACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_WDCH" VALUE="1024"/>
         <PARAMETER NAME="C_WR_DEPTH_WRCH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RDCH" VALUE="1024"/>
-        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="512"/>
+        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="1024"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WDCH" VALUE="10"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WRCH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RDCH" VALUE="10"/>
-        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="9"/>
+        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="10"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WACH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WRCH" VALUE="0"/>
@@ -9001,7 +9049,7 @@
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WRCH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RACH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RDCH" VALUE="1023"/>
-        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="511"/>
+        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WRCH" VALUE="0"/>
@@ -9013,7 +9061,7 @@
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH" VALUE="1022"/>
-        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="510"/>
+        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="1022"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WRCH" VALUE="0"/>
@@ -9087,7 +9135,7 @@
         <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
         <PARAMETER NAME="TUSER_WIDTH" VALUE="4"/>
         <PARAMETER NAME="Enable_TREADY" VALUE="true"/>
-        <PARAMETER NAME="Enable_TLAST" VALUE="false"/>
+        <PARAMETER NAME="Enable_TLAST" VALUE="true"/>
         <PARAMETER NAME="HAS_TSTRB" VALUE="false"/>
         <PARAMETER NAME="TSTRB_WIDTH" VALUE="4"/>
         <PARAMETER NAME="HAS_TKEEP" VALUE="false"/>
@@ -9158,12 +9206,12 @@
         <PARAMETER NAME="Enable_ECC_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Sbit_Error_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Dbit_Error_axis" VALUE="false"/>
-        <PARAMETER NAME="Input_Depth_axis" VALUE="512"/>
+        <PARAMETER NAME="Input_Depth_axis" VALUE="1024"/>
         <PARAMETER NAME="Enable_Data_Counts_axis" VALUE="false"/>
         <PARAMETER NAME="Programmable_Full_Type_axis" VALUE="No_Programmable_Full_Threshold"/>
-        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="511"/>
+        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="1023"/>
         <PARAMETER NAME="Programmable_Empty_Type_axis" VALUE="No_Programmable_Empty_Threshold"/>
-        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="510"/>
+        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="1022"/>
         <PARAMETER NAME="Register_Slice_Mode_wach" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wdch" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wrch" VALUE="Fully_Registered"/>
@@ -9210,6 +9258,11 @@
             <CONNECTION INSTANCE="axi_fifo_backup" PORT="axi_str_txd_tdata"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axi_fifo_backup_axi_str_txd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_fifo_backup" PORT="axi_str_txd_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="fifo_backup_to_IOI_m_axis_tvalid">
           <CONNECTIONS>
@@ -9226,12 +9279,18 @@
             <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_data_b"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="fifo_backup_to_IOI_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_tlast_b"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="3" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="M_AXIS" TYPE="INITIATOR">
           <PORTMAPS>
             <PORTMAP PHYSICAL="m_axis_tdata"/>
+            <PORTMAP PHYSICAL="m_axis_tlast"/>
             <PORTMAP PHYSICAL="m_axis_tready"/>
             <PORTMAP PHYSICAL="m_axis_tuser"/>
             <PORTMAP PHYSICAL="m_axis_tvalid"/>
@@ -9240,6 +9299,7 @@
         <BUSINTERFACE BUSNAME="axi_fifo_backup_AXI_STR_TXD" NAME="S_AXIS" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="s_axis_tdata"/>
+            <PORTMAP PHYSICAL="s_axis_tlast"/>
             <PORTMAP PHYSICAL="s_axis_tready"/>
             <PORTMAP PHYSICAL="s_axis_tuser"/>
             <PORTMAP PHYSICAL="s_axis_tvalid"/>
@@ -9347,7 +9407,7 @@
         <PARAMETER NAME="C_HAS_AXIS_TDEST" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TUSER" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TREADY" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_AXIS_TLAST" VALUE="1"/>
         <PARAMETER NAME="C_HAS_AXIS_TSTRB" VALUE="0"/>
         <PARAMETER NAME="C_HAS_AXIS_TKEEP" VALUE="0"/>
         <PARAMETER NAME="C_AXIS_TDATA_WIDTH" VALUE="32"/>
@@ -9379,7 +9439,7 @@
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_WRCH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RACH" VALUE="512x36"/>
         <PARAMETER NAME="C_PRIM_FIFO_TYPE_RDCH" VALUE="1kx36"/>
-        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="512x36"/>
+        <PARAMETER NAME="C_PRIM_FIFO_TYPE_AXIS" VALUE="1kx36"/>
         <PARAMETER NAME="C_USE_ECC_WACH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_USE_ECC_WRCH" VALUE="0"/>
@@ -9397,19 +9457,19 @@
         <PARAMETER NAME="C_DIN_WIDTH_WRCH" VALUE="2"/>
         <PARAMETER NAME="C_DIN_WIDTH_RACH" VALUE="32"/>
         <PARAMETER NAME="C_DIN_WIDTH_RDCH" VALUE="64"/>
-        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="36"/>
+        <PARAMETER NAME="C_DIN_WIDTH_AXIS" VALUE="37"/>
         <PARAMETER NAME="C_WR_DEPTH_WACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_WDCH" VALUE="1024"/>
         <PARAMETER NAME="C_WR_DEPTH_WRCH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RACH" VALUE="16"/>
         <PARAMETER NAME="C_WR_DEPTH_RDCH" VALUE="1024"/>
-        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="512"/>
+        <PARAMETER NAME="C_WR_DEPTH_AXIS" VALUE="1024"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WDCH" VALUE="10"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_WRCH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RACH" VALUE="4"/>
         <PARAMETER NAME="C_WR_PNTR_WIDTH_RDCH" VALUE="10"/>
-        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="9"/>
+        <PARAMETER NAME="C_WR_PNTR_WIDTH_AXIS" VALUE="10"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WACH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_HAS_DATA_COUNTS_WRCH" VALUE="0"/>
@@ -9433,7 +9493,7 @@
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_WRCH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RACH" VALUE="15"/>
         <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_RDCH" VALUE="1023"/>
-        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="511"/>
+        <PARAMETER NAME="C_PROG_FULL_THRESH_ASSERT_VAL_AXIS" VALUE="1023"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_PROG_EMPTY_TYPE_WRCH" VALUE="0"/>
@@ -9445,7 +9505,7 @@
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH" VALUE="14"/>
         <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH" VALUE="1022"/>
-        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="510"/>
+        <PARAMETER NAME="C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS" VALUE="1022"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WACH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WDCH" VALUE="0"/>
         <PARAMETER NAME="C_REG_SLICE_MODE_WRCH" VALUE="0"/>
@@ -9519,7 +9579,7 @@
         <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
         <PARAMETER NAME="TUSER_WIDTH" VALUE="4"/>
         <PARAMETER NAME="Enable_TREADY" VALUE="true"/>
-        <PARAMETER NAME="Enable_TLAST" VALUE="false"/>
+        <PARAMETER NAME="Enable_TLAST" VALUE="true"/>
         <PARAMETER NAME="HAS_TSTRB" VALUE="false"/>
         <PARAMETER NAME="TSTRB_WIDTH" VALUE="4"/>
         <PARAMETER NAME="HAS_TKEEP" VALUE="false"/>
@@ -9590,12 +9650,12 @@
         <PARAMETER NAME="Enable_ECC_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Sbit_Error_axis" VALUE="false"/>
         <PARAMETER NAME="Inject_Dbit_Error_axis" VALUE="false"/>
-        <PARAMETER NAME="Input_Depth_axis" VALUE="512"/>
+        <PARAMETER NAME="Input_Depth_axis" VALUE="1024"/>
         <PARAMETER NAME="Enable_Data_Counts_axis" VALUE="false"/>
         <PARAMETER NAME="Programmable_Full_Type_axis" VALUE="No_Programmable_Full_Threshold"/>
-        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="511"/>
+        <PARAMETER NAME="Full_Threshold_Assert_Value_axis" VALUE="1023"/>
         <PARAMETER NAME="Programmable_Empty_Type_axis" VALUE="No_Programmable_Empty_Threshold"/>
-        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="510"/>
+        <PARAMETER NAME="Empty_Threshold_Assert_Value_axis" VALUE="1022"/>
         <PARAMETER NAME="Register_Slice_Mode_wach" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wdch" VALUE="Fully_Registered"/>
         <PARAMETER NAME="Register_Slice_Mode_wrch" VALUE="Fully_Registered"/>
@@ -9642,6 +9702,11 @@
             <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_txd_tdata"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axi_fifo_production_axi_str_txd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_fifo_production" PORT="axi_str_txd_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="fifo_production_to_IOI_m_axis_tvalid">
           <CONNECTIONS>
@@ -9658,12 +9723,18 @@
             <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_data_a"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="fifo_production_to_IOI_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="queue_multiplexer" PORT="rx_tlast_a"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="3" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="M_AXIS" TYPE="INITIATOR">
           <PORTMAPS>
             <PORTMAP PHYSICAL="m_axis_tdata"/>
+            <PORTMAP PHYSICAL="m_axis_tlast"/>
             <PORTMAP PHYSICAL="m_axis_tready"/>
             <PORTMAP PHYSICAL="m_axis_tuser"/>
             <PORTMAP PHYSICAL="m_axis_tvalid"/>
@@ -9672,6 +9743,7 @@
         <BUSINTERFACE BUSNAME="axi_fifo_production_AXI_STR_TXD" NAME="S_AXIS" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="s_axis_tdata"/>
+            <PORTMAP PHYSICAL="s_axis_tlast"/>
             <PORTMAP PHYSICAL="s_axis_tready"/>
             <PORTMAP PHYSICAL="s_axis_tuser"/>
             <PORTMAP PHYSICAL="s_axis_tvalid"/>
@@ -10751,6 +10823,11 @@
             <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="0" NAME="rx_tlast_a" RIGHT="0" SIGIS="data" SIGNAME="fifo_production_to_IOI_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_production_to_IOI" PORT="m_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="rx_data_b" RIGHT="0" SIGIS="data" SIGNAME="fifo_backup_to_IOI_m_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="m_axis_tdata"/>
@@ -10764,6 +10841,11 @@
         <PORT DIR="I" LEFT="0" NAME="rx_valid_b" RIGHT="0" SIGIS="data" SIGNAME="fifo_backup_to_IOI_m_axis_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="rx_tlast_b" RIGHT="0" SIGIS="data" SIGNAME="fifo_backup_to_IOI_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_backup_to_IOI" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="rx_data" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_rx_data">
@@ -10781,6 +10863,11 @@
             <CONNECTION INSTANCE="axi_fifo_IOI_dequeue" PORT="axi_str_rxd_tvalid"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="0" NAME="rx_tlast" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_rx_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_fifo_IOI_dequeue" PORT="axi_str_rxd_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="tx_data_a" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_tx_data_a">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="s_axis_tdata"/>
@@ -10794,6 +10881,11 @@
         <PORT DIR="O" LEFT="0" NAME="tx_valid_a" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_tx_valid_a">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="tx_tlast_a" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_tx_tlast_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_production" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="tx_data_b" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_tx_data_b">
@@ -10811,6 +10903,11 @@
             <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="0" NAME="tx_tlast_b" RIGHT="0" SIGIS="data" SIGNAME="queue_multiplexer_tx_tlast_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fifo_IOI_to_backup" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="31" NAME="tx_data" RIGHT="0" SIGIS="data" SIGNAME="axi_fifo_IOI_enqueue_axi_str_txd_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_fifo_IOI_enqueue" PORT="axi_str_txd_tdata"/>
@@ -10824,6 +10921,11 @@
         <PORT DIR="I" LEFT="0" NAME="tx_valid" RIGHT="0" SIGIS="data" SIGNAME="axi_fifo_IOI_enqueue_axi_str_txd_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_fifo_IOI_enqueue" PORT="axi_str_txd_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="tx_tlast" RIGHT="0" SIGIS="data" SIGNAME="axi_fifo_IOI_enqueue_axi_str_txd_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_fifo_IOI_enqueue" PORT="axi_str_txd_tlast"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
