@@ -145,6 +145,10 @@ static void dequeue_handler(XLlFifo *InstancePtr)
 	static u32 ReceiveLength;
 	xil_printf("Receiving Data...\n");
 
+	int buffer[5] = {21, 22, 23, 24, 25};
+		enqueue(buffer, sizeof(buffer)/WORD_SIZE);
+
+
 	Pending = XLlFifo_IntPending(InstancePtr);
 	while (Pending) {
 		// Read Recieve Length

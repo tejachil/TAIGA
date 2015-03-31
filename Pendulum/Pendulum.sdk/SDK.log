@@ -737,3 +737,55 @@ java.lang.RuntimeException: Error in Resetting Target
 16:58:50 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
 17:00:09 INFO  : Processor reset is completed for ps7_cortexa9_1
 18:38:47 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:18:59 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+18:19:00 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+18:19:00 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:19:01 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+18:19:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1427840302000,  Project:1427315733000
+18:19:01 INFO  : The hardware specification for project 'TAIGA_System_wrapper_hw_platform_0' is different from /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+18:19:01 INFO  : Copied contents of /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf into /TAIGA_System_wrapper_hw_platform_0/system.hdf.
+18:19:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:19:08 INFO  : 
+18:19:10 INFO  : 
+18:19:12 INFO  : 
+18:19:15 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+18:19:16 INFO  : Updating hardware inferred compiler options for app_io_intermediary.
+18:19:17 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xllfifo_interrupt_example_1.
+18:19:17 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xuartlite_selftest_example_1.
+18:19:18 INFO  : Updating hardware inferred compiler options for app_production_controller.
+18:19:19 INFO  : Updating hardware inferred compiler options for bsp_production_freertos_xllfifo_polling_example_1.
+18:19:19 INFO  : Clearing existing target manager status.
+18:19:54 INFO  : Project bsp_production_freertos was a BSP project. Please update references.
+18:19:54 ERROR : SDK has detected that project bsp_production_freertos has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+18:20:17 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+18:20:31 INFO  : Refreshed build settings on project app_production_controller
+18:20:31 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+18:21:03 INFO  : Project bsp_backup_standalone was a BSP project. Please update references.
+18:21:03 ERROR : SDK has detected that project bsp_backup_standalone has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+18:21:25 INFO  : BSP Project P/bsp_backup_standalone has been successfully migrated.
+18:21:28 INFO  : Refreshed build settings on project app_backup_controller
+18:21:55 INFO  : Project bsp_ioi_standalone was a BSP project. Please update references.
+18:21:55 ERROR : SDK has detected that project bsp_ioi_standalone has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+18:22:09 INFO  : BSP Project P/bsp_ioi_standalone has been successfully migrated.
+18:22:12 INFO  : Refreshed build settings on project app_io_intermediary
+18:22:12 INFO  : Refreshed build settings on project bsp_ioi_standalone_xllfifo_interrupt_example_1
+18:22:12 INFO  : Refreshed build settings on project bsp_ioi_standalone_xuartlite_selftest_example_1
+18:24:38 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+18:25:26 INFO  : ps7_init is completed.
+18:25:26 INFO  : ps7_post_config is completed.
+18:25:27 INFO  : Processor reset is completed for backup_controller
+18:25:39 INFO  : Processor reset is completed for IO_Intermediary
+18:27:51 INFO  : Processor reset is completed for IO_Intermediary
+18:30:26 INFO  : Processor reset is completed for backup_controller
+18:30:39 INFO  : Processor reset is completed for IO_Intermediary
+18:32:17 INFO  : Processor reset is completed for IO_Intermediary
+18:32:23 INFO  : Processor reset is completed for backup_controller
+18:38:02 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+18:39:16 INFO  : ps7_init is completed.
+18:39:16 INFO  : ps7_post_config is completed.
+18:39:16 INFO  : Processor reset is completed for IO_Intermediary
+18:39:24 INFO  : Processor reset is completed for ps7_cortexa9_1

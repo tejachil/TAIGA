@@ -43,11 +43,6 @@ void production_control_timer(xTimerHandle pxTimer){
 	state = !state;
 	static int buffer[2];
 
-	static int buffer2[5];
-	int test = dequeue(buffer2,false);
-	if(test)
-		xil_printf("%d %d\n", test, buffer2[0]);
-
 	static int count = 3;
 	buffer[0] = 23;
 	buffer[1] = count;
@@ -55,6 +50,12 @@ void production_control_timer(xTimerHandle pxTimer){
 		enqueue(buffer, sizeof(buffer)/WORD_SIZE);
 		++count;
 	//}
+
+	static int buffer2[5];
+		int test = dequeue(buffer2);
+		if(test)
+			xil_printf("%d %d\n", test, buffer2[0]);
+
 	/*if(plantParams.iteration > 10000)	return;
 
 	set_led(LED3, true);

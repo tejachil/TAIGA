@@ -10,8 +10,7 @@
 
 #include "xparameters.h"
 
-#define ENQUEUE_DEV_ID	XPAR_AXI_FIFO_BACKUP_ENQUEUE_DEVICE_ID
-#define DEQUEUE_DEV_ID	XPAR_AXI_FIFO_BACKUP_DEQUEUE_DEVICE_ID
+#define QUEUE_DEV_ID	XPAR_AXI_FIFO_BACKUP_DEVICE_ID
 
 #define WORD_SIZE 		4 // Size of words in bytes
 

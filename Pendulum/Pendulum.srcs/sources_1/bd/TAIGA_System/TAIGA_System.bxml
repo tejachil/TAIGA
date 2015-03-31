@@ -191,7 +191,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/TAIGA_System_axi_fifo_IOI_dequeue_1/TAIGA_System_axi_fifo_IOI_dequeue_1.xci" Type="IP">
-        <Instance HierarchyPath="axi_fifo_backup_dequeue"/>
+        <Instance HierarchyPath="axi_fifo_backup"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -200,14 +200,6 @@
       </File>
       <File Name="ip/TAIGA_System_axi_fifo_IOI_dequeue_2/TAIGA_System_axi_fifo_IOI_dequeue_2.xci" Type="IP">
         <Instance HierarchyPath="axi_fifo_IOI_enqueue"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/TAIGA_System_axi_fifo_backup_dequeue_0/TAIGA_System_axi_fifo_backup_dequeue_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_fifo_backup_enqueue"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

@@ -1,0 +1,35 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="fifo_dequeue" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="fifo_data"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="fifo_dequeue" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="fifo_recv_enable"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="fifo_dequeue" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="fifo_recv_valid"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="fifo_dequeue" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_hs" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="fifo_dequeue" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle axi_fifo&quot;"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>
