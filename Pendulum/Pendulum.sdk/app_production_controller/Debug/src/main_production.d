@@ -16,7 +16,8 @@ src/main_production.o src/main_production.d: ../src/main_production.c \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xil_types.h \
  ../src/production_controller.h ../src/utilities/axi_gpio.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h \
- ../src/utilities/fifo_queue.h
+ ../src/utilities/fifo_queue.h \
+ ../../global_includes/taiga_pendulum_parameters.h
 
 ../../bsp_production_freertos/ps7_cortexa9_1/include/FreeRTOS.h:
 
@@ -55,3 +56,5 @@ src/main_production.o src/main_production.d: ../src/main_production.c \
 ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h:
 
 ../src/utilities/fifo_queue.h:
+
+../../global_includes/taiga_pendulum_parameters.h:

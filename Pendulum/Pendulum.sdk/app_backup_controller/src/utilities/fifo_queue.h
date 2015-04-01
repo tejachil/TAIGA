@@ -16,7 +16,7 @@
 
 int init_fifo_queues();
 
-int enqueue(int* data, int size);
+int enqueue(unsigned int* data, int size);
 
 int dequeue(int* buffer);
 

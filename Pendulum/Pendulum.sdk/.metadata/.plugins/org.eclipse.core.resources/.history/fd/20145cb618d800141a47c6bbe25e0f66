@@ -1,0 +1,13 @@
+/*
+ * pendulum_control.h
+ *
+ *  Created on: Mar 31, 2015
+ *      Author: teja
+ */
+
+#ifndef PENDULUM_CONTROL_H_
+#define PENDULUM_CONTROL_H_
+
+
+
+#endif /* PENDULUM_CONTROL_H_ */

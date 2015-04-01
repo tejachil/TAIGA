@@ -837,3 +837,80 @@ If this project was a BSP referenced by other C/C++ applications, then those app
 19:47:41 INFO  : Processor reset is completed for IO_Intermediary
 19:47:50 INFO  : Processor reset is completed for ps7_cortexa9_1
 19:49:58 INFO  : Processor reset is completed for backup_controller
+19:53:57 INFO  : Processor reset is completed for IO_Intermediary
+19:54:11 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:16:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1427847061000,  Project:1427845482000
+20:16:33 INFO  : Project TAIGA_System_wrapper_hw_platform_0's source hardware specification located at /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:16:34 INFO  : Copied contents of /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf into /TAIGA_System_wrapper_hw_platform_0/system.hdf.
+20:16:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:16:47 INFO  : 
+20:16:48 INFO  : 
+20:16:49 INFO  : 
+20:16:50 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+20:16:51 INFO  : Updating hardware inferred compiler options for app_io_intermediary.
+20:16:52 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xllfifo_interrupt_example_1.
+20:16:52 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xuartlite_selftest_example_1.
+20:16:53 INFO  : Updating hardware inferred compiler options for app_production_controller.
+20:16:54 INFO  : Updating hardware inferred compiler options for bsp_production_freertos_xllfifo_polling_example_1.
+20:16:54 INFO  : Clearing existing target manager status.
+20:16:54 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:17:29 INFO  : Project bsp_ioi_standalone was a BSP project. Please update references.
+20:17:29 ERROR : SDK has detected that project bsp_ioi_standalone has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+20:18:01 INFO  : BSP Project P/bsp_ioi_standalone has been successfully migrated.
+20:18:06 INFO  : Refreshed build settings on project app_io_intermediary
+20:18:06 INFO  : Refreshed build settings on project bsp_ioi_standalone_xllfifo_interrupt_example_1
+20:18:06 INFO  : Refreshed build settings on project bsp_ioi_standalone_xuartlite_selftest_example_1
+20:20:43 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+20:21:09 INFO  : ps7_init is completed.
+20:21:09 INFO  : ps7_post_config is completed.
+20:21:10 INFO  : Processor reset is completed for IO_Intermediary
+20:21:15 INFO  : Processor reset is completed for ps7_cortexa9_1
+23:09:29 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+23:13:34 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+23:13:54 INFO  : ps7_init is completed.
+23:13:54 INFO  : ps7_post_config is completed.
+23:13:55 INFO  : Processor reset is completed for IO_Intermediary
+23:14:01 INFO  : Processor reset is completed for ps7_cortexa9_1
+23:14:28 INFO  : Processor reset is completed for IO_Intermediary
+23:14:30 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 1.\nError accessing memory address 0x318: Unknown error -1.\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:774)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+23:15:16 INFO  : Processor reset is completed for IO_Intermediary
+23:15:18 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x318: Unknown error -1.\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:774)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+23:15:29 INFO  : Processor reset is completed for IO_Intermediary
+23:15:40 INFO  : Processor reset is completed for ps7_cortexa9_1
+23:17:29 INFO  : Processor reset is completed for IO_Intermediary
+23:17:38 INFO  : Processor reset is completed for ps7_cortexa9_1
+23:18:06 INFO  : Processor reset is completed for IO_Intermediary
+23:18:15 INFO  : Processor reset is completed for ps7_cortexa9_1
+23:22:38 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+23:23:06 INFO  : ps7_init is completed.
+23:23:06 INFO  : ps7_post_config is completed.
+23:23:07 INFO  : Processor reset is completed for IO_Intermediary
+23:24:10 INFO  : Processor reset is completed for IO_Intermediary
+23:24:24 INFO  : Processor reset is completed for IO_Intermediary
+23:25:05 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+23:25:05 WARN  : Terminating existing sessions on processor IO_Intermediary

@@ -1,0 +1,62 @@
+/*
+ * ioi_handler.c
+ *
+ *  Created on: Mar 31, 2015
+ *      Author: teja
+ */
+
+#include "ioi_handler.h"
+#include "utilities/fifo_queue.h"
+#include "utilities/axi_gpio.h"
+
+bool plant_filter(u32 spiParams, u32 spiWriteData);
+
+bool plant_filter(QueuePacket* packet);
+
+void ioi_handler(QueuePacket fifo_packet){
+	switch (fifo_packet.command){
+		case (PLANT): // SPI
+				spiWriteData = dequeue_controller_to_taiga();
+				if(cycleTimeFlag)	continue;
+				u32_to_buffer(spiWriteData, writeBuffer, (fifoParams >> 8) & 0xFF);
+				if((fifoParams >> 8) & 0xFF){
+					if(filterSPI(fifoParams, spiWriteData));
+						spi_transfer(fifoParams & 0xFF, writeBuffer, readBuffer, (fifoParams >> 8) & 0xFF);
+				}
+				if (((fifoParams >> 16) & 0xFF) == READ){
+					retData[0] = buffer_to_u32(readBuffer, (fifoParams >> 8) & 0xFF);
+					if (((fifoParams & 0xFF) == SS_ENCODER_P || (fifoParams & 0xFF) == SS_ENCODER_S) && (spiWriteData  == (READ_CNTR << 24)))
+						updateControlParam((fifoParams & 0xFF), retData[0] );
+				}
+				else if ((((fifoParams >> 16) & 0xFF) == WRITE) && ((fifoParams & 0xFF) == SS_DAC)){
+					updateControlParam((fifoParams & 0xFF), buffer_to_u32(writeBuffer, (fifoParams >> 8) & 0xFF));
+				}
+				break;
+			case (SET_POINT): // SET_POINT
+				retData[0] = ((u32)getSetPoint());
+				break;
+			case (STATE_INFORMATION): // STATE_INFORMATION
+				getStateInformation((unsigned int *)retData);
+				break;
+			}
+			for(i = 0; i < ((fifoParams >> 16) & 0xFF); ++i)
+				enqueue_taiga_to_controller(retData[i]);
+			set_led(LED1, false);
+			guardTriggerMechanism(startFlagTAIGA);
+			if(!startFlagTAIGA)	startFlagTAIGA = read_btn(BTN0);
+			if(read_btn(BTN1)){
+				i = read_sw_raw();
+				updateSetPoint((i & 8) ? (-5*(i&7)) : (5*(i&7)));
+			}
+			if(read_btn(BTN2)){
+				select_controller(PRODUCTION);
+			}
+}
+
+bool plant_filter(u32 spiParams, u32 spiWriteData){
+	if((((spiParams & 0xFF) == SS_ENCODER_S) | ((spiParams & 0xFF) == SS_ENCODER_P)) && (((spiParams >> 8) & 0xFFFF) == (READ << 8) | (BITS_32))) // read encoder
+		return true;
+	if(((spiParams & 0xFF) == SS_DAC) && (((spiParams >> 8) & 0xFFFF) == (WRITE << 16) | (BITS_16 << 8)) && ((spiWriteData & DAC_CONFIG_BITS) == DAC_CONFIG_BITS)) // write voltage
+		return true;
+	return false;
+}

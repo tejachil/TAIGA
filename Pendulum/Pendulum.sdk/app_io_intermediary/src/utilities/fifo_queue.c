@@ -12,9 +12,9 @@
 #include "xstatus.h"
 #include "xintc.h"
 #include "axi_gpio.h"
+#include "taiga_pendulum_parameters.h"
 
-static XLlFifo fifo_enqueue;
-static XLlFifo fifo_dequeue;
+static XLlFifo fifo_queue;
 
 static void dequeue_handler(XLlFifo *Fifo);
 
@@ -28,68 +28,43 @@ int init_fifo_queues(){
 	// Initialize the Enqueue Module -----------------------------
 
 	// Initialize the Device Configuration Interface driver
-	Config = XLlFfio_LookupConfig(ENQUEUE_DEV_ID);
+	Config = XLlFfio_LookupConfig(QUEUE_DEV_ID);
 	if (!Config) {
-		xil_printf("No config found for %d\r\n", ENQUEUE_DEV_ID);
+		xil_printf("No config found for %d\r\n", QUEUE_DEV_ID);
 		return XST_FAILURE;
 	}
 
 	// This is where the virtual address would be used, this example uses physical address.
-	Status = XLlFifo_CfgInitialize(&fifo_enqueue, Config, Config->BaseAddress);
+	Status = XLlFifo_CfgInitialize(&fifo_queue, Config, Config->BaseAddress);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Initialization failed\n\r");
 		return Status;
 	}
 
 	// Check for the Reset value
-	Status = XLlFifo_Status(&fifo_enqueue);
-	XLlFifo_IntClear(&fifo_enqueue,0xffffffff);
-	Status = XLlFifo_Status(&fifo_enqueue);
+	Status = XLlFifo_Status(&fifo_queue);
+	XLlFifo_IntClear(&fifo_queue,0xffffffff);
+	Status = XLlFifo_Status(&fifo_queue);
 	if(Status != 0x0) {
-		xil_printf("\n ERROR : Reset value of ISR0 : 0x%x\t" "Expected : 0x0\n\r", XLlFifo_Status(&fifo_enqueue));
-		return XST_FAILURE;
-	}
-
-	// Initialize the Dequeue Module -----------------------------
-
-	// Initialize the Device Configuration Interface driver
-	Config = XLlFfio_LookupConfig(DEQUEUE_DEV_ID);
-	if (!Config) {
-		xil_printf("No config found for %d\r\n", DEQUEUE_DEV_ID);
-		return XST_FAILURE;
-	}
-
-	// This is where the virtual address would be used, this example uses physical address.
-	Status = XLlFifo_CfgInitialize(&fifo_dequeue, Config, Config->BaseAddress);
-	if (Status != XST_SUCCESS) {
-		xil_printf("Initialization failed\n\r");
-		return Status;
-	}
-
-	// Check for the Reset value
-	Status = XLlFifo_Status(&fifo_dequeue);
-	XLlFifo_IntClear(&fifo_dequeue,0xffffffff);
-	Status = XLlFifo_Status(&fifo_dequeue);
-	if(Status != 0x0) {
-		xil_printf("\n ERROR : Reset value of ISR0 : 0x%x\t" "Expected : 0x0\n\r", XLlFifo_Status(&fifo_dequeue));
+		xil_printf("\n ERROR : Reset value of ISR0 : 0x%x\t" "Expected : 0x0\n\r", XLlFifo_Status(&fifo_queue));
 		return XST_FAILURE;
 	}
 
 	return XST_SUCCESS;
 }
 
-int enqueue(int* data, int size){
+int enqueue(unsigned int* data, int size){
 	int i = 0;
 	for(i = 0; i < size; ++i){
-		if(XLlFifo_iTxVacancy(&fifo_enqueue))
-			XLlFifo_TxPutWord(&fifo_enqueue, data[i]);
+		if(XLlFifo_iTxVacancy(&fifo_queue))
+			XLlFifo_TxPutWord(&fifo_queue, data[i]);
 	}
 
 	// Start Transmission by writing transmission length into the TLR
-	XLlFifo_iTxSetLen(&fifo_enqueue, WORD_SIZE*size);
+	XLlFifo_iTxSetLen(&fifo_queue, WORD_SIZE*size);
 
 	// Check for Transmission completion
-	while( !(XLlFifo_IsTxDone(&fifo_enqueue)));
+	while( !(XLlFifo_IsTxDone(&fifo_queue)));
 
 	return 0;
 }
@@ -106,7 +81,7 @@ int init_interrupt_system(){
 
 
 	// Connect a device driver handler that will be called when an interrupt for the device occurs,
-	Status = XIntc_Connect(&interrupt_controller, FIFO_INTR_ID,(XInterruptHandler)dequeue_handler,(void *)&fifo_dequeue);
+	Status = XIntc_Connect(&interrupt_controller, FIFO_INTR_ID,(XInterruptHandler)dequeue_handler,(void *)&fifo_queue);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -132,7 +107,7 @@ int init_interrupt_system(){
 	// Enable exceptions.
 	Xil_ExceptionEnable();
 
-	XLlFifo_IntEnable(&fifo_dequeue, XLLF_INT_RFPE_MASK);
+	XLlFifo_IntEnable(&fifo_queue, XLLF_INT_RC_MASK);
 
 	return XST_SUCCESS;
 }
@@ -151,20 +126,38 @@ static void dequeue_handler(XLlFifo *InstancePtr)
 
 	Pending = XLlFifo_IntPending(InstancePtr);
 	while (Pending) {
-		// Read Recieve Length
+		// Read Receive Length
 		ReceiveLength = (XLlFifo_iRxGetLen(InstancePtr))/WORD_SIZE;
+
+		if (ReceiveLength < 1)	break; // ERROR HANDLING HERE FOR FALSE ALARM
+		if(ReceiveLength > 4)	ReceiveLength = 4;
 
 		static bool ledState = true;
 		set_led(LED1, ledState);
 		ledState = !ledState;
 
+		QueuePacket newPacket;
 		for (i=0; i < ReceiveLength; i++) {
-				RxWord = XLlFifo_RxGetWord(InstancePtr);
-				xil_printf("%d\n", RxWord);
+			RxWord = XLlFifo_RxGetWord(InstancePtr);
+			if(i == 1){
+				newPacket.command = RxWord >> 24 & 0xFF;
+				newPacket.operation = RxWord >> 16 & 0xFF;
+				newPacket.bytes = RxWord >> 8 & 0xFF;
+				newPacket.slave = RxWord & 0xFF;
+				newPacket.length = ReceiveLength;
+			}
+			else{
+				newPacket.data[i-1] = RxWord;
+			}
+			xil_printf("%d\n", RxWord);
 		}
 
-		// Clear Interrupt and check if there is another
+		// Clear Interrupt
 		XLlFifo_IntClear(InstancePtr, Pending);
+
+		ioi_handler(newPacket);
+
+		// Check if there is another interrupt flag
 		Pending = XLlFifo_IntPending(InstancePtr);
 	}
 }

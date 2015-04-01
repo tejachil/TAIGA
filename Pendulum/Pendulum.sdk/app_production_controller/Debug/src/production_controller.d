@@ -11,9 +11,10 @@ src/production_controller.o src/production_controller.d: \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/list.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/task.h \
- ../src/utilities/axi_gpio.h \
+ ../src/pendulum_control.h ../src/utilities/fifo_queue.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h \
- ../src/utilities/fifo_queue.h
+ ../../global_includes/taiga_pendulum_parameters.h \
+ ../src/utilities/axi_gpio.h
 
 ../src/production_controller.h:
 
@@ -39,8 +40,12 @@ src/production_controller.o src/production_controller.d: \
 
 ../../bsp_production_freertos/ps7_cortexa9_1/include/task.h:
 
-../src/utilities/axi_gpio.h:
+../src/pendulum_control.h:
+
+../src/utilities/fifo_queue.h:
 
 ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h:
 
-../src/utilities/fifo_queue.h:
+../../global_includes/taiga_pendulum_parameters.h:
+
+../src/utilities/axi_gpio.h:

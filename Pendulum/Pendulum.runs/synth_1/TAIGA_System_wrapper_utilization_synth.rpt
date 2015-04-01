@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Tue Mar 31 19:39:04 2015
+| Date         : Tue Mar 31 20:06:41 2015
 | Host         : CRS running 64-bit Ubuntu 14.04.2 LTS
 | Command      : report_utilization -file TAIGA_System_wrapper_utilization_synth.rpt -pb TAIGA_System_wrapper_utilization_synth.pb
 | Design       : TAIGA_System_wrapper
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 10077 |     0 |     17600 | 57.25 |
-|   LUT as Logic             |  9345 |     0 |     17600 | 53.09 |
+| Slice LUTs*                | 10007 |     0 |     17600 | 56.85 |
+|   LUT as Logic             |  9275 |     0 |     17600 | 52.69 |
 |   LUT as Memory            |   732 |     0 |      6000 | 12.20 |
 |     LUT as Distributed RAM |   436 |     0 |           |       |
 |     LUT as Shift Register  |   296 |     0 |           |       |
-| Slice Registers            | 12263 |     3 |     35200 | 34.83 |
-|   Register as Flip Flop    | 12261 |     3 |     35200 | 34.83 |
+| Slice Registers            | 12170 |     3 |     35200 | 34.57 |
+|   Register as Flip Flop    | 12168 |     3 |     35200 | 34.56 |
 |   Register as Latch        |     0 |     0 |     35200 |  0.00 |
 |   Register as AND/OR       |     2 |     0 |     35200 | <0.01 |
-| F7 Muxes                   |   237 |     0 |      8800 |  2.69 |
+| F7 Muxes                   |   238 |     0 |      8800 |  2.70 |
 | F8 Muxes                   |     0 |     0 |      4400 |  0.00 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -59,8 +59,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 173   |          Yes |           - |          Set |
 | 1073  |          Yes |           - |        Reset |
-| 232   |          Yes |         Set |            - |
-| 10783 |          Yes |       Reset |            - |
+| 233   |          Yes |         Set |            - |
+| 10689 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -152,18 +152,18 @@ Table of Contents
 +----------+-------+----------------------+
 | Ref Name |  Used |  Functional Category |
 +----------+-------+----------------------+
-| FDRE     | 10783 |         Flop & Latch |
-| LUT6     |  3472 |                  LUT |
-| LUT3     |  2062 |                  LUT |
-| LUT5     |  1909 |                  LUT |
-| LUT4     |  1579 |                  LUT |
-| LUT2     |  1202 |                  LUT |
+| FDRE     | 10689 |         Flop & Latch |
+| LUT6     |  3453 |                  LUT |
+| LUT3     |  2054 |                  LUT |
+| LUT5     |  1901 |                  LUT |
+| LUT4     |  1561 |                  LUT |
+| LUT2     |  1173 |                  LUT |
 | FDCE     |  1073 |         Flop & Latch |
 | CARRY4   |   593 |           CarryLogic |
 | LUT1     |   544 |                  LUT |
 | RAMD32   |   320 |   Distributed Memory |
-| MUXF7    |   237 |                MuxFx |
-| FDSE     |   232 |         Flop & Latch |
+| MUXF7    |   238 |                MuxFx |
+| FDSE     |   233 |         Flop & Latch |
 | SRL16E   |   231 |   Distributed Memory |
 | RAMD64E  |   180 |   Distributed Memory |
 | FDPE     |   173 |         Flop & Latch |

@@ -1,0 +1,37 @@
+/*
+ * pendulum_control.c
+ *
+ *  Created on: Mar 31, 2015
+ *      Author: teja
+ */
+
+#include "pendulum_control.h"
+
+static QueuePacket fifo_packet;
+static unsigned int buffer[8];
+
+int getSetPoint(){
+	fifo_packet.command = SET_POINT;
+	fifo_packet.operation = READ;
+	fifo_packet.bytes = BITS_0;
+	fifo_packet.slave = NO_SLAVE;
+	fifo_packet.length = 0;
+
+	enqueue(&fifo_packet);
+
+	dequeue(buffer);
+
+	return buffer[0];
+}
+
+int readEncoder(slave_select encoder){
+
+}
+
+float readADC(){
+
+}
+
+int writeDAC(float voltage){
+
+}

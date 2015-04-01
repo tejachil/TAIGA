@@ -59,7 +59,6 @@ set_property used_in_implementation false [get_files -all /home/teja/Documents/T
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_mm_s_0_0/TAIGA_System_axi_fifo_mm_s_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_0/TAIGA_System_axi_fifo_IOI_dequeue_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_1/TAIGA_System_axi_fifo_IOI_dequeue_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_2/TAIGA_System_axi_fifo_IOI_dequeue_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/ipshared/xilinx.com/queue_multiplexer_v1_0/680e8b2b/constraints/queue_multiplexer_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1_ooc.xdc]

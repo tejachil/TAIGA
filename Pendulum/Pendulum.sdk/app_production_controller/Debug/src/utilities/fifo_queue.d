@@ -2,6 +2,7 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
  ../src/utilities/fifo_queue.c ../src/utilities/fifo_queue.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters_ps.h \
+ ../../global_includes/taiga_pendulum_parameters.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xstreamer.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xenv.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xenv_standalone.h \
@@ -25,6 +26,8 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
 ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h:
 
 ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters_ps.h:
+
+../../global_includes/taiga_pendulum_parameters.h:
 
 ../../bsp_production_freertos/ps7_cortexa9_1/include/xstreamer.h:
 

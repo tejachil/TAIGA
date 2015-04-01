@@ -78,6 +78,11 @@ ENTITY TAIGA_System_axi_fifo_mm_s_0_0 IS
     s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_rvalid : OUT STD_LOGIC;
     s_axi_rready : IN STD_LOGIC;
+    mm2s_prmry_reset_out_n : OUT STD_LOGIC;
+    axi_str_txd_tvalid : OUT STD_LOGIC;
+    axi_str_txd_tready : IN STD_LOGIC;
+    axi_str_txd_tlast : OUT STD_LOGIC;
+    axi_str_txd_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s2mm_prmry_reset_out_n : OUT STD_LOGIC;
     axi_str_rxd_tvalid : IN STD_LOGIC;
     axi_str_rxd_tready : OUT STD_LOGIC;
@@ -215,7 +220,7 @@ ARCHITECTURE TAIGA_System_axi_fifo_mm_s_0_0_arch OF TAIGA_System_axi_fifo_mm_s_0
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF TAIGA_System_axi_fifo_mm_s_0_0_arch : ARCHITECTURE IS "TAIGA_System_axi_fifo_mm_s_0_0,axi_fifo_mm_s,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_axi_fifo_mm_s_0_0_arch: ARCHITECTURE IS "TAIGA_System_axi_fifo_mm_s_0_0,axi_fifo_mm_s,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_fifo_mm_s,x_ipVersion=4.1,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ID_WIDTH=4,C_S_AXI_ADDR_WIDTH=32,C_S_AXI_DATA_WIDTH=32,C_S_AXI4_DATA_WIDTH=32,C_TX_FIFO_DEPTH=512,C_RX_FIFO_DEPTH=512,C_TX_FIFO_PF_THRESHOLD=507,C_TX_FIFO_PE_THRESHOLD=2,C_RX_FIFO_PF_THRESHOLD=507,C_RX_FIFO_PE_THRESHOLD=2,C_USE_TX_CUT_THROUGH=0,C_DATA_INTERFACE_TYPE=0,C_BASEADDR=0x44A10000,C_HIGHADDR=0x44A1FFFF,C_AXI4_BASEADDR=0x80001000,C_AXI4_HIGHADDR=0x80002FFF,C_HAS_AXIS_TID=0,C_HAS_AXIS_TDEST=0,C_HAS_AXIS_TUSER=0,C_HAS_AXIS_TSTRB=0,C_HAS_AXIS_TKEEP=0,C_AXIS_TID_WIDTH=4,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=4,C_USE_RX_CUT_THROUGH=0,C_USE_TX_DATA=0,C_USE_TX_CTRL=0,C_USE_RX_DATA=1}";
+  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_axi_fifo_mm_s_0_0_arch: ARCHITECTURE IS "TAIGA_System_axi_fifo_mm_s_0_0,axi_fifo_mm_s,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_fifo_mm_s,x_ipVersion=4.1,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ID_WIDTH=4,C_S_AXI_ADDR_WIDTH=32,C_S_AXI_DATA_WIDTH=32,C_S_AXI4_DATA_WIDTH=32,C_TX_FIFO_DEPTH=512,C_RX_FIFO_DEPTH=512,C_TX_FIFO_PF_THRESHOLD=507,C_TX_FIFO_PE_THRESHOLD=2,C_RX_FIFO_PF_THRESHOLD=507,C_RX_FIFO_PE_THRESHOLD=2,C_USE_TX_CUT_THROUGH=0,C_DATA_INTERFACE_TYPE=0,C_BASEADDR=0x44A10000,C_HIGHADDR=0x44A1FFFF,C_AXI4_BASEADDR=0x80001000,C_AXI4_HIGHADDR=0x80002FFF,C_HAS_AXIS_TID=0,C_HAS_AXIS_TDEST=0,C_HAS_AXIS_TUSER=0,C_HAS_AXIS_TSTRB=0,C_HAS_AXIS_TKEEP=0,C_AXIS_TID_WIDTH=4,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=4,C_USE_RX_CUT_THROUGH=0,C_USE_TX_DATA=1,C_USE_TX_CTRL=0,C_USE_RX_DATA=1}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF interrupt: SIGNAL IS "xilinx.com:signal:interrupt:1.0 interrupt_intf INTERRUPT";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 aclk_s_axi CLK";
@@ -237,6 +242,11 @@ ARCHITECTURE TAIGA_System_axi_fifo_mm_s_0_0_arch OF TAIGA_System_axi_fifo_mm_s_0
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI RRESP";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI RVALID";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI RREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF mm2s_prmry_reset_out_n: SIGNAL IS "xilinx.com:signal:reset:1.0 rst_axi_str_txd RST";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TLAST";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF s2mm_prmry_reset_out_n: SIGNAL IS "xilinx.com:signal:reset:1.0 rst_axi_str_rxd RST";
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_rxd_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_RXD TVALID";
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_rxd_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_RXD TREADY";
@@ -271,7 +281,7 @@ BEGIN
       C_AXIS_TDEST_WIDTH => 4,
       C_AXIS_TUSER_WIDTH => 4,
       C_USE_RX_CUT_THROUGH => 0,
-      C_USE_TX_DATA => 0,
+      C_USE_TX_DATA => 1,
       C_USE_TX_CTRL => 0,
       C_USE_RX_DATA => 1
     )
@@ -320,7 +330,11 @@ BEGIN
       s_axi4_arprot => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 3)),
       s_axi4_arvalid => '0',
       s_axi4_rready => '0',
-      axi_str_txd_tready => '0',
+      mm2s_prmry_reset_out_n => mm2s_prmry_reset_out_n,
+      axi_str_txd_tvalid => axi_str_txd_tvalid,
+      axi_str_txd_tready => axi_str_txd_tready,
+      axi_str_txd_tlast => axi_str_txd_tlast,
+      axi_str_txd_tdata => axi_str_txd_tdata,
       axi_str_txc_tready => '0',
       s2mm_prmry_reset_out_n => s2mm_prmry_reset_out_n,
       axi_str_rxd_tvalid => axi_str_rxd_tvalid,

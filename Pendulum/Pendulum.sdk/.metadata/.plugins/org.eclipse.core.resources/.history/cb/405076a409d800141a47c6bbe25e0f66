@@ -1,0 +1,14 @@
+/*
+ * ioi_handler.c
+ *
+ *  Created on: Mar 31, 2015
+ *      Author: teja
+ */
+
+#include "ioi_handler.h"
+#include "utilities/fifo_queue.h"
+
+void ioi_handler(u32* fifo_packet, u8 length){
+
+
+}

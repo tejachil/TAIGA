@@ -2,8 +2,8 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Tue Mar 31 19:39:06 2015
-# Process ID: 7547
+# Start of session at: Tue Mar 31 20:06:42 2015
+# Process ID: 18950
 # Log file: /home/teja/Documents/TAIGA/Pendulum/Pendulum.runs/impl_1/TAIGA_System_wrapper.vdi
 # Journal file: /home/teja/Documents/TAIGA/Pendulum/Pendulum.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
@@ -23,10 +23,10 @@ Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOS
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
 WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
 WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
 WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
@@ -55,7 +55,7 @@ Parsing XDC File [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd
 Finished Parsing XDC File [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_IO_Intermediary_axi_intc_0/TAIGA_System_IO_Intermediary_axi_intc_0.xdc] for cell 'TAIGA_System_i/axi_intc_IOI/U0'
 Parsing XDC File [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1.xdc] for cell 'TAIGA_System_i/mdm_1/U0'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1.xdc:50]
-get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1663.441 ; gain = 496.516 ; free physical = 7755 ; free virtual = 40592
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1663.430 ; gain = 497.516 ; free physical = 7643 ; free virtual = 40513
 Finished Parsing XDC File [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1.xdc] for cell 'TAIGA_System_i/mdm_1/U0'
 Parsing XDC File [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_rst_production_controller_100M_1/TAIGA_System_rst_production_controller_100M_1_board.xdc] for cell 'TAIGA_System_i/rst_production_controller_100M'
 Finished Parsing XDC File [/home/teja/Documents/TAIGA/Pendulum/Pendulum.srcs/sources_1/bd/TAIGA_System/ip/TAIGA_System_rst_production_controller_100M_1/TAIGA_System_rst_production_controller_100M_1_board.xdc] for cell 'TAIGA_System_i/rst_production_controller_100M'
@@ -128,7 +128,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 42 instances
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 6 instances
 
-link_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1671.445 ; gain = 833.383 ; free physical = 7799 ; free virtual = 40589
+link_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1671.434 ; gain = 833.383 ; free physical = 7686 ; free virtual = 40510
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -139,23 +139,23 @@ INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.32 . Memory (MB): peak = 1678.469 ; gain = 6.879 ; free physical = 7797 ; free virtual = 40587
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1678.457 ; gain = 6.879 ; free physical = 7684 ; free virtual = 40507
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 13 inverter(s) to 70 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 22815a612
+Phase 1 Retarget | Checksum: 17bd0c16d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1678.469 ; gain = 0.000 ; free physical = 7797 ; free virtual = 40586
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1678.457 ; gain = 0.000 ; free physical = 7682 ; free virtual = 40506
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 26 load pin(s).
-INFO: [Opt 31-10] Eliminated 599 cells.
-Phase 2 Constant Propagation | Checksum: 1490aa0bf
+INFO: [Opt 31-10] Eliminated 605 cells.
+Phase 2 Constant Propagation | Checksum: 19e8dab22
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1678.469 ; gain = 0.000 ; free physical = 7792 ; free virtual = 40581
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1678.457 ; gain = 0.000 ; free physical = 7687 ; free virtual = 40511
 
 Phase 3 Sweep
 WARNING: [Opt 31-6] Deleting driverless net: TAIGA_System_i/IO_Intermediary/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/LO_3.
@@ -259,18 +259,18 @@ WARNING: [Opt 31-6] Deleting driverless net: TAIGA_System_i/backup_controller/U0
 WARNING: [Opt 31-6] Deleting driverless net: TAIGA_System_i/backup_controller/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_pc_incr_carry_and_0/Carry_IN0_in.
 WARNING: [Opt 31-6] Deleting driverless net: TAIGA_System_i/backup_controller/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/if_pc_incr_carry_and_3/I1.
 INFO: [Common 17-14] Message 'Opt 31-6' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Opt 31-12] Eliminated 6352 unconnected nets.
+INFO: [Opt 31-12] Eliminated 6336 unconnected nets.
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
-INFO: [Opt 31-11] Eliminated 4245 unconnected cells.
-Phase 3 Sweep | Checksum: 1b27ca3f6
+INFO: [Opt 31-11] Eliminated 4238 unconnected cells.
+Phase 3 Sweep | Checksum: 1d6250ce8
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1678.469 ; gain = 0.000 ; free physical = 7794 ; free virtual = 40583
-Ending Logic Optimization Task | Checksum: 1b27ca3f6
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1678.457 ; gain = 0.000 ; free physical = 7687 ; free virtual = 40510
+Ending Logic Optimization Task | Checksum: 1d6250ce8
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1678.469 ; gain = 0.000 ; free physical = 7794 ; free virtual = 40583
-Implement Debug Cores | Checksum: 210e4422d
-Logic Optimization | Checksum: 210e4422d
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1678.457 ; gain = 0.000 ; free physical = 7687 ; free virtual = 40510
+Implement Debug Cores | Checksum: 244c4c9df
+Logic Optimization | Checksum: 244c4c9df
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
@@ -282,21 +282,21 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 8 BRAM(s) out of a total of 54 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 108
-Ending PowerOpt Patch Enables Task | Checksum: 1b27ca3f6
+Ending PowerOpt Patch Enables Task | Checksum: 1d6250ce8
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1758.477 ; gain = 0.000 ; free physical = 7669 ; free virtual = 40458
-Ending Power Optimization Task | Checksum: 1b27ca3f6
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1755.520 ; gain = 0.000 ; free physical = 7608 ; free virtual = 40432
+Ending Power Optimization Task | Checksum: 1d6250ce8
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1758.477 ; gain = 80.008 ; free physical = 7669 ; free virtual = 40458
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1755.520 ; gain = 77.062 ; free physical = 7608 ; free virtual = 40432
 INFO: [Common 17-83] Releasing license: Implementation
 29 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1758.477 ; gain = 87.031 ; free physical = 7669 ; free virtual = 40458
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1755.520 ; gain = 84.086 ; free physical = 7608 ; free virtual = 40432
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1774.484 ; gain = 0.000 ; free physical = 7665 ; free virtual = 40457
+Write XDEF Complete: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1771.527 ; gain = 0.000 ; free physical = 7608 ; free virtual = 40434
 INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/teja/Documents/TAIGA/Pendulum/Pendulum.runs/impl_1/TAIGA_System_wrapper_drc_opted.rpt.
 Command: place_design
@@ -314,26 +314,26 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
 
 Phase 1 Placer Runtime Estimator
-Phase 1 Placer Runtime Estimator | Checksum: 183d7ff7b
+Phase 1 Placer Runtime Estimator | Checksum: 11820e7bb
 
-Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1774.500 ; gain = 0.000 ; free physical = 7661 ; free virtual = 40453
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1771.543 ; gain = 0.000 ; free physical = 7605 ; free virtual = 40432
 
 Phase 2 Placer Initialization
 
 Phase 2.1 Placer Initialization Core
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1774.500 ; gain = 0.000 ; free physical = 7661 ; free virtual = 40453
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1774.500 ; gain = 0.000 ; free physical = 7661 ; free virtual = 40453
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1771.543 ; gain = 0.000 ; free physical = 7605 ; free virtual = 40432
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1771.543 ; gain = 0.000 ; free physical = 7605 ; free virtual = 40432
 
 Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
 
 Phase 2.1.1.1 Pre-Place Cells
 Phase 2.1.1.1 Pre-Place Cells | Checksum: 1de39d9f
 
-Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.50 . Memory (MB): peak = 1774.500 ; gain = 0.000 ; free physical = 7661 ; free virtual = 40453
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_dequeue/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
-WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI_enqueue/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.47 . Memory (MB): peak = 1771.543 ; gain = 0.000 ; free physical = 7605 ; free virtual = 40432
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_IOI/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
 WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
 WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
 WARNING: [Constraints 18-1079] Register TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and TAIGA_System_i/axi_fifo_backup/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
@@ -410,197 +410,197 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 2.1.1.2 IO & Clk Clean Up
 Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 1de39d9f
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7652 ; free virtual = 40444
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7599 ; free virtual = 40426
 
 Phase 2.1.1.3 Implementation Feasibility check On IDelay
 Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 1de39d9f
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7652 ; free virtual = 40444
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7599 ; free virtual = 40426
 
 Phase 2.1.1.4 Commit IO Placement
 Phase 2.1.1.4 Commit IO Placement | Checksum: fe3b6f08
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7652 ; free virtual = 40444
-Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1f96f1cd1
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7599 ; free virtual = 40426
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 122d4ca2e
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7652 ; free virtual = 40444
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7599 ; free virtual = 40426
 
 Phase 2.1.2 Build Placer Netlist Model
 
 Phase 2.1.2.1 Place Init Design
 
 Phase 2.1.2.1.1 Init Lut Pin Assignment
-Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 22d316c71
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 16d86e6ea
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
-Phase 2.1.2.1 Place Init Design | Checksum: 2a7d648b1
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7592 ; free virtual = 40419
+Phase 2.1.2.1 Place Init Design | Checksum: 17bf18778
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
-Phase 2.1.2 Build Placer Netlist Model | Checksum: 2a7d648b1
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7591 ; free virtual = 40417
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 17bf18778
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7591 ; free virtual = 40417
 
 Phase 2.1.3 Constrain Clocks/Macros
 
 Phase 2.1.3.1 Constrain Global/Regional Clocks
-Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 2a7d648b1
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 17bf18778
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
-Phase 2.1.3 Constrain Clocks/Macros | Checksum: 2a7d648b1
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7591 ; free virtual = 40417
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 17bf18778
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
-Phase 2.1 Placer Initialization Core | Checksum: 2a7d648b1
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7591 ; free virtual = 40417
+Phase 2.1 Placer Initialization Core | Checksum: 17bf18778
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
-Phase 2 Placer Initialization | Checksum: 2a7d648b1
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7591 ; free virtual = 40417
+Phase 2 Placer Initialization | Checksum: 17bf18778
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.543 ; gain = 120.043 ; free physical = 7650 ; free virtual = 40442
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.586 ; gain = 120.043 ; free physical = 7591 ; free virtual = 40417
 
 Phase 3 Global Placement
-Phase 3 Global Placement | Checksum: 266ee478f
+Phase 3 Global Placement | Checksum: 10a647a25
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7651 ; free virtual = 40443
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7576 ; free virtual = 40403
 
 Phase 4 Detail Placement
 
 Phase 4.1 Commit Multi Column Macros
-Phase 4.1 Commit Multi Column Macros | Checksum: 266ee478f
+Phase 4.1 Commit Multi Column Macros | Checksum: 10a647a25
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7651 ; free virtual = 40443
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7576 ; free virtual = 40403
 
 Phase 4.2 Commit Most Macros & LUTRAMs
-Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 163d4b6d8
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 507e2a59
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7649 ; free virtual = 40441
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7567 ; free virtual = 40394
 
 Phase 4.3 Area Swap Optimization
-Phase 4.3 Area Swap Optimization | Checksum: 1b8823193
+Phase 4.3 Area Swap Optimization | Checksum: 409ba840
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7649 ; free virtual = 40441
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7567 ; free virtual = 40394
 
 Phase 4.4 updateClock Trees: DP
-Phase 4.4 updateClock Trees: DP | Checksum: 1b8823193
+Phase 4.4 updateClock Trees: DP | Checksum: 409ba840
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7649 ; free virtual = 40441
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7567 ; free virtual = 40394
 
 Phase 4.5 Timing Path Optimizer
-Phase 4.5 Timing Path Optimizer | Checksum: 22582cc5c
+Phase 4.5 Timing Path Optimizer | Checksum: 951f7785
 
-Time (s): cpu = 00:01:35 ; elapsed = 00:00:33 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7566 ; free virtual = 40393
 
 Phase 4.6 Small Shape Detail Placement
 
 Phase 4.6.1 Commit Small Macros & Core Logic
 
 Phase 4.6.1.1 setBudgets
-Phase 4.6.1.1 setBudgets | Checksum: 18c3cf970
+Phase 4.6.1.1 setBudgets | Checksum: 5205c811
 
-Time (s): cpu = 00:01:35 ; elapsed = 00:00:33 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7566 ; free virtual = 40393
 
 Phase 4.6.1.2 Commit Slice Clusters
-Phase 4.6.1.2 Commit Slice Clusters | Checksum: 1ab34e922
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: e6674059
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
-Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 1ab34e922
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40390
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: e6674059
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40390
 
 Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
-Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1ab34e922
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: e6674059
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
 
 Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
-Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1ab34e922
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: e6674059
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
-Phase 4.6 Small Shape Detail Placement | Checksum: 1ab34e922
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
+Phase 4.6 Small Shape Detail Placement | Checksum: e6674059
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
 
 Phase 4.7 Re-assign LUT pins
-Phase 4.7 Re-assign LUT pins | Checksum: 1ab34e922
+Phase 4.7 Re-assign LUT pins | Checksum: e6674059
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
-Phase 4 Detail Placement | Checksum: 1ab34e922
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
+Phase 4 Detail Placement | Checksum: e6674059
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
 
 Phase 5 Post Placement Optimization and Clean-Up
 
 Phase 5.1 PCOPT Shape updates
-Phase 5.1 PCOPT Shape updates | Checksum: 195686267
+Phase 5.1 PCOPT Shape updates | Checksum: 234b75ef5
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
 
 Phase 5.2 Post Commit Optimization
 
 Phase 5.2.1 updateClock Trees: PCOPT
-Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 195686267
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 234b75ef5
 
-Time (s): cpu = 00:01:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7648 ; free virtual = 40440
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7563 ; free virtual = 40389
 
 Phase 5.2.2 Post Placement Optimization
 
 Phase 5.2.2.1 Post Placement Timing Optimization
 
 Phase 5.2.2.1.1 Restore Best Placement
-Phase 5.2.2.1.1 Restore Best Placement | Checksum: 141deb3c5
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7621 ; free virtual = 40414
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.563. For the most accurate timing information please run report_timing.
-Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 141deb3c5
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:02 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.576. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7621 ; free virtual = 40413
-Phase 5.2.2 Post Placement Optimization | Checksum: 141deb3c5
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:02 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
+Phase 5.2.2 Post Placement Optimization | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7620 ; free virtual = 40413
-Phase 5.2 Post Commit Optimization | Checksum: 141deb3c5
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
+Phase 5.2 Post Commit Optimization | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7621 ; free virtual = 40414
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
 
 Phase 5.3 Sweep Clock Roots: Post-Placement
-Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 141deb3c5
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:49 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7624 ; free virtual = 40417
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
 
 Phase 5.4 Post Placement Cleanup
-Phase 5.4 Post Placement Cleanup | Checksum: 141deb3c5
+Phase 5.4 Post Placement Cleanup | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7624 ; free virtual = 40417
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
 
 Phase 5.5 Placer Reporting
 
 Phase 5.5.1 Restore STA
-Phase 5.5.1 Restore STA | Checksum: 141deb3c5
+Phase 5.5.1 Restore STA | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7624 ; free virtual = 40417
-Phase 5.5 Placer Reporting | Checksum: 141deb3c5
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
+Phase 5.5 Placer Reporting | Checksum: 1c8b9d3a1
 
-Time (s): cpu = 00:02:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7624 ; free virtual = 40417
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
 
 Phase 5.6 Final Placement Cleanup
-Phase 5.6 Final Placement Cleanup | Checksum: 23ace05a2
+Phase 5.6 Final Placement Cleanup | Checksum: 15a33c19a
 
-Time (s): cpu = 00:02:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7624 ; free virtual = 40417
-Phase 5 Post Placement Optimization and Clean-Up | Checksum: 23ace05a2
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 15a33c19a
 
-Time (s): cpu = 00:02:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7624 ; free virtual = 40417
-Ending Placer Task | Checksum: 1d7e47e6b
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
+Ending Placer Task | Checksum: 7847c0aa
 
-Time (s): cpu = 00:02:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1926.559 ; gain = 152.059 ; free physical = 7623 ; free virtual = 40416
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:03 . Memory (MB): peak = 1923.602 ; gain = 152.059 ; free physical = 7556 ; free virtual = 40383
 INFO: [Common 17-83] Releasing license: Implementation
 42 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:02:53 ; elapsed = 00:01:43 . Memory (MB): peak = 1926.559 ; gain = 152.070 ; free physical = 7619 ; free virtual = 40412
+place_design: Time (s): cpu = 00:02:10 ; elapsed = 00:01:04 . Memory (MB): peak = 1923.602 ; gain = 152.070 ; free physical = 7556 ; free virtual = 40383
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7598 ; free virtual = 40412
-report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.25 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7617 ; free virtual = 40414
-report_utilization: Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.49 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7619 ; free virtual = 40416
-report_control_sets: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7619 ; free virtual = 40416
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7531 ; free virtual = 40380
+report_io: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7548 ; free virtual = 40380
+report_utilization: Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7548 ; free virtual = 40380
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7547 ; free virtual = 40379
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -615,168 +615,199 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 390fb3c4
+Phase 1 Build RT Design | Checksum: 17c41bdef
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7610 ; free virtual = 40408
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7503 ; free virtual = 40334
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 390fb3c4
+Phase 2.1 Create Timer | Checksum: 17c41bdef
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7606 ; free virtual = 40404
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7500 ; free virtual = 40332
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 390fb3c4
+Phase 2.2 Pre Route Cleanup | Checksum: 17c41bdef
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1926.559 ; gain = 0.000 ; free physical = 7579 ; free virtual = 40376
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1923.602 ; gain = 0.000 ; free physical = 7472 ; free virtual = 40304
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: d5787050
+Phase 2.3 Update Timing | Checksum: 19a1ea9c0
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:16 . Memory (MB): peak = 1951.059 ; gain = 24.500 ; free physical = 7536 ; free virtual = 40333
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.57  | TNS=-1.92e+03| WHS=-0.334 | THS=-223   |
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 1952.453 ; gain = 28.852 ; free physical = 7432 ; free virtual = 40264
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.42  | TNS=-1.69e+03| WHS=-0.358 | THS=-222   |
 
-Phase 2 Router Initialization | Checksum: b4781474
+Phase 2 Router Initialization | Checksum: 1a78fdbae
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:18 . Memory (MB): peak = 1951.059 ; gain = 24.500 ; free physical = 7517 ; free virtual = 40314
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:19 . Memory (MB): peak = 1952.453 ; gain = 28.852 ; free physical = 7415 ; free virtual = 40247
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 13070a7c4
+Phase 3 Initial Routing | Checksum: ab7f8784
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2050.363 ; gain = 123.805 ; free physical = 7411 ; free virtual = 40209
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2043.680 ; gain = 120.078 ; free physical = 7314 ; free virtual = 40146
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2366
- Number of Nodes with overlaps = 340
- Number of Nodes with overlaps = 40
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 2697
+ Number of Nodes with overlaps = 411
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 13
  Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: ebf0111f
+Phase 4.1.1 Update Timing | Checksum: 187a65193
 
-Time (s): cpu = 00:05:12 ; elapsed = 00:01:18 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7082 ; free virtual = 39885
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.24  | TNS=-4.12e+03| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:40 ; elapsed = 00:00:53 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7312 ; free virtual = 40144
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.23  | TNS=-3.63e+03| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.1.2 GlobIterForTiming
 
 Phase 4.1.2.1 Update Timing
-Phase 4.1.2.1 Update Timing | Checksum: 194a508a1
+Phase 4.1.2.1 Update Timing | Checksum: 1bb449005
 
-Time (s): cpu = 00:05:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7076 ; free virtual = 39879
+Time (s): cpu = 00:02:41 ; elapsed = 00:00:54 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7312 ; free virtual = 40144
 
 Phase 4.1.2.2 Fast Budgeting
-Phase 4.1.2.2 Fast Budgeting | Checksum: 17c2e3f09
+Phase 4.1.2.2 Fast Budgeting | Checksum: fdaa7d03
 
-Time (s): cpu = 00:05:14 ; elapsed = 00:01:19 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7075 ; free virtual = 39879
-Phase 4.1.2 GlobIterForTiming | Checksum: 1317ca011
+Time (s): cpu = 00:02:41 ; elapsed = 00:00:54 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7312 ; free virtual = 40144
+Phase 4.1.2 GlobIterForTiming | Checksum: 11d7db2f9
 
-Time (s): cpu = 00:05:15 ; elapsed = 00:01:20 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7077 ; free virtual = 39881
-Phase 4.1 Global Iteration 0 | Checksum: 1317ca011
+Time (s): cpu = 00:02:42 ; elapsed = 00:00:55 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7312 ; free virtual = 40144
+Phase 4.1 Global Iteration 0 | Checksum: 11d7db2f9
 
-Time (s): cpu = 00:05:15 ; elapsed = 00:01:20 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7077 ; free virtual = 39881
+Time (s): cpu = 00:02:42 ; elapsed = 00:00:55 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7312 ; free virtual = 40144
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 255
- Number of Nodes with overlaps = 218
- Number of Nodes with overlaps = 104
- Number of Nodes with overlaps = 42
- Number of Nodes with overlaps = 30
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 294
+ Number of Nodes with overlaps = 221
+ Number of Nodes with overlaps = 145
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 13
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 1812b54f9
+Phase 4.2.1 Update Timing | Checksum: 1452f3277
 
-Time (s): cpu = 00:06:21 ; elapsed = 00:01:39 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7026 ; free virtual = 39827
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.89  | TNS=-3.79e+03| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:05 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.88  | TNS=-3.45e+03| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.2.2 GlobIterForTiming
 
 Phase 4.2.2.1 Update Timing
-Phase 4.2.2.1 Update Timing | Checksum: c40c7c25
+Phase 4.2.2.1 Update Timing | Checksum: 165a36658
 
-Time (s): cpu = 00:06:21 ; elapsed = 00:01:39 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7025 ; free virtual = 39827
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:06 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
 
 Phase 4.2.2.2 Fast Budgeting
-Phase 4.2.2.2 Fast Budgeting | Checksum: 14853a7eb
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1bdf77d14
 
-Time (s): cpu = 00:06:22 ; elapsed = 00:01:40 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7025 ; free virtual = 39827
-Phase 4.2.2 GlobIterForTiming | Checksum: 106fe3fa3
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:06 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
+Phase 4.2.2 GlobIterForTiming | Checksum: f5e24c67
 
-Time (s): cpu = 00:06:23 ; elapsed = 00:01:40 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7024 ; free virtual = 39825
-Phase 4.2 Global Iteration 1 | Checksum: 106fe3fa3
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:07 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
+Phase 4.2 Global Iteration 1 | Checksum: f5e24c67
 
-Time (s): cpu = 00:06:23 ; elapsed = 00:01:40 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7024 ; free virtual = 39825
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:07 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
 
 Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 150
- Number of Nodes with overlaps = 106
- Number of Nodes with overlaps = 54
- Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 81
+ Number of Nodes with overlaps = 98
+ Number of Nodes with overlaps = 26
  Number of Nodes with overlaps = 13
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.3.1 Update Timing
-Phase 4.3.1 Update Timing | Checksum: 1b597a407
+Phase 4.3.1 Update Timing | Checksum: 194018b62
 
-Time (s): cpu = 00:07:11 ; elapsed = 00:01:53 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7294 ; free virtual = 40094
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.03  | TNS=-3.89e+03| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:13 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.83  | TNS=-3.33e+03| WHS=N/A    | THS=N/A    |
 
-Phase 4.3 Global Iteration 2 | Checksum: 97640249
 
-Time (s): cpu = 00:07:11 ; elapsed = 00:01:53 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7294 ; free virtual = 40094
-Phase 4 Rip-up And Reroute | Checksum: 97640249
+Phase 4.3.2 GlobIterForTiming
 
-Time (s): cpu = 00:07:11 ; elapsed = 00:01:53 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7294 ; free virtual = 40094
+Phase 4.3.2.1 Update Timing
+Phase 4.3.2.1 Update Timing | Checksum: 1ef306c86
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:14 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
+
+Phase 4.3.2.2 Fast Budgeting
+Phase 4.3.2.2 Fast Budgeting | Checksum: 25409f779
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:14 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
+Phase 4.3.2 GlobIterForTiming | Checksum: 107a2a769
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:15 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
+Phase 4.3 Global Iteration 2 | Checksum: 107a2a769
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:15 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.4.1 Update Timing
+Phase 4.4.1 Update Timing | Checksum: 16cea9d76
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:01:21 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.89  | TNS=-3.36e+03| WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 207fdc118
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:01:21 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
+Phase 4 Rip-up And Reroute | Checksum: 207fdc118
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:01:21 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
 
 Phase 5 Delay CleanUp
 
 Phase 5.1 Update Timing
-Phase 5.1 Update Timing | Checksum: 188d08554
+Phase 5.1 Update Timing | Checksum: 25fb6262c
 
-Time (s): cpu = 00:07:14 ; elapsed = 00:01:54 . Memory (MB): peak = 2058.367 ; gain = 131.809 ; free physical = 7294 ; free virtual = 40094
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.74  | TNS=-3.37e+03| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.72  | TNS=-2.93e+03| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5 Delay CleanUp | Checksum: 12552dae3
+Phase 5 Delay CleanUp | Checksum: 21fb56e9e
 
-Time (s): cpu = 00:07:26 ; elapsed = 00:01:56 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7253 ; free virtual = 40052
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:24 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
 
 Phase 6 Clock Skew Optimization
-Phase 6 Clock Skew Optimization | Checksum: 12552dae3
+Phase 6 Clock Skew Optimization | Checksum: 21fb56e9e
 
-Time (s): cpu = 00:07:26 ; elapsed = 00:01:56 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7253 ; free virtual = 40052
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:24 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7311 ; free virtual = 40143
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Update Timing
-Phase 7.1 Update Timing | Checksum: 13162c72b
+Phase 7.1 Update Timing | Checksum: 232397abc
 
-Time (s): cpu = 00:07:30 ; elapsed = 00:01:58 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7250 ; free virtual = 40050
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.73  | TNS=-3.36e+03| WHS=0.02   | THS=0      |
+Time (s): cpu = 00:04:08 ; elapsed = 00:01:25 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.72  | TNS=-2.93e+03| WHS=0.033  | THS=0      |
 
-Phase 7 Post Hold Fix | Checksum: 174b4126b
+Phase 7 Post Hold Fix | Checksum: 177e85106
 
-Time (s): cpu = 00:07:30 ; elapsed = 00:01:58 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7250 ; free virtual = 40050
+Time (s): cpu = 00:04:08 ; elapsed = 00:01:25 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 12.7694 %
-  Global Horizontal Routing Utilization  = 15.2401 %
+  Global Vertical Routing Utilization    = 13.1153 %
+  Global Horizontal Routing Utilization  = 15.9391 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -787,54 +818,54 @@ Router Utilization Summary
 
 Congestion Report
 North Dir 1x1 Area, Max Cong = 81.0811%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 75.6757%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_L_X6Y91 -> INT_L_X6Y91
-   INT_L_X6Y86 -> INT_L_X6Y86
-   INT_L_X16Y35 -> INT_L_X16Y35
-West Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_R_X13Y30 -> INT_R_X13Y30
-   INT_R_X11Y29 -> INT_R_X11Y29
-   INT_R_X13Y25 -> INT_R_X13Y25
-   INT_L_X16Y24 -> INT_L_X16Y24
-Phase 8 Route finalize | Checksum: 158c1cf8f
+South Dir 1x1 Area, Max Cong = 85.5856%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X19Y70 -> INT_R_X19Y70
+East Dir 1x1 Area, Max Cong = 98.5294%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X17Y69 -> INT_R_X17Y69
+   INT_R_X11Y10 -> INT_R_X11Y10
+   INT_L_X10Y9 -> INT_L_X10Y9
+West Dir 1x1 Area, Max Cong = 91.1765%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X19Y76 -> INT_R_X19Y76
+   INT_R_X17Y69 -> INT_R_X17Y69
+   INT_L_X18Y68 -> INT_L_X18Y68
+Phase 8 Route finalize | Checksum: 1df338689
 
-Time (s): cpu = 00:07:30 ; elapsed = 00:01:58 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7250 ; free virtual = 40050
+Time (s): cpu = 00:04:08 ; elapsed = 00:01:25 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 158c1cf8f
+Phase 9 Verifying routed nets | Checksum: 1df338689
 
-Time (s): cpu = 00:07:30 ; elapsed = 00:01:58 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7250 ; free virtual = 40050
+Time (s): cpu = 00:04:08 ; elapsed = 00:01:25 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: e96e5ebe
+Phase 10 Depositing Routes | Checksum: 211345d7c
 
-Time (s): cpu = 00:07:32 ; elapsed = 00:01:59 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7249 ; free virtual = 40048
+Time (s): cpu = 00:04:10 ; elapsed = 00:01:26 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 
 Phase 11 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.73  | TNS=-3.36e+03| WHS=0.02   | THS=0      |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.72  | TNS=-2.93e+03| WHS=0.033  | THS=0      |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 11 Post Router Timing | Checksum: e96e5ebe
+Phase 11 Post Router Timing | Checksum: 211345d7c
 
-Time (s): cpu = 00:07:32 ; elapsed = 00:01:59 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7249 ; free virtual = 40048
+Time (s): cpu = 00:04:10 ; elapsed = 00:01:26 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 INFO: [Route 35-16] Router Completed Successfully
 
 Routing Is Done.
 
-Time (s): cpu = 00:07:32 ; elapsed = 00:01:59 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7249 ; free virtual = 40048
+Time (s): cpu = 00:04:10 ; elapsed = 00:01:26 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 INFO: [Common 17-83] Releasing license: Implementation
-56 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:07:34 ; elapsed = 00:02:01 . Memory (MB): peak = 2110.363 ; gain = 183.805 ; free physical = 7249 ; free virtual = 40048
+route_design: Time (s): cpu = 00:04:12 ; elapsed = 00:01:28 . Memory (MB): peak = 2051.684 ; gain = 128.082 ; free physical = 7310 ; free virtual = 40142
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2126.371 ; gain = 0.000 ; free physical = 7212 ; free virtual = 40039
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2059.688 ; gain = 0.000 ; free physical = 7280 ; free virtual = 40140
 INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/teja/Documents/TAIGA/Pendulum/Pendulum.runs/impl_1/TAIGA_System_wrapper_drc_routed.rpt.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -883,7 +914,6 @@ Creating bitstream...
 Writing bitstream ./TAIGA_System_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/home/teja/Documents/TAIGA/Pendulum/Pendulum.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Mar 31 19:44:41 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 2290.711 ; gain = 164.336 ; free physical = 7162 ; free virtual = 39971
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 19:44:42 2015...
+write_bitstream: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2287.582 ; gain = 219.883 ; free physical = 7059 ; free virtual = 39901
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 20:11:01 2015...

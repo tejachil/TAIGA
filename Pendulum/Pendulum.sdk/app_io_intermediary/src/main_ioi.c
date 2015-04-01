@@ -55,6 +55,8 @@
 #include "xstatus.h"
 #include "utilities/axi_gpio.h"
 #include "utilities/fifo_queue.h"
+#include "utilities/axi_spi.h"
+#include "pendulum_plant.h"
 #include "xuartlite.h"
 
 #define UARTLITE_DEVICE_ID		XPAR_UARTLITE_0_DEVICE_ID
@@ -67,14 +69,16 @@ int main()
 	int Status;
 
 	init_axi_gpio();
+	init_fifo_queues();
+	init_spi();
+	init_pendulum_plant();
+
 
 	// Initialize the UartLite driver so that it is ready to use.
 	Status = XUartLite_Initialize(&UartLite, UARTLITE_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
-
-	init_fifo_queues();
 
 	select_controller(PRODUCTION);
 
@@ -87,6 +91,10 @@ int main()
 
 	while(1){
 		select_controller(read_sw_raw());
+		Status = read_sensor((SS_ENCODER_P), (READ_CNTR << 24));
+		Status &= ~(0xFF0000FF);
+		Status = (Status >> 8);
+		xil_printf("%d\r\n", Status);
 	}
 
 	return XST_SUCCESS;

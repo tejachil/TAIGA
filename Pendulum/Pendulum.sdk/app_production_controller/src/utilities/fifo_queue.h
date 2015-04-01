@@ -9,6 +9,7 @@
 #define FIFO_QUEUE_H_
 
 #include "xparameters.h"
+#include "taiga_pendulum_parameters.h"
 
 #define FIFO_DEV_ID		XPAR_AXI_FIFO_PRODUCTION_DEVICE_ID
 
@@ -16,7 +17,7 @@
 
 int init_fifo_queues();
 
-int enqueue(int* data, int size);
+int enqueue(QueuePacket* enqueue_packet);
 
 int dequeue(int* buffer);
 

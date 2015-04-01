@@ -21,7 +21,11 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xstatus.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h \
- ../src/utilities/fifo_queue.h \
+ ../src/utilities/fifo_queue.h ../src/utilities/axi_spi.h \
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xspi.h \
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xspi_l.h \
+ ../../global_includes/taiga_pendulum_parameters.h \
+ ../src/pendulum_plant.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xparameters.h:
@@ -69,5 +73,15 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
 ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h:
 
 ../src/utilities/fifo_queue.h:
+
+../src/utilities/axi_spi.h:
+
+../../bsp_ioi_standalone/IO_Intermediary/include/xspi.h:
+
+../../bsp_ioi_standalone/IO_Intermediary/include/xspi_l.h:
+
+../../global_includes/taiga_pendulum_parameters.h:
+
+../src/pendulum_plant.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h:

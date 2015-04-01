@@ -316,13 +316,9 @@ proc create_root_design { parentCell } {
   # Create instance: IO_Intermediary_xlconcat, and set properties
   set IO_Intermediary_xlconcat [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 IO_Intermediary_xlconcat ]
 
-  # Create instance: axi_fifo_IOI_dequeue, and set properties
-  set axi_fifo_IOI_dequeue [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_fifo_mm_s:4.1 axi_fifo_IOI_dequeue ]
-  set_property -dict [ list CONFIG.C_DATA_INTERFACE_TYPE {0} CONFIG.C_USE_TX_DATA {0}  ] $axi_fifo_IOI_dequeue
-
-  # Create instance: axi_fifo_IOI_enqueue, and set properties
-  set axi_fifo_IOI_enqueue [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_fifo_mm_s:4.1 axi_fifo_IOI_enqueue ]
-  set_property -dict [ list CONFIG.C_DATA_INTERFACE_TYPE {0} CONFIG.C_USE_RX_DATA {0} CONFIG.C_USE_TX_DATA {1}  ] $axi_fifo_IOI_enqueue
+  # Create instance: axi_fifo_IOI, and set properties
+  set axi_fifo_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_fifo_mm_s:4.1 axi_fifo_IOI ]
+  set_property -dict [ list CONFIG.C_DATA_INTERFACE_TYPE {0} CONFIG.C_USE_TX_DATA {1}  ] $axi_fifo_IOI
 
   # Create instance: axi_fifo_backup, and set properties
   set axi_fifo_backup [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_fifo_mm_s:4.1 axi_fifo_backup ]
@@ -358,7 +354,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: axi_periph_IOI, and set properties
   set axi_periph_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_periph_IOI ]
-  set_property -dict [ list CONFIG.NUM_MI {9}  ] $axi_periph_IOI
+  set_property -dict [ list CONFIG.NUM_MI {8}  ] $axi_periph_IOI
 
   # Create instance: axi_periph_backup_controller, and set properties
   set axi_periph_backup_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_periph_backup_controller ]
@@ -447,10 +443,9 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_periph_IOI_M02_AXI [get_bd_intf_pins axi_gpio_IOI_out/S_AXI] [get_bd_intf_pins axi_periph_IOI/M02_AXI]
   connect_bd_intf_net -intf_net axi_periph_IOI_M03_AXI [get_bd_intf_pins axi_gpio_IOI_in/S_AXI] [get_bd_intf_pins axi_periph_IOI/M03_AXI]
   connect_bd_intf_net -intf_net axi_periph_IOI_M04_AXI [get_bd_intf_pins axi_periph_IOI/M04_AXI] [get_bd_intf_pins axi_wdt_IOI/S_AXI]
-  connect_bd_intf_net -intf_net axi_periph_IOI_M05_AXI [get_bd_intf_pins axi_fifo_IOI_dequeue/S_AXI] [get_bd_intf_pins axi_periph_IOI/M05_AXI]
-  connect_bd_intf_net -intf_net axi_periph_IOI_M06_AXI [get_bd_intf_pins axi_fifo_IOI_enqueue/S_AXI] [get_bd_intf_pins axi_periph_IOI/M06_AXI]
-  connect_bd_intf_net -intf_net axi_periph_IOI_M07_AXI [get_bd_intf_pins axi_gpio_trigger/S_AXI] [get_bd_intf_pins axi_periph_IOI/M07_AXI]
-  connect_bd_intf_net -intf_net axi_periph_IOI_M08_AXI [get_bd_intf_pins axi_periph_IOI/M08_AXI] [get_bd_intf_pins axi_supervisory_uart/S_AXI]
+  connect_bd_intf_net -intf_net axi_periph_IOI_M05_AXI [get_bd_intf_pins axi_fifo_IOI/S_AXI] [get_bd_intf_pins axi_periph_IOI/M05_AXI]
+  connect_bd_intf_net -intf_net axi_periph_IOI_M06_AXI [get_bd_intf_pins axi_gpio_trigger/S_AXI] [get_bd_intf_pins axi_periph_IOI/M06_AXI]
+  connect_bd_intf_net -intf_net axi_periph_IOI_M07_AXI [get_bd_intf_pins axi_periph_IOI/M07_AXI] [get_bd_intf_pins axi_supervisory_uart/S_AXI]
   connect_bd_intf_net -intf_net axi_periph_backup_controller_M01_AXI [get_bd_intf_pins axi_periph_backup_controller/M01_AXI] [get_bd_intf_pins axi_timer_backup_controller/S_AXI]
   connect_bd_intf_net -intf_net axi_periph_backup_controller_M02_AXI [get_bd_intf_pins axi_gpio_backup_controller_out/S_AXI] [get_bd_intf_pins axi_periph_backup_controller/M02_AXI]
   connect_bd_intf_net -intf_net axi_periph_backup_controller_M03_AXI [get_bd_intf_pins axi_fifo_backup/S_AXI] [get_bd_intf_pins axi_periph_backup_controller/M03_AXI]
@@ -470,11 +465,11 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net IO_Intermediary_intr [get_bd_pins IO_Intermediary_xlconcat/dout] [get_bd_pins axi_intc_IOI/intr]
-  connect_bd_net -net axi_fifo_IOI_dequeue_axi_str_rxd_tready [get_bd_pins axi_fifo_IOI_dequeue/axi_str_rxd_tready] [get_bd_pins queue_multiplexer/rx_ready]
-  connect_bd_net -net axi_fifo_IOI_dequeue_interrupt [get_bd_pins IO_Intermediary_xlconcat/In1] [get_bd_pins axi_fifo_IOI_dequeue/interrupt]
-  connect_bd_net -net axi_fifo_IOI_enqueue_axi_str_txd_tdata [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tdata] [get_bd_pins queue_multiplexer/tx_data]
-  connect_bd_net -net axi_fifo_IOI_enqueue_axi_str_txd_tlast [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tlast] [get_bd_pins queue_multiplexer/tx_tlast]
-  connect_bd_net -net axi_fifo_IOI_enqueue_axi_str_txd_tvalid [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tvalid] [get_bd_pins queue_multiplexer/tx_valid]
+  connect_bd_net -net axi_fifo_IOI_dequeue_axi_str_rxd_tready [get_bd_pins axi_fifo_IOI/axi_str_rxd_tready] [get_bd_pins queue_multiplexer/rx_ready]
+  connect_bd_net -net axi_fifo_IOI_dequeue_axi_str_txd_tdata [get_bd_pins axi_fifo_IOI/axi_str_txd_tdata] [get_bd_pins queue_multiplexer/tx_data]
+  connect_bd_net -net axi_fifo_IOI_dequeue_axi_str_txd_tlast [get_bd_pins axi_fifo_IOI/axi_str_txd_tlast] [get_bd_pins queue_multiplexer/tx_tlast]
+  connect_bd_net -net axi_fifo_IOI_dequeue_axi_str_txd_tvalid [get_bd_pins axi_fifo_IOI/axi_str_txd_tvalid] [get_bd_pins queue_multiplexer/tx_valid]
+  connect_bd_net -net axi_fifo_IOI_dequeue_interrupt [get_bd_pins IO_Intermediary_xlconcat/In1] [get_bd_pins axi_fifo_IOI/interrupt]
   connect_bd_net -net axi_gpio_trigger_gpio_io_o [get_bd_ports gpio_trigger] [get_bd_pins axi_gpio_trigger/gpio_io_o] [get_bd_pins queue_multiplexer/switch_select]
   connect_bd_net -net axi_quad_spi_plant_io0_o [get_bd_ports spi_plant_mosi_o] [get_bd_pins axi_quad_spi_plant/io0_o]
   connect_bd_net -net axi_quad_spi_plant_sck_o [get_bd_ports spi_plant_sck_o] [get_bd_pins axi_quad_spi_plant/sck_o]
@@ -482,7 +477,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi_supervisory_uart_tx [get_bd_ports ioi_uart_tx] [get_bd_pins axi_supervisory_uart/tx]
   connect_bd_net -net axi_timer_backup_controller_interrupt [get_bd_pins axi_timer_backup_controller/interrupt] [get_bd_pins backup_controller_axi_intc/intr]
   connect_bd_net -net axi_wdt_IOI_wdt_interrupt [get_bd_pins IO_Intermediary_xlconcat/In0] [get_bd_pins axi_wdt_IOI/wdt_interrupt]
-  connect_bd_net -net backup_controller_Clk [get_bd_pins IO_Intermediary/Clk] [get_bd_pins axi_fifo_IOI_dequeue/s_axi_aclk] [get_bd_pins axi_fifo_IOI_enqueue/s_axi_aclk] [get_bd_pins axi_fifo_backup/s_axi_aclk] [get_bd_pins axi_fifo_production/s_axi_aclk] [get_bd_pins axi_gpio_IOI_in/s_axi_aclk] [get_bd_pins axi_gpio_IOI_out/s_axi_aclk] [get_bd_pins axi_gpio_backup_controller_out/s_axi_aclk] [get_bd_pins axi_gpio_production_controller_out/s_axi_aclk] [get_bd_pins axi_gpio_trigger/s_axi_aclk] [get_bd_pins axi_intc_IOI/processor_clk] [get_bd_pins axi_intc_IOI/s_axi_aclk] [get_bd_pins axi_periph_IOI/ACLK] [get_bd_pins axi_periph_IOI/M00_ACLK] [get_bd_pins axi_periph_IOI/M01_ACLK] [get_bd_pins axi_periph_IOI/M02_ACLK] [get_bd_pins axi_periph_IOI/M03_ACLK] [get_bd_pins axi_periph_IOI/M04_ACLK] [get_bd_pins axi_periph_IOI/M05_ACLK] [get_bd_pins axi_periph_IOI/M06_ACLK] [get_bd_pins axi_periph_IOI/M07_ACLK] [get_bd_pins axi_periph_IOI/M08_ACLK] [get_bd_pins axi_periph_IOI/S00_ACLK] [get_bd_pins axi_periph_backup_controller/ACLK] [get_bd_pins axi_periph_backup_controller/M00_ACLK] [get_bd_pins axi_periph_backup_controller/M01_ACLK] [get_bd_pins axi_periph_backup_controller/M02_ACLK] [get_bd_pins axi_periph_backup_controller/M03_ACLK] [get_bd_pins axi_periph_backup_controller/S00_ACLK] [get_bd_pins axi_periph_production_controller/ACLK] [get_bd_pins axi_periph_production_controller/M00_ACLK] [get_bd_pins axi_periph_production_controller/M01_ACLK] [get_bd_pins axi_periph_production_controller/S00_ACLK] [get_bd_pins axi_quad_spi_plant/ext_spi_clk] [get_bd_pins axi_quad_spi_plant/s_axi_aclk] [get_bd_pins axi_supervisory_uart/s_axi_aclk] [get_bd_pins axi_timer_backup_controller/s_axi_aclk] [get_bd_pins axi_wdt_IOI/s_axi_aclk] [get_bd_pins backup_controller/Clk] [get_bd_pins backup_controller_axi_intc/processor_clk] [get_bd_pins backup_controller_axi_intc/s_axi_aclk] [get_bd_pins backup_controller_local_memory/LMB_Clk] [get_bd_pins fifo_IOI_to_backup/s_aclk] [get_bd_pins fifo_IOI_to_production/s_aclk] [get_bd_pins fifo_backup_to_IOI/s_aclk] [get_bd_pins fifo_production_to_IOI/s_aclk] [get_bd_pins local_memory_IOI/LMB_Clk] [get_bd_pins production_controller/FCLK_CLK0] [get_bd_pins production_controller/M_AXI_GP0_ACLK] [get_bd_pins rst_production_controller_100M/slowest_sync_clk]
+  connect_bd_net -net backup_controller_Clk [get_bd_pins IO_Intermediary/Clk] [get_bd_pins axi_fifo_IOI/s_axi_aclk] [get_bd_pins axi_fifo_backup/s_axi_aclk] [get_bd_pins axi_fifo_production/s_axi_aclk] [get_bd_pins axi_gpio_IOI_in/s_axi_aclk] [get_bd_pins axi_gpio_IOI_out/s_axi_aclk] [get_bd_pins axi_gpio_backup_controller_out/s_axi_aclk] [get_bd_pins axi_gpio_production_controller_out/s_axi_aclk] [get_bd_pins axi_gpio_trigger/s_axi_aclk] [get_bd_pins axi_intc_IOI/processor_clk] [get_bd_pins axi_intc_IOI/s_axi_aclk] [get_bd_pins axi_periph_IOI/ACLK] [get_bd_pins axi_periph_IOI/M00_ACLK] [get_bd_pins axi_periph_IOI/M01_ACLK] [get_bd_pins axi_periph_IOI/M02_ACLK] [get_bd_pins axi_periph_IOI/M03_ACLK] [get_bd_pins axi_periph_IOI/M04_ACLK] [get_bd_pins axi_periph_IOI/M05_ACLK] [get_bd_pins axi_periph_IOI/M06_ACLK] [get_bd_pins axi_periph_IOI/M07_ACLK] [get_bd_pins axi_periph_IOI/S00_ACLK] [get_bd_pins axi_periph_backup_controller/ACLK] [get_bd_pins axi_periph_backup_controller/M00_ACLK] [get_bd_pins axi_periph_backup_controller/M01_ACLK] [get_bd_pins axi_periph_backup_controller/M02_ACLK] [get_bd_pins axi_periph_backup_controller/M03_ACLK] [get_bd_pins axi_periph_backup_controller/S00_ACLK] [get_bd_pins axi_periph_production_controller/ACLK] [get_bd_pins axi_periph_production_controller/M00_ACLK] [get_bd_pins axi_periph_production_controller/M01_ACLK] [get_bd_pins axi_periph_production_controller/S00_ACLK] [get_bd_pins axi_quad_spi_plant/ext_spi_clk] [get_bd_pins axi_quad_spi_plant/s_axi_aclk] [get_bd_pins axi_supervisory_uart/s_axi_aclk] [get_bd_pins axi_timer_backup_controller/s_axi_aclk] [get_bd_pins axi_wdt_IOI/s_axi_aclk] [get_bd_pins backup_controller/Clk] [get_bd_pins backup_controller_axi_intc/processor_clk] [get_bd_pins backup_controller_axi_intc/s_axi_aclk] [get_bd_pins backup_controller_local_memory/LMB_Clk] [get_bd_pins fifo_IOI_to_backup/s_aclk] [get_bd_pins fifo_IOI_to_production/s_aclk] [get_bd_pins fifo_backup_to_IOI/s_aclk] [get_bd_pins fifo_production_to_IOI/s_aclk] [get_bd_pins local_memory_IOI/LMB_Clk] [get_bd_pins production_controller/FCLK_CLK0] [get_bd_pins production_controller/M_AXI_GP0_ACLK] [get_bd_pins rst_production_controller_100M/slowest_sync_clk]
   connect_bd_net -net fifo_IOI_to_backup_s_axis_tready [get_bd_pins fifo_IOI_to_backup/s_axis_tready] [get_bd_pins queue_multiplexer/tx_ready_b]
   connect_bd_net -net fifo_IOI_to_production_s_axis_tready [get_bd_pins fifo_IOI_to_production/s_axis_tready] [get_bd_pins queue_multiplexer/tx_ready_a]
   connect_bd_net -net fifo_backup_to_IOI_m_axis_tdata [get_bd_pins fifo_backup_to_IOI/m_axis_tdata] [get_bd_pins queue_multiplexer/rx_data_b]
@@ -494,28 +489,27 @@ proc create_root_design { parentCell } {
   connect_bd_net -net io1_i_1 [get_bd_ports spi_plant_miso_i] [get_bd_pins axi_quad_spi_plant/io1_i]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_production_controller_100M/mb_debug_sys_rst]
   connect_bd_net -net production_controller_FCLK_RESET0_N [get_bd_pins production_controller/FCLK_RESET0_N] [get_bd_pins rst_production_controller_100M/ext_reset_in]
-  connect_bd_net -net queue_multiplexer_0_rx_data [get_bd_pins axi_fifo_IOI_dequeue/axi_str_rxd_tdata] [get_bd_pins queue_multiplexer/rx_data]
+  connect_bd_net -net queue_multiplexer_0_rx_data [get_bd_pins axi_fifo_IOI/axi_str_rxd_tdata] [get_bd_pins queue_multiplexer/rx_data]
   connect_bd_net -net queue_multiplexer_0_rx_ready_a [get_bd_pins fifo_production_to_IOI/m_axis_tready] [get_bd_pins queue_multiplexer/rx_ready_a]
   connect_bd_net -net queue_multiplexer_0_rx_ready_b [get_bd_pins fifo_backup_to_IOI/m_axis_tready] [get_bd_pins queue_multiplexer/rx_ready_b]
-  connect_bd_net -net queue_multiplexer_0_rx_valid [get_bd_pins axi_fifo_IOI_dequeue/axi_str_rxd_tvalid] [get_bd_pins queue_multiplexer/rx_valid]
+  connect_bd_net -net queue_multiplexer_0_rx_valid [get_bd_pins axi_fifo_IOI/axi_str_rxd_tvalid] [get_bd_pins queue_multiplexer/rx_valid]
   connect_bd_net -net queue_multiplexer_0_tx_data_a [get_bd_pins fifo_IOI_to_production/s_axis_tdata] [get_bd_pins queue_multiplexer/tx_data_a]
   connect_bd_net -net queue_multiplexer_0_tx_data_b [get_bd_pins fifo_IOI_to_backup/s_axis_tdata] [get_bd_pins queue_multiplexer/tx_data_b]
-  connect_bd_net -net queue_multiplexer_0_tx_ready [get_bd_pins axi_fifo_IOI_enqueue/axi_str_txd_tready] [get_bd_pins queue_multiplexer/tx_ready]
   connect_bd_net -net queue_multiplexer_0_tx_valid_a [get_bd_pins fifo_IOI_to_production/s_axis_tvalid] [get_bd_pins queue_multiplexer/tx_valid_a]
   connect_bd_net -net queue_multiplexer_0_tx_valid_b [get_bd_pins fifo_IOI_to_backup/s_axis_tvalid] [get_bd_pins queue_multiplexer/tx_valid_b]
-  connect_bd_net -net queue_multiplexer_rx_tlast [get_bd_pins axi_fifo_IOI_dequeue/axi_str_rxd_tlast] [get_bd_pins queue_multiplexer/rx_tlast]
+  connect_bd_net -net queue_multiplexer_rx_tlast [get_bd_pins axi_fifo_IOI/axi_str_rxd_tlast] [get_bd_pins queue_multiplexer/rx_tlast]
+  connect_bd_net -net queue_multiplexer_tx_ready [get_bd_pins axi_fifo_IOI/axi_str_txd_tready] [get_bd_pins queue_multiplexer/tx_ready]
   connect_bd_net -net queue_multiplexer_tx_tlast_a [get_bd_pins fifo_IOI_to_production/s_axis_tlast] [get_bd_pins queue_multiplexer/tx_tlast_a]
   connect_bd_net -net queue_multiplexer_tx_tlast_b [get_bd_pins fifo_IOI_to_backup/s_axis_tlast] [get_bd_pins queue_multiplexer/tx_tlast_b]
   connect_bd_net -net rst_production_controller_100M_bus_struct_reset [get_bd_pins backup_controller_local_memory/LMB_Rst] [get_bd_pins local_memory_IOI/LMB_Rst] [get_bd_pins rst_production_controller_100M/bus_struct_reset]
   connect_bd_net -net rst_production_controller_100M_interconnect_aresetn [get_bd_pins axi_periph_IOI/ARESETN] [get_bd_pins axi_periph_backup_controller/ARESETN] [get_bd_pins axi_periph_production_controller/ARESETN] [get_bd_pins rst_production_controller_100M/interconnect_aresetn]
   connect_bd_net -net rst_production_controller_100M_mb_reset [get_bd_pins IO_Intermediary/Reset] [get_bd_pins axi_intc_IOI/processor_rst] [get_bd_pins backup_controller/Reset] [get_bd_pins backup_controller_axi_intc/processor_rst] [get_bd_pins rst_production_controller_100M/mb_reset]
-  connect_bd_net -net rst_production_controller_100M_peripheral_aresetn [get_bd_pins axi_fifo_IOI_dequeue/s_axi_aresetn] [get_bd_pins axi_fifo_IOI_enqueue/s_axi_aresetn] [get_bd_pins axi_fifo_backup/s_axi_aresetn] [get_bd_pins axi_fifo_production/s_axi_aresetn] [get_bd_pins axi_gpio_IOI_in/s_axi_aresetn] [get_bd_pins axi_gpio_IOI_out/s_axi_aresetn] [get_bd_pins axi_gpio_backup_controller_out/s_axi_aresetn] [get_bd_pins axi_gpio_production_controller_out/s_axi_aresetn] [get_bd_pins axi_gpio_trigger/s_axi_aresetn] [get_bd_pins axi_intc_IOI/s_axi_aresetn] [get_bd_pins axi_periph_IOI/M00_ARESETN] [get_bd_pins axi_periph_IOI/M01_ARESETN] [get_bd_pins axi_periph_IOI/M02_ARESETN] [get_bd_pins axi_periph_IOI/M03_ARESETN] [get_bd_pins axi_periph_IOI/M04_ARESETN] [get_bd_pins axi_periph_IOI/M05_ARESETN] [get_bd_pins axi_periph_IOI/M06_ARESETN] [get_bd_pins axi_periph_IOI/M07_ARESETN] [get_bd_pins axi_periph_IOI/M08_ARESETN] [get_bd_pins axi_periph_IOI/S00_ARESETN] [get_bd_pins axi_periph_backup_controller/M00_ARESETN] [get_bd_pins axi_periph_backup_controller/M01_ARESETN] [get_bd_pins axi_periph_backup_controller/M02_ARESETN] [get_bd_pins axi_periph_backup_controller/M03_ARESETN] [get_bd_pins axi_periph_backup_controller/S00_ARESETN] [get_bd_pins axi_periph_production_controller/M00_ARESETN] [get_bd_pins axi_periph_production_controller/M01_ARESETN] [get_bd_pins axi_periph_production_controller/S00_ARESETN] [get_bd_pins axi_quad_spi_plant/s_axi_aresetn] [get_bd_pins axi_supervisory_uart/s_axi_aresetn] [get_bd_pins axi_timer_backup_controller/s_axi_aresetn] [get_bd_pins axi_wdt_IOI/s_axi_aresetn] [get_bd_pins backup_controller_axi_intc/s_axi_aresetn] [get_bd_pins fifo_IOI_to_backup/s_aresetn] [get_bd_pins fifo_IOI_to_production/s_aresetn] [get_bd_pins fifo_backup_to_IOI/s_aresetn] [get_bd_pins fifo_production_to_IOI/s_aresetn] [get_bd_pins rst_production_controller_100M/peripheral_aresetn]
+  connect_bd_net -net rst_production_controller_100M_peripheral_aresetn [get_bd_pins axi_fifo_IOI/s_axi_aresetn] [get_bd_pins axi_fifo_backup/s_axi_aresetn] [get_bd_pins axi_fifo_production/s_axi_aresetn] [get_bd_pins axi_gpio_IOI_in/s_axi_aresetn] [get_bd_pins axi_gpio_IOI_out/s_axi_aresetn] [get_bd_pins axi_gpio_backup_controller_out/s_axi_aresetn] [get_bd_pins axi_gpio_production_controller_out/s_axi_aresetn] [get_bd_pins axi_gpio_trigger/s_axi_aresetn] [get_bd_pins axi_intc_IOI/s_axi_aresetn] [get_bd_pins axi_periph_IOI/M00_ARESETN] [get_bd_pins axi_periph_IOI/M01_ARESETN] [get_bd_pins axi_periph_IOI/M02_ARESETN] [get_bd_pins axi_periph_IOI/M03_ARESETN] [get_bd_pins axi_periph_IOI/M04_ARESETN] [get_bd_pins axi_periph_IOI/M05_ARESETN] [get_bd_pins axi_periph_IOI/M06_ARESETN] [get_bd_pins axi_periph_IOI/M07_ARESETN] [get_bd_pins axi_periph_IOI/S00_ARESETN] [get_bd_pins axi_periph_backup_controller/M00_ARESETN] [get_bd_pins axi_periph_backup_controller/M01_ARESETN] [get_bd_pins axi_periph_backup_controller/M02_ARESETN] [get_bd_pins axi_periph_backup_controller/M03_ARESETN] [get_bd_pins axi_periph_backup_controller/S00_ARESETN] [get_bd_pins axi_periph_production_controller/M00_ARESETN] [get_bd_pins axi_periph_production_controller/M01_ARESETN] [get_bd_pins axi_periph_production_controller/S00_ARESETN] [get_bd_pins axi_quad_spi_plant/s_axi_aresetn] [get_bd_pins axi_supervisory_uart/s_axi_aresetn] [get_bd_pins axi_timer_backup_controller/s_axi_aresetn] [get_bd_pins axi_wdt_IOI/s_axi_aresetn] [get_bd_pins backup_controller_axi_intc/s_axi_aresetn] [get_bd_pins fifo_IOI_to_backup/s_aresetn] [get_bd_pins fifo_IOI_to_production/s_aresetn] [get_bd_pins fifo_backup_to_IOI/s_aresetn] [get_bd_pins fifo_production_to_IOI/s_aresetn] [get_bd_pins rst_production_controller_100M/peripheral_aresetn]
   connect_bd_net -net rx_1 [get_bd_ports ioi_uart_rx] [get_bd_pins axi_supervisory_uart/rx]
 
   # Create address segments
   create_bd_addr_seg -range 0x10000 -offset 0x41200000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_intc_IOI/s_axi/Reg] SEG_IO_Intermediary_axi_intc_Reg
-  create_bd_addr_seg -range 0x10000 -offset 0x44A10000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_fifo_IOI_dequeue/S_AXI/Mem0] SEG_axi_fifo_IOI_dequeue_Mem0
-  create_bd_addr_seg -range 0x10000 -offset 0x44A20000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_fifo_IOI_enqueue/S_AXI/Mem0] SEG_axi_fifo_IOI_enqueue_Mem0
+  create_bd_addr_seg -range 0x10000 -offset 0x44A10000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_fifo_IOI/S_AXI/Mem0] SEG_axi_fifo_IOI_Mem0
   create_bd_addr_seg -range 0x10000 -offset 0x40010000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_gpio_IOI_in/S_AXI/Reg] SEG_axi_gpio_IOI_in_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x40000000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_gpio_IOI_out/S_AXI/Reg] SEG_axi_gpio_IOI_out_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x40020000 [get_bd_addr_spaces IO_Intermediary/Data] [get_bd_addr_segs axi_gpio_trigger/S_AXI/Reg] SEG_axi_gpio_trigger_Reg

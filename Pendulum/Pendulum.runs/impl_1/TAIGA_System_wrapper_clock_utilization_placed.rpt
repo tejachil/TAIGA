@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Tue Mar 31 19:41:53 2015
+| Date         : Tue Mar 31 20:08:46 2015
 | Host         : CRS running 64-bit Ubuntu 14.04.2 LTS
 | Command      : report_clock_utilization -file TAIGA_System_wrapper_clock_utilization_placed.rpt
 | Design       : TAIGA_System_wrapper
@@ -48,9 +48,9 @@ Table of Contents
 +-------+-----------------------------------------------------------------------------+-----------------------------------------------------+------+-------+-------+---------------+-----------+
 | Index | BUFG Cell                                                                   | Net Name                                            | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+-----------------------------------------------------------------------------+-----------------------------------------------------+------+-------+-------+---------------+-----------+
-|     1 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst                           | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |   52 |    23 |    no |         1.836 |     0.165 |
-|     2 | TAIGA_System_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK                         | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |  375 |   131 |    no |         1.883 |     0.223 |
-|     3 | TAIGA_System_i/production_controller/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | TAIGA_System_i/production_controller/inst/FCLK_CLK0 | 8848 |  2898 |    no |         2.475 |     0.876 |
+|     1 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE_BUFG_inst                           | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |   52 |    28 |    no |         1.834 |     0.176 |
+|     2 | TAIGA_System_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK                         | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |  375 |   138 |    no |         1.845 |     0.193 |
+|     3 | TAIGA_System_i/production_controller/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | TAIGA_System_i/production_controller/inst/FCLK_CLK0 | 8758 |  2913 |    no |         2.475 |     0.876 |
 +-------+-----------------------------------------------------------------------------+-----------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -74,10 +74,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2125 |  8800 |  206 |  1600 |    0 |    20 |    9 |    10 |    5 |    20 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1925 |  8800 |  207 |  1400 |    0 |    40 |   17 |    20 |    0 |    20 |
-| X0Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2369 |  8800 |  278 |  1600 |    0 |    20 |    9 |    10 |    5 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    1 |    50 |    1 |    50 | 1929 |  8800 |  169 |  1400 |    4 |    40 |   15 |    20 |    0 |    20 |
+| X0Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2718 |  8800 |  321 |  1600 |    0 |    20 |    6 |    10 |    3 |    20 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2633 |  8800 |  206 |  1400 |    4 |    40 |   16 |    20 |    4 |    20 |
+| X0Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1167 |  8800 |   42 |  1600 |    0 |    20 |    9 |    10 |    3 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    1 |    50 |    1 |    50 | 1740 |  8800 |  291 |  1400 |    0 |    40 |   19 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
@@ -88,9 +88,9 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    2 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   62 |    22 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        18 |       0 |       0 | 2061 |   184 |        5 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   31 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  106 |    15 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        12 |       0 |       0 | 2581 |   306 |        3 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 
 
@@ -100,9 +100,9 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   39 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  110 |     4 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        34 |       0 |       0 | 1776 |   203 |        0 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   10 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   92 |    14 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        40 |       0 |       0 | 2531 |   192 |        4 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 
 
@@ -112,9 +112,9 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   11 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   81 |    12 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        18 |       0 |       0 | 2277 |   266 |        5 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    2 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   52 |    17 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        18 |       0 |       0 | 1113 |    25 |        3 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 
 
@@ -124,8 +124,9 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                    Clock Net Name                   |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   71 |    13 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |        38 |       1 |       1 | 1858 |   156 |        0 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    9 |     0 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE             |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   74 |     5 |        0 | TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK               |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |        38 |       1 |       1 | 1657 |   286 |        0 | TAIGA_System_i/production_controller/inst/FCLK_CLK0 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------+
 
 
@@ -162,7 +163,7 @@ resize_pblock [get_pblocks CLKAG_TAIGA_System_i/mdm_1/U0/Ext_JTAG_DRCK] -add {CL
 #startgroup
 create_pblock CLKAG_TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE
 add_cells_to_pblock [get_pblocks  CLKAG_TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE"}]]]
-resize_pblock [get_pblocks CLKAG_TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks CLKAG_TAIGA_System_i/mdm_1/U0/Ext_JTAG_UPDATE] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "TAIGA_System_i/production_controller/inst/FCLK_CLK0" driven by instance "TAIGA_System_i/production_controller/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG" located at site "BUFGCTRL_X0Y0"

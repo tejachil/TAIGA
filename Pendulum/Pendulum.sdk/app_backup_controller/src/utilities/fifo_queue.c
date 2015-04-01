@@ -41,7 +41,7 @@ int init_fifo_queues(){
 	return XST_SUCCESS;
 }
 
-int enqueue(int* data, int size){
+int enqueue(unsigned int* data, int size){
 	int i = 0;
 	for(i = 0; i < size; ++i){
 		if( XLlFifo_iTxVacancy(&fifo_queue))

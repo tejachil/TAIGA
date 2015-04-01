@@ -242,7 +242,7 @@
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -934,7 +934,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>39368bd5</spirit:value>
+            <spirit:value>43ceeea8</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -942,7 +942,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 17 19:14:01 UTC 2015</spirit:value>
+            <spirit:value>Thu Mar 19 22:29:05 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -961,7 +961,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>39368bd5</spirit:value>
+            <spirit:value>43ceeea8</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -969,7 +969,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 17 19:14:01 UTC 2015</spirit:value>
+            <spirit:value>Tue Mar 31 23:58:56 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2371,7 +2371,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -2394,7 +2394,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -2417,7 +2417,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -2440,7 +2440,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -2494,7 +2494,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_USE_TX_DATA&apos;)))=1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -3240,7 +3240,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_TX_DATA</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_TX_DATA">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_TX_DATA">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_TX_CTRL</spirit:name>
@@ -3662,7 +3662,7 @@
     <spirit:parameter>
       <spirit:name>C_USE_TX_DATA</spirit:name>
       <spirit:displayName>Enable Transmit Data</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_TX_DATA" spirit:choiceRef="choices_6" spirit:order="1000">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_TX_DATA" spirit:choiceRef="choices_6" spirit:order="1000">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_USE_RX_DATA</spirit:name>

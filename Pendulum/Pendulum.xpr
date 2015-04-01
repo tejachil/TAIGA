@@ -34,7 +34,6 @@
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_lmb_bram_1/TAIGA_System_lmb_bram_1.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_IO_Intermediary_axi_periph_0/TAIGA_System_IO_Intermediary_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_microblaze_0_0/TAIGA_System_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_ilmb_bram_if_cntlr_1/TAIGA_System_ilmb_bram_if_cntlr_1.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_dlmb_bram_if_cntlr_1/TAIGA_System_dlmb_bram_if_cntlr_1.xci"/>
@@ -50,7 +49,6 @@
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_gpio_0_2/TAIGA_System_axi_gpio_0_2.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_fifo_mm_s_0_0/TAIGA_System_axi_fifo_mm_s_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_fifo_IOI_dequeue_1/TAIGA_System_axi_fifo_IOI_dequeue_1.xci"/>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_fifo_IOI_dequeue_2/TAIGA_System_axi_fifo_IOI_dequeue_2.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_queue_multiplexer_0_0/TAIGA_System_queue_multiplexer_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_timer_0_0/TAIGA_System_axi_timer_0_0.xci"/>
@@ -65,6 +63,7 @@
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_fifo_IOI_dequeue_0/TAIGA_System_axi_fifo_IOI_dequeue_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_IOI_to_production_0/TAIGA_System_fifo_IOI_to_production_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_production_to_IOI_1/TAIGA_System_fifo_production_to_IOI_1.xci"/>
+        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_IO_Intermediary_axi_intc_0/TAIGA_System_IO_Intermediary_axi_intc_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_processing_system7_0_0/TAIGA_System_processing_system7_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="TAIGA_System.bmm"/>

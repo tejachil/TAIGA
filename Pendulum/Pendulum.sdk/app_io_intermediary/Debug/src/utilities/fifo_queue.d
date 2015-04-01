@@ -22,7 +22,8 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xintc_l.h \
  ../src/utilities/axi_gpio.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio.h \
- ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h \
+ ../../global_includes/taiga_pendulum_parameters.h
 
 ../src/utilities/fifo_queue.h:
 
@@ -71,3 +72,5 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
 ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h:
+
+../../global_includes/taiga_pendulum_parameters.h:
