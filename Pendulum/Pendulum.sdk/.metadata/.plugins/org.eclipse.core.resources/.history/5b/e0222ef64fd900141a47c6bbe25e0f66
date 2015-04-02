@@ -27,7 +27,7 @@ void ioi_handler(QueuePacket fifo_packet){
 				xil_printf("writing");//write_voltage(fifo_packet.data);
 			else if( (fifo_packet.slave == SS_ENCODER_S | fifo_packet.slave == SS_ENCODER_S) && (fifo_packet.operation == READ)
 					&& (fifo_packet.bytes ==  BITS_32) && (fifo_packet.data[0]  == (READ_CNTR << 24))) // read encoder
-				xil_printf("reading");;//returnData[0] = read_sensor(fifo_packet.slave, fifo_packet.data[0]);
+				;//returnData[0] = read_sensor(fifo_packet.slave, fifo_packet.data[0]);
 			break;
 		case (SET_POINT): // SET_POINT
 			returnData[0] = 10;

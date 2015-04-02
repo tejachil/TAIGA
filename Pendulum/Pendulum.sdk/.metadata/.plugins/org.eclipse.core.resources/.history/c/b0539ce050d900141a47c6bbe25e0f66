@@ -139,7 +139,7 @@ static void dequeue_handler(XLlFifo *InstancePtr)
 		QueuePacket newPacket;
 		for (i=0; i < ReceiveLength; i++) {
 			RxWord = XLlFifo_RxGetWord(InstancePtr);
-			if(i == 0){
+			if(i == 1){
 				newPacket.command = RxWord >> 24 & 0xFF;
 				newPacket.operation = RxWord >> 16 & 0xFF;
 				newPacket.bytes = RxWord >> 8 & 0xFF;

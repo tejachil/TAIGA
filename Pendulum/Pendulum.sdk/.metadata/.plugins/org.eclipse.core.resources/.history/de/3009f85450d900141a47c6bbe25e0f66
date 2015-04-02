@@ -55,7 +55,7 @@ int enqueue(QueuePacket* enqueue_packet){
 	}
 
 	// Start Transmission by writing transmission length into the TLR
-	XLlFifo_iTxSetLen(&fifo_queue, WORD_SIZE*enqueue_packet->length + WORD_SIZE);
+	XLlFifo_iTxSetLen(&fifo_queue, (1 + WORD_SIZE)*enqueue_packet->length);
 
 	// Check for Transmission completion
 	while( !(XLlFifo_IsTxDone(&fifo_queue)));

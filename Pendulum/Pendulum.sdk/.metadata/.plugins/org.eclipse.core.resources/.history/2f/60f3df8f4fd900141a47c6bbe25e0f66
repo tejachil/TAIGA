@@ -69,9 +69,10 @@ int main()
 	int Status;
 
 	init_axi_gpio();
+	init_fifo_queues();
 	init_spi();
 	init_pendulum_plant();
-	init_fifo_queues();
+
 
 	// Initialize the UartLite driver so that it is ready to use.
 	Status = XUartLite_Initialize(&UartLite, UARTLITE_DEVICE_ID);
@@ -90,10 +91,10 @@ int main()
 
 	while(1){
 		select_controller(read_sw_raw());
-		//Status = read_sensor((SS_ENCODER_P), (READ_CNTR << 24));
-		//Status &= ~(0xFF0000FF);
-		//Status = (Status >> 8);
-		//xil_printf("%d\r\n", Status);
+		Status = read_sensor((SS_ENCODER_P), (READ_CNTR << 24));
+		Status &= ~(0xFF0000FF);
+		Status = (Status >> 8);
+		xil_printf("%d\r\n", Status);
 	}
 
 	return XST_SUCCESS;
