@@ -54,7 +54,7 @@ void production_control_timer(xTimerHandle pxTimer){
 	int enc2 = readEncoder(SS_ENCODER_P) % 4096;
 	plantParams.alphaR = enc2*Kenc-pi;
 
-	xil_printf("%d: %d, %d\n", plantParams.cycle_count, enc1, enc1);
+	//xil_printf("%d: %d, %d\n", plantParams.cycle_count, enc1, enc1);
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);

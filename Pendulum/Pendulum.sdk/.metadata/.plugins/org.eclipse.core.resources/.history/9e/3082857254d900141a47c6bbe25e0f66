@@ -56,7 +56,7 @@ void ioi_handler(QueuePacket fifo_packet){
 }
 
 bool plant_filter(QueuePacket* packet){
-	if( (packet->slave == SS_ENCODER_S | packet->slave == SS_ENCODER_P) && (packet->operation == READ) && (packet->bytes ==  BITS_32) ) // read encoder
+	if( (packet->slave == SS_ENCODER_S | packet->slave == SS_ENCODER_S) && (packet->operation == READ) && (packet->bytes ==  BITS_32) ) // read encoder
 		return true;
 	if( (packet->slave == SS_DAC) && (packet->operation == WRITE) && (packet->bytes = BITS_16) && ((packet->data[0] & DAC_CONFIG_BITS) == DAC_CONFIG_BITS) )
 		return true;

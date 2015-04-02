@@ -53,8 +53,8 @@ float readADC(){
 	fifo_packet.length = 1;
 	fifo_packet.data[0] = ADC_CONFIG_BITS;
 	enqueue(&fifo_packet);
-	dequeue(buffer);
 
+	dequeue(buffer);
 	hex = buffer[0];
 
 	// convert hex to voltage
@@ -93,7 +93,6 @@ int writeDAC(float voltage){
 	fifo_packet.slave = SS_DAC;
 	fifo_packet.length = 1;
 	fifo_packet.data[0] = hex;
-	enqueue(&fifo_packet);
 
     return (hex & (~0xF000));
 }
