@@ -118,19 +118,17 @@ static void dequeue_handler(XLlFifo *InstancePtr)
 	int i;
 	u32 RxWord;
 	static u32 ReceiveLength;
-	xil_printf("Receiving Data...\n");
 
 	Pending = XLlFifo_IntPending(InstancePtr);
 	while (Pending) {
+		// Clear Interrupt
+		XLlFifo_IntClear(InstancePtr, Pending);
+
 		// Read Receive Length
 		ReceiveLength = (XLlFifo_iRxGetLen(InstancePtr))/WORD_SIZE;
 
 		if (ReceiveLength < 1)	break; // ERROR HANDLING HERE FOR FALSE ALARM
 		if(ReceiveLength > 4)	ReceiveLength = 4;
-
-		static bool ledState = true;
-		set_led(LED1, ledState);
-		ledState = !ledState;
 
 		QueuePacket newPacket;
 		for (i=0; i < ReceiveLength; i++) {
@@ -146,9 +144,6 @@ static void dequeue_handler(XLlFifo *InstancePtr)
 				newPacket.data[i-1] = RxWord;
 			}
 		}
-
-		// Clear Interrupt
-		XLlFifo_IntClear(InstancePtr, Pending);
 
 		ioi_handler(newPacket);
 

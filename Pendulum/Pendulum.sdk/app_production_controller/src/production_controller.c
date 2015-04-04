@@ -35,6 +35,7 @@ void startProductionControl(){
 
 	xTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
 	xTimerStart(ProductionControlTimer, 0);
+	xil_printf("Production Controller Timer started");
 }
 
 void production_control_timer(xTimerHandle pxTimer){
@@ -54,7 +55,7 @@ void production_control_timer(xTimerHandle pxTimer){
 	int enc2 = readEncoder(SS_ENCODER_P) % 4096;
 	plantParams.alphaR = enc2*Kenc-pi;
 
-	xil_printf("%d: %d, %d\n", plantParams.cycle_count, enc1, enc1);
+	xil_printf("%d: %f, %f\n", plantParams.cycle_count, plantParams.thetaR, plantParams.alphaR);
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
