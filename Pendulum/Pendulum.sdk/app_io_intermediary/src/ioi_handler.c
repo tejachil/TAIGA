@@ -27,7 +27,7 @@ void ioi_handler(QueuePacket fifo_packet){
 			if( (fifo_packet.slave == SS_DAC) && (fifo_packet.operation == WRITE) && (fifo_packet.bytes = BITS_16)
 					&& ((fifo_packet.data[0] & DAC_CONFIG_BITS) == DAC_CONFIG_BITS) ) // write voltage
 				{xil_printf("writing\n");
-				write_voltage(fifo_packet.data);
+				write_voltage(fifo_packet.data[0]);
 				}
 			else if( (fifo_packet.slave == SS_ENCODER_S | fifo_packet.slave == SS_ENCODER_P) && (fifo_packet.operation == READ)
 					&& (fifo_packet.bytes ==  BITS_32) && (fifo_packet.data[0]  == (READ_CNTR << 24))) // read encoder
@@ -50,7 +50,7 @@ void ioi_handler(QueuePacket fifo_packet){
 
 	enqueue(returnData, fifo_packet.operation > 4 ? 4 : fifo_packet.operation);
 
-	set_led(LED1, true);
+	set_led(LED1, false);
 /*			for(i = 0; i < ((fifoParams >> 16) & 0xFF); ++i)
 				enqueue_taiga_to_controller(retData[i]);
 			set_led(LED1, false);

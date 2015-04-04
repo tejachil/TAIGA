@@ -43,6 +43,8 @@ void production_control_timer(xTimerHandle pxTimer){
 	set_led(LED3, state);
 	state = !state;
 
+	//if(plantParams.cycle_count > 10000)	return;
+
 	set_led(LED3, true);
 
 	plantParams.theta_des = getSetPoint()*pi/180;
@@ -59,6 +61,8 @@ void production_control_timer(xTimerHandle pxTimer){
 	else plantParams.u = 0;
 
 	writeDAC(plantParams.u);
+
+	//xil_printf("%d: %d, %d; %d\n", plantParams.cycle_count, enc1, enc2, 1000*plantParams.u);
 
 	++plantParams.cycle_count;
 

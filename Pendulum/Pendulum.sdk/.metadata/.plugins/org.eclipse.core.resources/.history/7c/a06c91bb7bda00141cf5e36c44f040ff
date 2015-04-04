@@ -94,5 +94,6 @@ int writeDAC(float voltage){
 	fifo_packet.length = 1;
 	fifo_packet.data[0] = hex;
 	enqueue(&fifo_packet);
+	xil_printf("volt: %d  ", hex);
     return (hex & (~0xF000));
 }

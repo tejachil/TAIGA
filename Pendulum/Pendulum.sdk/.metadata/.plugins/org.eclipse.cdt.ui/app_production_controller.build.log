@@ -1,25 +1,6 @@
-22:52:26 **** Auto Build of configuration Debug for project app_production_controller ****
+23:41:17 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
-Building file: ../src/production_controller.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I../../global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
-../src/production_controller.c: In function 'startProductionControl':
-../src/production_controller.c:38:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-  xil_printf("Production Controller Timer started");
-  ^
-Finished building: ../src/production_controller.c
- 
-Building target: app_production_controller.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-Finished building target: app_production_controller.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  75852	   3096	  23372	 102320	  18fb0	app_production_controller.elf
-Finished building: app_production_controller.elf.size
- 
+make: Nothing to be done for `all'.
 
-22:52:26 Build Finished (took 170ms)
+23:41:17 Build Finished (took 66ms)
 

@@ -43,6 +43,8 @@ void production_control_timer(xTimerHandle pxTimer){
 	set_led(LED3, state);
 	state = !state;
 
+	//if(plantParams.cycle_count > 10000)	return;
+
 	set_led(LED3, true);
 
 	plantParams.theta_des = getSetPoint()*pi/180;
@@ -52,6 +54,8 @@ void production_control_timer(xTimerHandle pxTimer){
 
 	int enc2 = readEncoder(SS_ENCODER_P) % 4096;
 	plantParams.alphaR = enc2*Kenc-pi;
+
+	xil_printf("%d: %d, %d\n", plantParams.cycle_count, enc1, enc2);
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);

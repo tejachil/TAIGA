@@ -60,6 +60,8 @@ void production_control_timer(xTimerHandle pxTimer){
 
 	writeDAC(plantParams.u);
 
+	//xil_printf("%d: %d, %d; %d\n", plantParams.cycle_count, enc1, enc2, 1000*plantParams.u);
+
 	++plantParams.cycle_count;
 
 	set_led(LED3, false);
