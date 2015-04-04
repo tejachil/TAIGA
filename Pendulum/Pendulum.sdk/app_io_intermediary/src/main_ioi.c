@@ -54,7 +54,7 @@
 #include "xllfifo.h"
 #include "xstatus.h"
 #include "utilities/axi_gpio.h"
-#include "utilities/fifo_queue.h"
+#include "utilities/fifo_queue_wdt.h"
 #include "utilities/axi_spi.h"
 #include "pendulum_plant.h"
 #include "xuartlite.h"
@@ -72,6 +72,7 @@ int main()
 	init_spi();
 	init_pendulum_plant();
 	init_fifo_queues();
+	//init_wdt();
 
 	// Initialize the UartLite driver so that it is ready to use.
 	Status = XUartLite_Initialize(&UartLite, UARTLITE_DEVICE_ID);

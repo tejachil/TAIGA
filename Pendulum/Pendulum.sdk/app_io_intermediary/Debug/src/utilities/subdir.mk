@@ -6,19 +6,19 @@
 C_SRCS += \
 ../src/utilities/axi_gpio.c \
 ../src/utilities/axi_spi.c \
-../src/utilities/fifo_queue.c \
+../src/utilities/fifo_queue_wdt.c \
 ../src/utilities/interrupt_controller.c 
 
 OBJS += \
 ./src/utilities/axi_gpio.o \
 ./src/utilities/axi_spi.o \
-./src/utilities/fifo_queue.o \
+./src/utilities/fifo_queue_wdt.o \
 ./src/utilities/interrupt_controller.o 
 
 C_DEPS += \
 ./src/utilities/axi_gpio.d \
 ./src/utilities/axi_spi.d \
-./src/utilities/fifo_queue.d \
+./src/utilities/fifo_queue_wdt.d \
 ./src/utilities/interrupt_controller.d 
 
 

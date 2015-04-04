@@ -78,11 +78,11 @@ void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 
 	plantParams.theta_des = getSetPoint()*pi/180;
 
-	int enc1 = -readEncoder(SS_ENCODER_S) % 4096;
-	plantParams.thetaR = enc1*Kenc;
+	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
+	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 
-	int enc2 = readEncoder(SS_ENCODER_P) % 4096;
-	plantParams.alphaR = enc2*Kenc-pi;
+	plantParams.encoder_alpha = readEncoder(SS_ENCODER_P) % 4096;
+	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);

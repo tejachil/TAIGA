@@ -6,7 +6,7 @@
  */
 
 #include "ioi_handler.h"
-#include "utilities/fifo_queue.h"
+#include "utilities/fifo_queue_wdt.h"
 #include "utilities/axi_gpio.h"
 #include "pendulum_plant.h"
 

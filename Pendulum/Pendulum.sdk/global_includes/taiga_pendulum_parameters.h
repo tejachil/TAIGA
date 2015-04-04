@@ -19,6 +19,8 @@ typedef enum {NO_SLAVE=0x0, SS_ADC=0x01, SS_DAC=0x02, SS_ENCODER_P=0x04, SS_ENCO
 typedef struct PlantParameters{
 	float xpre[4];
 	float xhat[4];
+	short encoder_alpha;
+	short encoder_theta;
 	float alphaR;
 	float thetaR;
 	float u;

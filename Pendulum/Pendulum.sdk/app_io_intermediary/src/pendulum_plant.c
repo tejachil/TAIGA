@@ -7,6 +7,10 @@
 
 #include "pendulum_plant.h"
 
+static u8 cycle_flag = 0;
+
+static PlantParameters stateVector;
+
 void init_pendulum_plant(){
 	u32 spiParams, spiWriteData;
 	u8 writeBuffer[4], readBuffer[4];
@@ -74,11 +78,23 @@ void write_voltage(u32 voltage_data){
 	u8 writeBuffer[4];
 	u32_to_buffer(voltage_data, writeBuffer, BITS_16);
 	spi_transfer(SS_DAC, writeBuffer, NULL, BITS_16);
+
+	cycle_flag |= SS_DAC;
 }
 
 u32 read_sensor(slave_select sensor, u32 data){
 	u8 writeBuffer[4], readBuffer[4];
 	u32_to_buffer(data, writeBuffer, BITS_32);
 	spi_transfer(sensor, writeBuffer, readBuffer, BITS_32);
-	return buffer_to_u32(readBuffer, BITS_32);
+
+	cycle_flag |= sensor;
+
+	int rawSensor = buffer_to_u32(readBuffer, BITS_32);
+
+	if(sensor == SS_ENCODER_P)
+		stateVector.encoder_alpha = (0xFFFF)*(rawSensor >> 8);
+	else if (sensor == SS_ENCODER_P)
+		stateVector.encoder_theta = (0xFFFF)*(rawSensor >> 8);
+
+	return rawSensor;
 }
