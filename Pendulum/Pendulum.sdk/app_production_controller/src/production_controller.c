@@ -35,14 +35,10 @@ void startProductionControl(){
 
 	xTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
 	xTimerStart(ProductionControlTimer, 0);
-	xil_printf("Production Controller Timer started");
+	xil_printf("Production Controller Timer started\n");
 }
 
 void production_control_timer(xTimerHandle pxTimer){
-	static bool state = true;
-	set_led(LED3, state);
-	state = !state;
-
 	set_led(LED3, true);
 
 	plantParams.theta_des = getSetPoint()*pi/180;

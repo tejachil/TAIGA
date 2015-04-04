@@ -1,6 +1,7 @@
 src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
  ../src/utilities/fifo_queue.c ../src/utilities/fifo_queue.h \
  ../../bsp_backup_standalone/backup_controller/include/xparameters.h \
+ ../../global_includes/taiga_pendulum_parameters.h \
  ../../bsp_backup_standalone/backup_controller/include/xstreamer.h \
  ../../bsp_backup_standalone/backup_controller/include/xenv.h \
  ../../bsp_backup_standalone/backup_controller/include/xenv_standalone.h \
@@ -21,6 +22,8 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
 ../src/utilities/fifo_queue.h:
 
 ../../bsp_backup_standalone/backup_controller/include/xparameters.h:
+
+../../global_includes/taiga_pendulum_parameters.h:
 
 ../../bsp_backup_standalone/backup_controller/include/xstreamer.h:
 

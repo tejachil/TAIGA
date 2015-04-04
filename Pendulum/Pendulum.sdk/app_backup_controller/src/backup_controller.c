@@ -6,14 +6,14 @@
  */
 
 #include "backup_controller.h"
-//#include "pendulum_system.h"
+#include "pendulum_control.h"
 #include "utilities/axi_gpio.h"
 #include "utilities/fifo_queue.h"
 #include "xtmrctr.h"
 #include "xintc.h"
 
 
-//float calculateKalmanControlSignal(ControlParameters *params);
+float calculateKalmanControlSignal(PlantParameters *params);
 void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber);
 void stopBackupControl();
 
@@ -31,7 +31,7 @@ volatile float thetaDot=0.,alphaDot=0.;
 int temp;
 float u;
 
-//static ControlParameters plantParams;
+static PlantParameters plantParams;
 
 int startBackupControl(){
 	// Initialize xpre and xhat
@@ -74,44 +74,26 @@ int startBackupControl(){
 }
 
 void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
-	static bool state = true;
-	set_led(LED2, state);
-	state = !state;
-	static int buffer[2];
-
-	static int count = 3;
-	buffer[0] = 23;
-	buffer[1] = count;
-	//if(count < 22){
-		enqueue(buffer, sizeof(buffer)/WORD_SIZE);
-		++count;
-	//}
-
-	dequeue(buffer);
-
-	/*
 	set_led(LED2, true);
 
-	static unsigned sec1000 = 0;; // This is updated 1000 times per second by interrupt handler
-	sec1000++; // update variable
+	plantParams.theta_des = getSetPoint()*pi/180;
 
-	plantParams.theta_des = OPERATIONAL_SET_POINT*pi/180;
-
-	int enc1 = -encoderRead(SS_ENCODER_S) % 4096;
+	int enc1 = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = enc1*Kenc;
 
-	int enc2 = encoderRead(SS_ENCODER_P) % 4096;
+	int enc2 = readEncoder(SS_ENCODER_P) % 4096;
 	plantParams.alphaR = enc2*Kenc-pi;
 
-	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
 	}
 	else plantParams.u = 0;
 
 	writeDAC(plantParams.u);
 
+	++plantParams.cycle_count;
+
 	set_led(LED2, false);
-	*/
 }
 
 
@@ -152,4 +134,53 @@ static int TmrCtrSetupIntrSystem(XIntc* IntcInstancePtr, XTmrCtr* TmrCtrInstance
 	Xil_ExceptionEnable();
 
 	return XST_SUCCESS;
+}
+
+float calculateKalmanControlSignal(PlantParameters *params){
+	/***** Kalman Filter Constants Start *****/
+	static const float Kf[4][2]={
+		{0.9943,0},
+		{0,0.9943},
+		{0.0023,-0.0071},
+		{-0.0077,0.2988}
+	};
+	static const float Kc[4]={-5.1688,27.7667,-2.7224,3.1787};
+	static const float Aup[4][4]={
+		{0.0057,0.000,0.0000,0.0000},
+		{0.0000,0.0057,0.0000,0.0000},
+		{-0.0023,0.1059,0.9443,-0.0011},
+		{0.0077,-0.1492,-0.0535,0.9980}
+	};
+	static const float Bup[4]={0,0,0.1013,0.0975};
+
+	/***** Kalman Filter Constants End *****/
+
+	if (params->thetaR < -pi)	params->thetaR += 2*pi; // correction for encoder zeroing error
+
+	int ind;
+	for(ind = 0; ind < 4; ind++){
+		params->xhat[ind] = params->xpre[ind] + Kf[ind][0]*params->thetaR + Kf[ind][1]*params->alphaR;
+	}
+
+	// compute control
+	float u = 0;
+	for(ind = 0; ind < 4; ind++){
+		u += -Kc[ind]*params->xhat[ind]; // changed the sign for kc to positive
+	}
+	u += Kc[0]*params->theta_des; // changed the sign of kc to negative
+
+	// Saturate signal at -10 or 10 volts
+	if(u > 5.)	 u = 5.;
+	else if(u < -5.)	u = -5.;
+
+	//precompute the part of xhat we can
+	for(ind = 0; ind < 4; ind++){
+		params->xpre[ind] = 0.;
+		int col;
+		for(col = 0; col < 4; col++){
+			params->xpre[ind] += Aup[ind][col]*params->xhat[col];
+		}
+		params->xpre[ind] += Bup[ind]*u;
+	}
+	return u;
 }

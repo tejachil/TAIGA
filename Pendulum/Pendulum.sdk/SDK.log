@@ -1092,3 +1092,18 @@ MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
 23:36:23 INFO  : Processor reset is completed for IO_Intermediary
 23:36:28 INFO  : Processor reset is completed for ps7_cortexa9_1
 23:37:03 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:03:37 INFO  : Processor reset is completed for IO_Intermediary
+00:03:51 INFO  : Processor reset is completed for backup_controller
+00:10:31 INFO  : Processor reset is completed for IO_Intermediary
+00:10:54 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:11:01 INFO  : Processor reset is completed for backup_controller
+00:11:52 INFO  : Processor reset is completed for IO_Intermediary
+00:12:08 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:12:15 INFO  : Processor reset is completed for backup_controller
+00:19:19 INFO  : Processor reset is completed for IO_Intermediary
+00:19:39 INFO  : Processor reset is completed for backup_controller
+00:22:44 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+00:23:14 INFO  : ps7_init is completed.
+00:23:14 INFO  : ps7_post_config is completed.
+00:23:15 INFO  : Processor reset is completed for IO_Intermediary
+00:23:20 INFO  : Processor reset is completed for backup_controller

@@ -8,15 +8,18 @@ LD_SRCS += \
 
 C_SRCS += \
 ../src/backup_controller.c \
-../src/main_backup.c 
+../src/main_backup.c \
+../src/pendulum_control.c 
 
 OBJS += \
 ./src/backup_controller.o \
-./src/main_backup.o 
+./src/main_backup.o \
+./src/pendulum_control.o 
 
 C_DEPS += \
 ./src/backup_controller.d \
-./src/main_backup.d 
+./src/main_backup.d \
+./src/pendulum_control.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

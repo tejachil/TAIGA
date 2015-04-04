@@ -1,7 +1,9 @@
 src/backup_controller.o src/backup_controller.d: \
  ../src/backup_controller.c ../src/backup_controller.h \
  ../../bsp_backup_standalone/backup_controller/include/xparameters.h \
- ../src/utilities/axi_gpio.h ../src/utilities/fifo_queue.h \
+ ../src/pendulum_control.h ../src/utilities/fifo_queue.h \
+ ../../global_includes/taiga_pendulum_parameters.h \
+ ../src/utilities/axi_gpio.h \
  ../../bsp_backup_standalone/backup_controller/include/xtmrctr.h \
  ../../bsp_backup_standalone/backup_controller/include/xil_types.h \
  ../../bsp_backup_standalone/backup_controller/include/xil_assert.h \
@@ -19,9 +21,13 @@ src/backup_controller.o src/backup_controller.d: \
 
 ../../bsp_backup_standalone/backup_controller/include/xparameters.h:
 
-../src/utilities/axi_gpio.h:
+../src/pendulum_control.h:
 
 ../src/utilities/fifo_queue.h:
+
+../../global_includes/taiga_pendulum_parameters.h:
+
+../src/utilities/axi_gpio.h:
 
 ../../bsp_backup_standalone/backup_controller/include/xtmrctr.h:
 

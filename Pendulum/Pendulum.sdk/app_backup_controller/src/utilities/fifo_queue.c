@@ -4,7 +4,6 @@
  *  Created on: Mar 17, 2015
  *      Author: teja
  */
-
 #include "fifo_queue.h"
 #include "xstreamer.h"
 #include "xil_cache.h"
@@ -19,7 +18,7 @@ int init_fifo_queues(){
 	Status = XST_SUCCESS;
 
 	// Initialize the Device Configuration Interface driver
-	Config = XLlFfio_LookupConfig(QUEUE_DEV_ID);
+	Config = XLlFfio_LookupConfig(FIFO_DEV_ID);
 	if (!Config) {
 		return XST_FAILURE;
 	}
@@ -41,15 +40,18 @@ int init_fifo_queues(){
 	return XST_SUCCESS;
 }
 
-int enqueue(unsigned int* data, int size){
+int enqueue(QueuePacket* enqueue_packet){
+	if(XLlFifo_iTxVacancy(&fifo_queue))
+		XLlFifo_TxPutWord(&fifo_queue, ((enqueue_packet->command << 24) |(enqueue_packet->operation << 16) | (enqueue_packet->bytes << 8) | enqueue_packet->slave));
+
 	int i = 0;
-	for(i = 0; i < size; ++i){
-		if( XLlFifo_iTxVacancy(&fifo_queue))
-			XLlFifo_TxPutWord(&fifo_queue, data[i]);
+	for(i = 0; i < enqueue_packet->length; ++i){
+		if(XLlFifo_iTxVacancy(&fifo_queue))
+			XLlFifo_TxPutWord(&fifo_queue, enqueue_packet->data[i]);
 	}
 
 	// Start Transmission by writing transmission length into the TLR
-	XLlFifo_iTxSetLen(&fifo_queue, WORD_SIZE*size);
+	XLlFifo_iTxSetLen(&fifo_queue, WORD_SIZE*enqueue_packet->length + WORD_SIZE);
 
 	// Check for Transmission completion
 	while( !(XLlFifo_IsTxDone(&fifo_queue)));
@@ -61,20 +63,18 @@ int dequeue(int* buffer){
 	int ReceiveLength = 0;
 	int RxWord = 0;
 
-	//while(!XLlFifo_iRxOccupancy(&fifo_queue));
-	RxWord = XLlFifo_iRxOccupancy(&fifo_queue);
-	if(RxWord == 0)	return 0;
+	while(!XLlFifo_iRxOccupancy(&fifo_queue));
 
 	ReceiveLength = (XLlFifo_iRxGetLen(&fifo_queue))/WORD_SIZE;
 
-	//if(sizeof(buffer)/WORD_SIZE < ReceiveLength)	return -1;
+	if(ReceiveLength > 4)	ReceiveLength = 4;
 
 	int i = 0;
 	// Start Receiving
 	for ( i=0; i < ReceiveLength; i++){
 		RxWord = 0;
 		RxWord = XLlFifo_RxGetWord(&fifo_queue);
-		//buffer[i] = RxWord;
+		buffer[i] = RxWord;
 	}
 
 	return ReceiveLength;
