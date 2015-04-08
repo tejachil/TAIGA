@@ -9,6 +9,8 @@
 
 static u8 cycle_flag = 0;
 
+static bool start_ioi_flag = false;
+
 static PlantParameters stateVector;
 
 void init_pendulum_plant(){
@@ -91,10 +93,53 @@ u32 read_sensor(slave_select sensor, u32 data){
 
 	int rawSensor = buffer_to_u32(readBuffer, BITS_32);
 
-	if(sensor == SS_ENCODER_P)
-		stateVector.encoder_alpha = (0xFFFF)*(rawSensor >> 8);
+	unsigned int value = rawSensor;
+	value &= ~(0xFF0000FF);
+	value = (value >> 8);
+
+	if(sensor == SS_ENCODER_S)
+		stateVector.encoder_theta = -((int)value % 4096);
 	else if (sensor == SS_ENCODER_P)
-		stateVector.encoder_theta = (0xFFFF)*(rawSensor >> 8);
+		stateVector.encoder_alpha = value % 4096;
 
 	return rawSensor;
+}
+
+int start_ioi(){
+	start_ioi_flag = true;
+	// TODO: start IOI flag
+	return 1;
+}
+
+bool check_control_cycle(){
+	return start_ioi_flag && (cycle_flag == (SS_DAC | SS_ENCODER_P | SS_ENCODER_S));
+}
+
+void reset_control_cycle(){
+	stateVector.thetaR = stateVector.encoder_theta*Kenc;
+	stateVector.alphaR = stateVector.encoder_alpha*Kenc-pi;
+
+	cycle_flag = 0;
+
+	xil_printf("et:%d ea:%d t:%d a:%d\n", stateVector.encoder_theta, stateVector.encoder_alpha, (int)(stateVector.thetaR*1800/pi), (int)(stateVector.alphaR*1800/pi));
+
+	// TODO: Method to reset the WDT
+}
+
+float get_thetaR(){
+	return stateVector.thetaR;
+}
+
+float get_alphaR(){
+	return stateVector.alphaR;
+}
+
+void get_state_vector(u32* buffer){
+	int i;
+	for(i = 0; i < 4; ++i)
+		buffer[i] = (u32)stateVector.xpre[i];
+}
+
+PlantParameters* get_plant_state_instance(){
+	return &stateVector;
 }

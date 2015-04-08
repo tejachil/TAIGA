@@ -11607,3 +11607,6 @@ Binding(CTRL+SHIFT+H,
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-04-04 01:28:54.787
 !MESSAGE Indexed 'bsp_ioi_standalone_xwdttb_intr_example_1' (1 sources, 34 headers) in 0.34 sec: 1,246 declarations; 1,679 references; 0 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-04-07 20:00:16.367
+!MESSAGE Indexed 'bsp_ioi_standalone_xuartlite_polled_example_1' (1 sources, 10 headers) in 0.05 sec: 179 declarations; 391 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

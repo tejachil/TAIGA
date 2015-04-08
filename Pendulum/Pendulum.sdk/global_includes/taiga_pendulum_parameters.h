@@ -1,5 +1,5 @@
 /*
- * global_params.h
+ * taiga_pendulum_parameters.h
  *
  *  Created on: Oct 9, 2014
  *      Author: teja
@@ -10,8 +10,8 @@
 
 // FIFO Message Queue format for first message containing information about message:
 // 32|31	command_type	24|23	operation_type		16|15	transfer_bits	8|7		slave_select	1|0
-typedef enum {PLANT, SET_POINT, STATE_INFORMATION} command_type;
-typedef enum {WRITE, READ, READ_STATE_INFORMATION = 0x4} operation_type;
+typedef enum {PLANT, SET_POINT, STATE_VECTOR} command_type;
+typedef enum {WRITE, READ, READ_STATE_VECTOR = 0x4} operation_type;
 typedef enum {BITS_0, BITS_8, BITS_16, BITS_24, BITS_32} transfer_bits;
 typedef enum {NO_SLAVE=0x0, SS_ADC=0x01, SS_DAC=0x02, SS_ENCODER_P=0x04, SS_ENCODER_S=0x08} slave_select;
 

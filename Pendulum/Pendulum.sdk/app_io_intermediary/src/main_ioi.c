@@ -88,6 +88,7 @@ int main()
 		return XST_FAILURE;
 	}
 
+	start_ioi();
 
 	while(1){
 		select_controller(read_sw_raw());

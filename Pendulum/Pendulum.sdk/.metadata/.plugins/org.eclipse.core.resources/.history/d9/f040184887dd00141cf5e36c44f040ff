@@ -1,0 +1,21 @@
+/*
+ * monitor_plant.h
+ *
+ *  Created on: Apr 7, 2015
+ *      Author: teja
+ */
+
+#ifndef MONITOR_PLANT_H_
+#define MONITOR_PLANT_H_
+
+#define THETA_GUARD		35
+
+bool trivial_guard_trigger(PlantParameters* params);
+
+bool prediction_guard_trigger(PlantParameters* params, unsigned int numIter);
+
+bool classifier_guard_trigger(PlantParameters* params);
+
+float calculateKalmanControlSignal(PlantParameters *params);
+
+#endif /* MONITOR_PLANT_H_ */

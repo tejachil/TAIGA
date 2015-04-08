@@ -96,3 +96,18 @@ int writeDAC(float voltage){
 	enqueue(&fifo_packet);
     return (hex & (~0xF000));
 }
+
+void getStateInformation(float *xpre){
+	fifo_packet.command = STATE_VECTOR;
+	fifo_packet.operation = READ_STATE_VECTOR;
+	fifo_packet.bytes = BITS_0;
+	fifo_packet.slave = NO_SLAVE;
+	fifo_packet.length = 0;
+	enqueue(&fifo_packet);
+
+	int length = dequeue(buffer);
+
+	int i;
+	for(i = 0; i < length; ++i)
+		xpre[i] = (float)buffer[i];
+}

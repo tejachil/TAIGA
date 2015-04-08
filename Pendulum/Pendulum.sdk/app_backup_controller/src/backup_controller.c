@@ -35,7 +35,7 @@ static PlantParameters plantParams;
 
 int startBackupControl(){
 	// Initialize xpre and xhat
-	//getStateInformation(plantParams.xpre);
+	getStateInformation(plantParams.xpre);
 
 	int Status;
 

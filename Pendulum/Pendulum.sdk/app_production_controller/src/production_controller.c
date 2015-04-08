@@ -46,6 +46,8 @@ void production_control_timer(xTimerHandle pxTimer){
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 
+	//xil_printf("et:%d ea:%d t:%d a:%d\n", plantParams.encoder_theta, plantParams.encoder_alpha, (int)(plantParams.thetaR*1800/pi), (int)(plantParams.alphaR*1800/pi));
+
 	plantParams.encoder_alpha= readEncoder(SS_ENCODER_P) % 4096;
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
 

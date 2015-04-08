@@ -18,5 +18,6 @@ float readADC();
 
 int writeDAC(float voltage);
 
+void getStateInformation(float *xpre);
 
 #endif /* PENDULUM_CONTROL_H_ */
