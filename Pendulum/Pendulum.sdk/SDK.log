@@ -1211,3 +1211,40 @@ MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
 23:03:44 INFO  : Processor reset is completed for IO_Intermediary
 23:03:57 INFO  : Processor reset is completed for ps7_cortexa9_1
 23:04:05 INFO  : Processor reset is completed for backup_controller
+23:31:47 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:32:24 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+23:32:25 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+23:32:25 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+23:32:25 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+23:32:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1428463831000,  Project:1427847061000
+23:32:25 INFO  : The hardware specification for project 'TAIGA_System_wrapper_hw_platform_0' is different from /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+23:32:25 INFO  : Copied contents of /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf into /TAIGA_System_wrapper_hw_platform_0/system.hdf.
+23:32:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:32:31 INFO  : 
+23:32:32 INFO  : 
+23:32:36 INFO  : 
+23:32:37 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+23:32:37 INFO  : Updating hardware inferred compiler options for app_io_intermediary.
+23:32:38 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xllfifo_interrupt_example_1.
+23:32:39 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xuartlite_polled_example_1.
+23:32:40 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xuartlite_selftest_example_1.
+23:32:40 INFO  : Updating hardware inferred compiler options for bsp_ioi_standalone_xwdttb_intr_example_1.
+23:32:41 INFO  : Updating hardware inferred compiler options for app_production_controller.
+23:32:42 INFO  : Updating hardware inferred compiler options for bsp_production_freertos_xllfifo_polling_example_1.
+23:32:42 INFO  : Clearing existing target manager status.
+23:32:44 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:41:06 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+23:41:56 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+23:42:29 INFO  : ps7_init is completed.
+23:42:29 INFO  : ps7_post_config is completed.
+23:42:30 INFO  : Processor reset is completed for IO_Intermediary
+23:42:41 INFO  : Processor reset is completed for backup_controller
+23:42:56 INFO  : Processor reset is completed for ps7_cortexa9_1
+23:44:25 INFO  : Processor reset is completed for backup_controller
+23:49:06 INFO  : Processor reset is completed for backup_controller

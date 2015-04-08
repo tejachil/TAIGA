@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'queue_multiplexer'" level="0">
-<item name = "Date">Tue Mar 31 19:26:20 2015
+<item name = "Date">Tue Apr  7 23:52:36 2015
 </item>
 <item name = "Version">2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)</item>
 <item name = "Project">queue_multiplexer</item>
@@ -50,7 +50,7 @@
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 35</column>
+<column name="Multiplexer">-, -, -, 105</column>
 <column name="Register">-, -, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, 0, ~0</specialColumn>
@@ -77,9 +77,17 @@
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="rx_data">32, 3, 32, 96</column>
+<column name="rx_ready_a">1, 3, 1, 3</column>
+<column name="rx_ready_b">1, 3, 1, 3</column>
 <column name="rx_tlast">1, 3, 1, 3</column>
 <column name="rx_valid">1, 3, 1, 3</column>
+<column name="tx_data_a">32, 3, 32, 96</column>
+<column name="tx_data_b">32, 3, 32, 96</column>
 <column name="tx_ready">1, 3, 1, 3</column>
+<column name="tx_tlast_a">1, 3, 1, 3</column>
+<column name="tx_tlast_b">1, 3, 1, 3</column>
+<column name="tx_valid_a">1, 3, 1, 3</column>
+<column name="tx_valid_b">1, 3, 1, 3</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">

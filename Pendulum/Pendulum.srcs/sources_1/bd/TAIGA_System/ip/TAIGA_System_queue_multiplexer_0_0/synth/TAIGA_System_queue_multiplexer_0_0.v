@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:queue_multiplexer:1.0
-// IP Revision: 1503311926
+// IP Revision: 1504072353
 
 (* X_CORE_INFO = "queue_multiplexer,Vivado 2014.4" *)
 (* CHECK_LICENSE_TYPE = "TAIGA_System_queue_multiplexer_0_0,queue_multiplexer,{}" *)
-(* CORE_GENERATION_INFO = "TAIGA_System_queue_multiplexer_0_0,queue_multiplexer,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=queue_multiplexer,x_ipVersion=1.0,x_ipCoreRevision=1503311926,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "TAIGA_System_queue_multiplexer_0_0,queue_multiplexer,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=queue_multiplexer,x_ipVersion=1.0,x_ipCoreRevision=1504072353,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module TAIGA_System_queue_multiplexer_0_0 (
   switch_select,

@@ -26,5 +26,5 @@
   <xd:arg xd:name="*(tx_valid)" xd:originalName="tx_valid" xd:direction="in" xd:interfaceRef="tx_valid" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="*(tx_tlast)" xd:originalName="tx_tlast" xd:direction="in" xd:interfaceRef="tx_tlast" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
-  <xd:resourceEstimates xd:LUT="35" xd:FF="0" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="105" xd:FF="0" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

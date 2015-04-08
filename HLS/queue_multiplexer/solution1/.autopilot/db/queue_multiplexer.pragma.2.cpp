@@ -2431,10 +2431,17 @@ _ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, 0, 0, "", "", "");
   *rx_ready_b = *rx_ready;
   *rx_tlast = *rx_tlast_b;
 
+  *tx_ready = *tx_ready_b;
+
   *tx_data_b = *tx_data;
   *tx_valid_b = *tx_valid;
-  *tx_ready = *tx_ready_b;
   *tx_tlast_b = *tx_tlast;
+
+  *rx_ready_a = false;
+
+  *tx_data_a = 0;
+  *tx_valid_a = false;
+  *tx_tlast_a = false;
  }
  else{
   *rx_data = *rx_data_a;
@@ -2442,10 +2449,17 @@ _ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, 0, 0, "", "", "");
   *rx_ready_a = *rx_ready;
   *rx_tlast = *rx_tlast_a;
 
+  *tx_ready = *tx_ready_a;
+
   *tx_data_a = *tx_data;
   *tx_valid_a = *tx_valid;
-  *tx_ready = *tx_ready_a;
   *tx_tlast_a = *tx_tlast;
+
+  *rx_ready_b = false;
+
+  *tx_data_b = 0;
+  *tx_valid_b = false;
+  *tx_tlast_b = false;
  }
 
 }

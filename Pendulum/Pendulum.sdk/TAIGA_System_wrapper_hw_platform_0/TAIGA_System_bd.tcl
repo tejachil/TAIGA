@@ -393,19 +393,19 @@ proc create_root_design { parentCell } {
 
   # Create instance: fifo_IOI_to_backup, and set properties
   set fifo_IOI_to_backup [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_IOI_to_backup ]
-  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_backup
+  set_property -dict [ list CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_backup
 
   # Create instance: fifo_IOI_to_production, and set properties
   set fifo_IOI_to_production [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_IOI_to_production ]
-  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_production
+  set_property -dict [ list CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_IOI_to_production
 
   # Create instance: fifo_backup_to_IOI, and set properties
   set fifo_backup_to_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_backup_to_IOI ]
-  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_backup_to_IOI
+  set_property -dict [ list CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_backup_to_IOI
 
   # Create instance: fifo_production_to_IOI, and set properties
   set fifo_production_to_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:12.0 fifo_production_to_IOI ]
-  set_property -dict [ list CONFIG.Empty_Threshold_Assert_Value_axis {1022} CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_axis {1023} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_production_to_IOI
+  set_property -dict [ list CONFIG.Enable_TLAST {true} CONFIG.FIFO_Implementation_rach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wach {Common_Clock_Distributed_RAM} CONFIG.FIFO_Implementation_wrch {Common_Clock_Distributed_RAM} CONFIG.HAS_TKEEP {false} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Input_Depth_axis {1024} CONFIG.TDATA_NUM_BYTES {4}  ] $fifo_production_to_IOI
 
   # Create instance: local_memory_IOI
   create_hier_cell_local_memory_IOI [current_bd_instance .] local_memory_IOI

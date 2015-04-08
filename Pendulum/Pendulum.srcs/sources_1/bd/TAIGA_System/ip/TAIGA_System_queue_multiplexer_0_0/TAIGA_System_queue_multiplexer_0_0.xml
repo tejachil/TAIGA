@@ -569,7 +569,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>db2d6bf2</spirit:value>
+            <spirit:value>ca1794bf</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -577,7 +577,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 31 23:30:43 UTC 2015</spirit:value>
+            <spirit:value>Wed Apr 08 03:55:52 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -596,7 +596,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>db2d6bf2</spirit:value>
+            <spirit:value>ca1794bf</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -604,7 +604,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 31 23:30:43 UTC 2015</spirit:value>
+            <spirit:value>Wed Apr 08 03:55:52 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1195,14 +1195,14 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/queue_multiplexer_v1_0/680e8b2b/constraints/queue_multiplexer_ooc.xdc</spirit:name>
+        <spirit:name>../../../../ipshared/xilinx.com/queue_multiplexer_v1_0/84747adb/constraints/queue_multiplexer_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
         <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/queue_multiplexer_v1_0/680e8b2b/hdl/verilog/queue_multiplexer.v</spirit:name>
+        <spirit:name>../../../../ipshared/xilinx.com/queue_multiplexer_v1_0/84747adb/hdl/verilog/queue_multiplexer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1251,8 +1251,8 @@
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Queue_multiplexer</xilinx:displayName>
-      <xilinx:coreRevision>1503311926</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2015-03-31T23:26:42Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1504072353</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2015-04-08T03:53:38Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>

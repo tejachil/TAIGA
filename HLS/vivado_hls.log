@@ -1,6 +1,6 @@
 @I [LIC-101] Checked out feature [HLS]
 @I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2014.4/bin/unwrapped/lnx64.o/vivado_hls'
-            for user 'teja' on host 'CRS' (Linux_x86_64 version 3.13.0-46-generic) on Tue Mar 31 19:26:32 EDT 2015
+            for user 'teja' on host 'CRS' (Linux_x86_64 version 3.13.0-46-generic) on Tue Apr 07 23:53:30 EDT 2015
             in directory '/home/teja/Documents/TAIGA/HLS'
 @I [HLS-10] Opening project '/home/teja/Documents/TAIGA/HLS/queue_multiplexer'.
 @I [HLS-10] Opening solution '/home/teja/Documents/TAIGA/HLS/queue_multiplexer/solution1'.
@@ -18,6 +18,6 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2014.4/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 19:26:42 2015...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 23:53:38 2015...
 CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/teja/.Xilinx/Vivado/2014.4/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
 @I [LIC-101] Checked in feature [HLS]

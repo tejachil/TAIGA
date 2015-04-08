@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'queue_multiplexer'
 ================================================================
-* Date:           Tue Mar 31 19:26:20 2015
+* Date:           Tue Apr  7 23:52:36 2015
 
 * Version:        2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)
 * Project:        queue_multiplexer
@@ -310,23 +310,23 @@ ST_1: rx_tlast_a_read [1/1] 0.00ns
 ST_1: stg_63 [1/1] 0.00ns
 :7  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_a_read) nounwind
 
-ST_1: tx_data_read_1 [1/1] 0.00ns
-:8  %tx_data_read_1 = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
+ST_1: tx_ready_a_read [1/1] 0.00ns
+:8  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind
 
 ST_1: stg_65 [1/1] 0.00ns
-:9  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 %tx_data_read_1) nounwind
+:9  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind
 
-ST_1: tx_valid_read_1 [1/1] 0.00ns
-:10  %tx_valid_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
+ST_1: tx_data_read_1 [1/1] 0.00ns
+:10  %tx_data_read_1 = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
 
 ST_1: stg_67 [1/1] 0.00ns
-:11  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 %tx_valid_read_1) nounwind
+:11  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 %tx_data_read_1) nounwind
 
-ST_1: tx_ready_a_read [1/1] 0.00ns
-:12  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind
+ST_1: tx_valid_read_1 [1/1] 0.00ns
+:12  %tx_valid_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
 
 ST_1: stg_69 [1/1] 0.00ns
-:13  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind
+:13  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 %tx_valid_read_1) nounwind
 
 ST_1: tx_tlast_read_1 [1/1] 0.00ns
 :14  %tx_tlast_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind
@@ -335,60 +335,84 @@ ST_1: stg_71 [1/1] 0.00ns
 :15  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 %tx_tlast_read_1) nounwind
 
 ST_1: stg_72 [1/1] 0.00ns
-:16  br label %3
+:16  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 false) nounwind
+
+ST_1: stg_73 [1/1] 0.00ns
+:17  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 0) nounwind
+
+ST_1: stg_74 [1/1] 0.00ns
+:18  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 false) nounwind
+
+ST_1: stg_75 [1/1] 0.00ns
+:19  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 false) nounwind
+
+ST_1: stg_76 [1/1] 0.00ns
+:20  br label %3
 
 ST_1: rx_data_b_read [1/1] 0.00ns
 :0  %rx_data_b_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %rx_data_b) nounwind
 
-ST_1: stg_74 [1/1] 0.00ns
+ST_1: stg_78 [1/1] 0.00ns
 :1  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %rx_data, i32 %rx_data_b_read) nounwind
 
 ST_1: rx_valid_b_read [1/1] 0.00ns
 :2  %rx_valid_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_valid_b) nounwind
 
-ST_1: stg_76 [1/1] 0.00ns
+ST_1: stg_80 [1/1] 0.00ns
 :3  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_valid, i1 %rx_valid_b_read) nounwind
 
 ST_1: rx_ready_read [1/1] 0.00ns
 :4  %rx_ready_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_ready) nounwind
 
-ST_1: stg_78 [1/1] 0.00ns
+ST_1: stg_82 [1/1] 0.00ns
 :5  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 %rx_ready_read) nounwind
 
 ST_1: rx_tlast_b_read [1/1] 0.00ns
 :6  %rx_tlast_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_b) nounwind
 
-ST_1: stg_80 [1/1] 0.00ns
+ST_1: stg_84 [1/1] 0.00ns
 :7  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_b_read) nounwind
 
-ST_1: tx_data_read [1/1] 0.00ns
-:8  %tx_data_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
-
-ST_1: stg_82 [1/1] 0.00ns
-:9  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 %tx_data_read) nounwind
-
-ST_1: tx_valid_read [1/1] 0.00ns
-:10  %tx_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
-
-ST_1: stg_84 [1/1] 0.00ns
-:11  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 %tx_valid_read) nounwind
-
 ST_1: tx_ready_b_read [1/1] 0.00ns
-:12  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind
+:8  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind
 
 ST_1: stg_86 [1/1] 0.00ns
-:13  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind
+:9  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind
+
+ST_1: tx_data_read [1/1] 0.00ns
+:10  %tx_data_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
+
+ST_1: stg_88 [1/1] 0.00ns
+:11  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 %tx_data_read) nounwind
+
+ST_1: tx_valid_read [1/1] 0.00ns
+:12  %tx_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
+
+ST_1: stg_90 [1/1] 0.00ns
+:13  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 %tx_valid_read) nounwind
 
 ST_1: tx_tlast_read [1/1] 0.00ns
 :14  %tx_tlast_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind
 
-ST_1: stg_88 [1/1] 0.00ns
+ST_1: stg_92 [1/1] 0.00ns
 :15  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 %tx_tlast_read) nounwind
 
-ST_1: stg_89 [1/1] 0.00ns
-:16  br label %3
+ST_1: stg_93 [1/1] 0.00ns
+:16  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 false) nounwind
 
-ST_1: stg_90 [1/1] 0.00ns
+ST_1: stg_94 [1/1] 0.00ns
+:17  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 0) nounwind
+
+ST_1: stg_95 [1/1] 0.00ns
+:18  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 false) nounwind
+
+ST_1: stg_96 [1/1] 0.00ns
+:19  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 false) nounwind
+
+ST_1: stg_97 [1/1] 0.00ns
+:20  br label %3
+
+ST_1: stg_98 [1/1] 0.00ns
 :0  ret void
 
 

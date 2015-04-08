@@ -1270,7 +1270,7 @@
 			<spirit:file>
 				<spirit:name>hdl/vhdl/queue_multiplexer.vhd</spirit:name>
 				<spirit:fileType>vhdlSource</spirit:fileType>
-				<spirit:userFileType>CHECKSUM_53d607c6</spirit:userFileType>
+				<spirit:userFileType>CHECKSUM_0cd98b34</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -1360,8 +1360,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Queue_multiplexer</xilinx:displayName>
-			<xilinx:coreRevision>1503311926</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2015-03-31T23:26:42Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1504072353</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2015-04-08T03:53:38Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>

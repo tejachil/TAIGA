@@ -25,7 +25,7 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<LUT>35</LUT>
+<LUT>105</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <FF>0</FF>

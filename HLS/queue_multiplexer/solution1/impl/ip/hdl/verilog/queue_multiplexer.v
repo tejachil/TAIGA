@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="queue_multiplexer,hls_ip_2014_4,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=0.000000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=35}" *)
+(* CORE_GENERATION_INFO="queue_multiplexer,hls_ip_2014_4,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=0.000000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=105}" *)
 
 module queue_multiplexer (
         switch_select,
@@ -39,6 +39,7 @@ module queue_multiplexer (
 
 parameter    ap_true = 1'b1;
 parameter    ap_const_lv1_0 = 1'b0;
+parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_const_logic_0 = 1'b0;
 
@@ -68,33 +69,65 @@ output   tx_ready;
 input   tx_valid;
 input   tx_tlast;
 
+reg rx_ready_a;
+reg rx_ready_b;
 reg[31:0] rx_data;
 reg rx_valid;
 reg rx_tlast;
+reg[31:0] tx_data_a;
+reg tx_valid_a;
+reg tx_tlast_a;
+reg[31:0] tx_data_b;
+reg tx_valid_b;
+reg tx_tlast_b;
 reg tx_ready;
-wire   [0:0] switch_select_read_read_fu_74_p2;
+wire   [0:0] switch_select_read_read_fu_76_p2;
 
 
 
 
 /// rx_data assign process. ///
-always @ (rx_data_a or rx_data_b or switch_select_read_read_fu_74_p2)
+always @ (rx_data_a or rx_data_b or switch_select_read_read_fu_76_p2)
 begin
-    if (~(switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         rx_data = rx_data_b;
-    end else if ((switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         rx_data = rx_data_a;
     end else begin
         rx_data = 'bx;
     end
 end
 
-/// rx_tlast assign process. ///
-always @ (rx_tlast_a or rx_tlast_b or switch_select_read_read_fu_74_p2)
+/// rx_ready_a assign process. ///
+always @ (rx_ready or switch_select_read_read_fu_76_p2)
 begin
-    if (~(switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        rx_ready_a = ap_const_lv1_0;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        rx_ready_a = rx_ready;
+    end else begin
+        rx_ready_a = 'bx;
+    end
+end
+
+/// rx_ready_b assign process. ///
+always @ (rx_ready or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        rx_ready_b = rx_ready;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        rx_ready_b = ap_const_lv1_0;
+    end else begin
+        rx_ready_b = 'bx;
+    end
+end
+
+/// rx_tlast assign process. ///
+always @ (rx_tlast_a or rx_tlast_b or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         rx_tlast = rx_tlast_b;
-    end else if ((switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         rx_tlast = rx_tlast_a;
     end else begin
         rx_tlast = 'bx;
@@ -102,37 +135,101 @@ begin
 end
 
 /// rx_valid assign process. ///
-always @ (rx_valid_a or rx_valid_b or switch_select_read_read_fu_74_p2)
+always @ (rx_valid_a or rx_valid_b or switch_select_read_read_fu_76_p2)
 begin
-    if (~(switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         rx_valid = rx_valid_b;
-    end else if ((switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         rx_valid = rx_valid_a;
     end else begin
         rx_valid = 'bx;
     end
 end
 
-/// tx_ready assign process. ///
-always @ (tx_ready_a or tx_ready_b or switch_select_read_read_fu_74_p2)
+/// tx_data_a assign process. ///
+always @ (tx_data or switch_select_read_read_fu_76_p2)
 begin
-    if (~(switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_data_a = ap_const_lv32_0;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_data_a = tx_data;
+    end else begin
+        tx_data_a = 'bx;
+    end
+end
+
+/// tx_data_b assign process. ///
+always @ (tx_data or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_data_b = tx_data;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_data_b = ap_const_lv32_0;
+    end else begin
+        tx_data_b = 'bx;
+    end
+end
+
+/// tx_ready assign process. ///
+always @ (tx_ready_a or tx_ready_b or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         tx_ready = tx_ready_b;
-    end else if ((switch_select_read_read_fu_74_p2 == ap_const_lv1_0)) begin
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
         tx_ready = tx_ready_a;
     end else begin
         tx_ready = 'bx;
     end
 end
-assign rx_ready_a = rx_ready;
-assign rx_ready_b = rx_ready;
-assign switch_select_read_read_fu_74_p2 = switch_select;
-assign tx_data_a = tx_data;
-assign tx_data_b = tx_data;
-assign tx_tlast_a = tx_tlast;
-assign tx_tlast_b = tx_tlast;
-assign tx_valid_a = tx_valid;
-assign tx_valid_b = tx_valid;
+
+/// tx_tlast_a assign process. ///
+always @ (tx_tlast or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_tlast_a = ap_const_lv1_0;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_tlast_a = tx_tlast;
+    end else begin
+        tx_tlast_a = 'bx;
+    end
+end
+
+/// tx_tlast_b assign process. ///
+always @ (tx_tlast or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_tlast_b = tx_tlast;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_tlast_b = ap_const_lv1_0;
+    end else begin
+        tx_tlast_b = 'bx;
+    end
+end
+
+/// tx_valid_a assign process. ///
+always @ (tx_valid or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_valid_a = ap_const_lv1_0;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_valid_a = tx_valid;
+    end else begin
+        tx_valid_a = 'bx;
+    end
+end
+
+/// tx_valid_b assign process. ///
+always @ (tx_valid or switch_select_read_read_fu_76_p2)
+begin
+    if (~(switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_valid_b = tx_valid;
+    end else if ((switch_select_read_read_fu_76_p2 == ap_const_lv1_0)) begin
+        tx_valid_b = ap_const_lv1_0;
+    end else begin
+        tx_valid_b = 'bx;
+    end
+end
+assign switch_select_read_read_fu_76_p2 = switch_select;
 
 
 endmodule //queue_multiplexer

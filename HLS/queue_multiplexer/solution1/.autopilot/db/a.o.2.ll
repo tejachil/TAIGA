@@ -98,37 +98,45 @@ define void @queue_multiplexer(i1* %switch_select, i32* %rx_data_a, i1* %rx_read
   store volatile i1 %rx_ready.load, i1* %rx_ready_b, align 1, !dbg !210 ; [debug line = 64:3]
   %rx_tlast_b.load = load volatile i1* %rx_tlast_b, align 1, !dbg !211 ; [#uses=1 type=i1] [debug line = 65:3]
   store volatile i1 %rx_tlast_b.load, i1* %rx_tlast, align 1, !dbg !211 ; [debug line = 65:3]
-  %tx_data.load = load volatile i32* %tx_data, align 4, !dbg !212 ; [#uses=1 type=i32] [debug line = 67:3]
-  store volatile i32 %tx_data.load, i32* %tx_data_b, align 4, !dbg !212 ; [debug line = 67:3]
-  %tx_valid.load = load volatile i1* %tx_valid, align 1, !dbg !213 ; [#uses=1 type=i1] [debug line = 68:3]
-  store volatile i1 %tx_valid.load, i1* %tx_valid_b, align 1, !dbg !213 ; [debug line = 68:3]
-  %tx_ready_b.load = load volatile i1* %tx_ready_b, align 1, !dbg !214 ; [#uses=1 type=i1] [debug line = 69:3]
-  store volatile i1 %tx_ready_b.load, i1* %tx_ready, align 1, !dbg !214 ; [debug line = 69:3]
-  %tx_tlast.load = load volatile i1* %tx_tlast, align 1, !dbg !215 ; [#uses=1 type=i1] [debug line = 70:3]
-  store volatile i1 %tx_tlast.load, i1* %tx_tlast_b, align 1, !dbg !215 ; [debug line = 70:3]
-  br label %3, !dbg !216                          ; [debug line = 71:2]
+  %tx_ready_b.load = load volatile i1* %tx_ready_b, align 1, !dbg !212 ; [#uses=1 type=i1] [debug line = 67:3]
+  store volatile i1 %tx_ready_b.load, i1* %tx_ready, align 1, !dbg !212 ; [debug line = 67:3]
+  %tx_data.load = load volatile i32* %tx_data, align 4, !dbg !213 ; [#uses=1 type=i32] [debug line = 69:3]
+  store volatile i32 %tx_data.load, i32* %tx_data_b, align 4, !dbg !213 ; [debug line = 69:3]
+  %tx_valid.load = load volatile i1* %tx_valid, align 1, !dbg !214 ; [#uses=1 type=i1] [debug line = 70:3]
+  store volatile i1 %tx_valid.load, i1* %tx_valid_b, align 1, !dbg !214 ; [debug line = 70:3]
+  %tx_tlast.load = load volatile i1* %tx_tlast, align 1, !dbg !215 ; [#uses=1 type=i1] [debug line = 71:3]
+  store volatile i1 %tx_tlast.load, i1* %tx_tlast_b, align 1, !dbg !215 ; [debug line = 71:3]
+  store volatile i1 false, i1* %rx_ready_a, align 1, !dbg !216 ; [debug line = 73:3]
+  store volatile i32 0, i32* %tx_data_a, align 4, !dbg !217 ; [debug line = 75:3]
+  store volatile i1 false, i1* %tx_valid_a, align 1, !dbg !218 ; [debug line = 76:3]
+  store volatile i1 false, i1* %tx_tlast_a, align 1, !dbg !219 ; [debug line = 77:3]
+  br label %3, !dbg !220                          ; [debug line = 78:2]
 
 ; <label>:2                                       ; preds = %0
-  %rx_data_a.load = load volatile i32* %rx_data_a, align 4, !dbg !217 ; [#uses=1 type=i32] [debug line = 73:3]
-  store volatile i32 %rx_data_a.load, i32* %rx_data, align 4, !dbg !217 ; [debug line = 73:3]
-  %rx_valid_a.load = load volatile i1* %rx_valid_a, align 1, !dbg !219 ; [#uses=1 type=i1] [debug line = 74:3]
-  store volatile i1 %rx_valid_a.load, i1* %rx_valid, align 1, !dbg !219 ; [debug line = 74:3]
-  %rx_ready.load.1 = load volatile i1* %rx_ready, align 1, !dbg !220 ; [#uses=1 type=i1] [debug line = 75:3]
-  store volatile i1 %rx_ready.load.1, i1* %rx_ready_a, align 1, !dbg !220 ; [debug line = 75:3]
-  %rx_tlast_a.load = load volatile i1* %rx_tlast_a, align 1, !dbg !221 ; [#uses=1 type=i1] [debug line = 76:3]
-  store volatile i1 %rx_tlast_a.load, i1* %rx_tlast, align 1, !dbg !221 ; [debug line = 76:3]
-  %tx_data.load.1 = load volatile i32* %tx_data, align 4, !dbg !222 ; [#uses=1 type=i32] [debug line = 78:3]
-  store volatile i32 %tx_data.load.1, i32* %tx_data_a, align 4, !dbg !222 ; [debug line = 78:3]
-  %tx_valid.load.1 = load volatile i1* %tx_valid, align 1, !dbg !223 ; [#uses=1 type=i1] [debug line = 79:3]
-  store volatile i1 %tx_valid.load.1, i1* %tx_valid_a, align 1, !dbg !223 ; [debug line = 79:3]
-  %tx_ready_a.load = load volatile i1* %tx_ready_a, align 1, !dbg !224 ; [#uses=1 type=i1] [debug line = 80:3]
-  store volatile i1 %tx_ready_a.load, i1* %tx_ready, align 1, !dbg !224 ; [debug line = 80:3]
-  %tx_tlast.load.1 = load volatile i1* %tx_tlast, align 1, !dbg !225 ; [#uses=1 type=i1] [debug line = 81:3]
-  store volatile i1 %tx_tlast.load.1, i1* %tx_tlast_a, align 1, !dbg !225 ; [debug line = 81:3]
+  %rx_data_a.load = load volatile i32* %rx_data_a, align 4, !dbg !221 ; [#uses=1 type=i32] [debug line = 80:3]
+  store volatile i32 %rx_data_a.load, i32* %rx_data, align 4, !dbg !221 ; [debug line = 80:3]
+  %rx_valid_a.load = load volatile i1* %rx_valid_a, align 1, !dbg !223 ; [#uses=1 type=i1] [debug line = 81:3]
+  store volatile i1 %rx_valid_a.load, i1* %rx_valid, align 1, !dbg !223 ; [debug line = 81:3]
+  %rx_ready.load.1 = load volatile i1* %rx_ready, align 1, !dbg !224 ; [#uses=1 type=i1] [debug line = 82:3]
+  store volatile i1 %rx_ready.load.1, i1* %rx_ready_a, align 1, !dbg !224 ; [debug line = 82:3]
+  %rx_tlast_a.load = load volatile i1* %rx_tlast_a, align 1, !dbg !225 ; [#uses=1 type=i1] [debug line = 83:3]
+  store volatile i1 %rx_tlast_a.load, i1* %rx_tlast, align 1, !dbg !225 ; [debug line = 83:3]
+  %tx_ready_a.load = load volatile i1* %tx_ready_a, align 1, !dbg !226 ; [#uses=1 type=i1] [debug line = 85:3]
+  store volatile i1 %tx_ready_a.load, i1* %tx_ready, align 1, !dbg !226 ; [debug line = 85:3]
+  %tx_data.load.1 = load volatile i32* %tx_data, align 4, !dbg !227 ; [#uses=1 type=i32] [debug line = 87:3]
+  store volatile i32 %tx_data.load.1, i32* %tx_data_a, align 4, !dbg !227 ; [debug line = 87:3]
+  %tx_valid.load.1 = load volatile i1* %tx_valid, align 1, !dbg !228 ; [#uses=1 type=i1] [debug line = 88:3]
+  store volatile i1 %tx_valid.load.1, i1* %tx_valid_a, align 1, !dbg !228 ; [debug line = 88:3]
+  %tx_tlast.load.1 = load volatile i1* %tx_tlast, align 1, !dbg !229 ; [#uses=1 type=i1] [debug line = 89:3]
+  store volatile i1 %tx_tlast.load.1, i1* %tx_tlast_a, align 1, !dbg !229 ; [debug line = 89:3]
+  store volatile i1 false, i1* %rx_ready_b, align 1, !dbg !230 ; [debug line = 91:3]
+  store volatile i32 0, i32* %tx_data_b, align 4, !dbg !231 ; [debug line = 93:3]
+  store volatile i1 false, i1* %tx_valid_b, align 1, !dbg !232 ; [debug line = 94:3]
+  store volatile i1 false, i1* %tx_tlast_b, align 1, !dbg !233 ; [debug line = 95:3]
   br label %3
 
 ; <label>:3                                       ; preds = %2, %1
-  ret void, !dbg !226                             ; [debug line = 84:1]
+  ret void, !dbg !234                             ; [debug line = 98:1]
 }
 
 ; [#uses=26]
@@ -359,17 +367,25 @@ declare void @_ssdm_op_SpecBitsMap(...)
 !210 = metadata !{i32 64, i32 3, metadata !208, null}
 !211 = metadata !{i32 65, i32 3, metadata !208, null}
 !212 = metadata !{i32 67, i32 3, metadata !208, null}
-!213 = metadata !{i32 68, i32 3, metadata !208, null}
-!214 = metadata !{i32 69, i32 3, metadata !208, null}
-!215 = metadata !{i32 70, i32 3, metadata !208, null}
-!216 = metadata !{i32 71, i32 2, metadata !208, null}
-!217 = metadata !{i32 73, i32 3, metadata !218, null}
-!218 = metadata !{i32 786443, metadata !180, i32 72, i32 6, metadata !6, i32 2} ; [ DW_TAG_lexical_block ]
-!219 = metadata !{i32 74, i32 3, metadata !218, null}
-!220 = metadata !{i32 75, i32 3, metadata !218, null}
-!221 = metadata !{i32 76, i32 3, metadata !218, null}
-!222 = metadata !{i32 78, i32 3, metadata !218, null}
-!223 = metadata !{i32 79, i32 3, metadata !218, null}
-!224 = metadata !{i32 80, i32 3, metadata !218, null}
-!225 = metadata !{i32 81, i32 3, metadata !218, null}
-!226 = metadata !{i32 84, i32 1, metadata !180, null}
+!213 = metadata !{i32 69, i32 3, metadata !208, null}
+!214 = metadata !{i32 70, i32 3, metadata !208, null}
+!215 = metadata !{i32 71, i32 3, metadata !208, null}
+!216 = metadata !{i32 73, i32 3, metadata !208, null}
+!217 = metadata !{i32 75, i32 3, metadata !208, null}
+!218 = metadata !{i32 76, i32 3, metadata !208, null}
+!219 = metadata !{i32 77, i32 3, metadata !208, null}
+!220 = metadata !{i32 78, i32 2, metadata !208, null}
+!221 = metadata !{i32 80, i32 3, metadata !222, null}
+!222 = metadata !{i32 786443, metadata !180, i32 79, i32 6, metadata !6, i32 2} ; [ DW_TAG_lexical_block ]
+!223 = metadata !{i32 81, i32 3, metadata !222, null}
+!224 = metadata !{i32 82, i32 3, metadata !222, null}
+!225 = metadata !{i32 83, i32 3, metadata !222, null}
+!226 = metadata !{i32 85, i32 3, metadata !222, null}
+!227 = metadata !{i32 87, i32 3, metadata !222, null}
+!228 = metadata !{i32 88, i32 3, metadata !222, null}
+!229 = metadata !{i32 89, i32 3, metadata !222, null}
+!230 = metadata !{i32 91, i32 3, metadata !222, null}
+!231 = metadata !{i32 93, i32 3, metadata !222, null}
+!232 = metadata !{i32 94, i32 3, metadata !222, null}
+!233 = metadata !{i32 95, i32 3, metadata !222, null}
+!234 = metadata !{i32 98, i32 1, metadata !180, null}

@@ -72,14 +72,18 @@ define void @queue_multiplexer(i1* %switch_select, i32* %rx_data_a, i1* %rx_read
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 %rx_ready_read) nounwind
   %rx_tlast_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_b) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_b_read) nounwind
+  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind
   %tx_data_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 %tx_data_read) nounwind
   %tx_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 %tx_valid_read) nounwind
-  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind
   %tx_tlast_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 %tx_tlast_read) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 false) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 0) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 false) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 false) nounwind
   br label %3
 
 ; <label>:2                                       ; preds = %0
@@ -91,14 +95,18 @@ define void @queue_multiplexer(i1* %switch_select, i32* %rx_data_a, i1* %rx_read
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 %rx_ready_read_1) nounwind
   %rx_tlast_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_a) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_a_read) nounwind
+  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind
   %tx_data_read_1 = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 %tx_data_read_1) nounwind
   %tx_valid_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 %tx_valid_read_1) nounwind
-  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind
   %tx_tlast_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 %tx_tlast_read_1) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 false) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 0) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 false) nounwind
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 false) nounwind
   br label %3
 
 ; <label>:3                                       ; preds = %2, %1

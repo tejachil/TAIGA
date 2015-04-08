@@ -55,9 +55,10 @@ struct queue_multiplexer : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    sc_signal< sc_lv<1> > switch_select_read_read_fu_74_p2;
+    sc_signal< sc_lv<1> > switch_select_read_read_fu_76_p2;
     static const bool ap_true;
     static const sc_lv<1> ap_const_lv1_0;
+    static const sc_lv<32> ap_const_lv32_0;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     // Thread declarations
@@ -66,7 +67,7 @@ struct queue_multiplexer : public sc_module {
     void thread_rx_ready_b();
     void thread_rx_tlast();
     void thread_rx_valid();
-    void thread_switch_select_read_read_fu_74_p2();
+    void thread_switch_select_read_read_fu_76_p2();
     void thread_tx_data_a();
     void thread_tx_data_b();
     void thread_tx_ready();

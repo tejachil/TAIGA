@@ -2225,10 +2225,17 @@ void queue_multiplexer(
   *rx_ready_b = *rx_ready;
   *rx_tlast = *rx_tlast_b;
 #pragma empty_line
+  *tx_ready = *tx_ready_b;
+#pragma empty_line
   *tx_data_b = *tx_data;
   *tx_valid_b = *tx_valid;
-  *tx_ready = *tx_ready_b;
   *tx_tlast_b = *tx_tlast;
+#pragma empty_line
+  *rx_ready_a = false;
+#pragma empty_line
+  *tx_data_a = 0;
+  *tx_valid_a = false;
+  *tx_tlast_a = false;
  }
  else{
   *rx_data = *rx_data_a;
@@ -2236,10 +2243,17 @@ void queue_multiplexer(
   *rx_ready_a = *rx_ready;
   *rx_tlast = *rx_tlast_a;
 #pragma empty_line
+  *tx_ready = *tx_ready_a;
+#pragma empty_line
   *tx_data_a = *tx_data;
   *tx_valid_a = *tx_valid;
-  *tx_ready = *tx_ready_a;
   *tx_tlast_a = *tx_tlast;
+#pragma empty_line
+  *rx_ready_b = false;
+#pragma empty_line
+  *tx_data_b = 0;
+  *tx_valid_b = false;
+  *tx_tlast_b = false;
  }
 #pragma empty_line
 }

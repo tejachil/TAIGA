@@ -42,13 +42,14 @@ end;
 architecture behav of queue_multiplexer is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "queue_multiplexer,hls_ip_2014_4,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=0.000000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=35}";
+    "queue_multiplexer,hls_ip_2014_4,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=0.000000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=105}";
     constant ap_true : BOOLEAN := true;
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
-    signal switch_select_read_read_fu_74_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal switch_select_read_read_fu_76_p2 : STD_LOGIC_VECTOR (0 downto 0);
 
 
 begin
@@ -57,26 +58,50 @@ begin
 
 
     -- rx_data assign process. --
-    rx_data_assign_proc : process(rx_data_a, rx_data_b, switch_select_read_read_fu_74_p2)
+    rx_data_assign_proc : process(rx_data_a, rx_data_b, switch_select_read_read_fu_76_p2)
     begin
-        if (not((switch_select_read_read_fu_74_p2 = ap_const_lv1_0))) then 
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
             rx_data <= rx_data_b;
-        elsif ((switch_select_read_read_fu_74_p2 = ap_const_lv1_0)) then 
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
             rx_data <= rx_data_a;
         else 
             rx_data <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    rx_ready_a <= rx_ready;
-    rx_ready_b <= rx_ready;
+
+    -- rx_ready_a assign process. --
+    rx_ready_a_assign_proc : process(rx_ready, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            rx_ready_a <= ap_const_logic_0;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            rx_ready_a <= rx_ready;
+        else 
+            rx_ready_a <= 'X';
+        end if; 
+    end process;
+
+
+    -- rx_ready_b assign process. --
+    rx_ready_b_assign_proc : process(rx_ready, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            rx_ready_b <= rx_ready;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            rx_ready_b <= ap_const_logic_0;
+        else 
+            rx_ready_b <= 'X';
+        end if; 
+    end process;
+
 
     -- rx_tlast assign process. --
-    rx_tlast_assign_proc : process(rx_tlast_a, rx_tlast_b, switch_select_read_read_fu_74_p2)
+    rx_tlast_assign_proc : process(rx_tlast_a, rx_tlast_b, switch_select_read_read_fu_76_p2)
     begin
-        if (not((switch_select_read_read_fu_74_p2 = ap_const_lv1_0))) then 
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
             rx_tlast <= rx_tlast_b;
-        elsif ((switch_select_read_read_fu_74_p2 = ap_const_lv1_0)) then 
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
             rx_tlast <= rx_tlast_a;
         else 
             rx_tlast <= 'X';
@@ -85,35 +110,107 @@ begin
 
 
     -- rx_valid assign process. --
-    rx_valid_assign_proc : process(rx_valid_a, rx_valid_b, switch_select_read_read_fu_74_p2)
+    rx_valid_assign_proc : process(rx_valid_a, rx_valid_b, switch_select_read_read_fu_76_p2)
     begin
-        if (not((switch_select_read_read_fu_74_p2 = ap_const_lv1_0))) then 
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
             rx_valid <= rx_valid_b;
-        elsif ((switch_select_read_read_fu_74_p2 = ap_const_lv1_0)) then 
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
             rx_valid <= rx_valid_a;
         else 
             rx_valid <= 'X';
         end if; 
     end process;
 
-    switch_select_read_read_fu_74_p2 <= (0=>switch_select, others=>'-');
-    tx_data_a <= tx_data;
-    tx_data_b <= tx_data;
+    switch_select_read_read_fu_76_p2 <= (0=>switch_select, others=>'-');
+
+    -- tx_data_a assign process. --
+    tx_data_a_assign_proc : process(tx_data, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            tx_data_a <= ap_const_lv32_0;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            tx_data_a <= tx_data;
+        else 
+            tx_data_a <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    -- tx_data_b assign process. --
+    tx_data_b_assign_proc : process(tx_data, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            tx_data_b <= tx_data;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            tx_data_b <= ap_const_lv32_0;
+        else 
+            tx_data_b <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
 
     -- tx_ready assign process. --
-    tx_ready_assign_proc : process(tx_ready_a, tx_ready_b, switch_select_read_read_fu_74_p2)
+    tx_ready_assign_proc : process(tx_ready_a, tx_ready_b, switch_select_read_read_fu_76_p2)
     begin
-        if (not((switch_select_read_read_fu_74_p2 = ap_const_lv1_0))) then 
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
             tx_ready <= tx_ready_b;
-        elsif ((switch_select_read_read_fu_74_p2 = ap_const_lv1_0)) then 
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
             tx_ready <= tx_ready_a;
         else 
             tx_ready <= 'X';
         end if; 
     end process;
 
-    tx_tlast_a <= tx_tlast;
-    tx_tlast_b <= tx_tlast;
-    tx_valid_a <= tx_valid;
-    tx_valid_b <= tx_valid;
+
+    -- tx_tlast_a assign process. --
+    tx_tlast_a_assign_proc : process(tx_tlast, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            tx_tlast_a <= ap_const_logic_0;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            tx_tlast_a <= tx_tlast;
+        else 
+            tx_tlast_a <= 'X';
+        end if; 
+    end process;
+
+
+    -- tx_tlast_b assign process. --
+    tx_tlast_b_assign_proc : process(tx_tlast, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            tx_tlast_b <= tx_tlast;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            tx_tlast_b <= ap_const_logic_0;
+        else 
+            tx_tlast_b <= 'X';
+        end if; 
+    end process;
+
+
+    -- tx_valid_a assign process. --
+    tx_valid_a_assign_proc : process(tx_valid, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            tx_valid_a <= ap_const_logic_0;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            tx_valid_a <= tx_valid;
+        else 
+            tx_valid_a <= 'X';
+        end if; 
+    end process;
+
+
+    -- tx_valid_b assign process. --
+    tx_valid_b_assign_proc : process(tx_valid, switch_select_read_read_fu_76_p2)
+    begin
+        if (not((switch_select_read_read_fu_76_p2 = ap_const_lv1_0))) then 
+            tx_valid_b <= tx_valid;
+        elsif ((switch_select_read_read_fu_76_p2 = ap_const_lv1_0)) then 
+            tx_valid_b <= ap_const_logic_0;
+        else 
+            tx_valid_b <= 'X';
+        end if; 
+    end process;
+
 end behav;

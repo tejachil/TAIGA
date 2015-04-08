@@ -14,6 +14,7 @@ namespace ap_rtl {
 
 const bool queue_multiplexer::ap_true = true;
 const sc_lv<1> queue_multiplexer::ap_const_lv1_0 = "0";
+const sc_lv<32> queue_multiplexer::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_logic queue_multiplexer::ap_const_logic_1 = sc_dt::Log_1;
 const sc_logic queue_multiplexer::ap_const_logic_0 = sc_dt::Log_0;
 
@@ -22,57 +23,57 @@ queue_multiplexer::queue_multiplexer(sc_module_name name) : sc_module(name), mVc
     SC_METHOD(thread_rx_data);
     sensitive << ( rx_data_a );
     sensitive << ( rx_data_b );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_rx_ready_a);
     sensitive << ( rx_ready );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_rx_ready_b);
     sensitive << ( rx_ready );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_rx_tlast);
     sensitive << ( rx_tlast_a );
     sensitive << ( rx_tlast_b );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_rx_valid);
     sensitive << ( rx_valid_a );
     sensitive << ( rx_valid_b );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
-    SC_METHOD(thread_switch_select_read_read_fu_74_p2);
+    SC_METHOD(thread_switch_select_read_read_fu_76_p2);
     sensitive << ( switch_select );
 
     SC_METHOD(thread_tx_data_a);
     sensitive << ( tx_data );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_tx_data_b);
     sensitive << ( tx_data );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_tx_ready);
     sensitive << ( tx_ready_a );
     sensitive << ( tx_ready_b );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_tx_tlast_a);
     sensitive << ( tx_tlast );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_tx_tlast_b);
     sensitive << ( tx_tlast );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_tx_valid_a);
     sensitive << ( tx_valid );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_METHOD(thread_tx_valid_b);
     sensitive << ( tx_valid );
-    sensitive << ( switch_select_read_read_fu_74_p2 );
+    sensitive << ( switch_select_read_read_fu_76_p2 );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_virtual_clock.pos() );
@@ -112,7 +113,7 @@ queue_multiplexer::queue_multiplexer(sc_module_name name) : sc_module(name), mVc
     sc_trace(mVcdFile, tx_tlast, "(port)tx_tlast");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, switch_select_read_read_fu_74_p2, "switch_select_read_read_fu_74_p2");
+    sc_trace(mVcdFile, switch_select_read_read_fu_76_p2, "switch_select_read_read_fu_76_p2");
 #endif
 
     }
@@ -131,9 +132,9 @@ queue_multiplexer::~queue_multiplexer() {
 }
 
 void queue_multiplexer::thread_rx_data() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         rx_data = rx_data_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         rx_data = rx_data_a.read();
     } else {
         rx_data = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
@@ -141,17 +142,29 @@ void queue_multiplexer::thread_rx_data() {
 }
 
 void queue_multiplexer::thread_rx_ready_a() {
-    rx_ready_a = rx_ready.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        rx_ready_a =  (sc_logic) (ap_const_lv1_0[0]);
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        rx_ready_a = rx_ready.read();
+    } else {
+        rx_ready_a = sc_logic('X');
+    }
 }
 
 void queue_multiplexer::thread_rx_ready_b() {
-    rx_ready_b = rx_ready.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        rx_ready_b = rx_ready.read();
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        rx_ready_b =  (sc_logic) (ap_const_lv1_0[0]);
+    } else {
+        rx_ready_b = sc_logic('X');
+    }
 }
 
 void queue_multiplexer::thread_rx_tlast() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         rx_tlast = rx_tlast_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         rx_tlast = rx_tlast_a.read();
     } else {
         rx_tlast = sc_logic('X');
@@ -159,31 +172,43 @@ void queue_multiplexer::thread_rx_tlast() {
 }
 
 void queue_multiplexer::thread_rx_valid() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         rx_valid = rx_valid_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         rx_valid = rx_valid_a.read();
     } else {
         rx_valid = sc_logic('X');
     }
 }
 
-void queue_multiplexer::thread_switch_select_read_read_fu_74_p2() {
-    switch_select_read_read_fu_74_p2 =  (sc_lv<1>) (switch_select.read());
+void queue_multiplexer::thread_switch_select_read_read_fu_76_p2() {
+    switch_select_read_read_fu_76_p2 =  (sc_lv<1>) (switch_select.read());
 }
 
 void queue_multiplexer::thread_tx_data_a() {
-    tx_data_a = tx_data.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_data_a = ap_const_lv32_0;
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_data_a = tx_data.read();
+    } else {
+        tx_data_a = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    }
 }
 
 void queue_multiplexer::thread_tx_data_b() {
-    tx_data_b = tx_data.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_data_b = tx_data.read();
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_data_b = ap_const_lv32_0;
+    } else {
+        tx_data_b = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    }
 }
 
 void queue_multiplexer::thread_tx_ready() {
-    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         tx_ready = tx_ready_b.read();
-    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_74_p2.read(), ap_const_lv1_0)) {
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
         tx_ready = tx_ready_a.read();
     } else {
         tx_ready = sc_logic('X');
@@ -191,19 +216,43 @@ void queue_multiplexer::thread_tx_ready() {
 }
 
 void queue_multiplexer::thread_tx_tlast_a() {
-    tx_tlast_a = tx_tlast.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_tlast_a =  (sc_logic) (ap_const_lv1_0[0]);
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_tlast_a = tx_tlast.read();
+    } else {
+        tx_tlast_a = sc_logic('X');
+    }
 }
 
 void queue_multiplexer::thread_tx_tlast_b() {
-    tx_tlast_b = tx_tlast.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_tlast_b = tx_tlast.read();
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_tlast_b =  (sc_logic) (ap_const_lv1_0[0]);
+    } else {
+        tx_tlast_b = sc_logic('X');
+    }
 }
 
 void queue_multiplexer::thread_tx_valid_a() {
-    tx_valid_a = tx_valid.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_valid_a =  (sc_logic) (ap_const_lv1_0[0]);
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_valid_a = tx_valid.read();
+    } else {
+        tx_valid_a = sc_logic('X');
+    }
 }
 
 void queue_multiplexer::thread_tx_valid_b() {
-    tx_valid_b = tx_valid.read();
+    if (!esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_valid_b = tx_valid.read();
+    } else if (esl_seteq<1,1,1>(switch_select_read_read_fu_76_p2.read(), ap_const_lv1_0)) {
+        tx_valid_b =  (sc_logic) (ap_const_lv1_0[0]);
+    } else {
+        tx_valid_b = sc_logic('X');
+    }
 }
 
 void queue_multiplexer::thread_hdltv_gen() {

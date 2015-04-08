@@ -98,37 +98,45 @@ define void @queue_multiplexer(i1* %switch_select, i32* %rx_data_a, i1* %rx_read
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 %rx_ready_read) nounwind, !dbg !195 ; [debug line = 64:3]
   %rx_tlast_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_b) nounwind, !dbg !196 ; [#uses=1 type=i1] [debug line = 65:3]
   call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_b_read) nounwind, !dbg !196 ; [debug line = 65:3]
-  %tx_data_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind, !dbg !197 ; [#uses=1 type=i32] [debug line = 67:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 %tx_data_read) nounwind, !dbg !197 ; [debug line = 67:3]
-  %tx_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind, !dbg !198 ; [#uses=1 type=i1] [debug line = 68:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 %tx_valid_read) nounwind, !dbg !198 ; [debug line = 68:3]
-  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind, !dbg !199 ; [#uses=1 type=i1] [debug line = 69:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind, !dbg !199 ; [debug line = 69:3]
-  %tx_tlast_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind, !dbg !200 ; [#uses=1 type=i1] [debug line = 70:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 %tx_tlast_read) nounwind, !dbg !200 ; [debug line = 70:3]
-  br label %3, !dbg !201                          ; [debug line = 71:2]
+  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind, !dbg !197 ; [#uses=1 type=i1] [debug line = 67:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind, !dbg !197 ; [debug line = 67:3]
+  %tx_data_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind, !dbg !198 ; [#uses=1 type=i32] [debug line = 69:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 %tx_data_read) nounwind, !dbg !198 ; [debug line = 69:3]
+  %tx_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind, !dbg !199 ; [#uses=1 type=i1] [debug line = 70:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 %tx_valid_read) nounwind, !dbg !199 ; [debug line = 70:3]
+  %tx_tlast_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind, !dbg !200 ; [#uses=1 type=i1] [debug line = 71:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 %tx_tlast_read) nounwind, !dbg !200 ; [debug line = 71:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 false) nounwind, !dbg !201 ; [debug line = 73:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 0) nounwind, !dbg !202 ; [debug line = 75:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 false) nounwind, !dbg !203 ; [debug line = 76:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 false) nounwind, !dbg !204 ; [debug line = 77:3]
+  br label %3, !dbg !205                          ; [debug line = 78:2]
 
 ; <label>:2                                       ; preds = %0
-  %rx_data_a_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %rx_data_a) nounwind, !dbg !202 ; [#uses=1 type=i32] [debug line = 73:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %rx_data, i32 %rx_data_a_read) nounwind, !dbg !202 ; [debug line = 73:3]
-  %rx_valid_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_valid_a) nounwind, !dbg !204 ; [#uses=1 type=i1] [debug line = 74:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_valid, i1 %rx_valid_a_read) nounwind, !dbg !204 ; [debug line = 74:3]
-  %rx_ready_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_ready) nounwind, !dbg !205 ; [#uses=1 type=i1] [debug line = 75:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 %rx_ready_read_1) nounwind, !dbg !205 ; [debug line = 75:3]
-  %rx_tlast_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_a) nounwind, !dbg !206 ; [#uses=1 type=i1] [debug line = 76:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_a_read) nounwind, !dbg !206 ; [debug line = 76:3]
-  %tx_data_read_1 = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind, !dbg !207 ; [#uses=1 type=i32] [debug line = 78:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 %tx_data_read_1) nounwind, !dbg !207 ; [debug line = 78:3]
-  %tx_valid_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind, !dbg !208 ; [#uses=1 type=i1] [debug line = 79:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 %tx_valid_read_1) nounwind, !dbg !208 ; [debug line = 79:3]
-  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind, !dbg !209 ; [#uses=1 type=i1] [debug line = 80:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind, !dbg !209 ; [debug line = 80:3]
-  %tx_tlast_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind, !dbg !210 ; [#uses=1 type=i1] [debug line = 81:3]
-  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 %tx_tlast_read_1) nounwind, !dbg !210 ; [debug line = 81:3]
+  %rx_data_a_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %rx_data_a) nounwind, !dbg !206 ; [#uses=1 type=i32] [debug line = 80:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %rx_data, i32 %rx_data_a_read) nounwind, !dbg !206 ; [debug line = 80:3]
+  %rx_valid_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_valid_a) nounwind, !dbg !208 ; [#uses=1 type=i1] [debug line = 81:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_valid, i1 %rx_valid_a_read) nounwind, !dbg !208 ; [debug line = 81:3]
+  %rx_ready_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_ready) nounwind, !dbg !209 ; [#uses=1 type=i1] [debug line = 82:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 %rx_ready_read_1) nounwind, !dbg !209 ; [debug line = 82:3]
+  %rx_tlast_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_a) nounwind, !dbg !210 ; [#uses=1 type=i1] [debug line = 83:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_a_read) nounwind, !dbg !210 ; [debug line = 83:3]
+  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind, !dbg !211 ; [#uses=1 type=i1] [debug line = 85:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind, !dbg !211 ; [debug line = 85:3]
+  %tx_data_read_1 = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind, !dbg !212 ; [#uses=1 type=i32] [debug line = 87:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 %tx_data_read_1) nounwind, !dbg !212 ; [debug line = 87:3]
+  %tx_valid_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind, !dbg !213 ; [#uses=1 type=i1] [debug line = 88:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 %tx_valid_read_1) nounwind, !dbg !213 ; [debug line = 88:3]
+  %tx_tlast_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind, !dbg !214 ; [#uses=1 type=i1] [debug line = 89:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 %tx_tlast_read_1) nounwind, !dbg !214 ; [debug line = 89:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 false) nounwind, !dbg !215 ; [debug line = 91:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 0) nounwind, !dbg !216 ; [debug line = 93:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 false) nounwind, !dbg !217 ; [debug line = 94:3]
+  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 false) nounwind, !dbg !218 ; [debug line = 95:3]
   br label %3
 
 ; <label>:3                                       ; preds = %2, %1
-  ret void, !dbg !211                             ; [debug line = 84:1]
+  ret void, !dbg !219                             ; [debug line = 98:1]
 }
 
 ; [#uses=26]
@@ -166,14 +174,14 @@ entry:
   ret i32 %empty
 }
 
-; [#uses=12]
+; [#uses=18]
 define weak void @_ssdm_op_Write.ap_none.volatile.i1P(i1*, i1) {
 entry:
   store i1 %1, i1* %0
   ret void
 }
 
-; [#uses=4]
+; [#uses=6]
 define weak void @_ssdm_op_Write.ap_none.volatile.i32P(i32*, i32) {
 entry:
   store i32 %1, i32* %0
@@ -380,17 +388,25 @@ entry:
 !195 = metadata !{i32 64, i32 3, metadata !193, null}
 !196 = metadata !{i32 65, i32 3, metadata !193, null}
 !197 = metadata !{i32 67, i32 3, metadata !193, null}
-!198 = metadata !{i32 68, i32 3, metadata !193, null}
-!199 = metadata !{i32 69, i32 3, metadata !193, null}
-!200 = metadata !{i32 70, i32 3, metadata !193, null}
-!201 = metadata !{i32 71, i32 2, metadata !193, null}
-!202 = metadata !{i32 73, i32 3, metadata !203, null}
-!203 = metadata !{i32 786443, metadata !165, i32 72, i32 6, metadata !104, i32 2} ; [ DW_TAG_lexical_block ]
-!204 = metadata !{i32 74, i32 3, metadata !203, null}
-!205 = metadata !{i32 75, i32 3, metadata !203, null}
-!206 = metadata !{i32 76, i32 3, metadata !203, null}
-!207 = metadata !{i32 78, i32 3, metadata !203, null}
-!208 = metadata !{i32 79, i32 3, metadata !203, null}
-!209 = metadata !{i32 80, i32 3, metadata !203, null}
-!210 = metadata !{i32 81, i32 3, metadata !203, null}
-!211 = metadata !{i32 84, i32 1, metadata !165, null}
+!198 = metadata !{i32 69, i32 3, metadata !193, null}
+!199 = metadata !{i32 70, i32 3, metadata !193, null}
+!200 = metadata !{i32 71, i32 3, metadata !193, null}
+!201 = metadata !{i32 73, i32 3, metadata !193, null}
+!202 = metadata !{i32 75, i32 3, metadata !193, null}
+!203 = metadata !{i32 76, i32 3, metadata !193, null}
+!204 = metadata !{i32 77, i32 3, metadata !193, null}
+!205 = metadata !{i32 78, i32 2, metadata !193, null}
+!206 = metadata !{i32 80, i32 3, metadata !207, null}
+!207 = metadata !{i32 786443, metadata !165, i32 79, i32 6, metadata !104, i32 2} ; [ DW_TAG_lexical_block ]
+!208 = metadata !{i32 81, i32 3, metadata !207, null}
+!209 = metadata !{i32 82, i32 3, metadata !207, null}
+!210 = metadata !{i32 83, i32 3, metadata !207, null}
+!211 = metadata !{i32 85, i32 3, metadata !207, null}
+!212 = metadata !{i32 87, i32 3, metadata !207, null}
+!213 = metadata !{i32 88, i32 3, metadata !207, null}
+!214 = metadata !{i32 89, i32 3, metadata !207, null}
+!215 = metadata !{i32 91, i32 3, metadata !207, null}
+!216 = metadata !{i32 93, i32 3, metadata !207, null}
+!217 = metadata !{i32 94, i32 3, metadata !207, null}
+!218 = metadata !{i32 95, i32 3, metadata !207, null}
+!219 = metadata !{i32 98, i32 1, metadata !165, null}
