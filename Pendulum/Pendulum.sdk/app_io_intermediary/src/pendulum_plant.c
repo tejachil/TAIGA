@@ -98,14 +98,14 @@ u32 read_sensor(slave_select sensor, u32 data){
 
 	cycle_flag |= sensor;
 
-	int rawSensor = buffer_to_u32(readBuffer, BITS_32);
+	unsigned int rawSensor = buffer_to_u32(readBuffer, BITS_32);
 
 	unsigned int value = rawSensor;
 	value &= ~(0xFF0000FF);
 	value = (value >> 8);
 
 	if(sensor == SS_ENCODER_S)
-		stateVector.encoder_theta = -((int)value % 4096);
+		stateVector.encoder_theta = -(value % 4096);
 	else if (sensor == SS_ENCODER_P)
 		stateVector.encoder_alpha = value % 4096;
 

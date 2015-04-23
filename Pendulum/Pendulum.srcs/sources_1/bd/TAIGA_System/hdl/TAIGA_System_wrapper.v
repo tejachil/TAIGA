@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Thu Apr 23 11:26:37 2015
+//Date        : Thu Apr 23 15:48:52 2015
 //Host        : CRS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System_wrapper.bd
 //Design      : TAIGA_System_wrapper
@@ -32,7 +32,9 @@ module TAIGA_System_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     gpio_btn_tri_i,
+    gpio_debug_backup_tri_o,
     gpio_debug_ioi_tri_o,
+    gpio_debug_production_tri_o,
     gpio_led_backup_tri_o,
     gpio_led_ioi_tri_o,
     gpio_led_production_tri_o,
@@ -66,7 +68,9 @@ module TAIGA_System_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   input [3:0]gpio_btn_tri_i;
+  output [1:0]gpio_debug_backup_tri_o;
   output [3:0]gpio_debug_ioi_tri_o;
+  output [1:0]gpio_debug_production_tri_o;
   output [0:0]gpio_led_backup_tri_o;
   output [0:0]gpio_led_ioi_tri_o;
   output [0:0]gpio_led_production_tri_o;
@@ -101,7 +105,9 @@ module TAIGA_System_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [3:0]gpio_btn_tri_i;
+  wire [1:0]gpio_debug_backup_tri_o;
   wire [3:0]gpio_debug_ioi_tri_o;
+  wire [1:0]gpio_debug_production_tri_o;
   wire [0:0]gpio_led_backup_tri_o;
   wire [0:0]gpio_led_ioi_tri_o;
   wire [0:0]gpio_led_production_tri_o;
@@ -137,7 +143,9 @@ TAIGA_System TAIGA_System_i
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .gpio_btn_tri_i(gpio_btn_tri_i),
+        .gpio_debug_backup_tri_o(gpio_debug_backup_tri_o),
         .gpio_debug_ioi_tri_o(gpio_debug_ioi_tri_o),
+        .gpio_debug_production_tri_o(gpio_debug_production_tri_o),
         .gpio_led_backup_tri_o(gpio_led_backup_tri_o),
         .gpio_led_ioi_tri_o(gpio_led_ioi_tri_o),
         .gpio_led_production_tri_o(gpio_led_production_tri_o),

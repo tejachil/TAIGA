@@ -15,12 +15,16 @@
 #define GUARD_TRIGGER_CHANNEL	1
 #define LED_DEVICE_ID			XPAR_AXI_GPIO_IOI_OUT_DEVICE_ID
 #define LED_CHANNEL				1
+#define DEBUG_DEVICE_ID			XPAR_AXI_GPIO_IOI_OUT_DEVICE_ID
+#define DEBUG_CHANNEL			2
 #define BTN_DEVICE_ID			XPAR_AXI_GPIO_IOI_IN_DEVICE_ID
 #define BTN_CHANNEL				1
 #define SW_DEVICE_ID			XPAR_AXI_GPIO_IOI_IN_DEVICE_ID
 #define SW_CHANNEL				2
 
 #define LED1			0x1
+
+typedef enum {DEBUG1=0x1, DEBUG2=0x2, DEBUG3=0x4, DEBUG4=0x8} debug;
 
 typedef enum {false, true} bool;
 
@@ -31,6 +35,8 @@ typedef enum {BTN0 = 0x1, BTN1 = 0x2, BTN2 = 0x4, BTN3 = 0x8} btn;
 int init_axi_gpio();
 
 void set_led(u8 leds, bool state);
+
+void set_debug(debug pin, bool state);
 
 void select_controller(controller control);
 

@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Thu Apr 23 11:26:37 2015
+//Date        : Thu Apr 23 15:48:52 2015
 //Host        : CRS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System.bd
 //Design      : TAIGA_System
@@ -32,7 +32,9 @@ module TAIGA_System
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     gpio_btn_tri_i,
+    gpio_debug_backup_tri_o,
     gpio_debug_ioi_tri_o,
+    gpio_debug_production_tri_o,
     gpio_led_backup_tri_o,
     gpio_led_ioi_tri_o,
     gpio_led_production_tri_o,
@@ -66,7 +68,9 @@ module TAIGA_System
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   input [3:0]gpio_btn_tri_i;
+  output [1:0]gpio_debug_backup_tri_o;
   output [3:0]gpio_debug_ioi_tri_o;
+  output [1:0]gpio_debug_production_tri_o;
   output [0:0]gpio_led_backup_tri_o;
   output [0:0]gpio_led_ioi_tri_o;
   output [0:0]gpio_led_production_tri_o;
@@ -182,7 +186,9 @@ module TAIGA_System
   wire [3:0]axi_gpio_IOI_in_GPIO_TRI_I;
   wire [3:0]axi_gpio_IOI_out_GPIO2_TRI_O;
   wire [0:0]axi_gpio_IOI_out_GPIO_TRI_O;
+  wire [1:0]axi_gpio_backup_controller_out_GPIO2_TRI_O;
   wire [0:0]axi_gpio_backup_controller_out_GPIO_TRI_O;
+  wire [1:0]axi_gpio_production_controller_out_GPIO2_TRI_O;
   wire [0:0]axi_gpio_production_controller_out_GPIO_TRI_O;
   wire [0:0]axi_gpio_trigger_gpio_io_o;
   wire [8:0]axi_periph_IOI_M02_AXI_ARADDR;
@@ -543,7 +549,9 @@ module TAIGA_System
 
   assign axi_gpio_IOI_in_GPIO2_TRI_I = gpio_sw_tri_i[3:0];
   assign axi_gpio_IOI_in_GPIO_TRI_I = gpio_btn_tri_i[3:0];
+  assign gpio_debug_backup_tri_o[1:0] = axi_gpio_backup_controller_out_GPIO2_TRI_O;
   assign gpio_debug_ioi_tri_o[3:0] = axi_gpio_IOI_out_GPIO2_TRI_O;
+  assign gpio_debug_production_tri_o[1:0] = axi_gpio_production_controller_out_GPIO2_TRI_O;
   assign gpio_led_backup_tri_o[0] = axi_gpio_backup_controller_out_GPIO_TRI_O;
   assign gpio_led_ioi_tri_o[0] = axi_gpio_IOI_out_GPIO_TRI_O;
   assign gpio_led_production_tri_o[0] = axi_gpio_production_controller_out_GPIO_TRI_O;
@@ -746,7 +754,8 @@ TAIGA_System_axi_gpio_0_0 axi_gpio_IOI_out
         .s_axi_wstrb(axi_periph_IOI_M02_AXI_WSTRB),
         .s_axi_wvalid(axi_periph_IOI_M02_AXI_WVALID));
 TAIGA_System_axi_gpio_0_2 axi_gpio_backup_controller_out
-       (.gpio_io_o(axi_gpio_backup_controller_out_GPIO_TRI_O),
+       (.gpio2_io_o(axi_gpio_backup_controller_out_GPIO2_TRI_O),
+        .gpio_io_o(axi_gpio_backup_controller_out_GPIO_TRI_O),
         .s_axi_aclk(backup_controller_Clk),
         .s_axi_araddr(axi_periph_backup_controller_M02_AXI_ARADDR),
         .s_axi_aresetn(rst_production_controller_100M_peripheral_aresetn),
@@ -767,7 +776,8 @@ TAIGA_System_axi_gpio_0_2 axi_gpio_backup_controller_out
         .s_axi_wstrb(axi_periph_backup_controller_M02_AXI_WSTRB),
         .s_axi_wvalid(axi_periph_backup_controller_M02_AXI_WVALID));
 TAIGA_System_axi_gpio_0_3 axi_gpio_production_controller_out
-       (.gpio_io_o(axi_gpio_production_controller_out_GPIO_TRI_O),
+       (.gpio2_io_o(axi_gpio_production_controller_out_GPIO2_TRI_O),
+        .gpio_io_o(axi_gpio_production_controller_out_GPIO_TRI_O),
         .s_axi_aclk(backup_controller_Clk),
         .s_axi_araddr(axi_periph_production_controller_M00_AXI_ARADDR),
         .s_axi_aresetn(rst_production_controller_100M_peripheral_aresetn),

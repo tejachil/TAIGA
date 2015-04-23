@@ -3,11 +3,11 @@
 	<item value="Default C source template" key="LastUsedSourceTemplate"/>
 	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
-		<item value="498" key="DIALOG_WIDTH"/>
+		<item value="506" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="187" key="DIALOG_HEIGHT"/>
-		<item value="711" key="DIALOG_X_ORIGIN"/>
-		<item value="447" key="DIALOG_Y_ORIGIN"/>
+		<item value="383" key="DIALOG_HEIGHT"/>
+		<item value="707" key="DIALOG_X_ORIGIN"/>
+		<item value="349" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
 		<item value="168" key="size.height"/>

@@ -86,27 +86,26 @@ int main()
 	while(1){
 		//select_controller(read_sw_raw());
 		if(check_control_cycle()){
-			//set_led(LED1, true);
+			set_debug(DEBUG2, true);
 			reset_control_cycle();
 
-			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) > (20.*pi/180))	continue;
+			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) > (45.*pi/180))	continue;
 
 			calculateKalmanControlSignal(get_plant_state_instance());
-
+			set_debug(DEBUG2, false);
+			set_debug(DEBUG4, true);
 			supervisor_send_state_vector(get_plant_state_instance()->xhat);
-
+			set_debug(DEBUG4, false);
 			// TODO: Trigger Mechanism
-
-			if(trivial_trigger_mechanism(get_plant_state_instance())){
-				set_led(LED1, true);
-			}
+			set_debug(DEBUG2, true);
+			if(trivial_trigger_mechanism(get_plant_state_instance()))
+				set_debug(DEBUG3, true);
 			else
-				set_led(LED1, false);
+				set_debug(DEBUG3, false);
 
 			supervisor_send_tail();
 
-			//set_led(LED1, false);
-
+			set_debug(DEBUG2, false);
 		}
 	}
 

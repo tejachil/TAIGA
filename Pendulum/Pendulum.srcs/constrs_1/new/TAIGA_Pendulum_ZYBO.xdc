@@ -221,26 +221,26 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_ioi_tri_o[2]}]
 ###IO_L17N_T2_34
 ##set_property PACKAGE_PIN Y19 [get_ports {jb_n[2]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[2]}]
-#set_property PACKAGE_PIN Y19 [get_ports {gpio_led_microblaze_taiga_tri_o[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_led_microblaze_taiga_tri_o[0]}]
+set_property PACKAGE_PIN Y19 [get_ports {gpio_debug_backup_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_backup_tri_o[1]}]
 
 ###IO_L17P_T2_34
 ##set_property PACKAGE_PIN Y18 [get_ports {jb_p[2]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[2]}]
-#set_property PACKAGE_PIN Y18 [get_ports {led_guard_trigger[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {led_guard_trigger[0]}]
+set_property PACKAGE_PIN Y18 [get_ports {gpio_debug_backup_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_backup_tri_o[0]}]
 
 ###IO_L22N_T3_34
 ##set_property PACKAGE_PIN W19 [get_ports {jb_n[3]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[3]}]
-#set_property PACKAGE_PIN W19 [get_ports {gpio_led_zynq_production_tri_o[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_led_zynq_production_tri_o[0]}]
+set_property PACKAGE_PIN W19 [get_ports {gpio_debug_production_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_production_tri_o[1]}]
 
 ###IO_L22P_T3_34
 ##set_property PACKAGE_PIN W18 [get_ports {jb_p[3]}]
 ##set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[3]}]
-#set_property PACKAGE_PIN W18 [get_ports {gpio_led_microblaze_backup_tri_o[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {gpio_led_microblaze_backup_tri_o[0]}]
+set_property PACKAGE_PIN W18 [get_ports {gpio_debug_production_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_production_tri_o[0]}]
 
 ##Pmod Header JC
 ##IO_L10N_T1_34

@@ -294,7 +294,9 @@ proc create_root_design { parentCell } {
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
   set gpio_btn [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_btn ]
+  set gpio_debug_backup [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_debug_backup ]
   set gpio_debug_ioi [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_debug_ioi ]
+  set gpio_debug_production [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_debug_production ]
   set gpio_led_backup [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_led_backup ]
   set gpio_led_ioi [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_led_ioi ]
   set gpio_led_production [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_led_production ]
@@ -338,11 +340,11 @@ proc create_root_design { parentCell } {
 
   # Create instance: axi_gpio_backup_controller_out, and set properties
   set axi_gpio_backup_controller_out [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_backup_controller_out ]
-  set_property -dict [ list CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_GPIO_WIDTH {1}  ] $axi_gpio_backup_controller_out
+  set_property -dict [ list CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1} CONFIG.C_GPIO2_WIDTH {2} CONFIG.C_GPIO_WIDTH {1} CONFIG.C_IS_DUAL {1}  ] $axi_gpio_backup_controller_out
 
   # Create instance: axi_gpio_production_controller_out, and set properties
   set axi_gpio_production_controller_out [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_production_controller_out ]
-  set_property -dict [ list CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_GPIO_WIDTH {1}  ] $axi_gpio_production_controller_out
+  set_property -dict [ list CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1} CONFIG.C_GPIO2_WIDTH {2} CONFIG.C_GPIO_WIDTH {1} CONFIG.C_IS_DUAL {1}  ] $axi_gpio_production_controller_out
 
   # Create instance: axi_gpio_trigger, and set properties
   set axi_gpio_trigger [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_trigger ]
@@ -439,7 +441,9 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_gpio_IOI_out_GPIO [get_bd_intf_ports gpio_led_ioi] [get_bd_intf_pins axi_gpio_IOI_out/GPIO]
   connect_bd_intf_net -intf_net axi_gpio_IOI_out_GPIO2 [get_bd_intf_ports gpio_debug_ioi] [get_bd_intf_pins axi_gpio_IOI_out/GPIO2]
   connect_bd_intf_net -intf_net axi_gpio_backup_controller_out_GPIO [get_bd_intf_ports gpio_led_backup] [get_bd_intf_pins axi_gpio_backup_controller_out/GPIO]
+  connect_bd_intf_net -intf_net axi_gpio_backup_controller_out_GPIO2 [get_bd_intf_ports gpio_debug_backup] [get_bd_intf_pins axi_gpio_backup_controller_out/GPIO2]
   connect_bd_intf_net -intf_net axi_gpio_production_controller_out_GPIO [get_bd_intf_ports gpio_led_production] [get_bd_intf_pins axi_gpio_production_controller_out/GPIO]
+  connect_bd_intf_net -intf_net axi_gpio_production_controller_out_GPIO2 [get_bd_intf_ports gpio_debug_production] [get_bd_intf_pins axi_gpio_production_controller_out/GPIO2]
   connect_bd_intf_net -intf_net axi_periph_IOI_M02_AXI [get_bd_intf_pins axi_gpio_IOI_out/S_AXI] [get_bd_intf_pins axi_periph_IOI/M02_AXI]
   connect_bd_intf_net -intf_net axi_periph_IOI_M03_AXI [get_bd_intf_pins axi_gpio_IOI_in/S_AXI] [get_bd_intf_pins axi_periph_IOI/M03_AXI]
   connect_bd_intf_net -intf_net axi_periph_IOI_M04_AXI [get_bd_intf_pins axi_periph_IOI/M04_AXI] [get_bd_intf_pins axi_wdt_IOI/S_AXI]

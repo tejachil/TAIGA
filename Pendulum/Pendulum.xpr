@@ -66,10 +66,10 @@
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_production_to_IOI_1/TAIGA_System_fifo_production_to_IOI_1.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_IOI_to_production_0/TAIGA_System_fifo_IOI_to_production_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hw_handoff/TAIGA_System.hwh"/>
+        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hw_handoff/TAIGA_System_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="TAIGA_System_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="TAIGA_System.bmm"/>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hw_handoff/TAIGA_System_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/hdl/TAIGA_System_wrapper.v">
         <FileInfo>
