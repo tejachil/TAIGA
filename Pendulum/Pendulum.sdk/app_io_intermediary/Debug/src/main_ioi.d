@@ -25,8 +25,10 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xspi.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xspi_l.h \
  ../../global_includes/taiga_pendulum_parameters.h \
- ../src/pendulum_plant.h \
- ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h
+ ../src/utilities/axi_uart.h \
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h \
+ ../src/pendulum_plant.h ../src/monitor_plant.h \
+ ../src/monitor_supervisor.h
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xparameters.h:
 
@@ -82,6 +84,12 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
 
 ../../global_includes/taiga_pendulum_parameters.h:
 
-../src/pendulum_plant.h:
+../src/utilities/axi_uart.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h:
+
+../src/pendulum_plant.h:
+
+../src/monitor_plant.h:
+
+../src/monitor_supervisor.h:

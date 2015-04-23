@@ -10,6 +10,7 @@
 #include "utilities/axi_gpio.h"
 #include "pendulum_plant.h"
 #include "monitor_plant.h"
+#include "utilities/axi_uart.h"
 
 bool plant_filter(QueuePacket* packet);
 
@@ -35,12 +36,12 @@ void ioi_handler(QueuePacket fifo_packet){
 				}
 			break;
 		case (SET_POINT): // SET_POINT
-			returnData[0] = 10;
+			returnData[0] = get_set_point();
 			//xil_printf("SET_POINT\n");
 			//returnData[0] = ((u32)getSetPoint());
 			break;
 		case (STATE_VECTOR): // STATE_INFORMATION
-			get_plant_state_instance(returnData);
+			get_state_vector(returnData);
 			break;
 		default:
 			xil_printf("default\n");
@@ -50,35 +51,6 @@ void ioi_handler(QueuePacket fifo_packet){
 	enqueue(returnData, fifo_packet.operation > 4 ? 4 : fifo_packet.operation);
 
 	//set_led(LED1, false);
-
-	if(check_control_cycle()){
-		reset_control_cycle();
-
-		//xil_printf("Theta:%d\n", (int)(get_thetaR()*100));
-
-		if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) > (20.*pi/180))	return;
-
-		calculateKalmanControlSignal(get_plant_state_instance());
-
-		//xil_printf("AfterKalm %d \n", (int)(get_thetaR()*100));
-
-		set_led(LED1, trivial_trigger_mechanism(get_plant_state_instance()));
-
-		// TODO: Trigger Mechanism
-	}
-
-/*			for(i = 0; i < ((fifoParams >> 16) & 0xFF); ++i)
-				enqueue_taiga_to_controller(retData[i]);
-			set_led(LED1, false);
-			guardTriggerMechanism(startFlagTAIGA);
-			if(!startFlagTAIGA)	startFlagTAIGA = read_btn(BTN0);
-			if(read_btn(BTN1)){
-				i = read_sw_raw();
-				updateSetPoint((i & 8) ? (-5*(i&7)) : (5*(i&7)));
-			}
-			if(read_btn(BTN2)){
-				select_controller(PRODUCTION);
-			}*/
 }
 
 bool plant_filter(QueuePacket* packet){

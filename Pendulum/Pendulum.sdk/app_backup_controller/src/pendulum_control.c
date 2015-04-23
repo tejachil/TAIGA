@@ -109,5 +109,6 @@ void getStateInformation(float *xpre){
 
 	int i;
 	for(i = 0; i < length; ++i)
-		xpre[i] = (float)buffer[i];
+		xpre[i] = 0;
+	xpre[1] = 0.6;
 }

@@ -56,29 +56,22 @@
 #include "utilities/axi_gpio.h"
 #include "utilities/fifo_queue_wdt.h"
 #include "utilities/axi_spi.h"
+#include "utilities/axi_uart.h"
 #include "pendulum_plant.h"
-#include "xuartlite.h"
-
-#define UARTLITE_DEVICE_ID		XPAR_UARTLITE_0_DEVICE_ID
-
-XUartLite UartLite;		 /* Instance of the UartLite device */
+#include "monitor_plant.h"
+#include "monitor_supervisor.h"
 
 
 int main()
 {
 	int Status;
 
+	init_axi_uart();
 	init_axi_gpio();
 	init_spi();
 	init_pendulum_plant();
 	init_fifo_queues();
 	//init_wdt();
-
-	// Initialize the UartLite driver so that it is ready to use.
-	Status = XUartLite_Initialize(&UartLite, UARTLITE_DEVICE_ID);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
 
 	select_controller(PRODUCTION);
 
@@ -91,11 +84,30 @@ int main()
 	start_ioi();
 
 	while(1){
-		select_controller(read_sw_raw());
-		//Status = read_sensor((SS_ENCODER_P), (READ_CNTR << 24));
-		//Status &= ~(0xFF0000FF);
-		//Status = (Status >> 8);
-		//xil_printf("%d\r\n", Status);
+		//select_controller(read_sw_raw());
+		if(check_control_cycle()){
+			//set_led(LED1, true);
+			reset_control_cycle();
+
+			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) > (20.*pi/180))	continue;
+
+			calculateKalmanControlSignal(get_plant_state_instance());
+
+			supervisor_send_state_vector(get_plant_state_instance()->xhat);
+
+			// TODO: Trigger Mechanism
+
+			if(trivial_trigger_mechanism(get_plant_state_instance())){
+				set_led(LED1, true);
+			}
+			else
+				set_led(LED1, false);
+
+			supervisor_send_tail();
+
+			//set_led(LED1, false);
+
+		}
 	}
 
 	return XST_SUCCESS;

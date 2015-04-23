@@ -14,6 +14,13 @@ static bool start_ioi_flag = false;
 static PlantParameters stateVector;
 
 void init_pendulum_plant(){
+	int i;
+	for(i = 0; i < 4; ++i){
+		stateVector.xpre[i] = 0.;
+		stateVector.xhat[i] = 0.;
+	}
+	stateVector.cycle_count = 0;
+
 	u32 spiParams, spiWriteData;
 	u8 writeBuffer[4], readBuffer[4];
 
@@ -105,6 +112,15 @@ u32 read_sensor(slave_select sensor, u32 data){
 	return rawSensor;
 }
 
+int get_set_point(){
+	static long count = 0;
+	++count;
+	int setpoint = 10;
+
+	stateVector.theta_des = setpoint*pi/180;
+	return setpoint;
+}
+
 int start_ioi(){
 	start_ioi_flag = true;
 	// TODO: start IOI flag
@@ -121,7 +137,7 @@ void reset_control_cycle(){
 
 	cycle_flag = 0;
 
-	xil_printf("et:%d ea:%d t:%d a:%d\n", stateVector.encoder_theta, stateVector.encoder_alpha, (int)(stateVector.thetaR*1800/pi), (int)(stateVector.alphaR*1800/pi));
+	//xil_printf("et:%d ea:%d t:%d a:%d\n", stateVector.encoder_theta, stateVector.encoder_alpha, (int)(stateVector.thetaR*1800/pi), (int)(stateVector.alphaR*1800/pi));
 
 	// TODO: Method to reset the WDT
 }

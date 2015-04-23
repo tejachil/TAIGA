@@ -29,7 +29,6 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/home/teja/Documents/TAIGA/HLS"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1155253733" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
@@ -56,7 +55,6 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/home/teja/Documents/TAIGA/HLS"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.150402791" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
@@ -133,7 +131,6 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/home/teja/Documents/TAIGA/HLS"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1281455895" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -146,7 +143,6 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/lnx64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/home/teja/Documents/TAIGA/HLS"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1236182093" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>

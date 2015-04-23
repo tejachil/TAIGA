@@ -1,0 +1,20 @@
+/*
+ * monitor_supervisor.c
+ *
+ *  Created on: Apr 8, 2015
+ *      Author: teja
+ */
+
+#include "utilities/axi_spi.h"
+
+void supervisor_send_state_vector(){
+	u8 uartBuffer[16];
+
+
+
+	u32_to_buffer()
+}
+
+void supervisor_send_tail(){
+
+}

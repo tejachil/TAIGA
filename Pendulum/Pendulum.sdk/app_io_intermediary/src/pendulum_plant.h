@@ -18,6 +18,8 @@ void write_voltage(u32 voltage_data);
 
 u32 read_sensor(slave_select sensor, u32 data);
 
+int get_set_point();
+
 int start_ioi();
 
 bool check_control_cycle();

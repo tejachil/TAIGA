@@ -202,8 +202,9 @@ int UartLitePolledExample(u16 DeviceId)
 	 * accordingly.
 	 */
 	while (1) {
-		ReceivedCount = XUartLite_Recv(&UartLite, RecvBuffer ,TEST_BUFFER_SIZE);
+		ReceivedCount = XUartLite_Recv(&UartLite, RecvBuffer ,4);
 		if(ReceivedCount){
+			//xil_printf("Receive count: %d \n", ReceivedCount);
 			XUartLite_Send(&UartLite, RecvBuffer, ReceivedCount);
 		}
 		/*ReceivedCount += XUartLite_Recv(&UartLite,

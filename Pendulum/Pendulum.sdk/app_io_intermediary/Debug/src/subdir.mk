@@ -10,18 +10,21 @@ C_SRCS += \
 ../src/ioi_handler.c \
 ../src/main_ioi.c \
 ../src/monitor_plant.c \
+../src/monitor_supervisor.c \
 ../src/pendulum_plant.c 
 
 OBJS += \
 ./src/ioi_handler.o \
 ./src/main_ioi.o \
 ./src/monitor_plant.o \
+./src/monitor_supervisor.o \
 ./src/pendulum_plant.o 
 
 C_DEPS += \
 ./src/ioi_handler.d \
 ./src/main_ioi.d \
 ./src/monitor_plant.d \
+./src/monitor_supervisor.d \
 ./src/pendulum_plant.d 
 
 
