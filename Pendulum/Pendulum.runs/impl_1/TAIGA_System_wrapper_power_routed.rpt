@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Thu Apr 23 16:00:39 2015
+| Date             : Mon Apr 27 02:16:29 2015
 | Host             : CRS running 64-bit Ubuntu 14.04.2 LTS
 | Command          : report_power -file TAIGA_System_wrapper_power_routed.rpt -pb TAIGA_System_wrapper_power_summary_routed.pb
 | Design           : TAIGA_System_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.954 |
-| Dynamic (W)              | 1.812 |
+| Total On-Chip Power (W)  | 1.953 |
+| Dynamic (W)              | 1.811 |
 | Device Static (W)        | 0.142 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 62.5  |
@@ -49,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.072 |        5 |       --- |             --- |
+| Clocks                   |     0.071 |        5 |       --- |             --- |
 | Slice Logic              |     0.035 |    22210 |       --- |             --- |
-|   LUT as Logic           |     0.029 |     8698 |     17600 |           49.42 |
+|   LUT as Logic           |     0.030 |     8709 |     17600 |           49.48 |
 |   CARRY4                 |     0.003 |      593 |      4400 |           13.47 |
 |   LUT as Distributed RAM |     0.001 |      372 |      6000 |            6.20 |
 |   Register               |     0.001 |     8276 |     35200 |           23.51 |
 |   F7/F8 Muxes            |    <0.001 |      236 |     17600 |            1.34 |
 |   LUT as Shift Register  |    <0.001 |      202 |      6000 |            3.36 |
 |   Others                 |    <0.001 |     2162 |       --- |             --- |
-| Signals                  |     0.059 |    15849 |       --- |             --- |
+| Signals                  |     0.059 |    15850 |       --- |             --- |
 | Block RAM                |     0.048 |       52 |        60 |           86.66 |
 | DSPs                     |     0.016 |       10 |        80 |           12.50 |
 | I/O                      |     0.025 |       29 |       100 |           29.00 |
 | PS7                      |     1.557 |        1 |       --- |             --- |
 | Static Power             |     0.142 |          |           |                 |
-| Total                    |     1.954 |          |           |                 |
+| Total                    |     1.953 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.237 |       0.227 |      0.010 |
+| Vccint    |       1.000 |     0.235 |       0.225 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.012 |
 | Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -152,12 +152,12 @@ Table of Contents
 +-----------------------------------------------------------------------------------+-----------+
 | Name                                                                              | Power (W) |
 +-----------------------------------------------------------------------------------+-----------+
-| TAIGA_System_wrapper                                                              |     1.812 |
-|   TAIGA_System_i                                                                  |     1.787 |
-|     IO_Intermediary                                                               |     0.059 |
-|       U0                                                                          |     0.059 |
-|         MicroBlaze_Core_I                                                         |     0.059 |
-|           Performance.Core                                                        |     0.058 |
+| TAIGA_System_wrapper                                                              |     1.811 |
+|   TAIGA_System_i                                                                  |     1.785 |
+|     IO_Intermediary                                                               |     0.058 |
+|       U0                                                                          |     0.058 |
+|         MicroBlaze_Core_I                                                         |     0.058 |
+|           Performance.Core                                                        |     0.057 |
 |             Data_Flow_I                                                           |     0.041 |
 |               ALU_I                                                               |     0.004 |
 |                 ALL_Bits[0].ALU_Bit_I1                                            |     0.004 |
@@ -1236,8 +1236,8 @@ Table of Contents
 |             read_data_mux_I                                                       |    <0.001 |
 |           Reset_DFF                                                               |    <0.001 |
 |     IO_Intermediary_xlconcat                                                      |     0.000 |
-|     axi_fifo_IOI                                                                  |     0.014 |
-|       U0                                                                          |     0.014 |
+|     axi_fifo_IOI                                                                  |     0.013 |
+|       U0                                                                          |     0.013 |
 |         COMP_IPIC2AXI_S                                                           |     0.013 |
 |           grxd.COMP_RX_FIFO                                                       |     0.004 |
 |             gfifo_gen.COMP_AXIS_FG_FIFO                                           |     0.004 |
@@ -1329,8 +1329,8 @@ Table of Contents
 |         COMP_IPIF                                                                 |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
 |             I_DECODER                                                             |    <0.001 |
-|     axi_fifo_backup                                                               |     0.014 |
-|       U0                                                                          |     0.014 |
+|     axi_fifo_backup                                                               |     0.013 |
+|       U0                                                                          |     0.013 |
 |         COMP_IPIC2AXI_S                                                           |     0.013 |
 |           grxd.COMP_RX_FIFO                                                       |     0.004 |
 |             gfifo_gen.COMP_AXIS_FG_FIFO                                           |     0.004 |
@@ -1391,7 +1391,7 @@ Table of Contents
 |                         RAM_reg_64_127_3_5                                        |    <0.001 |
 |                         RAM_reg_64_127_6_8                                        |    <0.001 |
 |                         RAM_reg_64_127_9_11                                       |    <0.001 |
-|           gtxd.COMP_TXD_FIFO                                                      |     0.005 |
+|           gtxd.COMP_TXD_FIFO                                                      |     0.004 |
 |             gfifo_gen.COMP_AXIS_FG_FIFO                                           |     0.004 |
 |               COMP_FIFO                                                           |     0.004 |
 |                 inst_fifo_gen                                                     |     0.004 |
@@ -1515,8 +1515,8 @@ Table of Contents
 |         COMP_IPIF                                                                 |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
 |             I_DECODER                                                             |    <0.001 |
-|     axi_gpio_IOI_in                                                               |     0.001 |
-|       U0                                                                          |     0.001 |
+|     axi_gpio_IOI_in                                                               |    <0.001 |
+|       U0                                                                          |    <0.001 |
 |         AXI_LITE_IPIF_I                                                           |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
 |             I_DECODER                                                             |    <0.001 |
@@ -1605,13 +1605,13 @@ Table of Contents
 |             splitter_ar                                                           |    <0.001 |
 |             splitter_aw                                                           |    <0.001 |
 |     axi_periph_production_controller                                              |     0.013 |
-|       s00_couplers                                                                |     0.011 |
-|         auto_pc                                                                   |     0.011 |
-|           inst                                                                    |     0.011 |
-|             gen_axilite.gen_b2s_conv.axilite_b2s                                  |     0.011 |
+|       s00_couplers                                                                |     0.012 |
+|         auto_pc                                                                   |     0.012 |
+|           inst                                                                    |     0.012 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s                                  |     0.012 |
 |               RD.ar_channel_0                                                     |     0.002 |
 |                 ar_cmd_fsm_0                                                      |    <0.001 |
-|                 cmd_translator_0                                                  |     0.001 |
+|                 cmd_translator_0                                                  |    <0.001 |
 |                   incr_cmd_0                                                      |    <0.001 |
 |                   wrap_cmd_0                                                      |    <0.001 |
 |               RD.r_channel_0                                                      |     0.004 |
@@ -1643,7 +1643,7 @@ Table of Contents
 |         QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I                                        |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                      |    <0.001 |
 |             I_DECODER                                                             |    <0.001 |
-|         QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I                                  |     0.004 |
+|         QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I                                  |     0.003 |
 |           CONTROL_REG_I                                                           |    <0.001 |
 |           INTERRUPT_CONTROL_I                                                     |    <0.001 |
 |           LOGIC_FOR_MD_0_GEN.SPI_MODULE_I                                         |     0.001 |
@@ -1690,10 +1690,10 @@ Table of Contents
 |             I_DECODER                                                             |    <0.001 |
 |         TIMEBASE_WDT_CORE_I                                                       |    <0.001 |
 |           INPUT_DOUBLE_REGS3                                                      |     0.000 |
-|     backup_controller                                                             |     0.052 |
-|       U0                                                                          |     0.052 |
-|         MicroBlaze_Core_I                                                         |     0.052 |
-|           Performance.Core                                                        |     0.051 |
+|     backup_controller                                                             |     0.051 |
+|       U0                                                                          |     0.051 |
+|         MicroBlaze_Core_I                                                         |     0.051 |
+|           Performance.Core                                                        |     0.050 |
 |             Data_Flow_I                                                           |     0.038 |
 |               ALU_I                                                               |     0.001 |
 |                 ALL_Bits[0].ALU_Bit_I1                                            |     0.001 |
@@ -2425,7 +2425,7 @@ Table of Contents
 |                 OF_EX_MSR_Bits[29].Using_FDR.MSR_ex_I                             |    <0.001 |
 |                 OF_EX_MSR_Bits[30].Using_FDR.MSR_ex_I                             |    <0.001 |
 |                 OF_EX_MSR_Bits[30].Using_FDR.MSR_of_I                             |    <0.001 |
-|             Decode_I                                                              |     0.010 |
+|             Decode_I                                                              |     0.009 |
 |               PC_Module_I                                                         |     0.002 |
 |                 Incr_PC[0].MUXCY_XOR_I                                            |    <0.001 |
 |                 Incr_PC[10].MUXCY_XOR_I                                           |    <0.001 |
@@ -2672,7 +2672,7 @@ Table of Contents
 |                 MUXCY_I                                                           |     0.000 |
 |               if_pc_incr_carry_and_3                                              |     0.000 |
 |                 MUXCY_I                                                           |     0.000 |
-|               jump_logic_I1                                                       |     0.002 |
+|               jump_logic_I1                                                       |     0.001 |
 |                 MUXCY_JUMP_CARRY                                                  |     0.000 |
 |                 MUXCY_JUMP_CARRY2                                                 |    <0.001 |
 |                 MUXCY_JUMP_CARRY3                                                 |     0.000 |

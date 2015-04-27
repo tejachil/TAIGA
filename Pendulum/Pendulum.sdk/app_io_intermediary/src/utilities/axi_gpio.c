@@ -74,7 +74,7 @@ void set_led(u8 leds, bool state){
 
 void set_debug(debug pin, bool state){
 	static u8 currentState = 0;
-	currentState = (pin) ? (currentState|pin) : (currentState & (~pin));
+	currentState = (state) ? (currentState|pin) : (currentState & (~pin));
 	XGpio_DiscreteWrite(&XGpio_debug, DEBUG_CHANNEL, currentState);
 }
 

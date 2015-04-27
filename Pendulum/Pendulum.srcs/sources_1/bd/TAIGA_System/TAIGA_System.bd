@@ -257,6 +257,7 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_System_axi_timebase_wdt_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_WDT_INTERVAL">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="WDT_ENABLE_ONCE">Enable_repeatedly</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>

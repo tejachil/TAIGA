@@ -15,8 +15,8 @@ src/ioi_handler.o src/ioi_handler.d: ../src/ioi_handler.c \
  ../src/utilities/axi_spi.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xspi.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xspi_l.h \
- ../src/utilities/fifo_queue_wdt.h ../src/monitor_plant.h \
- ../src/utilities/axi_uart.h \
+ ../src/utilities/fifo_queue_wdt.h ../src/utilities/axi_gpio.h \
+ ../src/monitor_plant.h ../src/utilities/axi_uart.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h
 
 ../src/ioi_handler.h:
@@ -54,6 +54,8 @@ src/ioi_handler.o src/ioi_handler.d: ../src/ioi_handler.c \
 ../../bsp_ioi_standalone/IO_Intermediary/include/xspi_l.h:
 
 ../src/utilities/fifo_queue_wdt.h:
+
+../src/utilities/axi_gpio.h:
 
 ../src/monitor_plant.h:
 

@@ -23,7 +23,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_generator_0_0/TAIGA_System_fifo_generator_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_timebase_wdt_0_0/TAIGA_System_axi_timebase_wdt_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_production_to_IOI_0/TAIGA_System_fifo_production_to_IOI_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_gpio_0_1/TAIGA_System_axi_gpio_0_1.xci"/>
@@ -42,6 +41,7 @@
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_microblaze_0_0/TAIGA_System_microblaze_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_dlmb_v10_1/TAIGA_System_dlmb_v10_1.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_processing_system7_0_0/TAIGA_System_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hw_handoff/TAIGA_System.hwh"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hdl/TAIGA_System.v"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4.xci"/>
@@ -65,11 +65,11 @@
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_axi_fifo_IOI_dequeue_0/TAIGA_System_axi_fifo_IOI_dequeue_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_production_to_IOI_1/TAIGA_System_fifo_production_to_IOI_1.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_IOI_to_production_0/TAIGA_System_fifo_IOI_to_production_0.xci"/>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hw_handoff/TAIGA_System.hwh"/>
+        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_fifo_generator_0_0/TAIGA_System_fifo_generator_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="hw_handoff/TAIGA_System_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="TAIGA_System_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="TAIGA_System.bmm"/>
+        <CompFileExtendedInfo CompFileName="TAIGA_System.bd" FileRelPathName="TAIGA_System_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/hdl/TAIGA_System_wrapper.v">
         <FileInfo>

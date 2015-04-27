@@ -9,6 +9,7 @@
 #define FIFO_QUEUE_WDT_H_
 
 #include "xparameters.h"
+#include "axi_gpio.h"
 
 #define QUEUE_DEV_ID		XPAR_AXI_FIFO_IOI_DEVICE_ID
 #define INTC_DEVICE_ID		XPAR_INTC_0_DEVICE_ID
@@ -21,6 +22,12 @@
 int init_fifo_queues();
 
 int init_wdt();
+
+void start_wdt();
+
+void reset_wdt();
+
+bool check_wdt();
 
 int init_interrupt_system();
 

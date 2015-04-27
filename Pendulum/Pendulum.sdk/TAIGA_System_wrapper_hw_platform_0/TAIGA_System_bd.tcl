@@ -380,7 +380,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: axi_wdt_IOI, and set properties
   set axi_wdt_IOI [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timebase_wdt:2.0 axi_wdt_IOI ]
-  set_property -dict [ list CONFIG.C_WDT_INTERVAL {18}  ] $axi_wdt_IOI
+  set_property -dict [ list CONFIG.C_WDT_INTERVAL {18} CONFIG.WDT_ENABLE_ONCE {Enable_repeatedly}  ] $axi_wdt_IOI
 
   # Create instance: backup_controller, and set properties
   set backup_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.4 backup_controller ]

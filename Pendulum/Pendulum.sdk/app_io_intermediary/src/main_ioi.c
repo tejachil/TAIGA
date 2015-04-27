@@ -71,7 +71,7 @@ int main()
 	init_spi();
 	init_pendulum_plant();
 	init_fifo_queues();
-	//init_wdt();
+	init_wdt();
 
 	select_controller(PRODUCTION);
 
@@ -83,28 +83,41 @@ int main()
 
 	start_ioi();
 
+	bool startTAIGA = false;
+
 	while(1){
-		select_controller(read_sw_raw());
+		if(!startTAIGA && read_btn(BTN0)){
+			startTAIGA = true;
+			start_wdt();
+		}
+		//select_controller(read_sw_raw());
+
+		select_controller(check_wdt());
+
 		if(check_control_cycle()){
 			set_debug(DEBUG2, true);
 			reset_control_cycle();
 
-			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) > (20.*pi/180))	continue;
+			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180))
+				calculateKalmanControlSignal(get_plant_state_instance());
 
-			calculateKalmanControlSignal(get_plant_state_instance());
-			set_debug(DEBUG2, false);
-			set_debug(DEBUG4, true);
+			if(!startTAIGA) continue;
+
+			reset_wdt();
+
+			//set_debug(DEBUG2, false);
+			//set_debug(DEBUG4, true);
 			supervisor_send_state_vector(get_plant_state_instance()->xhat);
-			set_debug(DEBUG4, false);
+			//set_debug(DEBUG4, false);
 			// TODO: Trigger Mechanism
-			set_debug(DEBUG2, true);
-			if(trivial_trigger_mechanism(get_plant_state_instance())){
+			//set_debug(DEBUG2, true);
+			/*if(trivial_trigger_mechanism(get_plant_state_instance())){
 				//select_controller(BACKUP);
 				set_debug(DEBUG3, true);
 			}
 			else
 				set_debug(DEBUG3, false);
-
+*/
 			supervisor_send_tail();
 
 			set_debug(DEBUG2, false);
