@@ -84,15 +84,14 @@ int main()
 	start_ioi();
 
 	bool startTAIGA = false;
-
+	bool assertTrigger = false;
 	while(1){
 		if(!startTAIGA && read_btn(BTN0)){
 			startTAIGA = true;
 			start_wdt();
 		}
-		//select_controller(read_sw_raw());
 
-		select_controller(check_wdt());
+		select_controller(check_wdt() | assertTrigger);
 
 		if(check_control_cycle()){
 			set_debug(DEBUG2, true);
@@ -101,25 +100,22 @@ int main()
 			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180))
 				calculateKalmanControlSignal(get_plant_state_instance());
 
-			if(!startTAIGA) continue;
+			if(startTAIGA){
+				reset_wdt();
 
-			reset_wdt();
+				set_debug(DEBUG2, false);
+				supervisor_send_state_vector(get_plant_state_instance()->xhat);
+				set_debug(DEBUG2, true);
+				// TODO: Trigger Mechanism
+				if(trivial_trigger_mechanism(get_plant_state_instance())){
+					assertTrigger = true;
+					set_debug(DEBUG3, true);
+				}
+				else
+					set_debug(DEBUG3, false);
 
-			//set_debug(DEBUG2, false);
-			//set_debug(DEBUG4, true);
-			supervisor_send_state_vector(get_plant_state_instance()->xhat);
-			//set_debug(DEBUG4, false);
-			// TODO: Trigger Mechanism
-			//set_debug(DEBUG2, true);
-			/*if(trivial_trigger_mechanism(get_plant_state_instance())){
-				//select_controller(BACKUP);
-				set_debug(DEBUG3, true);
+				supervisor_send_tail();
 			}
-			else
-				set_debug(DEBUG3, false);
-*/
-			supervisor_send_tail();
-
 			set_debug(DEBUG2, false);
 		}
 	}
