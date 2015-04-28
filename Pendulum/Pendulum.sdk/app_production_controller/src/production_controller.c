@@ -51,11 +51,9 @@ void production_control_timer(xTimerHandle pxTimer){
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
-		//xil_printf("%d %d\n", (int)(plantParams.xhat[0]*1000), (int)(plantParams.xhat[1]*1000));
 	}
 	else plantParams.u = 0;
 
-	//xil_printf("%d %d %d %d\n",(int)(plantParams.xhat[0]*1000),(int)(plantParams.xhat[1]*1000),(int)(plantParams.xhat[2]*1000), (int)(plantParams.xhat[3]*1000));
 	writeDAC(plantParams.u);
 
 	++plantParams.cycle_count;

@@ -2069,3 +2069,5 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 00:07:17 INFO  : Processor reset is completed for ps7_cortexa9_1
 00:11:15 INFO  : Processor reset is completed for IO_Intermediary
 00:11:33 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:30:25 INFO  : Processor reset is completed for IO_Intermediary
+00:30:34 INFO  : Processor reset is completed for ps7_cortexa9_1
