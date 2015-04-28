@@ -9,7 +9,7 @@
 #include "math.h"
 
 bool trivial_trigger_mechanism(PlantParameters* params){
-	return (params->thetaR >= THETA_GUARD*pi/180 && params->thetaR < 180*pi/180);
+	return (params->thetaR >= THETA_GUARD*pi/180 || params->thetaR <= -THETA_GUARD*pi/180);
 }
 
 bool prediction_trigger_mechanism(PlantParameters* params, unsigned int numIter){

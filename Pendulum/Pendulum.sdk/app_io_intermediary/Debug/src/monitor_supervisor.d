@@ -13,7 +13,10 @@ src/monitor_supervisor.o src/monitor_supervisor.d: \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xparameters.h \
  ../../global_includes/taiga_pendulum_parameters.h \
  ../src/utilities/axi_uart.h \
- ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h \
+ ../src/monitor_plant.h ../src/utilities/axi_gpio.h \
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio.h \
+ ../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h
 
 ../src/monitor_supervisor.h:
 
@@ -44,3 +47,11 @@ src/monitor_supervisor.o src/monitor_supervisor.d: \
 ../src/utilities/axi_uart.h:
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h:
+
+../src/monitor_plant.h:
+
+../src/utilities/axi_gpio.h:
+
+../../bsp_ioi_standalone/IO_Intermediary/include/xgpio.h:
+
+../../bsp_ioi_standalone/IO_Intermediary/include/xgpio_l.h:

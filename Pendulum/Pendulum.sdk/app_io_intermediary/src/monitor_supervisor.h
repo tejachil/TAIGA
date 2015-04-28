@@ -10,6 +10,6 @@
 
 void supervisor_send_state_vector(float stateVector[4]);
 
-void supervisor_send_tail();
+void supervisor_send_tail(float u);
 
 #endif /* MONITOR_SUPERVISOR_H_ */

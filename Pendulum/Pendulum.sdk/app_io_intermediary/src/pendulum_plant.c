@@ -113,12 +113,12 @@ u32 read_sensor(slave_select sensor, u32 data){
 }
 
 int get_set_point(){
-	static long count = 0;
-	++count;
-	int setpoint = 10;
+	stateVector.theta_des = stateVector.set_point*pi/180;
+	return stateVector.set_point ;
+}
 
-	stateVector.theta_des = setpoint*pi/180;
-	return setpoint;
+void set_set_point(int setPoint){
+	stateVector.set_point = setPoint;
 }
 
 int start_ioi(){
