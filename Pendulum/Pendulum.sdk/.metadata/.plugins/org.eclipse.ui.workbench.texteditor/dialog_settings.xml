@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="init_interrupt_system" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="16"/>
+			<item value="wdt_expired_flag"/>
+			<item value="start_ioi_flag"/>
 			<item value="init_interrupt_system"/>
 			<item value="GPIO_DEBUG"/>
 			<item value="DEBUG"/>
 			<item value="INTR"/>
 			<item value="WDT"/>
-			<item value="retData[i]"/>
-			<item value="retData[1]"/>
-			<item value="SPI"/>
 		</list>
 		<list key="replacehistory">
 		</list>
