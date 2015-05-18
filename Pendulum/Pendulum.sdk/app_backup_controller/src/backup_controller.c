@@ -81,7 +81,7 @@ void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 
-	plantParams.encoder_alpha = readEncoder(SS_ENCODER_P) % 4096;
+	plantParams.encoder_alpha =  4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){

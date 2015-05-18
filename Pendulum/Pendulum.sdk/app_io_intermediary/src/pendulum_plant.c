@@ -110,7 +110,7 @@ u32 read_sensor(slave_select sensor, u32 data){
 	if(sensor == SS_ENCODER_S)
 		stateVector.encoder_theta = -(value % 4096);
 	else if (sensor == SS_ENCODER_P)
-		stateVector.encoder_alpha = value % 4096;
+		stateVector.encoder_alpha = 4096 + (-((int)(value)) % 4096);
 
 	return rawSensor;
 }

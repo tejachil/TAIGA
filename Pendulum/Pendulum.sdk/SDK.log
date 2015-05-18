@@ -2110,3 +2110,113 @@ java.lang.RuntimeException: No Target with ID 0 in the System
 21:12:21 INFO  : Processor reset is completed for IO_Intermediary
 21:12:34 INFO  : Processor reset is completed for IO_Intermediary
 21:12:39 INFO  : Processor reset is completed for ps7_cortexa9_1
+12:39:10 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+12:39:25 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+12:39:34 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+12:40:03 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+12:40:52 INFO  : ps7_init is completed.
+12:40:52 INFO  : ps7_post_config is completed.
+12:40:53 INFO  : Processor reset is completed for IO_Intermediary
+12:41:05 INFO  : Processor reset is completed for ps7_cortexa9_1
+12:43:20 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+    Failed to lock the JTAG Cable for exclusive access
+
+
+14:33:38 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+14:33:38 ERROR : Timeout occured while waiting to get reply for command "xfpga -cable type xilinx_tcf url TCP:127.0.0.1:3121 -f /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit -report_progress"
+14:33:38 ERROR : FPGA Configuration failed.
+14:34:46 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+14:34:46 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+14:34:46 ERROR : Disconnect target failed.
+14:34:46 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:327)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:306)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:210)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:57)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+14:34:46 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+14:34:46 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+14:35:21 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+14:35:21 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+14:35:22 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:35:22 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+14:35:53 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+14:36:48 INFO  : ps7_init is completed.
+14:36:48 INFO  : ps7_post_config is completed.
+14:36:49 INFO  : Processor reset is completed for IO_Intermediary
+14:36:55 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:37:00 INFO  : Processor reset is completed for backup_controller
+14:50:13 INFO  : Processor reset is completed for IO_Intermediary
+14:50:19 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:17:48 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+18:02:01 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+18:02:20 INFO  : ps7_init is completed.
+18:02:21 INFO  : ps7_post_config is completed.
+18:02:21 INFO  : Processor reset is completed for IO_Intermediary
+18:03:27 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:11:57 INFO  : Processor reset is completed for IO_Intermediary
+18:14:23 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:17:28 INFO  : Processor reset is completed for IO_Intermediary
+18:17:34 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:20:04 INFO  : Processor reset is completed for IO_Intermediary
+18:20:09 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:23:21 INFO  : Processor reset is completed for IO_Intermediary
+18:23:27 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:27:04 INFO  : Processor reset is completed for IO_Intermediary
+18:27:09 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:33:22 INFO  : Processor reset is completed for IO_Intermediary
+18:33:31 INFO  : Processor reset is completed for ps7_cortexa9_1

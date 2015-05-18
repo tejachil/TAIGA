@@ -41,7 +41,10 @@ void startProductionControl(){
 void production_control_timer(xTimerHandle pxTimer){
 	set_led(LED3, true);
 
-	plantParams.theta_des = getSetPoint()*pi/180;
+	plantParams.set_point = getSetPoint();
+	plantParams.theta_des = plantParams.set_point*pi/180;
+
+	xil_printf("%d\n", plantParams.set_point);
 
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
@@ -51,10 +54,10 @@ void production_control_timer(xTimerHandle pxTimer){
 
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
-		xil_printf("S %d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
+		//xil_printf("S %d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
 	}
 	else {
-		xil_printf("%d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
+		//xil_printf("%d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
 		plantParams.u = 0;
 	}
 
