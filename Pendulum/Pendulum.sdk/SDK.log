@@ -2220,3 +2220,14 @@ java.net.SocketException: Connection reset
 18:27:09 INFO  : Processor reset is completed for ps7_cortexa9_1
 18:33:22 INFO  : Processor reset is completed for IO_Intermediary
 18:33:31 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:42:10 INFO  : Processor reset is completed for IO_Intermediary
+18:42:19 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:42:26 INFO  : Processor reset is completed for backup_controller
+18:47:07 INFO  : Processor reset is completed for IO_Intermediary
+18:47:14 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:56:24 INFO  : Processor reset is completed for IO_Intermediary
+18:56:35 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:23:03 INFO  : Processor reset is completed for IO_Intermediary
+19:23:12 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:27:33 INFO  : Processor reset is completed for IO_Intermediary
+19:27:37 INFO  : Processor reset is completed for ps7_cortexa9_1

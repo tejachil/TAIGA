@@ -36,11 +36,12 @@ void supervisor_send_tail(float u){
 }
 
 void supervisor_update_set_point(){
-	/*u8 supervisorInput;
+	u8 supervisorInput[3];
 
-	if(uart_receive(&supervisorInput)){
-		if(supervisorInput&0x7F > THETA_GUARD)	return;
-		int setPoint = (0x80 & supervisorInput) ? -(supervisorInput&0x7F) : (supervisorInput&0x7F);
+	if(uart_receive(supervisorInput) >= 3){
+		if(supervisorInput[0] != 'S' || supervisorInput[1] != 'P')	return;
+		//if(supervisorInput[2] & 0x7F > THETA_GUARD)	return;
+		int setPoint = (0x80 & supervisorInput[2]) ? -(supervisorInput[2]&0x7F) : (supervisorInput[2]&0x7F);
 		set_set_point(setPoint);
-	}*/
+	}
 }
