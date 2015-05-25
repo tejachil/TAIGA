@@ -76,7 +76,7 @@ int startBackupControl(){
 void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 	set_led(LED2, true);
 
-	plantParams.theta_des = getSetPoint()*pi/180;
+	plantParams.theta_des = 0*pi/180;
 
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;

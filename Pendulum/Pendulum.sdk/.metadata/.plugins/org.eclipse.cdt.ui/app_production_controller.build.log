@@ -1,6 +1,6 @@
-19:27:36 **** Incremental Build of configuration Debug for project app_production_controller ****
+16:12:53 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
 make: Nothing to be done for `all'.
 
-19:27:36 Build Finished (took 62ms)
+16:12:53 Build Finished (took 62ms)
 

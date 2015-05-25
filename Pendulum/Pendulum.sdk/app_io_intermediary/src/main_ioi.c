@@ -108,7 +108,7 @@ int main()
 				set_debug(DEBUG4, true);
 				reset_wdt();
 				if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180)){
-					if(trivial_trigger_mechanism(get_plant_state_instance())){
+					if(classifier_trigger_mechanism(get_plant_state_instance())){
 						assertTrigger = true;
 						set_debug(DEBUG3, true);
 					}

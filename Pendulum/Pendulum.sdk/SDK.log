@@ -2231,3 +2231,34 @@ java.net.SocketException: Connection reset
 19:23:12 INFO  : Processor reset is completed for ps7_cortexa9_1
 19:27:33 INFO  : Processor reset is completed for IO_Intermediary
 19:27:37 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:40:50 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+    Failed to lock the JTAG Cable for exclusive access
+
+
+16:24:37 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+16:24:37 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+16:24:37 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+16:24:37 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.BindException: Address already in use
+16:24:38 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+16:24:38 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+15:54:28 INFO  : Processing command line option -hwspec /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+15:54:29 WARN  : Unable to obtain port 2450 for use by XSDB Server, java.net.BindException: Address already in use
+15:54:29 WARN  : Unable to obtain port 2457 for use by XSDB Server, java.net.BindException: Address already in use
+15:54:29 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+15:54:29 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+15:54:29 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+15:55:02 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+15:55:29 INFO  : FPGA configured successfully with bitstream "/home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+15:56:27 INFO  : ps7_init is completed.
+15:56:27 INFO  : ps7_post_config is completed.
+15:56:28 INFO  : Processor reset is completed for IO_Intermediary
+15:56:40 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:56:49 INFO  : Processor reset is completed for backup_controller
+16:09:16 INFO  : Processor reset is completed for IO_Intermediary
+16:09:37 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:12:55 INFO  : Processor reset is completed for backup_controller
+17:00:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
