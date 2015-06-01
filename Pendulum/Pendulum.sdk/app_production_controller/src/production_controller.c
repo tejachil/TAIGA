@@ -44,8 +44,6 @@ void production_control_timer(xTimerHandle pxTimer){
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;
 
-	xil_printf("%d\n", plantParams.set_point);
-
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 
@@ -87,6 +85,8 @@ float calculateKalmanControlSignal(PlantParameters *params){
 	static const float Bup[4]={0,0,0.1013,0.0975};
 
 	/***** Kalman Filter Constants End *****/
+
+	xil_printf("%d %d\n", (int)(params->xhat[0]*1000), (int)(params->theta_des*100));
 
 	if (params->thetaR < -pi)	params->thetaR += 2*pi; // correction for encoder zeroing error
 

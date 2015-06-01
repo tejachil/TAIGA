@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_timebase_wdt:2.0
--- IP Revision: 6
+-- IP Revision: 7
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -123,11 +123,11 @@ ARCHITECTURE TAIGA_System_axi_timebase_wdt_0_0_arch OF TAIGA_System_axi_timebase
     );
   END COMPONENT axi_timebase_wdt;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF TAIGA_System_axi_timebase_wdt_0_0_arch: ARCHITECTURE IS "axi_timebase_wdt,Vivado 2014.4";
+  ATTRIBUTE X_CORE_INFO OF TAIGA_System_axi_timebase_wdt_0_0_arch: ARCHITECTURE IS "axi_timebase_wdt,Vivado 2015.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF TAIGA_System_axi_timebase_wdt_0_0_arch : ARCHITECTURE IS "TAIGA_System_axi_timebase_wdt_0_0,axi_timebase_wdt,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_axi_timebase_wdt_0_0_arch: ARCHITECTURE IS "TAIGA_System_axi_timebase_wdt_0_0,axi_timebase_wdt,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_timebase_wdt,x_ipVersion=2.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_WDT_INTERVAL=18,C_WDT_ENABLE_ONCE=0,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_axi_timebase_wdt_0_0_arch: ARCHITECTURE IS "TAIGA_System_axi_timebase_wdt_0_0,axi_timebase_wdt,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_timebase_wdt,x_ipVersion=2.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_WDT_INTERVAL=18,C_WDT_ENABLE_ONCE=0,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF wdt_reset: SIGNAL IS "xilinx.com:signal:reset:1.0 WDT_RESET RST";
   ATTRIBUTE X_INTERFACE_INFO OF timebase_interrupt: SIGNAL IS "xilinx.com:signal:interrupt:1.0 TIMEBASE_INTERRUPT INTERRUPT";

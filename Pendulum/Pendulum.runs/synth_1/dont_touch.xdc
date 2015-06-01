@@ -45,9 +45,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_rs
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_quad_spi_0_0/TAIGA_System_axi_quad_spi_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_quad_spi_0_0 || ORIG_REF_NAME==TAIGA_System_axi_quad_spi_0_0}]
 
-# IP: bd/TAIGA_System/ip/TAIGA_System_xbar_0/TAIGA_System_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_xbar_0 || ORIG_REF_NAME==TAIGA_System_xbar_0}]
-
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_0/TAIGA_System_axi_gpio_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_0 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_0}]
 
@@ -108,17 +105,11 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_ba
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_timer_0_0/TAIGA_System_axi_timer_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_timer_0_0 || ORIG_REF_NAME==TAIGA_System_axi_timer_0_0}]
 
-# IP: bd/TAIGA_System/ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_xbar_1 || ORIG_REF_NAME==TAIGA_System_xbar_1}]
-
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_2/TAIGA_System_axi_gpio_0_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_2 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_2}]
 
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_interconnect_0_0/TAIGA_System_axi_interconnect_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_interconnect_0_0 || ORIG_REF_NAME==TAIGA_System_axi_interconnect_0_0}]
-
-# IP: bd/TAIGA_System/ip/TAIGA_System_xbar_2/TAIGA_System_xbar_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_xbar_2 || ORIG_REF_NAME==TAIGA_System_xbar_2}]
 
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_3/TAIGA_System_axi_gpio_0_3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_3 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_3}]
@@ -129,6 +120,15 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_ax
 # IP: bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_uartlite_0_0 || ORIG_REF_NAME==TAIGA_System_axi_uartlite_0_0}]
 
+# IP: bd/TAIGA_System/ip/TAIGA_System_xbar_0/TAIGA_System_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_xbar_0 || ORIG_REF_NAME==TAIGA_System_xbar_0}]
+
+# IP: bd/TAIGA_System/ip/TAIGA_System_xbar_2/TAIGA_System_xbar_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_xbar_2 || ORIG_REF_NAME==TAIGA_System_xbar_2}]
+
+# IP: bd/TAIGA_System/ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_xbar_1 || ORIG_REF_NAME==TAIGA_System_xbar_1}]
+
 # IP: bd/TAIGA_System/ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_auto_pc_0 || ORIG_REF_NAME==TAIGA_System_auto_pc_0}]
 
@@ -137,6 +137,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_0/TAIGA_System_microblaze_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_microblaze_0_0 || ORIG_REF_NAME==TAIGA_System_microblaze_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_0/TAIGA_System_microblaze_0_0_ooc_debug.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_0/TAIGA_System_microblaze_0_0_ooc.xdc
 
@@ -167,7 +169,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_mdm_1_1 || ORIG_REF_NAME==TAIGA_System_mdm_1_1}] {/U0 }]/U0 ]]
 
-# XDC: bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1_ooc.xdc
+# XDC: bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1_ooc_trace.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_rst_production_controller_100M_1/TAIGA_System_rst_production_controller_100M_1_board.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TAIGA_System_rst_production_controller_100M_1 || ORIG_REF_NAME==TAIGA_System_rst_production_controller_100M_1}]
@@ -187,8 +189,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_quad_spi_0_0/TAIGA_System_axi_quad_spi_0_0_clocks.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_quad_spi_0_0 || ORIG_REF_NAME==TAIGA_System_axi_quad_spi_0_0}] {/U0 }]/U0 ]]
-
-# XDC: bd/TAIGA_System/ip/TAIGA_System_xbar_0/TAIGA_System_xbar_0_ooc.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_0/TAIGA_System_axi_gpio_0_0_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_0 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_0}] {/U0 }]/U0 ]]
@@ -242,6 +242,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_microblaze_0_1 || ORIG_REF_NAME==TAIGA_System_microblaze_0_1}] {/U0 }]/U0 ]]
 
+# XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1_ooc_debug.xdc
+
 # XDC: bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1_ooc.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_dlmb_v10_0/TAIGA_System_dlmb_v10_0.xdc
@@ -273,8 +275,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_timer_0_0/TAIGA_System_axi_timer_0_0_ooc.xdc
 
-# XDC: bd/TAIGA_System/ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1_ooc.xdc
-
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_2/TAIGA_System_axi_gpio_0_2_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_2 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_2}] {/U0 }]/U0 ]]
 
@@ -282,8 +282,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_2/TAIGA_System_axi_gpio_0_2.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_2 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_2}] {/U0 }]/U0 ]]
-
-# XDC: bd/TAIGA_System/ip/TAIGA_System_xbar_2/TAIGA_System_xbar_2_ooc.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_3/TAIGA_System_axi_gpio_0_3_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_gpio_0_3 || ORIG_REF_NAME==TAIGA_System_axi_gpio_0_3}] {/U0 }]/U0 ]]
@@ -308,6 +306,12 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==TAIGA_System_axi_uartlite_0_0 || ORIG_REF_NAME==TAIGA_System_axi_uartlite_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/TAIGA_System/ip/TAIGA_System_xbar_0/TAIGA_System_xbar_0_ooc.xdc
+
+# XDC: bd/TAIGA_System/ip/TAIGA_System_xbar_2/TAIGA_System_xbar_2_ooc.xdc
+
+# XDC: bd/TAIGA_System/ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1_ooc.xdc
 
 # XDC: bd/TAIGA_System/ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0_ooc.xdc
 

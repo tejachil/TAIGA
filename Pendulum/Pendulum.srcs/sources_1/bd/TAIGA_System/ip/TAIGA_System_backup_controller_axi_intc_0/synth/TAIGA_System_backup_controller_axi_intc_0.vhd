@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_intc:4.1
--- IP Revision: 2
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -149,11 +149,11 @@ ARCHITECTURE TAIGA_System_backup_controller_axi_intc_0_arch OF TAIGA_System_back
     );
   END COMPONENT axi_intc;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF TAIGA_System_backup_controller_axi_intc_0_arch: ARCHITECTURE IS "axi_intc,Vivado 2014.4";
+  ATTRIBUTE X_CORE_INFO OF TAIGA_System_backup_controller_axi_intc_0_arch: ARCHITECTURE IS "axi_intc,Vivado 2015.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF TAIGA_System_backup_controller_axi_intc_0_arch : ARCHITECTURE IS "TAIGA_System_backup_controller_axi_intc_0,axi_intc,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_backup_controller_axi_intc_0_arch: ARCHITECTURE IS "TAIGA_System_backup_controller_axi_intc_0,axi_intc,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_intc,x_ipVersion=4.1,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_INSTANCE=axi_intc_inst,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_NUM_INTR_INPUTS=1,C_NUM_SW_INTR=0,C_KIND_OF_INTR=0xfffffffe,C_KIND_OF_EDGE=0xffffffff,C_KIND_OF_LVL=0xffffffff,C_ASYNC_INTR=0xFFFFFFFE,C_NUM_SYNC_FF=2,C_IVAR_RESET_VALUE=0x00000010,C_ENABLE_ASYNC=0,C_HAS_IPR=1,C_HAS_SIE=1,C_HAS_CIE=1,C_HAS_IVR=1,C_HAS_ILR=0,C_IRQ_IS_LEVEL=1,C_IRQ_ACTIVE=0x1,C_DISABLE_SYNCHRONIZERS=1,C_MB_CLK_NOT_CONNECTED=1,C_HAS_FAST=1,C_EN_CASCADE_MODE=0,C_CASCADE_MASTER=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_backup_controller_axi_intc_0_arch: ARCHITECTURE IS "TAIGA_System_backup_controller_axi_intc_0,axi_intc,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_intc,x_ipVersion=4.1,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_INSTANCE=axi_intc_inst,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_NUM_INTR_INPUTS=1,C_NUM_SW_INTR=0,C_KIND_OF_INTR=0xfffffffe,C_KIND_OF_EDGE=0xffffffff,C_KIND_OF_LVL=0xffffffff,C_ASYNC_INTR=0xFFFFFFFE,C_NUM_SYNC_FF=2,C_IVAR_RESET_VALUE=0x00000010,C_ENABLE_ASYNC=0,C_HAS_IPR=1,C_HAS_SIE=1,C_HAS_CIE=1,C_HAS_IVR=1,C_HAS_ILR=0,C_IRQ_IS_LEVEL=1,C_IRQ_ACTIVE=0x1,C_DISABLE_SYNCHRONIZERS=1,C_MB_CLK_NOT_CONNECTED=1,C_HAS_FAST=1,C_EN_CASCADE_MODE=0,C_CASCADE_MASTER=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s_axi_aclk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 s_resetn RST";

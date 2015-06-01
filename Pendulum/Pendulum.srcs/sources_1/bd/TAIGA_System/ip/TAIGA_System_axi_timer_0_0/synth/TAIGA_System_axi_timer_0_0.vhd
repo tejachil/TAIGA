@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_timer:2.0
--- IP Revision: 6
+-- IP Revision: 7
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -133,11 +133,11 @@ ARCHITECTURE TAIGA_System_axi_timer_0_0_arch OF TAIGA_System_axi_timer_0_0 IS
     );
   END COMPONENT axi_timer;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF TAIGA_System_axi_timer_0_0_arch: ARCHITECTURE IS "axi_timer,Vivado 2014.4";
+  ATTRIBUTE X_CORE_INFO OF TAIGA_System_axi_timer_0_0_arch: ARCHITECTURE IS "axi_timer,Vivado 2015.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF TAIGA_System_axi_timer_0_0_arch : ARCHITECTURE IS "TAIGA_System_axi_timer_0_0,axi_timer,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_axi_timer_0_0_arch: ARCHITECTURE IS "TAIGA_System_axi_timer_0_0,axi_timer,{x_ipProduct=Vivado 2014.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_timer,x_ipVersion=2.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_COUNT_WIDTH=32,C_ONE_TIMER_ONLY=1,C_TRIG0_ASSERT=1,C_TRIG1_ASSERT=1,C_GEN0_ASSERT=1,C_GEN1_ASSERT=1,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=5}";
+  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_System_axi_timer_0_0_arch: ARCHITECTURE IS "TAIGA_System_axi_timer_0_0,axi_timer,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_timer,x_ipVersion=2.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_COUNT_WIDTH=32,C_ONE_TIMER_ONLY=1,C_TRIG0_ASSERT=1,C_TRIG1_ASSERT=1,C_GEN0_ASSERT=1,C_GEN1_ASSERT=1,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=5}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF interrupt: SIGNAL IS "xilinx.com:signal:interrupt:1.0 INTERRUPT INTERRUPT";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";

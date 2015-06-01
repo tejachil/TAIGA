@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-   3058	    336	   2174	   5568	   15c0	bsp_ioi_standalone_xuartlite_selftest_example_1.elf
+   3134	    336	   2168	   5638	   1606	bsp_ioi_standalone_xuartlite_selftest_example_1.elf

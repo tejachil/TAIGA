@@ -1,8 +1,8 @@
-Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Mon Apr 27 02:15:04 2015
-| Host         : CRS running 64-bit Ubuntu 14.04.2 LTS
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Sun May 31 16:06:28 2015
+| Host         : XPS running 64-bit Ubuntu 12.04.5 LTS
 | Command      : report_io -file TAIGA_System_wrapper_io_placed.rpt
 | Design       : TAIGA_System_wrapper
 | Device       : xc7z010
@@ -31,7 +31,7 @@ Table of Contents
 --------------------------------
 
 +------------+--------------------------------+------------+-------------------------+---------------+-------------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+------+------------------+
-| Pin Number | Signal Name                    | Bank Type  | Pin Name                | Use           | IO Standard       | IO Bank | Drive (mA) | Slew | On-chip Termination | Off-Chip Termination | Voltage | Constraint | Pull Type | Vref | Signal Integrity |
+| Pin Number | Signal Name                    | Bank Type  | Pin Name                | Use           | IO Standard       | IO Bank | Drive (mA) | Slew | On-Chip Termination | Off-Chip Termination | Voltage | Constraint | Pull Type | Vref | Signal Integrity |
 +------------+--------------------------------+------------+-------------------------+---------------+-------------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+------+------------------+
 | A1         | DDR_dm[0]                      |            | PS_DDR_DM0_502          | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | A2         | DDR_dq[2]                      |            | PS_DDR_DQ2_502          | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1430114688">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1433101960">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="TAIGA_System_wrapper.vdi"/>
   <File Type="BG-DRC" Name="TAIGA_System_wrapper.drc"/>
@@ -13,9 +13,9 @@
   <File Type="BG-BIN" Name="TAIGA_System_wrapper.bin"/>
   <File Type="BG-BIT" Name="TAIGA_System_wrapper.bit"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TAIGA_System_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TAIGA_System_wrapper_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TAIGA_System_wrapper_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="TAIGA_System_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="TAIGA_System_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="TAIGA_System_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-TIMING-RPX" Name="TAIGA_System_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="TAIGA_System_wrapper_timing_summary_routed.pb"/>
@@ -40,8 +40,10 @@
   <File Type="PLACE-DCP" Name="TAIGA_System_wrapper_placed.dcp"/>
   <File Type="PWROPT-DRC" Name="TAIGA_System_wrapper_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="TAIGA_System_wrapper_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="TAIGA_System_wrapper.hwdef"/>
   <File Type="OPT-DRC" Name="TAIGA_System_wrapper_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="TAIGA_System_wrapper_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TAIGA_System_wrapper_timing_summary_postroute_physopted.pb"/>
   <File Type="PA-TCL" Name="TAIGA_System_wrapper.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
@@ -63,6 +65,42 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_queue_multiplexer_0_0/TAIGA_System_queue_multiplexer_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_IO_Intermediary_axi_intc_0/TAIGA_System_IO_Intermediary_axi_intc_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_IO_Intermediary_axi_periph_0/TAIGA_System_IO_Intermediary_axi_periph_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_0/TAIGA_System_axi_fifo_IOI_dequeue_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_IOI_dequeue_1/TAIGA_System_axi_fifo_IOI_dequeue_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_fifo_mm_s_0_0/TAIGA_System_axi_fifo_mm_s_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_0/TAIGA_System_axi_gpio_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_1/TAIGA_System_axi_gpio_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_2/TAIGA_System_axi_gpio_0_2.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_3/TAIGA_System_axi_gpio_0_3.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_gpio_0_4/TAIGA_System_axi_gpio_0_4.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_interconnect_0_0/TAIGA_System_axi_interconnect_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_quad_spi_0_0/TAIGA_System_axi_quad_spi_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_timebase_wdt_0_0/TAIGA_System_axi_timebase_wdt_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_timer_0_0/TAIGA_System_axi_timer_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_backup_controller_axi_intc_0/TAIGA_System_backup_controller_axi_intc_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_backup_controller_axi_periph_0/TAIGA_System_backup_controller_axi_periph_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_dlmb_bram_if_cntlr_0/TAIGA_System_dlmb_bram_if_cntlr_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_dlmb_bram_if_cntlr_1/TAIGA_System_dlmb_bram_if_cntlr_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_dlmb_v10_0/TAIGA_System_dlmb_v10_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_dlmb_v10_1/TAIGA_System_dlmb_v10_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_fifo_IOI_to_production_0/TAIGA_System_fifo_IOI_to_production_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_fifo_generator_0_0/TAIGA_System_fifo_generator_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_fifo_production_to_IOI_0/TAIGA_System_fifo_production_to_IOI_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_fifo_production_to_IOI_1/TAIGA_System_fifo_production_to_IOI_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_ilmb_bram_if_cntlr_0/TAIGA_System_ilmb_bram_if_cntlr_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_ilmb_bram_if_cntlr_1/TAIGA_System_ilmb_bram_if_cntlr_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_ilmb_v10_0/TAIGA_System_ilmb_v10_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_ilmb_v10_1/TAIGA_System_ilmb_v10_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_lmb_bram_0/TAIGA_System_lmb_bram_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_lmb_bram_1/TAIGA_System_lmb_bram_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_mdm_1_1/TAIGA_System_mdm_1_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_microblaze_0_0/TAIGA_System_microblaze_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_microblaze_0_1/TAIGA_System_microblaze_0_1.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_processing_system7_0_0/TAIGA_System_processing_system7_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAIGA_System/ip/TAIGA_System_rst_production_controller_100M_1/TAIGA_System_rst_production_controller_100M_1.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="TAIGA_System_wrapper"/>

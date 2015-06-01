@@ -1,8 +1,8 @@
-//Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-//Date        : Mon Apr 27 02:04:41 2015
-//Host        : CRS running 64-bit Ubuntu 14.04.2 LTS
+//Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+//Date        : Sun May 31 15:52:37 2015
+//Host        : XPS running 64-bit Ubuntu 12.04.5 LTS
 //Command     : generate_target TAIGA_System_wrapper.bd
 //Design      : TAIGA_System_wrapper
 //Purpose     : IP block netlist
@@ -120,7 +120,7 @@ module TAIGA_System_wrapper
   wire spi_plant_sck_o;
   wire [3:0]spi_plant_ss_o;
 
-TAIGA_System TAIGA_System_i
+  TAIGA_System TAIGA_System_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),

@@ -3,7 +3,6 @@
 	<name>bsp_ioi_standalone</name>
 	<comment>Created by SDK v2014.4</comment>
 	<projects>
-		<project>TAIGA_System_wrapper_hw_platform_0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

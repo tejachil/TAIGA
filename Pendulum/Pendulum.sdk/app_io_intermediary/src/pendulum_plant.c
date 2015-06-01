@@ -86,7 +86,7 @@ void init_pendulum_plant(){
 void write_voltage(u32 voltage_data){
 	u8 writeBuffer[4];
 
-	if(voltage_data > (DAC_CONFIG_BITS | 0xF84))	voltage_data = (DAC_CONFIG_BITS | 0xF84); // 0xF84 = 3.2/3.3 * 4096
+	//if(voltage_data > (DAC_CONFIG_BITS | 0xF84))	voltage_data = (DAC_CONFIG_BITS | 0xF84); // 0xF84 = 3.2/3.3 * 4096
 
 	u32_to_buffer(voltage_data, writeBuffer, BITS_16);
 	spi_transfer(SS_DAC, writeBuffer, NULL, BITS_16);

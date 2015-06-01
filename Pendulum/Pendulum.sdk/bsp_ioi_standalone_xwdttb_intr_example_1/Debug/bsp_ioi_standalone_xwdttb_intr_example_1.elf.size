@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-   6462	    380	   2324	   9166	   23ce	bsp_ioi_standalone_xwdttb_intr_example_1.elf
+   6594	    380	   2330	   9304	   2458	bsp_ioi_standalone_xwdttb_intr_example_1.elf

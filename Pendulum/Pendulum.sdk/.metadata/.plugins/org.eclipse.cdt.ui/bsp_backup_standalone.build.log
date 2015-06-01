@@ -1,4 +1,4 @@
-16:24:55 **** Incremental Build of project bsp_backup_standalone ****
+16:11:42 **** Auto Build of project bsp_backup_standalone ****
 make -k all 
 Running Make include in backup_controller/libsrc/bram_v4_0/src
 make -C backup_controller/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
@@ -37,5 +37,5 @@ make -C backup_controller/libsrc/tmrctr_v3_0/src -s libs  "SHELL=/bin/sh" "COMPI
 Compiling tmrctr
 Finished building libraries
 
-16:24:57 Build Finished (took 1s.824ms)
+16:11:55 Build Finished (took 12s.495ms)
 

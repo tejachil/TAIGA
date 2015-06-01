@@ -3229,38 +3229,22 @@
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:supportedFamilies>
-        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Pre-Production">kintexu</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Pre-Production">virtexu</xilinx:family>
-        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
-      </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>/AXI_Infrastructure</xilinx:taxonomy>
         <xilinx:taxonomy>/Embedded_Processing/AXI_Infrastructure</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>AXI Interconnect</xilinx:displayName>
+      <xilinx:autoFamilySupportLevel>level_2</xilinx:autoFamilySupportLevel>
       <xilinx:vendorURL>http://www.xilinx.com</xilinx:vendorURL>
       <xilinx:coreRevision>5</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:ip:axi_interconnect:2.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2014-11-18T07:59:06Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2015-04-21T17:26:39Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fd11536d"/>
+      <xilinx:xilinxVersion>2015.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a34a28bd"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="8fcba5a8"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

@@ -1,5 +1,4 @@
-################################################################################
-# (c) Copyright 2006 - 2013 Xilinx, Inc. All rights reserved.
+# (c) Copyright 2012-2015 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
 # of Xilinx, Inc. and is protected under U.S. and
@@ -44,20 +43,16 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
+# 
+# DO NOT MODIFY THIS FILE.
+# #########################################################
+#
+# This XDC is used only in OOC mode for synthesis, implementation
+#
+# #########################################################
 
-################################################################################
 
-# This XDC is used only for OOC mode of synthesis, implementation
-# User should update the correct clock period before proceeding further
-# This constraints file contains default clock frequencies to be used during 
-# out-of-context flows such as OOC Synthesis and Hierarchical Designs. 
-# For best results the frequencies should be modified# to match the target 
-# frequencies. 
-# This constraints file is not used in normal top-down synthesis (the default flow of Vivado)
-################################################################################
-#create_clock -name clock_name -period 10 [get_ports clock_name] 
-################################################################################
+create_clock -period 5 -name s_axi_aclk [get_ports s_axi_aclk]
+set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports s_axi_aclk]
 
-create_clock -name "s_axi_aclk" -period 10.0 [ get_ports s_axi_aclk ]
 
-################################################################################

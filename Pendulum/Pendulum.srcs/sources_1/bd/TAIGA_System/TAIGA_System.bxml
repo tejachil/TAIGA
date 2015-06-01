@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root MajorVersion="0" MinorVersion="31">
+<Root MajorVersion="0" MinorVersion="32">
   <CompositeFile CompositeFileTopName="TAIGA_System" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
     <Generation Name="SYNTHESIS" State="GENERATED"/>
@@ -104,14 +104,6 @@
       </File>
       <File Name="ip/TAIGA_System_axi_quad_spi_0_0/TAIGA_System_axi_quad_spi_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_quad_spi_plant"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/TAIGA_System_xbar_0/TAIGA_System_xbar_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_periph_IOI/xbar"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -278,14 +270,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1.xci" Type="IP">
-        <Instance HierarchyPath="axi_periph_backup_controller/xbar"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip/TAIGA_System_axi_gpio_0_2/TAIGA_System_axi_gpio_0_2.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_backup_controller_out"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -297,14 +281,6 @@
       <File Name="ip/TAIGA_System_axi_interconnect_0_0/TAIGA_System_axi_interconnect_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_periph_production_controller"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/TAIGA_System_xbar_2/TAIGA_System_xbar_2.xci" Type="IP">
-        <Instance HierarchyPath="axi_periph_production_controller/xbar"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -326,15 +302,32 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="hdl/TAIGA_System.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+      <File Name="ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_supervisory_uart"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/TAIGA_System_axi_uartlite_0_0/TAIGA_System_axi_uartlite_0_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_supervisory_uart"/>
+      <File Name="ip/TAIGA_System_xbar_0/TAIGA_System_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_periph_IOI/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/TAIGA_System_xbar_2/TAIGA_System_xbar_2.xci" Type="IP">
+        <Instance HierarchyPath="axi_periph_production_controller/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/TAIGA_System_xbar_1/TAIGA_System_xbar_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_periph_backup_controller/xbar"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -344,6 +337,13 @@
       <File Name="ip/TAIGA_System_auto_pc_0/TAIGA_System_auto_pc_0.xci" Type="IP">
         <Instance HierarchyPath="axi_periph_production_controller/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdl/TAIGA_System.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -368,6 +368,11 @@
         <UsedIn Val="HW_HANDOFF"/>
       </File>
       <File Name="hw_handoff/TAIGA_System_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hdl/TAIGA_System.hwdef">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>

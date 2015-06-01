@@ -2262,3 +2262,178 @@ java.net.SocketException: Connection reset
 16:09:37 INFO  : Processor reset is completed for ps7_cortexa9_1
 16:12:55 INFO  : Processor reset is completed for backup_controller
 17:00:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:39:34 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:39:36 INFO  : XSDB server has started successfully.
+16:11:38 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+16:11:39 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:11:49 INFO  : XSDB server has started successfully.
+16:11:54 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+16:11:54 ERROR :  [Hsi 55-1550] Repository Directory /home/teja/Documents/TAIGA/repo doesn't exist in the disk
+16:11:54 ERROR : Internal error. Unable to add /home/teja/Documents/TAIGA/repo as a repository.
+16:13:26 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+16:13:26 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+16:13:26 ERROR :  [Hsi 55-1550] Repository Directory /home/teja/Documents/TAIGA/repo doesn't exist in the disk
+16:13:26 ERROR : Internal error. Unable to add /home/teja/Documents/TAIGA/repo as a repository.
+16:13:28 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:13:28 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_1.
+16:13:29 INFO  : XSDB server has started successfully.
+16:14:12 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:14:12 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1430] Driver Name is empty
+16:14:12 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1546] Processor Instance  doesn't exist in Xml/HwDb
+16:14:13 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:14:13 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core  of version  not found in repositories
+16:14:13 ERROR :  [Hsi 55-1430] Driver Name is empty
+16:14:13 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:14:13 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:16:17 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:16:17 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1464] Hardware instance  not found in the design
+16:16:26 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:16:37 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:17:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+16:17:23 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+16:17:53 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:17:57 ERROR :  [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+ [Hsi 55-1594] Core freertos_zynq of version 1.02.a not found in repositories
+16:17:58 INFO  : ps7_init is completed.
+16:17:58 INFO  : ps7_post_config is completed.
+16:17:58 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:22:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+13:22:13 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+13:22:20 INFO  : ps7_init is completed.
+13:22:20 INFO  : ps7_post_config is completed.
+13:22:21 INFO  : Processor reset is completed for IO_Intermediary
+13:22:30 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:25:26 INFO  : Processor reset is completed for backup_controller
+13:41:14 INFO  : Processor reset is completed for IO_Intermediary
+13:41:21 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:41:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:41:30 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+14:41:41 INFO  : ps7_init is completed.
+14:41:41 INFO  : ps7_post_config is completed.
+14:41:41 INFO  : Processor reset is completed for IO_Intermediary
+14:41:51 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:42:00 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+    Failed to lock the JTAG Cable for exclusive access
+
+
+14:45:14 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+14:45:14 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No Target with ID 0 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:327)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:306)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:210)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:60)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+14:45:14 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:45:22 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+14:45:23 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+14:45:23 ERROR :  [Hsi 55-1550] Repository Directory /home/teja/Documents/TAIGA/repo doesn't exist in the disk
+14:45:23 ERROR : Internal error. Unable to add /home/teja/Documents/TAIGA/repo as a repository.
+14:45:23 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:45:24 INFO  : XSDB server has started successfully.
+14:46:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:46:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:46:11 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+14:47:07 INFO  : ps7_init is completed.
+14:47:07 INFO  : ps7_post_config is completed.
+14:47:08 INFO  : Processor reset is completed for IO_Intermediary
+14:47:13 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:59:31 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+14:59:31 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:379)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:288)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:59:54 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:00:02 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+15:00:02 INFO  : Restoring local repository preferences: 
+		 /home/teja/Documents/TAIGA/repo
+15:00:02 ERROR :  [Hsi 55-1550] Repository Directory /home/teja/Documents/TAIGA/repo doesn't exist in the disk
+15:00:02 ERROR : Internal error. Unable to add /home/teja/Documents/TAIGA/repo as a repository.
+15:00:03 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:00:04 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_1.
+15:00:04 INFO  : XSDB server has started successfully.
+15:00:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+15:00:57 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+15:01:33 INFO  : ps7_init is completed.
+15:01:33 INFO  : ps7_post_config is completed.
+15:01:34 INFO  : Processor reset is completed for IO_Intermediary
+15:01:41 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:02:32 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:03:01 INFO  : Processor reset is completed for backup_controller
+15:04:07 INFO  : Processor reset is completed for IO_Intermediary
+15:04:13 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:05:17 INFO  : Processor reset is completed for IO_Intermediary
+15:05:24 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:05:57 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:07:20 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:09:35 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:12:01 INFO  : Processor reset is completed for IO_Intermediary
+15:12:13 INFO  : Processor reset is completed for ps7_cortexa9_1

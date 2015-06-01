@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+| Date         : Sun May 31 15:50:26 2015
+| Host         : XPS running 64-bit Ubuntu 12.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TAIGA_System_axi_fifo_IOI_dequeue_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TAIGA_System_axi_fifo_IOI_dequeue_1 (xilinx.com:ip:axi_fifo_mm_s:4.1) from (Rev. 1) to (Rev. 2)
+

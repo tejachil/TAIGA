@@ -2,6 +2,10 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.mb.exe.debug.920607962;xilinx.gnu.mb.exe.debug.920607962.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../microblaze-xilinx-elf/sysroot/usr/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/include-fixed"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/../../../../microblaze-xilinx-elf/include"/>
@@ -10,8 +14,11 @@
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
 <definedSymbol symbol="__GNUC_MINOR__=8"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=2"/>
 <definedSymbol symbol="__VERSION__=&quot;4.8.3 20140131 (prerelease)&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.2&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -213,6 +220,10 @@
 <definedSymbol symbol="_BIG_ENDIAN=1"/>
 <definedSymbol symbol="__BIG_ENDIAN__=1"/>
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
+<definedSymbol symbol="__GCC_IEC_559=0"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 </collector>
 </instance>
 <instance id="xilinx.gnu.mb.exe.release.98260360;xilinx.gnu.mb.exe.release.98260360.">
@@ -432,6 +443,10 @@
 </instance>
 <instance id="xilinx.gnu.mb.exe.debug.920607962;xilinx.gnu.mb.exe.debug.920607962.;xilinx.gnu.mb.c.toolchain.compiler.debug.10735829;xilinx.gnu.compiler.input.115429171">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="/opt/Xilinx/SDK/2015.1/gnu/microblaze/lin/bin/../microblaze-xilinx-elf/sysroot/usr/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/include"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/include-fixed"/>
 <includePath path="/opt/Xilinx/SDK/2014.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.8.3/../../../../microblaze-xilinx-elf/include"/>
@@ -440,8 +455,11 @@
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
 <definedSymbol symbol="__GNUC_MINOR__=8"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=2"/>
 <definedSymbol symbol="__VERSION__=&quot;4.8.3 20140131 (prerelease)&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.2&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -643,6 +661,10 @@
 <definedSymbol symbol="_BIG_ENDIAN=1"/>
 <definedSymbol symbol="__BIG_ENDIAN__=1"/>
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
+<definedSymbol symbol="__GCC_IEC_559=0"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 </collector>
 </instance>
 </scannerInfo>
