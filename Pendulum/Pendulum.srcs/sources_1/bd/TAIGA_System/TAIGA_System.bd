@@ -73,6 +73,12 @@
         <spirit:busType spirit:library="interface" spirit:name="gpio" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:abstractionType spirit:library="interface" spirit:name="gpio_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
       </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>UART_0</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="interface" spirit:name="uart" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="uart_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+      </spirit:busInterface>
     </spirit:busInterfaces>
     <spirit:model>
       <spirit:views>
@@ -446,6 +452,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_FPGA0_PERIPHERAL_FREQMHZ">200.000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_IMPORT_BOARD_PRESET">/home/teja/Documents/TAIGA/ZYBO_zynq_def.xml</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_QSPI_GRP_SINGLE_SS_ENABLE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART0_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_UART1_UART1_IO">MIO 48 .. 49</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -933,6 +940,9 @@
       </spirit:hierConnection>
       <spirit:hierConnection spirit:interfaceRef="gpio_debug_backup/axi_gpio_backup_controller_out_GPIO2">
         <spirit:activeInterface spirit:busRef="GPIO2" spirit:componentRef="axi_gpio_backup_controller_out"/>
+      </spirit:hierConnection>
+      <spirit:hierConnection spirit:interfaceRef="UART_0/production_controller_UART_0">
+        <spirit:activeInterface spirit:busRef="UART_0" spirit:componentRef="production_controller"/>
       </spirit:hierConnection>
     </spirit:hierConnections>
   </spirit:design>

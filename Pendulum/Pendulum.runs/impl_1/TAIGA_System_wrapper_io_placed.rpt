@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Thu Jun  4 20:54:10 2015
+| Date         : Thu Jun  4 22:59:43 2015
 | Host         : XPS running 64-bit Ubuntu 14.04.2 LTS
 | Command      : report_io -file TAIGA_System_wrapper_io_placed.rpt
 | Design       : TAIGA_System_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           159 |
+|           161 |
 +---------------+
 
 
@@ -64,7 +64,7 @@ Table of Contents
 | B9         | FIXED_IO_mio[51]               |            | PS_MIO51_501            | BIDIR         | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | B10        | FIXED_IO_ps_srstb              |            | PS_SRST_B_501           | BIDIR         | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | B11        |                                |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
-| B12        | FIXED_IO_mio[48]               |            | PS_MIO48_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |      | NONE             |
+| B12        | FIXED_IO_mio[48]               |            | PS_MIO48_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |      | NONE             |
 | B13        | FIXED_IO_mio[50]               |            | PS_MIO50_501            | BIDIR         | LVCMOS18*         |         |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | B14        | FIXED_IO_mio[47]               |            | PS_MIO47_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | B15        | FIXED_IO_mio[45]               |            | PS_MIO45_501            | BIDIR         | LVCMOS18          |         |          8 | FAST |                     |                 NONE |         | FIXED      |           |      | NONE             |
@@ -84,7 +84,7 @@ Table of Contents
 | C9         |                                |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | C10        | FIXED_IO_mio[52]               |            | PS_MIO52_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | C11        | FIXED_IO_mio[53]               |            | PS_MIO53_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |      | NONE             |
-| C12        | FIXED_IO_mio[49]               |            | PS_MIO49_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      |           |      | NONE             |
+| C12        | FIXED_IO_mio[49]               |            | PS_MIO49_501            | BIDIR         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |      | NONE             |
 | C13        | FIXED_IO_mio[29]               |            | PS_MIO29_501            | BIDIR         | LVCMOS18          |         |          8 | FAST |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | C14        |                                |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | C15        | FIXED_IO_mio[30]               |            | PS_MIO30_501            | BIDIR         | LVCMOS18          |         |          8 | FAST |                     |                 NONE |         | FIXED      |           |      | NONE             |
@@ -344,7 +344,7 @@ Table of Contents
 | T9         |                                |            | NC                      | Not Connected |                   |         |            |      |                     |                      |         |            |           |      |                  |
 | T10        |                                | High Range | IO_L1N_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | T11        |                                | High Range | IO_L1P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
-| T12        |                                | High Range | IO_L2P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
+| T12        | UART_0_rxd                     | High Range | IO_L2P_T0_34            | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | T13        |                                |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | T14        |                                | High Range | IO_L5P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | T15        |                                | High Range | IO_L5N_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
@@ -426,7 +426,7 @@ Table of Contents
 | Y11        |                                |            | NC                      | Not Connected |                   |         |            |      |                     |                      |         |            |           |      |                  |
 | Y12        |                                |            | NC                      | Not Connected |                   |         |            |      |                     |                      |         |            |           |      |                  |
 | Y13        |                                |            | NC                      | Not Connected |                   |         |            |      |                     |                      |         |            |           |      |                  |
-| Y14        |                                | High Range | IO_L8N_T1_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
+| Y14        | UART_0_txd                     | High Range | IO_L8N_T1_34            | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | Y15        |                                |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | Y16        | gpio_btn_tri_i[3]              | High Range | IO_L7P_T1_34            | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | Y17        |                                | High Range | IO_L7N_T1_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |

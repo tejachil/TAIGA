@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -68,24 +68,24 @@ extern "C" {
  * These constants are specific to Microblaze processor.
  */
 
-#define XIL_EXCEPTION_ID_FIRST                0
-#define XIL_EXCEPTION_ID_FSL                  0
-#define XIL_EXCEPTION_ID_UNALIGNED_ACCESS     1
-#define XIL_EXCEPTION_ID_ILLEGAL_OPCODE       2
-#define XIL_EXCEPTION_ID_M_AXI_I_EXCEPTION    3
-#define XIL_EXCEPTION_ID_IPLB_EXCEPTION       3
-#define XIL_EXCEPTION_ID_M_AXI_D_EXCEPTION    4
-#define XIL_EXCEPTION_ID_DPLB_EXCEPTION       4
-#define XIL_EXCEPTION_ID_DIV_BY_ZERO          5
-#define XIL_EXCEPTION_ID_FPU                  6
-#define XIL_EXCEPTION_ID_STACK_VIOLATION      7
-#define XIL_EXCEPTION_ID_MMU                  7
+#define XIL_EXCEPTION_ID_FIRST                0U
+#define XIL_EXCEPTION_ID_FSL                  0U
+#define XIL_EXCEPTION_ID_UNALIGNED_ACCESS     1U
+#define XIL_EXCEPTION_ID_ILLEGAL_OPCODE       2U
+#define XIL_EXCEPTION_ID_M_AXI_I_EXCEPTION    3U
+#define XIL_EXCEPTION_ID_IPLB_EXCEPTION       3U
+#define XIL_EXCEPTION_ID_M_AXI_D_EXCEPTION    4U
+#define XIL_EXCEPTION_ID_DPLB_EXCEPTION       4U
+#define XIL_EXCEPTION_ID_DIV_BY_ZERO          5U
+#define XIL_EXCEPTION_ID_FPU                  6U
+#define XIL_EXCEPTION_ID_STACK_VIOLATION      7U
+#define XIL_EXCEPTION_ID_MMU                  7U
 #define XIL_EXCEPTION_ID_LAST		      XIL_EXCEPTION_ID_MMU
 
 /*
  * XIL_EXCEPTION_ID_INT is defined for all processors, but with different value.
  */
-#define XIL_EXCEPTION_ID_INT		      16 /**
+#define XIL_EXCEPTION_ID_INT		      16U /**
 						  * exception ID for interrupt
 						  */
 

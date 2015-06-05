@@ -8,8 +8,10 @@
 #ifndef MONITOR_SUPERVISOR_H_
 #define MONITOR_SUPERVISOR_H_
 
+#include "utilities/axi_gpio.h"
+
 void supervisor_send_state_vector(float stateVector[4]);
 
-void supervisor_send_tail(float u);
+void supervisor_send_tail(float u, bool trigger, bool wdt);
 
 #endif /* MONITOR_SUPERVISOR_H_ */

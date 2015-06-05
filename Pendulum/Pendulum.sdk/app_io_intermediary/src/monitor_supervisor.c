@@ -23,11 +23,14 @@ void supervisor_send_state_vector(float stateVector[4]){
 	while(!uart_send(uartBuffer, 16));
 }
 
-void supervisor_send_tail(float u){
+void supervisor_send_tail(float u, bool trigger, bool wdt){
 	u8 uartBuffer[8];
 
 	u32_to_buffer((u32)(u*10000), &uartBuffer[0], 4);
-	uartBuffer[4] = '-';
+	if(trigger && wdt)	uartBuffer[4] = 'T';
+	else if (trigger)	uartBuffer[4] = 'G';
+	else if (wdt)	uartBuffer[4] = 'W';
+	else uartBuffer[4] = 'P';
 	uartBuffer[5] = '-';
 	uartBuffer[6] = '-';
 	uartBuffer[7] = '\n';

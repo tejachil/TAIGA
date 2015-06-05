@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Thu Jun  4 20:40:24 2015
+//Date        : Thu Jun  4 22:45:43 2015
 //Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System_wrapper.bd
 //Design      : TAIGA_System_wrapper
@@ -31,6 +31,8 @@ module TAIGA_System_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    UART_0_rxd,
+    UART_0_txd,
     gpio_btn_tri_i,
     gpio_debug_backup_tri_o,
     gpio_debug_ioi_tri_o,
@@ -67,6 +69,8 @@ module TAIGA_System_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input UART_0_rxd;
+  output UART_0_txd;
   input [3:0]gpio_btn_tri_i;
   output [1:0]gpio_debug_backup_tri_o;
   output [3:0]gpio_debug_ioi_tri_o;
@@ -104,6 +108,8 @@ module TAIGA_System_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire UART_0_rxd;
+  wire UART_0_txd;
   wire [3:0]gpio_btn_tri_i;
   wire [1:0]gpio_debug_backup_tri_o;
   wire [3:0]gpio_debug_ioi_tri_o;
@@ -142,6 +148,8 @@ module TAIGA_System_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .UART_0_rxd(UART_0_rxd),
+        .UART_0_txd(UART_0_txd),
         .gpio_btn_tri_i(gpio_btn_tri_i),
         .gpio_debug_backup_tri_o(gpio_debug_backup_tri_o),
         .gpio_debug_ioi_tri_o(gpio_debug_ioi_tri_o),

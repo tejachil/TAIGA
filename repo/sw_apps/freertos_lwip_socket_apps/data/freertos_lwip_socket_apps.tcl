@@ -149,7 +149,7 @@ proc swapp_is_supported_sw {} {
     check_stdout_sw;
 
     # make sure lwip140 is available
-    set librarylist [get_libs -filter "NAME==lwip140"];
+    set librarylist [get_libs -filter "NAME==lwip141"];
 
     if { [llength $librarylist] == 0 } {
         error "This application requires lwIP library in the Board Support Package.";
@@ -388,8 +388,8 @@ proc swapp_generate {} {
     generate_stdout_config $fid;
     puts $fid "";
 
-    set use_softeth_on_zynq [get_property CONFIG.use_axieth_on_zynq [get_libs lwip140]];
-    set use_ethernetlite_on_zynq [get_property CONFIG.use_emaclite_on_zynq [get_libs lwip140]];
+    set use_softeth_on_zynq [get_property CONFIG.use_axieth_on_zynq [get_libs lwip141]];
+    set use_ethernetlite_on_zynq [get_property CONFIG.use_emaclite_on_zynq [get_libs lwip141]];
     # figure out the emac baseaddr
     generate_emac_config $fid;
     puts $fid "";

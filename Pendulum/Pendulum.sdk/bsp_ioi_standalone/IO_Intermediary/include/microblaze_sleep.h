@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -74,7 +74,7 @@ extern "C" {
 
 /************************** Function Prototypes ******************************/
 
-void MB_Sleep(unsigned int MilliSeconds);
+void MB_Sleep(u32 MilliSeconds);
 
 #ifdef __cplusplus
 }

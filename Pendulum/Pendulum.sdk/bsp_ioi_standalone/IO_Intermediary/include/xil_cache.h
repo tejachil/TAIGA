@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -133,7 +133,7 @@ extern "C" {
 * Processor must be in real mode.
 ****************************************************************************/
 #define Xil_L1DCacheInvalidateRange(Addr, Len) \
-			microblaze_invalidate_dcache_range(Addr, Len)
+			microblaze_invalidate_dcache_range((Addr), (Len))
 
 /****************************************************************************/
 /**
@@ -153,7 +153,7 @@ extern "C" {
 * Processor must be in real mode.
 ****************************************************************************/
 #define Xil_L2CacheInvalidateRange(Addr, Len) \
-		microblaze_invalidate_cache_ext_range(Addr, Len)
+		microblaze_invalidate_cache_ext_range((Addr), (Len))
 
 /****************************************************************************/
 /**
@@ -170,10 +170,10 @@ extern "C" {
 ****************************************************************************/
 #if (XPAR_MICROBLAZE_DCACHE_USE_WRITEBACK == 1)
 #   define Xil_L1DCacheFlushRange(Addr, Len) \
-		microblaze_flush_dcache_range(Addr, Len)
+		microblaze_flush_dcache_range((Addr), (Len))
 #else
 #   define Xil_L1DCacheFlushRange(Addr, Len) \
-		microblaze_invalidate_dcache_range(Addr, Len)
+		microblaze_invalidate_dcache_range((Addr), (Len))
 #endif /* XPAR_MICROBLAZE_DCACHE_USE_WRITEBACK */
 
 /****************************************************************************/
@@ -190,7 +190,7 @@ extern "C" {
 *
 ****************************************************************************/
 #define Xil_L2CacheFlushRange(Addr, Len) \
-		microblaze_flush_cache_ext_range(Addr, Len)
+		microblaze_flush_cache_ext_range((Addr), (Len))
 
 /****************************************************************************/
 /**
@@ -232,7 +232,7 @@ extern "C" {
 *
 ****************************************************************************/
 #define Xil_L1ICacheInvalidateRange(Addr, Len) \
-			microblaze_invalidate_icache_range(Addr, Len)
+			microblaze_invalidate_icache_range((Addr), (Len))
 
 /****************************************************************************/
 /**
@@ -360,8 +360,8 @@ extern "C" {
 *
 ****************************************************************************/
 #define Xil_DCacheInvalidateRange(Addr, Len) \
-	Xil_L2CacheInvalidateRange(Addr, Len); \
-	Xil_L1DCacheInvalidateRange(Addr, Len);
+	Xil_L2CacheInvalidateRange((Addr), (Len)); \
+	Xil_L1DCacheInvalidateRange((Addr), (Len));
 
 
 /****************************************************************************
@@ -395,8 +395,8 @@ extern "C" {
 *
 ****************************************************************************/
 #define Xil_DCacheFlushRange(Addr, Len) \
-	Xil_L2CacheFlushRange(Addr, Len); \
-	Xil_L1DCacheFlushRange(Addr, Len);
+	Xil_L2CacheFlushRange((Addr), (Len)); \
+	Xil_L1DCacheFlushRange((Addr), (Len));
 
 
 /****************************************************************************
@@ -432,8 +432,8 @@ extern "C" {
 *
 ****************************************************************************/
 #define Xil_ICacheInvalidateRange(Addr, Len) \
-	Xil_L2CacheInvalidateRange(Addr, Len); \
-	Xil_L1ICacheInvalidateRange(Addr, Len);
+	Xil_L2CacheInvalidateRange((Addr), (Len)); \
+	Xil_L1ICacheInvalidateRange((Addr), (Len));
 
 void Xil_DCacheDisable(void);
 void Xil_ICacheDisable(void);

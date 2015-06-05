@@ -35,7 +35,7 @@ void startProductionControl(){
 
 	xTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
 	xTimerStart(ProductionControlTimer, 0);
-	xil_printf("Production Controller Timer started\n");
+	//xil_printf("Production Controller Timer started\n");
 }
 
 void production_control_timer(xTimerHandle pxTimer){

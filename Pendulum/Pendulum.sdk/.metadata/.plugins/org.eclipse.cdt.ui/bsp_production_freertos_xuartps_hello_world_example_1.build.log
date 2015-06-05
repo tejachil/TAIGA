@@ -1,6 +1,6 @@
-21:52:23 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+00:43:06 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
 make all 
 make: Nothing to be done for `all'.
 
-21:52:23 Build Finished (took 64ms)
+00:43:06 Build Finished (took 64ms)
 

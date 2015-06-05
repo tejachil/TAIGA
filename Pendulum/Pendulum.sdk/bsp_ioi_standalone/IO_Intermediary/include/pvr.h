@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2006 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2006 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -274,4 +274,3 @@ int microblaze_get_pvr (pvr_t *pvr);
 }
 #endif
 #endif /* _PVR_H */
-

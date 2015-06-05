@@ -1,19 +1,17 @@
 
- PARAMETER NAME = /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/bsp_backup_standalone/system.mss
-
  PARAMETER VERSION = 2.2.0
 
 
 BEGIN OS
  PARAMETER OS_NAME = standalone
- PARAMETER OS_VER = 4.2
+ PARAMETER OS_VER = 5.0
  PARAMETER PROC_INSTANCE = backup_controller
 END
 
 
 BEGIN PROCESSOR
  PARAMETER DRIVER_NAME = cpu
- PARAMETER DRIVER_VER = 2.2
+ PARAMETER DRIVER_VER = 2.3
  PARAMETER HW_INSTANCE = backup_controller
 END
 
@@ -38,7 +36,7 @@ END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = intc
- PARAMETER DRIVER_VER = 3.2
+ PARAMETER DRIVER_VER = 3.3
  PARAMETER HW_INSTANCE = backup_controller_axi_intc
 END
 

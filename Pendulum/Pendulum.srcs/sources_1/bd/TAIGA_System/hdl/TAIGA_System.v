@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Thu Jun  4 20:40:24 2015
+//Date        : Thu Jun  4 22:45:43 2015
 //Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System.bd
 //Design      : TAIGA_System
@@ -32,6 +32,8 @@ module TAIGA_System
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    UART_0_rxd,
+    UART_0_txd,
     gpio_btn_tri_i,
     gpio_debug_backup_tri_o,
     gpio_debug_ioi_tri_o,
@@ -68,6 +70,8 @@ module TAIGA_System
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input UART_0_rxd;
+  output UART_0_txd;
   input [3:0]gpio_btn_tri_i;
   output [1:0]gpio_debug_backup_tri_o;
   output [3:0]gpio_debug_ioi_tri_o;
@@ -530,6 +534,8 @@ module TAIGA_System
   wire production_controller_M_AXI_GP0_WREADY;
   wire [3:0]production_controller_M_AXI_GP0_WSTRB;
   wire production_controller_M_AXI_GP0_WVALID;
+  wire production_controller_UART_0_RxD;
+  wire production_controller_UART_0_TxD;
   wire [31:0]queue_multiplexer_0_rx_data;
   wire [0:0]queue_multiplexer_0_rx_ready_a;
   wire [0:0]queue_multiplexer_0_rx_ready_b;
@@ -548,6 +554,7 @@ module TAIGA_System
   wire [0:0]rst_production_controller_100M_peripheral_aresetn;
   wire rx_1;
 
+  assign UART_0_txd = production_controller_UART_0_TxD;
   assign axi_gpio_IOI_in_GPIO2_TRI_I = gpio_sw_tri_i[3:0];
   assign axi_gpio_IOI_in_GPIO_TRI_I = gpio_btn_tri_i[3:0];
   assign gpio_debug_backup_tri_o[1:0] = axi_gpio_backup_controller_out_GPIO2_TRI_O;
@@ -559,6 +566,7 @@ module TAIGA_System
   assign gpio_trigger[0] = axi_gpio_trigger_gpio_io_o;
   assign io1_i_1 = spi_plant_miso_i;
   assign ioi_uart_tx = axi_supervisory_uart_tx;
+  assign production_controller_UART_0_RxD = UART_0_rxd;
   assign rx_1 = ioi_uart_rx;
   assign spi_plant_mosi_o = axi_quad_spi_plant_io0_o;
   assign spi_plant_sck_o = axi_quad_spi_plant_sck_o;
@@ -1554,6 +1562,8 @@ module TAIGA_System
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
         .SDIO0_WP(GND_1),
+        .UART0_RX(production_controller_UART_0_RxD),
+        .UART0_TX(production_controller_UART_0_TxD),
         .USB0_VBUS_PWRFAULT(GND_1));
   TAIGA_System_queue_multiplexer_0_0 queue_multiplexer
        (.rx_data(queue_multiplexer_0_rx_data),

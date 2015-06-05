@@ -118,7 +118,7 @@ int main()
 				}
 				set_debug(DEBUG4, false);
 			}
-			supervisor_send_tail(get_plant_state_instance()->u);
+			supervisor_send_tail(get_plant_state_instance()->u, assertTrigger, check_wdt());
 			set_debug(DEBUG2, false);
 		}
 	}

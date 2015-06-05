@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -71,7 +71,15 @@ extern "C" {
 
 /************************** Constant Definitions *****************************/
 
-/**************************** Type Definitions *******************************/
+/**************************** Function Prototypes ****************************/
+
+u8 Xil_In8(u32 Addr);
+u16 Xil_In16(u32 Addr);
+u32 Xil_In32(u32 Addr);
+
+void Xil_Out8(u32 Addr, u8 Value);
+void Xil_Out16(u32 Addr, u16 Value);
+void Xil_Out32(u32 Addr, u32 Value);
 
 /***************** Macros (Inline Functions) Definitions *********************/
 
@@ -89,102 +97,6 @@ extern "C" {
  * operation is needed as it will likely break some code.
  */
 
-/*****************************************************************************/
-/**
-*
-* Perform an input operation for an 8-bit memory location by reading from the
-* specified address and returning the value read from that address.
-*
-* @param	Addr contains the address to perform the input operation at.
-*
-* @return	The value read from the specified input address.
-*
-* @note		None.
-*
-******************************************************************************/
-#define Xil_In8(Addr)  (*(volatile u8  *)(Addr))
-
-/*****************************************************************************/
-/**
-*
-* Perform an input operation for a 16-bit memory location by reading from the
-* specified address and returning the value read from that address.
-*
-* @param	Addr contains the address to perform the input operation at.
-*
-* @return	The value read from the specified input address.
-*
-* @note		None.
-*
-******************************************************************************/
-#define Xil_In16(Addr) (*(volatile u16 *)(Addr))
-
-/*****************************************************************************/
-/**
-*
-* Perform an input operation for a 32-bit memory location by reading from the
-* specified address and returning the value read from that address.
-*
-* @param	Addr contains the address to perform the input operation at.
-*
-* @return	The value read from the specified input address.
-*
-* @note		None.
-*
-******************************************************************************/
-#define Xil_In32(Addr)  (*(volatile u32 *)(Addr))
-
-
-/*****************************************************************************/
-/**
-*
-* Perform an output operation for an 8-bit memory location by writing the
-* specified value to the specified address.
-*
-* @param	Addr contains the address to perform the output operation at.
-* @param	value contains the value to be output at the specified address.
-*
-* @return	None
-*
-* @note		None.
-*
-******************************************************************************/
-#define Xil_Out8(Addr, Value)  \
-	(*(volatile u8  *)((Addr)) = (Value))
-
-/*****************************************************************************/
-/**
-*
-* Perform an output operation for a 16-bit memory location by writing the
-* specified value to the specified address.
-*
-* @param	Addr contains the address to perform the output operation at.
-* @param	value contains the value to be output at the specified address.
-*
-* @return	None
-*
-* @note		None.
-*
-******************************************************************************/
-#define Xil_Out16(Addr, Value) \
-	(*(volatile u16 *)((Addr)) = (Value))
-
-/*****************************************************************************/
-/**
-*
-* Perform an output operation for a 32-bit memory location by writing the
-* specified value to the specified address.
-*
-* @param	addr contains the address to perform the output operation at.
-* @param	value contains the value to be output at the specified address.
-*
-* @return	None
-*
-* @note		None.
-*
-******************************************************************************/
-#define Xil_Out32(Addr, Value) \
-	(*(volatile u32 *)((Addr)) = (Value))
 
 
 extern u16 Xil_EndianSwap16(u16 Data);
@@ -213,7 +125,7 @@ extern void Xil_Out32LE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_In16BE(Addr) Xil_In16(Addr)
+#define Xil_In16BE(Addr) Xil_In16((Addr))
 
 /**
 *
@@ -233,7 +145,7 @@ extern void Xil_Out32LE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_In32BE(Addr) Xil_In32(Addr)
+#define Xil_In32BE(Addr) Xil_In32((Addr))
 
 /*****************************************************************************/
 /**
@@ -253,7 +165,7 @@ extern void Xil_Out32LE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_Out16BE(Addr, Value) Xil_Out16(Addr, Value)
+#define Xil_Out16BE(Addr, Value) Xil_Out16((Addr), (Value))
 
 /*****************************************************************************/
 /**
@@ -272,7 +184,7 @@ extern void Xil_Out32LE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_Out32BE(Addr, Value) Xil_Out32(Addr, Value)
+#define Xil_Out32BE(Addr, Value) Xil_Out32((Addr), (Value))
 
 #define Xil_Htonl(Data) (Data)
 #define Xil_Htons(Data) (Data)
@@ -286,10 +198,10 @@ extern u32 Xil_In32BE(u32 Addr);
 extern void Xil_Out16BE(u32 Addr, u16 Value);
 extern void Xil_Out32BE(u32 Addr, u32 Value);
 
-#define Xil_In16LE(Addr) Xil_In16(Addr)
-#define Xil_In32LE(Addr) Xil_In32(Addr)
-#define Xil_Out16LE(Addr, Value) Xil_Out16(Addr, Value)
-#define Xil_Out32LE(Addr, Value) Xil_Out32(Addr, Value)
+#define Xil_In16LE(Addr) Xil_In16((Addr))
+#define Xil_In32LE(Addr) Xil_In32((Addr))
+#define Xil_Out16LE(Addr, Value) Xil_Out16((Addr), (Value))
+#define Xil_Out32LE(Addr, Value) Xil_Out32((Addr), (Value))
 
 
 /*****************************************************************************/
@@ -304,7 +216,7 @@ extern void Xil_Out32BE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_Htonl(Data) Xil_EndianSwap32(Data)
+#define Xil_Htonl(Data) Xil_EndianSwap32((Data))
 
 /*****************************************************************************/
 /**
@@ -318,7 +230,7 @@ extern void Xil_Out32BE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_Htons(Data) Xil_EndianSwap16(Data)
+#define Xil_Htons(Data) Xil_EndianSwap16((Data))
 
 /*****************************************************************************/
 /**
@@ -332,7 +244,7 @@ extern void Xil_Out32BE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_Ntohl(Data) Xil_EndianSwap32(Data)
+#define Xil_Ntohl(Data) Xil_EndianSwap32((Data))
 
 /*****************************************************************************/
 /**
@@ -346,7 +258,7 @@ extern void Xil_Out32BE(u32 Addr, u32 Value);
 * @note		None.
 *
 ******************************************************************************/
-#define Xil_Ntohs(Data) Xil_EndianSwap16(Data)
+#define Xil_Ntohs(Data) Xil_EndianSwap16((Data))
 
 #endif
 

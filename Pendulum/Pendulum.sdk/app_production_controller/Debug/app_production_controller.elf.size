@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  74224	   3088	  23372	 100684	  1894c	app_production_controller.elf
+  73728	   3148	  23308	 100184	  18758	app_production_controller.elf

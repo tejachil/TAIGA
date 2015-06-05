@@ -1,12 +1,10 @@
 
- PARAMETER NAME = /home/teja/Documents/TAIGA/Pendulum/Pendulum.sdk/bsp_ioi_standalone/system.mss
-
  PARAMETER VERSION = 2.2.0
 
 
 BEGIN OS
  PARAMETER OS_NAME = standalone
- PARAMETER OS_VER = 4.2
+ PARAMETER OS_VER = 5.0
  PARAMETER PROC_INSTANCE = IO_Intermediary
  PARAMETER stdin = axi_supervisory_uart
  PARAMETER stdout = axi_supervisory_uart
@@ -15,7 +13,7 @@ END
 
 BEGIN PROCESSOR
  PARAMETER DRIVER_NAME = cpu
- PARAMETER DRIVER_VER = 2.2
+ PARAMETER DRIVER_VER = 2.3
  PARAMETER HW_INSTANCE = IO_Intermediary
 END
 
@@ -46,7 +44,7 @@ END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = intc
- PARAMETER DRIVER_VER = 3.2
+ PARAMETER DRIVER_VER = 3.3
  PARAMETER HW_INSTANCE = axi_intc_IOI
 END
 

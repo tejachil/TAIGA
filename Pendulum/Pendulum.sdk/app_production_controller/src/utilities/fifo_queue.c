@@ -21,14 +21,14 @@ int init_fifo_queues(){
 	// Initialize the Device Configuration Interface driver
 	Config = XLlFfio_LookupConfig(FIFO_DEV_ID);
 	if (!Config) {
-		xil_printf("No config found for %d\r\n", FIFO_DEV_ID);
+		//xil_printf("No config found for %d\r\n", FIFO_DEV_ID);
 		return XST_FAILURE;
 	}
 
 	// This is where the virtual address would be used, this example uses physical address.
 	Status = XLlFifo_CfgInitialize(&fifo_queue, Config, Config->BaseAddress);
 	if (Status != XST_SUCCESS) {
-		xil_printf("Initialization failed\n\r");
+		//xil_printf("Initialization failed\n\r");
 		return Status;
 	}
 
@@ -37,7 +37,7 @@ int init_fifo_queues(){
 	XLlFifo_IntClear(&fifo_queue,0xffffffff);
 	Status = XLlFifo_Status(&fifo_queue);
 	if(Status != 0x0) {
-		xil_printf("\n ERROR : Reset value of ISR0 : 0x%x\t" "Expected : 0x0\n\r", XLlFifo_Status(&fifo_queue));
+		//xil_printf("\n ERROR : Reset value of ISR0 : 0x%x\t" "Expected : 0x0\n\r", XLlFifo_Status(&fifo_queue));
 		return XST_FAILURE;
 	}
 

@@ -5,8 +5,8 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
  ../../bsp_backup_standalone/backup_controller/include/xstreamer.h \
  ../../bsp_backup_standalone/backup_controller/include/xenv.h \
  ../../bsp_backup_standalone/backup_controller/include/xenv_standalone.h \
- ../../bsp_backup_standalone/backup_controller/include/mb_interface.h \
  ../../bsp_backup_standalone/backup_controller/include/xil_types.h \
+ ../../bsp_backup_standalone/backup_controller/include/mb_interface.h \
  ../../bsp_backup_standalone/backup_controller/include/xil_assert.h \
  ../../bsp_backup_standalone/backup_controller/include/xil_exception.h \
  ../../bsp_backup_standalone/backup_controller/include/xparameters.h \
@@ -31,9 +31,9 @@ src/utilities/fifo_queue.o src/utilities/fifo_queue.d: \
 
 ../../bsp_backup_standalone/backup_controller/include/xenv_standalone.h:
 
-../../bsp_backup_standalone/backup_controller/include/mb_interface.h:
-
 ../../bsp_backup_standalone/backup_controller/include/xil_types.h:
+
+../../bsp_backup_standalone/backup_controller/include/mb_interface.h:
 
 ../../bsp_backup_standalone/backup_controller/include/xil_assert.h:
 

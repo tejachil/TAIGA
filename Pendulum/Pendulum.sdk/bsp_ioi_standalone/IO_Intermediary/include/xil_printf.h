@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2012 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2012 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -32,11 +32,13 @@
 #ifndef XIL_PRINTF_H
 #define XIL_PRINTF_H
 
+#include "xil_types.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void xil_printf(const char *ctrl1, ...);
+void xil_printf(const char8 *ctrl1, ...);
 void print(char *ptr);
 
 #ifdef __cplusplus

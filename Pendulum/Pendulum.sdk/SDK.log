@@ -2832,3 +2832,139 @@ java.lang.RuntimeException:
 21:52:14 INFO  : Processor reset is completed for IO_Intermediary
 21:52:19 INFO  : Processor reset is completed for ps7_cortexa9_1
 21:52:25 INFO  : Processor reset is completed for backup_controller
+22:15:39 INFO  : Processor reset is completed for IO_Intermediary
+22:15:47 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:17:36 INFO  : Processor reset is completed for backup_controller
+22:21:58 INFO  : Processor reset is completed for IO_Intermediary
+22:22:03 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:22:35 INFO  : Processor reset is completed for backup_controller
+22:35:02 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:35:17 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+22:35:18 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+22:35:18 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:35:19 INFO  : XSDB server has started successfully.
+22:36:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:36:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+22:36:02 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+22:36:35 INFO  : ps7_init is completed.
+22:36:35 INFO  : ps7_post_config is completed.
+22:36:36 INFO  : Processor reset is completed for IO_Intermediary
+22:36:42 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:36:47 INFO  : Processor reset is completed for backup_controller
+23:03:27 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:05:27 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+23:05:27 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+23:05:28 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+23:05:29 INFO  : XSDB server has started successfully.
+23:05:50 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:05:51 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:05:51 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:06:08 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:06:38 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:06:38 INFO  : Refreshed build settings on project app_production_controller
+23:06:38 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+23:06:38 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+23:09:05 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:09:07 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+23:09:08 ERROR :  [Hsi 55-1430] Driver Name is empty
+23:10:17 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+23:10:33 INFO  : Refreshed build settings on project app_production_controller
+23:10:33 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+23:10:33 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+23:12:29 INFO  : Refreshed build settings on project app_production_controller
+23:12:29 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+23:12:29 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+23:16:48 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+23:18:04 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_freertos_zynq_v1_02_a::generate : couldn't open "../standalone_v5_0/src/config.make": no such file or directory
+    while executing
+"open "../${standalone_version}/src/config.make" w"
+    (procedure "::sw_freertos_zynq_v1_02_a::generate" line 53)
+    invoked from within
+"::sw_freertos_zynq_v1_02_a::generate freertos_zynq"
+ [Hsi 55-1442] Error(s) while running TCL procedure generate()
+23:18:04 ERROR : Failed to generate BSP.
+23:18:04 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+23:18:29 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_freertos_zynq_v1_02_a::generate : couldn't open "../standalone_v5_0/src/config.make": no such file or directory
+    while executing
+"open "../${standalone_version}/src/config.make" w"
+    (procedure "::sw_freertos_zynq_v1_02_a::generate" line 53)
+    invoked from within
+"::sw_freertos_zynq_v1_02_a::generate freertos_zynq"
+ [Hsi 55-1442] Error(s) while running TCL procedure generate()
+23:18:29 ERROR : Error generating bsp sources: Failed to generate BSP.
+23:18:29 ERROR : Failed to generate sources for BSP project bsp_production_freertos
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+23:18:34 INFO  : Refreshed build settings on project app_production_controller
+23:18:34 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+23:18:34 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+23:19:10 ERROR :  [Hsi 55-1545] Problem running tcl command ::sw_freertos_zynq_v1_02_a::generate : couldn't open "../standalone_v4_2/src/config.make": no such file or directory
+    while executing
+"open "../${standalone_version}/src/config.make" w"
+    (procedure "::sw_freertos_zynq_v1_02_a::generate" line 53)
+    invoked from within
+"::sw_freertos_zynq_v1_02_a::generate freertos_zynq"
+ [Hsi 55-1442] Error(s) while running TCL procedure generate()
+23:19:10 ERROR : Error generating bsp sources: Failed to generate BSP.
+23:19:10 ERROR : Failed to regenerate sources for BSP project bsp_production_freertos
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+00:28:00 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+00:28:05 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper.hdf.
+00:28:06 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:28:06 INFO  : Checking for hwspec changes in the project TAIGA_System_wrapper_hw_platform_0.
+00:28:07 INFO  : XSDB server has started successfully.
+00:28:17 INFO  : Saving repository preferences.
+00:28:20 INFO  : Saving repository preferences.
+00:28:21 INFO  : Saving repository preferences.
+00:28:44 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+00:28:58 INFO  : Refreshed build settings on project app_production_controller
+00:28:58 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+00:28:58 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+00:30:22 INFO  : Refreshed build settings on project app_production_controller
+00:30:22 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+00:30:22 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+00:33:08 INFO  : BSP Project P/bsp_backup_standalone has been successfully migrated.
+00:33:10 INFO  : Refreshed build settings on project app_backup_controller
+00:36:45 INFO  : Saving repository preferences.
+00:36:48 INFO  : Saving repository preferences.
+00:36:49 INFO  : Saving repository preferences.
+00:37:59 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+00:38:04 INFO  : Refreshed build settings on project app_production_controller
+00:38:04 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+00:38:04 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+00:39:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:39:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+00:39:28 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Pendulum/Pendulum.sdk/TAIGA_System_wrapper_hw_platform_0/download.bit"
+00:39:47 INFO  : ps7_init is completed.
+00:39:47 INFO  : ps7_post_config is completed.
+00:39:48 INFO  : Processor reset is completed for IO_Intermediary
+00:39:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:41:13 INFO  : Refreshed build settings on project app_production_controller
+00:41:13 INFO  : Refreshed build settings on project bsp_production_freertos_xllfifo_polling_example_1
+00:41:13 INFO  : Refreshed build settings on project bsp_production_freertos_xuartps_hello_world_example_1
+00:42:14 INFO  : BSP Project P/bsp_ioi_standalone has been successfully migrated.
+00:42:18 INFO  : Refreshed build settings on project app_io_intermediary
+00:42:18 INFO  : Refreshed build settings on project bsp_ioi_standalone_xllfifo_interrupt_example_1
+00:42:18 INFO  : Refreshed build settings on project bsp_ioi_standalone_xuartlite_polled_example_1
+00:42:18 INFO  : Refreshed build settings on project bsp_ioi_standalone_xuartlite_selftest_example_1
+00:42:18 INFO  : Refreshed build settings on project bsp_ioi_standalone_xwdttb_example_1
+00:42:18 INFO  : Refreshed build settings on project bsp_ioi_standalone_xwdttb_intr_example_1
+00:42:27 INFO  : No changes in MSS file content so not generating sources.
+00:42:41 INFO  : IO_Intermediary Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:42:56 INFO  : Processor reset is completed for IO_Intermediary
+00:43:02 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:43:07 INFO  : Processor reset is completed for backup_controller

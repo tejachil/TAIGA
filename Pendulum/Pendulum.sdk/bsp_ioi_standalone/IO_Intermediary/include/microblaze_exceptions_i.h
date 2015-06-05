@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2012 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2012 - 2014 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -67,17 +67,17 @@ typedef struct
 } MB_ExceptionVectorTableEntry;
 
 /* Exception IDs */
-#define XEXC_ID_FSL                     0
-#define XEXC_ID_UNALIGNED_ACCESS        1
-#define XEXC_ID_ILLEGAL_OPCODE          2
-#define XEXC_ID_M_AXI_I_EXCEPTION       3
-#define XEXC_ID_IPLB_EXCEPTION          3
-#define XEXC_ID_M_AXI_D_EXCEPTION       4
-#define XEXC_ID_DPLB_EXCEPTION          4
-#define XEXC_ID_DIV_BY_ZERO             5
-#define XEXC_ID_FPU                     6
-#define XEXC_ID_STACK_VIOLATION         7
-#define XEXC_ID_MMU                     7
+#define XEXC_ID_FSL                     0U
+#define XEXC_ID_UNALIGNED_ACCESS        1U
+#define XEXC_ID_ILLEGAL_OPCODE          2U
+#define XEXC_ID_M_AXI_I_EXCEPTION       3U
+#define XEXC_ID_IPLB_EXCEPTION          3U
+#define XEXC_ID_M_AXI_D_EXCEPTION       4U
+#define XEXC_ID_DPLB_EXCEPTION          4U
+#define XEXC_ID_DIV_BY_ZERO             5U
+#define XEXC_ID_FPU                     6U
+#define XEXC_ID_STACK_VIOLATION         7U
+#define XEXC_ID_MMU                     7U
 
 void microblaze_register_exception_handler(u32 ExceptionId, Xil_ExceptionHandler Handler, void *DataPtr);
 

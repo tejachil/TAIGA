@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  70880	   3072	  31388	 105340	  19b7c	bsp_production_freertos_xllfifo_polling_example_1.elf
+  70688	   3128	  31340	 105156	  19ac4	bsp_production_freertos_xllfifo_polling_example_1.elf

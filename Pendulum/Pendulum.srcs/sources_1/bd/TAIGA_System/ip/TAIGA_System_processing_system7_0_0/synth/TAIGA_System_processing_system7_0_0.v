@@ -72,6 +72,8 @@ module TAIGA_System_processing_system7_0_0 (
   I2C0_SCL_O,
   I2C0_SCL_T,
   SDIO0_WP,
+  UART0_TX,
+  UART0_RX,
   USB0_PORT_INDCTL,
   USB0_VBUS_PWRSELECT,
   USB0_VBUS_PWRFAULT,
@@ -173,6 +175,10 @@ output wire I2C0_SCL_O;
 output wire I2C0_SCL_T;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sdio:1.0 SDIO_0 WP" *)
 input wire SDIO0_WP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *)
+output wire UART0_TX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *)
+input wire UART0_RX;
 (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *)
 output wire [1 : 0] USB0_PORT_INDCTL;
 (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *)
@@ -488,12 +494,12 @@ inout wire PS_PORB;
     .SPI1_SS_T(),
     .UART0_DTRN(),
     .UART0_RTSN(),
-    .UART0_TX(),
+    .UART0_TX(UART0_TX),
     .UART0_CTSN(1'B0),
     .UART0_DCDN(1'B0),
     .UART0_DSRN(1'B0),
     .UART0_RIN(1'B0),
-    .UART0_RX(1'B1),
+    .UART0_RX(UART0_RX),
     .UART1_DTRN(),
     .UART1_RTSN(),
     .UART1_TX(),

@@ -79,11 +79,7 @@ void set_debug(debug pin, bool state){
 }
 
 void assert_trigger(controller control){
-	static currentController = PRODUCTION;
-	if(currentController == PRODUCTION){
-		XGpio_DiscreteWrite(&XGpio_Guard_Trigger, GUARD_TRIGGER_CHANNEL, control);
-		currentController = control;
-	}
+	XGpio_DiscreteWrite(&XGpio_Guard_Trigger, GUARD_TRIGGER_CHANNEL, control);
 }
 
 bool read_btn(u8 btn){
