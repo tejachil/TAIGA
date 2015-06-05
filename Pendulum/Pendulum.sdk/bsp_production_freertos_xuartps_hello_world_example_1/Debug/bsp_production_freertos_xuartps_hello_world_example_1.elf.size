@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  68684	   3148	  23100	  94932	  172d4	bsp_production_freertos_xuartps_hello_world_example_1.elf
+  68852	   3132	  23100	  95084	  1736c	bsp_production_freertos_xuartps_hello_world_example_1.elf

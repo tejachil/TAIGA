@@ -4,7 +4,7 @@
 ## - rename the used signals according to the project
 
 ##Clock signal
-##IO_L11P_T1_SRCC_35
+##IO_L11P_T1_SRCC_35	
 #set_property PACKAGE_PIN L16 [get_ports clk]
 #set_property IOSTANDARD LVCMOS33 [get_ports clk]
 #create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports clk]
@@ -263,8 +263,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_production_tri_o[0]}]
 #set_property PACKAGE_PIN Y14 [get_ports {jc_n[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jc_n[2]}]
 
-set_property PACKAGE_PIN Y14 [get_ports {UART_0_txd}]
-set_property IOSTANDARD LVCMOS33 [get_ports {UART_0_txd}]
+#set_property PACKAGE_PIN Y14 [get_ports {production_uart_tx}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {production_uart_tx}]
 
 ##IO_L8P_T1_34
 #set_property PACKAGE_PIN W14 [get_ports {jc_p[2]}]
@@ -278,8 +278,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {UART_0_txd}]
 #set_property PACKAGE_PIN T12 [get_ports {jc_p[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jc_p[3]}]
 
-set_property PACKAGE_PIN T12 [get_ports {UART_0_rxd}]
-set_property IOSTANDARD LVCMOS33 [get_ports {UART_0_rxd}]
+#set_property PACKAGE_PIN T12 [get_ports {production_uart_rx}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {production_uart_rx}]
 
 ##Pmod Header JD
 ##IO_L5N_T0_34
@@ -302,8 +302,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {UART_0_rxd}]
 #set_property PACKAGE_PIN U15 [get_ports {jd_n[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jd_n[2]}]
 
-set_property PACKAGE_PIN U15 [get_ports ioi_uart_tx]
-set_property IOSTANDARD LVCMOS33 [get_ports ioi_uart_tx]
+set_property PACKAGE_PIN U15 [get_ports {ioi_uart_tx}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_tx}]
 
 
 ##IO_L11P_T1_SRCC_34
@@ -318,8 +318,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports ioi_uart_tx]
 #set_property PACKAGE_PIN V17 [get_ports {jd_p[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jd_p[3]}]
 
-set_property PACKAGE_PIN V17 [get_ports ioi_uart_rx]
-set_property IOSTANDARD LVCMOS33 [get_ports ioi_uart_rx]
+set_property PACKAGE_PIN V17 [get_ports {ioi_uart_rx}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ioi_uart_rx}]
 
 ##Pmod Header JE
 ##IO_L4P_T0_34
@@ -331,20 +331,20 @@ set_property IOSTANDARD LVCMOS33 [get_ports {spi_plant_ss_o[2]}]
 ##IO_L18N_T2_34
 #set_property PACKAGE_PIN W16 [get_ports {je[1]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {je[1]}]
-set_property PACKAGE_PIN W16 [get_ports spi_plant_mosi_o]
-set_property IOSTANDARD LVCMOS33 [get_ports spi_plant_mosi_o]
+set_property PACKAGE_PIN W16 [get_ports {spi_plant_mosi_o}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_plant_mosi_o}]
 
 ##IO_25_35
 #set_property PACKAGE_PIN J15 [get_ports {je[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {je[2]}]
-set_property PACKAGE_PIN J15 [get_ports spi_plant_miso_i]
-set_property IOSTANDARD LVCMOS33 [get_ports spi_plant_miso_i]
+set_property PACKAGE_PIN J15 [get_ports {spi_plant_miso_i}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_plant_miso_i}]
 
 ##IO_L19P_T3_35
 #set_property PACKAGE_PIN H15 [get_ports {je[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {je[3]}]
-set_property PACKAGE_PIN H15 [get_ports spi_plant_sck_o]
-set_property IOSTANDARD LVCMOS33 [get_ports spi_plant_sck_o]
+set_property PACKAGE_PIN H15 [get_ports {spi_plant_sck_o}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_plant_sck_o}]
 
 ##IO_L3N_T0_DQS_34
 #set_property PACKAGE_PIN V13 [get_ports {je[4]}]

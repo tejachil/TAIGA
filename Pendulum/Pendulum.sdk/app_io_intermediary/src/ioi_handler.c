@@ -32,7 +32,7 @@ void ioi_handler(QueuePacket fifo_packet){
 				returnData[0] = read_sensor(fifo_packet.slave, fifo_packet.data[0]);
 			break;
 		case (SET_POINT): // SET_POINT
-			returnData[0] = get_set_point();
+			returnData[0] = (unsigned int)get_set_point();
 			break;
 		case (STATE_VECTOR): // STATE_INFORMATION
 			get_state_vector(returnData);

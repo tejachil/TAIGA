@@ -20,7 +20,7 @@ int getSetPoint(){
 	enqueue(&fifo_packet);
 	dequeue(buffer);
 
-	return buffer[0];
+	return (int)buffer[0];
 }
 
 int readEncoder(slave_select encoder){

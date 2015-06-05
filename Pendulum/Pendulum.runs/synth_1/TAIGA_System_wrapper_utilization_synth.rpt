@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Thu Jun  4 22:57:22 2015
+| Date         : Fri Jun  5 18:46:17 2015
 | Host         : XPS running 64-bit Ubuntu 14.04.2 LTS
 | Command      : report_utilization -file TAIGA_System_wrapper_utilization_synth.rpt -pb TAIGA_System_wrapper_utilization_synth.pb
 | Design       : TAIGA_System_wrapper
@@ -96,7 +96,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |   31 |     0 |       100 |  31.00 |
+| Bonded IOB                  |   29 |     0 |       100 |  29.00 |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |  130 |     0 |       130 | 100.00 |
 | PHY_CONTROL                 |    0 |     0 |         2 |   0.00 |
@@ -171,9 +171,9 @@ Table of Contents
 | RAMS32   |    64 |   Distributed Memory |
 | SRLC32E  |    51 |   Distributed Memory |
 | RAMB36E1 |    50 |         Block Memory |
-| OBUF     |    20 |                   IO |
+| OBUF     |    19 |                   IO |
 | SRLC16E  |    14 |   Distributed Memory |
-| IBUF     |    11 |                   IO |
+| IBUF     |    10 |                   IO |
 | DSP48E1  |    10 |     Block Arithmetic |
 | RAMB18E1 |     4 |         Block Memory |
 | BUFG     |     3 |                Clock |

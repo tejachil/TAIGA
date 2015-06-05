@@ -293,7 +293,6 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
-  set UART_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 UART_0 ]
   set gpio_btn [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_btn ]
   set gpio_debug_backup [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_debug_backup ]
   set gpio_debug_ioi [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_debug_ioi ]
@@ -419,7 +418,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: production_controller, and set properties
   set production_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 production_controller ]
-  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/teja/Documents/TAIGA/ZYBO_zynq_def.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {1} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
+  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/teja/Documents/TAIGA/ZYBO_zynq_def.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
 
   # Create instance: queue_multiplexer, and set properties
   set queue_multiplexer [ create_bd_cell -type ip -vlnv xilinx.com:hls:queue_multiplexer:1.0 queue_multiplexer ]
@@ -467,7 +466,6 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net production_controller_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins production_controller/DDR]
   connect_bd_intf_net -intf_net production_controller_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins production_controller/FIXED_IO]
   connect_bd_intf_net -intf_net production_controller_M_AXI_GP0 [get_bd_intf_pins axi_periph_production_controller/S00_AXI] [get_bd_intf_pins production_controller/M_AXI_GP0]
-  connect_bd_intf_net -intf_net production_controller_UART_0 [get_bd_intf_ports UART_0] [get_bd_intf_pins production_controller/UART_0]
 
   # Create port connections
   connect_bd_net -net IO_Intermediary_intr [get_bd_pins IO_Intermediary_xlconcat/dout] [get_bd_pins axi_intc_IOI/intr]

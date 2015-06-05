@@ -852,7 +852,7 @@
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_UART0)) = 1)||(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_MODEM_UART0)) = 1))">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_UART0)) = 1)||(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_MODEM_UART0)) = 1))">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -9998,7 +9998,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>d617bb78</spirit:value>
+            <spirit:value>a9aea6eb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -10006,7 +10006,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ba53d836</spirit:value>
+            <spirit:value>04d5a409</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -10014,7 +10014,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 05 02:45:40 UTC 2015</spirit:value>
+            <spirit:value>Fri Jun 05 04:48:11 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -10033,7 +10033,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>d617bb78</spirit:value>
+            <spirit:value>a9aea6eb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -10041,7 +10041,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>ba53d836</spirit:value>
+            <spirit:value>04d5a409</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -10049,7 +10049,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 05 02:45:40 UTC 2015</spirit:value>
+            <spirit:value>Fri Jun 05 04:48:11 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -12856,7 +12856,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_UART0)) = 1)">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_UART0)) = 1)">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12971,7 +12971,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_UART0)) = 1)">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_UART0)) = 1)">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -27869,6 +27869,7 @@
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choices_302</spirit:name>
+      <spirit:enumeration spirit:text="&lt;Select>">&lt;Select></spirit:enumeration>
       <spirit:enumeration spirit:text="EMIO">EMIO</spirit:enumeration>
       <spirit:enumeration spirit:text="MIO 10 .. 11">MIO 10 .. 11</spirit:enumeration>
       <spirit:enumeration spirit:text="MIO 14 .. 15">MIO 14 .. 15</spirit:enumeration>
@@ -30417,7 +30418,7 @@
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_UART0)) = 1) ">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_UART0)) = 1) ">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -30430,7 +30431,7 @@
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_UART0)) = 1) ">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_UART0)) = 1) ">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -33136,7 +33137,7 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_EMIO_UART0</spirit:name>
       <spirit:displayName>PCW EN EMIO UART0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_UART0" spirit:choiceRef="choices_62" spirit:order="12100">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_UART0" spirit:choiceRef="choices_62" spirit:order="12100">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -33701,7 +33702,7 @@
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_UART0)) = 1)">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_UART0)) = 1)">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -34219,7 +34220,7 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_UART0</spirit:name>
       <spirit:displayName>PCW EN UART0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_UART0" spirit:choiceRef="choices_151" spirit:order="9500">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_UART0" spirit:choiceRef="choices_151" spirit:order="9500">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -36060,7 +36061,7 @@
     <spirit:parameter>
       <spirit:name>PCW_UART0_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW UART0 PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:format="string" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UART0_PERIPHERAL_ENABLE" spirit:choiceRef="choices_301" spirit:order="800">1</spirit:value>
+      <spirit:value spirit:format="string" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UART0_PERIPHERAL_ENABLE" spirit:choiceRef="choices_301" spirit:order="800">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -36072,11 +36073,11 @@
     <spirit:parameter>
       <spirit:name>PCW_UART0_UART0_IO</spirit:name>
       <spirit:displayName>PCW UART0 UART0 IO</spirit:displayName>
-      <spirit:value spirit:format="string" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UART0_UART0_IO" spirit:choiceRef="choices_302" spirit:order="6700">EMIO</spirit:value>
+      <spirit:value spirit:format="string" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_UART0_UART0_IO" spirit:choiceRef="choices_302" spirit:order="6700">&lt;Select></spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled>true</xilinx:isEnabled>
+            <xilinx:isEnabled>false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36087,7 +36088,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled>true</xilinx:isEnabled>
+            <xilinx:isEnabled>false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>

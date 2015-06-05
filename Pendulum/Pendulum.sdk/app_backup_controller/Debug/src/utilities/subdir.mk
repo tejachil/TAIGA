@@ -20,7 +20,7 @@ C_DEPS += \
 src/utilities/%.o: ../src/utilities/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MicroBlaze gcc compiler'
-	mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I../../global_includes -c -fmessage-length=0 -MT"$@" -I../../bsp_backup_standalone/backup_controller/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I../../global_includes -c -fmessage-length=0 -MT"$@" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
