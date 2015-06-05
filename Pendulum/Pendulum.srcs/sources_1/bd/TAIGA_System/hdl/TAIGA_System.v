@@ -1,15 +1,15 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Sun May 31 15:52:36 2015
-//Host        : XPS running 64-bit Ubuntu 12.04.5 LTS
+//Date        : Thu Jun  4 20:40:24 2015
+//Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System.bd
 //Design      : TAIGA_System
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* HW_HANDOFF = "TAIGA_System.hwdef" *) (* core_generation_info = "TAIGA_System,IP_Integrator,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=TAIGA_System,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=61,numReposBlks=39,numNonXlnxBlks=0,numHierBlks=22,maxHierDepth=1,da_axi4_cnt=26,da_board_cnt=7,da_mb_cnt=3,da_ps7_cnt=2,synth_mode=Global}" *) 
+(* CORE_GENERATION_INFO = "TAIGA_System,IP_Integrator,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=TAIGA_System,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=61,numReposBlks=39,numNonXlnxBlks=0,numHierBlks=22,maxHierDepth=1,da_axi4_cnt=26,da_board_cnt=7,da_mb_cnt=3,da_ps7_cnt=2,synth_mode=Global}" *) (* HW_HANDOFF = "TAIGA_System.hwdef" *) 
 module TAIGA_System
    (DDR_addr,
     DDR_ba,

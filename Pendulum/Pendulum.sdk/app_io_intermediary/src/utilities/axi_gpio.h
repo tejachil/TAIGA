@@ -38,7 +38,7 @@ void set_led(u8 leds, bool state);
 
 void set_debug(debug pin, bool state);
 
-void select_controller(controller control);
+void assert_trigger(controller control);
 
 bool read_btn(u8 btn);
 

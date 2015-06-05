@@ -1059,7 +1059,9 @@ int XQspiPs_LqspiRead(XQspiPs *InstancePtr, u8 *RecvBufPtr,
 	Xil_AssertNonvoid(ByteCount > 0);
 	Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR
+#ifndef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR
+#define	XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR 0xFC000000
+#endif
 	/*
 	 * Enable the controller
 	 */
@@ -1080,10 +1082,6 @@ int XQspiPs_LqspiRead(XQspiPs *InstancePtr, u8 *RecvBufPtr,
 	 * Disable the controller
 	 */
 	XQspiPs_Disable(InstancePtr);
-
-#else
-	return XST_FAILURE;
-#endif
 
 }
 

@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-   4382	    340	   2172	   6894	   1aee	bsp_ioi_standalone_xuartlite_polled_example_1.elf
+   4402	    340	   2178	   6920	   1b08	bsp_ioi_standalone_xuartlite_polled_example_1.elf

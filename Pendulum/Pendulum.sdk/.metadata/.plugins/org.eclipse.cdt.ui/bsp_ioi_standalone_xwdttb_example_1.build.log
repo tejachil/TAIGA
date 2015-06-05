@@ -1,6 +1,6 @@
-15:12:12 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+21:52:22 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
 make all 
 make: Nothing to be done for `all'.
 
-15:12:12 Build Finished (took 62ms)
+21:52:22 Build Finished (took 65ms)
 

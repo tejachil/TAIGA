@@ -9,6 +9,7 @@
 #define IOI_HANDLER_H_
 
 #include "pendulum_plant.h"
+#include "utilities/axi_gpio.h"
 
 void ioi_handler(QueuePacket fifo_packet);
 

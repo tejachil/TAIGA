@@ -274,8 +274,10 @@ int XLlFifoInterruptExample(XLlFifo *InstancePtr, u16 DeviceId)
 
 	Done = 0;
 
+	select_controller(1);
+	Status = TxSend(InstancePtr, SourceBuffer);
 	while(1){
-		select_controller(read_sw_raw());
+		select_controller(1);
 	}
 	/* Transmit the Data Stream */
 	Status = TxSend(InstancePtr, SourceBuffer);

@@ -133,6 +133,16 @@ typedef int64_t s64;
 typedef intptr_t INTPTR;
 typedef uintptr_t UINTPTR;
 typedef ptrdiff_t PTRDIFF; 
+
+#if !defined(LONG) || !defined(ULONG)
+typedef long LONG;
+typedef unsigned long ULONG;
+#endif
+
+#define ULONG64_HI_MASK	0xFFFFFFFF00000000
+#define ULONG64_LO_MASK	~ULONG64_HI_MASK
+
+
 #else
 #include <linux/types.h>
 #endif

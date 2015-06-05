@@ -10,7 +10,7 @@
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2014.4
+set scripts_vivado_version 2015.1
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -31,6 +31,13 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # you can create a project using the following command:
 #    create_project project_1 myproj -part xc7z010clg400-1
 
+# CHECKING IF PROJECT EXISTS
+if { [get_projects -quiet] eq "" } {
+   puts "ERROR: Please open or create a project!"
+   return 1
+}
+
+
 
 # CHANGE DESIGN NAME HERE
 set design_name TAIGA_System
@@ -38,13 +45,6 @@ set design_name TAIGA_System
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
 #    create_bd_design $design_name
-
-# CHECKING IF PROJECT EXISTS
-if { [get_projects -quiet] eq "" } {
-   puts "ERROR: Please open or create a project!"
-   return 1
-}
-
 
 # Creating design if needed
 set errMsg ""
@@ -312,7 +312,7 @@ proc create_root_design { parentCell } {
   set spi_plant_ss_o [ create_bd_port -dir O -from 3 -to 0 spi_plant_ss_o ]
 
   # Create instance: IO_Intermediary, and set properties
-  set IO_Intermediary [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.4 IO_Intermediary ]
+  set IO_Intermediary [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 IO_Intermediary ]
   set_property -dict [ list CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_I_LMB {1} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DCACHE {0} CONFIG.C_USE_DIV {1} CONFIG.C_USE_FPU {2} CONFIG.C_USE_HW_MUL {1} CONFIG.C_USE_ICACHE {0} CONFIG.C_USE_MSR_INSTR {1} CONFIG.C_USE_PCMP_INSTR {1}  ] $IO_Intermediary
 
   # Create instance: IO_Intermediary_xlconcat, and set properties
@@ -383,7 +383,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list CONFIG.C_WDT_INTERVAL {18} CONFIG.WDT_ENABLE_ONCE {Enable_repeatedly}  ] $axi_wdt_IOI
 
   # Create instance: backup_controller, and set properties
-  set backup_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.4 backup_controller ]
+  set backup_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 backup_controller ]
   set_property -dict [ list CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_I_LMB {1} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DCACHE {0} CONFIG.C_USE_DIV {1} CONFIG.C_USE_FPU {2} CONFIG.C_USE_HW_MUL {1} CONFIG.C_USE_ICACHE {0} CONFIG.C_USE_MSR_INSTR {1} CONFIG.C_USE_PCMP_INSTR {1}  ] $backup_controller
 
   # Create instance: backup_controller_axi_intc, and set properties
@@ -418,7 +418,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: production_controller, and set properties
   set production_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 production_controller ]
-  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/teja/Documents/TAIGA/ZYBO_zynq_def.xml}  ] $production_controller
+  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/teja/Documents/TAIGA/ZYBO_zynq_def.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
 
   # Create instance: queue_multiplexer, and set properties
   set queue_multiplexer [ create_bd_cell -type ip -vlnv xilinx.com:hls:queue_multiplexer:1.0 queue_multiplexer ]

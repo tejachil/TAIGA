@@ -29,7 +29,7 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
  ../src/utilities/axi_uart.h \
  ../../bsp_ioi_standalone/IO_Intermediary/include/xuartlite.h \
  ../src/pendulum_plant.h ../src/monitor_plant.h \
- ../src/monitor_supervisor.h
+ ../src/monitor_supervisor.h ../src/ioi_handler.h
 
 ../../bsp_ioi_standalone/IO_Intermediary/include/xparameters.h:
 
@@ -96,3 +96,5 @@ src/main_ioi.o src/main_ioi.d: ../src/main_ioi.c \
 ../src/monitor_plant.h:
 
 ../src/monitor_supervisor.h:
+
+../src/ioi_handler.h:

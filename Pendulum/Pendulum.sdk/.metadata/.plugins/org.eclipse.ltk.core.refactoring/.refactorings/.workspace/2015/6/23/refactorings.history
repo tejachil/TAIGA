@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 3 resources" deleteContents="true" description="Delete 3 resources" element1="/system_wrapper_hw_platform_0" element2="/TAIGA_System_wrapper_hw_platform_0" element3="/TAIGA_System_wrapper_hw_platform_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1433389291446"/>&#x0A;<refactoring comment="Delete resource &apos;TAIGA_System_wrapper_hw_platform_0&apos;" deleteContents="true" description="Delete resource &apos;TAIGA_System_wrapper_hw_platform_0&apos;" element1="/TAIGA_System_wrapper_hw_platform_0" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1433467062955"/>
+</session>

@@ -3359,29 +3359,6 @@ unsigned long ps7_peripherals_init_data_3_0[] = {
     // .. 
     EMIT_MASKWRITE(0XE0001004, 0x000003FFU ,0x00000020U),
     // .. FINISH: UART REGISTERS
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: QSPI REGISTERS
     // .. Holdb_dr = 1
     // .. ==> 0XE000D000[19:19] = 0x00000001U
@@ -3690,29 +3667,6 @@ unsigned long ps7_post_config_3_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000900, 0x0000000FU ,0x0000000FU),
     // .. FINISH: ENABLING LEVEL SHIFTER
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: FPGA RESETS TO 0
     // .. reserved_3 = 0
     // .. ==> 0XF8000240[31:25] = 0x00000000U
@@ -3789,6 +3743,8 @@ unsigned long ps7_post_config_3_0[] = {
     // .. .. FINISH: AFI2 REGISTERS
     // .. .. START: AFI3 REGISTERS
     // .. .. FINISH: AFI3 REGISTERS
+    // .. .. START: AFI2 SECURE REGISTER
+    // .. .. FINISH: AFI2 SECURE REGISTER
     // .. FINISH: AFI REGISTERS
     // .. START: LOCK IT BACK
     // .. LOCK_KEY = 0X767B
@@ -7326,29 +7282,6 @@ unsigned long ps7_peripherals_init_data_2_0[] = {
     // .. 
     EMIT_MASKWRITE(0XE0001004, 0x00000FFFU ,0x00000020U),
     // .. FINISH: UART REGISTERS
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: QSPI REGISTERS
     // .. Holdb_dr = 1
     // .. ==> 0XE000D000[19:19] = 0x00000001U
@@ -7651,29 +7584,6 @@ unsigned long ps7_post_config_2_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000900, 0x0000000FU ,0x0000000FU),
     // .. FINISH: ENABLING LEVEL SHIFTER
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: FPGA RESETS TO 0
     // .. reserved_3 = 0
     // .. ==> 0XF8000240[31:25] = 0x00000000U
@@ -11220,29 +11130,6 @@ unsigned long ps7_peripherals_init_data_1_0[] = {
     // .. 
     EMIT_MASKWRITE(0XE0001004, 0x00000FFFU ,0x00000020U),
     // .. FINISH: UART REGISTERS
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: QSPI REGISTERS
     // .. Holdb_dr = 1
     // .. ==> 0XE000D000[19:19] = 0x00000001U
@@ -11545,29 +11432,6 @@ unsigned long ps7_post_config_1_0[] = {
     // .. 
     EMIT_MASKWRITE(0XF8000900, 0x0000000FU ,0x0000000FU),
     // .. FINISH: ENABLING LEVEL SHIFTER
-    // .. START: TPIU WIDTH IN CASE OF EMIO
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0XC5ACCE55
-    // .. .. ==> 0XF8803FB0[31:0] = 0xC5ACCE55U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0xC5ACCE55U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0xC5ACCE55U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. .. START: TRACE CURRENT PORT SIZE
-    // .. .. a = 2
-    // .. .. ==> 0XF8803004[31:0] = 0x00000002U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000002U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803004, 0xFFFFFFFFU ,0x00000002U),
-    // .. .. FINISH: TRACE CURRENT PORT SIZE
-    // .. .. START: TRACE LOCK ACCESS REGISTER
-    // .. .. a = 0X0
-    // .. .. ==> 0XF8803FB0[31:0] = 0x00000000U
-    // .. ..     ==> MASK : 0xFFFFFFFFU    VAL : 0x00000000U
-    // .. .. 
-    EMIT_MASKWRITE(0XF8803FB0, 0xFFFFFFFFU ,0x00000000U),
-    // .. .. FINISH: TRACE LOCK ACCESS REGISTER
-    // .. FINISH: TPIU WIDTH IN CASE OF EMIO
     // .. START: FPGA RESETS TO 0
     // .. reserved_3 = 0
     // .. ==> 0XF8000240[31:25] = 0x00000000U

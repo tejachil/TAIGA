@@ -37,11 +37,28 @@ void supervisor_send_tail(float u){
 
 void supervisor_update_set_point(){
 	u8 supervisorInput[3];
+	int receiveCount = uart_receive(supervisorInput);
 
-	if(uart_receive(supervisorInput) >= 3){
-		if(supervisorInput[0] != 'S' || supervisorInput[1] != 'P')	return;
-		//if(supervisorInput[2] & 0x7F > THETA_GUARD)	return;
-		int setPoint = (0x80 & supervisorInput[2]) ? -(supervisorInput[2]&0x7F) : (supervisorInput[2]&0x7F);
-		set_set_point(setPoint);
+	if(receiveCount == 0) return;
+
+	int setPoint;
+	static char stateChar = 'x';
+	int i = 0;
+	for(i = 0; i < receiveCount; ++i){
+		switch (stateChar){
+			case 'S':
+				if (supervisorInput[i] == 'P')	stateChar = 'P';
+				else	stateChar = 'x';
+				break;
+			case 'P':
+				setPoint = (0x80 & supervisorInput[i]) ? -(supervisorInput[i]&0x7F) : (supervisorInput[i]&0x7F);
+				set_set_point(setPoint);
+				stateChar = 'x';
+				break;
+			default:
+				if (supervisorInput[i] == 'S')	stateChar = 'S';
+				else	stateChar = 'x';
+				break;
+		}
 	}
 }

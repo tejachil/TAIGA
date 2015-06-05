@@ -263,6 +263,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_production_tri_o[0]}]
 #set_property PACKAGE_PIN Y14 [get_ports {jc_n[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jc_n[2]}]
 
+#set_property PACKAGE_PIN Y14 [get_ports {UART1_TX}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {UART1_TX}]
+
 ##IO_L8P_T1_34
 #set_property PACKAGE_PIN W14 [get_ports {jc_p[2]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jc_p[2]}]
@@ -274,6 +277,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio_debug_production_tri_o[0]}]
 ##IO_L2P_T0_34
 #set_property PACKAGE_PIN T12 [get_ports {jc_p[3]}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {jc_p[3]}]
+
+#set_property PACKAGE_PIN T12 [get_ports {UART1_RX}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {UART1_RX}]
 
 ##Pmod Header JD
 ##IO_L5N_T0_34

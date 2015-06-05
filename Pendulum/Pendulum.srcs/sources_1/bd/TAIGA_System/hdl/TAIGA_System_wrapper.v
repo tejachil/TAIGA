@@ -1,8 +1,8 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Sun May 31 15:52:37 2015
-//Host        : XPS running 64-bit Ubuntu 12.04.5 LTS
+//Date        : Thu Jun  4 20:40:24 2015
+//Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_System_wrapper.bd
 //Design      : TAIGA_System_wrapper
 //Purpose     : IP block netlist

@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date         : Sun May 31 16:07:55 2015
-| Host         : XPS running 64-bit Ubuntu 12.04.5 LTS
+| Date         : Thu Jun  4 20:55:48 2015
+| Host         : XPS running 64-bit Ubuntu 14.04.2 LTS
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file TAIGA_System_wrapper_timing_summary_routed.rpt -rpx TAIGA_System_wrapper_timing_summary_routed.rpx
 | Design       : TAIGA_System_wrapper
 | Device       : 7z010-clg400
