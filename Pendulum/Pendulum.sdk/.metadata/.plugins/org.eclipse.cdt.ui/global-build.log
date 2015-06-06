@@ -30946,3 +30946,390 @@ make: Nothing to be done for `all'.
 19:08:52 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
 make all 
 make: Nothing to be done for `all'.
+19:15:29 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:15:29 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+19:15:29 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:30 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:30 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:30 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:30 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:31 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:15:31 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:15:31 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:05 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:16:05 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+19:16:05 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:07 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:16:07 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:07 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:10 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:16:10 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+19:16:10 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:11 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:11 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:11 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:11 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:12 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:16:12 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:16:12 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:13 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:18:13 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+19:18:13 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:14 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:14 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:14 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:14 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:14 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:18:15 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:15 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:20 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:18:20 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+19:18:20 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:20 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:21 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:21 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:21 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:21 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:18:22 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:22 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:28 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:18:28 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+19:18:28 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:28 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:29 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:29 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:29 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:29 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:18:30 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+19:18:30 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:23:28 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/monitor_supervisor.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_Intermediary/include -I../../global_includes -c -fmessage-length=0 -MT"src/monitor_supervisor.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monitor_supervisor.d" -MT"src/monitor_supervisor.d" -o "src/monitor_supervisor.o" "../src/monitor_supervisor.c"
+../src/monitor_supervisor.c:26:6: error: conflicting types for 'supervisor_send_tail'
+ void supervisor_send_tail(float u, bool startTAIGA, bool trigger, bool wdt){
+      ^
+In file included from ../src/monitor_supervisor.c:9:0:
+../src/monitor_supervisor.h:15:6: note: previous declaration of 'supervisor_send_tail' was here
+ void supervisor_send_tail(float u, bool trigger, bool wdt);
+      ^
+../src/monitor_supervisor.c: In function 'supervisor_update_set_point':
+../src/monitor_supervisor.c:58:5: warning: implicit declaration of function 'set_set_point' [-Wimplicit-function-declaration]
+     set_set_point(setPoint);
+     ^
+make: *** [src/monitor_supervisor.o] Error 1
+20:24:03 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_Intermediary/include -I../../global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:99:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+../src/main_ioi.c:121:4: error: too few arguments to function 'supervisor_send_tail'
+    supervisor_send_tail(get_plant_state_instance()->u, assertTrigger, check_wdt());
+    ^
+In file included from ../src/main_ioi.c:62:0:
+../src/monitor_supervisor.h:15:6: note: declared here
+ void supervisor_send_tail(float u, bool startTAIGA, bool trigger, bool wdt);
+      ^
+make: *** [src/main_ioi.o] Error 1
+20:24:15 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_Intermediary/include -I../../global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:99:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building file: ../src/monitor_supervisor.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_Intermediary/include -I../../global_includes -c -fmessage-length=0 -MT"src/monitor_supervisor.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monitor_supervisor.d" -MT"src/monitor_supervisor.d" -o "src/monitor_supervisor.o" "../src/monitor_supervisor.c"
+../src/monitor_supervisor.c: In function 'supervisor_update_set_point':
+../src/monitor_supervisor.c:58:5: warning: implicit declaration of function 'set_set_point' [-Wimplicit-function-declaration]
+     set_set_point(setPoint);
+     ^
+Finished building: ../src/monitor_supervisor.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o ./src/utilities/interrupt_controller.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/monitor_plant.o ./src/monitor_supervisor.o ./src/pendulum_plant.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44052	    449	   2699	  47200	   b860	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+20:28:23 **** Auto Build of configuration Debug for project app_io_intermediary ****
+make all 
+Building file: ../src/monitor_supervisor.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_Intermediary/include -I../../global_includes -c -fmessage-length=0 -MT"src/monitor_supervisor.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monitor_supervisor.d" -MT"src/monitor_supervisor.d" -o "src/monitor_supervisor.o" "../src/monitor_supervisor.c"
+../src/monitor_supervisor.c: In function 'supervisor_update_set_point':
+../src/monitor_supervisor.c:59:5: warning: implicit declaration of function 'set_set_point' [-Wimplicit-function-declaration]
+     set_set_point(setPoint);
+     ^
+Finished building: ../src/monitor_supervisor.c
+ 
+Building target: app_io_intermediary.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_Intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.4 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "app_io_intermediary.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o ./src/utilities/interrupt_controller.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/monitor_plant.o ./src/monitor_supervisor.o ./src/pendulum_plant.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_io_intermediary.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_io_intermediary.elf  |tee "app_io_intermediary.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44072	    449	   2695	  47216	   b870	app_io_intermediary.elf
+Finished building: app_io_intermediary.elf.size
+ 
+20:45:34 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:45:34 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+20:45:35 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:35 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:35 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:35 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:36 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:36 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:45:36 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:36 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:48 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:45:49 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+20:45:49 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:49 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:49 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:50 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:50 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:50 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:45:50 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:51 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:56 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:45:57 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+20:45:57 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:57 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:57 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:58 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:58 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:45:58 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:45:59 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:05 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:46:05 **** Incremental Build of configuration Debug for project app_io_intermediary ****
+make all 
+make: Nothing to be done for `all'.
+20:46:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xllfifo_interrupt_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xuartlite_selftest_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:06 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:07 **** Incremental Build of configuration Debug for project bsp_ioi_standalone_xwdttb_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:07 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:46:07 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_polling_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+20:46:07 **** Incremental Build of configuration Debug for project bsp_production_freertos_xuartps_hello_world_example_1 ****
+make all 
+make: Nothing to be done for `all'.

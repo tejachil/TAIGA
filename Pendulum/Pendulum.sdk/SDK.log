@@ -3175,3 +3175,14 @@ Caused by: java.lang.IllegalArgumentException: Path must include project and res
 19:08:23 INFO  : Processor reset is completed for IO_Intermediary
 19:08:48 INFO  : Processor reset is completed for ps7_cortexa9_1
 19:08:53 INFO  : Processor reset is completed for backup_controller
+19:15:32 INFO  : Processor reset is completed for IO_Intermediary
+19:16:08 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:16:13 INFO  : Processor reset is completed for backup_controller
+19:18:16 INFO  : Processor reset is completed for IO_Intermediary
+19:18:23 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:18:31 INFO  : Processor reset is completed for backup_controller
+20:45:37 INFO  : IO_Intermediary Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:45:52 INFO  : Processor reset is completed for IO_Intermediary
+20:45:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:46:09 INFO  : Processor reset is completed for backup_controller
+21:32:42 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
