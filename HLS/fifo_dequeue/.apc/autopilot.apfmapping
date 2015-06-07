@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="fifo_dequeue.c" path="/home/teja/Documents/TAIGA/HLS/fifo_dequeue/.apc/fifo_dequeue.c"/>
-  </source>
-  <testbench/>
-</autopilotfilemapping:AutoPilotFileMapping>

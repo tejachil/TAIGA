@@ -1,6 +1,0 @@
-17:52:37 **** Incremental Build of configuration Debug for project bsp_production_freertos_xllfifo_interrupt_example_1 ****
-make all 
-make: Nothing to be done for `all'.
-
-17:52:37 Build Finished (took 61ms)
-

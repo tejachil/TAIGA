@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;bsp_ioi_standalone&apos;" deleteContents="true" description="Delete resource &apos;bsp_ioi_standalone&apos;" element1="/bsp_ioi_standalone" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1427847449455"/>&#x0A;<refactoring comment="Delete resource &apos;app_backup_controller/taiga_pendulum_parameters.h&apos;" deleteContents="false" description="Delete resource &apos;app_backup_controller/taiga_pendulum_parameters.h&apos;" element1="/app_backup_controller/taiga_pendulum_parameters.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1427848716651"/>
-</session>

@@ -1,0 +1,113 @@
+16:45:41 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+16:45:52 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:46:01 INFO  : XSDB server has started successfully.
+16:46:39 INFO  : Saving repository preferences.
+16:46:39 INFO  : Reading in cores from local repositories: 
+		 /home/controls/TAIGA/repo
+16:46:39 INFO  : Cleaning BSP projects in the workspace.
+16:46:40 INFO  : Saving repository preferences.
+16:47:18 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+16:48:40 INFO  : BSP Project P/bsp_ioi_standalone has been successfully migrated.
+16:49:49 INFO  : BSP Project P/bsp_backup_standalone has been successfully migrated.
+16:50:20 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:50:40 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:50:40 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:50:47 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:50:47 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:51:09 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:51:09 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:51:30 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:52:07 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:52:08 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+16:52:24 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+17:24:15 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+17:24:15 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+17:24:15 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+17:24:16 INFO  : XSDB server has started successfully.
+17:24:52 INFO  : BSP Project P/bsp_backup_standalone has been successfully migrated.
+17:24:58 INFO  : Refreshed build settings on project app_backup_controller
+17:25:56 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+17:26:08 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+17:35:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+17:35:39 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+17:36:44 INFO  : ps7_init is completed.
+17:36:45 INFO  : ps7_post_config is completed.
+17:36:45 INFO  : Processor reset is completed for IO_intermediary
+17:36:51 INFO  : Processor reset is completed for ps7_cortexa9_1
+17:37:13 INFO  : Processor reset is completed for backup_controller
+17:44:58 INFO  : Processor reset is completed for IO_intermediary
+17:45:22 INFO  : Processor reset is completed for ps7_cortexa9_1
+17:45:25 INFO  : Processor reset is completed for backup_controller
+17:48:13 INFO  : Processor reset is completed for IO_intermediary
+17:48:19 INFO  : Processor reset is completed for ps7_cortexa9_1
+17:48:24 INFO  : Processor reset is completed for backup_controller
+18:11:00 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:14:41 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+18:14:41 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+18:14:41 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:14:42 INFO  : XSDB server has started successfully.
+18:15:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+18:15:53 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+18:16:07 INFO  : ps7_init is completed.
+18:16:07 INFO  : ps7_post_config is completed.
+18:16:08 INFO  : Processor reset is completed for IO_intermediary
+18:16:24 INFO  : IO_intermediary Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:16:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:16:47 INFO  : Processor reset is completed for backup_controller
+18:17:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+18:17:40 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+18:18:17 INFO  : ps7_init is completed.
+18:18:17 INFO  : ps7_post_config is completed.
+18:18:17 INFO  : Processor reset is completed for IO_intermediary
+18:18:22 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:20:51 INFO  : No changes in MSS file content so not generating sources.
+18:21:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:21:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+18:21:56 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+18:22:19 INFO  : ps7_init is completed.
+18:22:19 INFO  : ps7_post_config is completed.
+18:22:20 INFO  : Processor reset is completed for IO_intermediary
+18:22:24 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:44:59 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:53:03 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+18:53:04 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+18:53:05 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:53:06 INFO  : XSDB server has started successfully.
+18:53:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:53:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+18:53:57 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+18:54:38 INFO  : ps7_init is completed.
+18:54:38 INFO  : ps7_post_config is completed.
+18:54:39 INFO  : Processor reset is completed for IO_intermediary
+18:55:08 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:56:11 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+18:56:41 INFO  : Refreshed build settings on project app_production_controller
+18:57:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:57:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+18:57:36 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+18:57:42 INFO  : ps7_init is completed.
+18:57:42 INFO  : ps7_post_config is completed.
+18:57:43 INFO  : Processor reset is completed for IO_intermediary
+18:57:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:59:43 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:16:45 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+19:16:46 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+19:16:47 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+19:16:48 INFO  : XSDB server has started successfully.
+19:18:00 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+19:18:20 INFO  : Refreshed build settings on project app_production_controller
+19:18:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:18:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+19:18:52 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+19:19:09 INFO  : ps7_init is completed.
+19:19:09 INFO  : ps7_post_config is completed.
+19:19:10 INFO  : Processor reset is completed for IO_intermediary
+19:20:32 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:20:49 INFO  : Processor reset is completed for backup_controller
