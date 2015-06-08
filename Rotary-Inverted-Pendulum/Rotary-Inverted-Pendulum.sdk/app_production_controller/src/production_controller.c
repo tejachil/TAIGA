@@ -35,23 +35,23 @@ void startProductionControl(){
 
 	xTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
 	xTimerStart(ProductionControlTimer, 0);
-	//xil_printf("Production Controller Timer started\n");
+	xil_printf("Production Controller Timer started\n");
 }
 
 void production_control_timer(xTimerHandle pxTimer){
 	set_led(LED3, true);
 
+	set_debug(DEBUG7, true);
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;
-
-	xil_printf("SP %d \r\n\r", plantParams.set_point);
-
+	//xil_printf("SP %d \r\n\r", plantParams.set_point);
+	set_debug(DEBUG7, false);
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
-
+	set_debug(DEBUG7, true);
 	plantParams.encoder_alpha= 4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
-
+	set_debug(DEBUG7, false);
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
 		//xil_printf("S %d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
@@ -60,8 +60,12 @@ void production_control_timer(xTimerHandle pxTimer){
 		//xil_printf("%d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
 		plantParams.u = 0;
 	}
-
+	set_debug(DEBUG7, true);
 	writeDAC(plantParams.u);
+	set_debug(DEBUG7, false);
+	static bool state = true;
+	set_debug(DEBUG8, state);
+	state = !state;
 
 	++plantParams.cycle_count;
 

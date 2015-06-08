@@ -77,18 +77,18 @@ void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 	set_led(LED2, true);
 
 	plantParams.theta_des = 0*pi/180;
-
+	set_debug(DEBUG5, true);
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
-
+	set_debug(DEBUG5, false);
 	plantParams.encoder_alpha =  4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
-
+	set_debug(DEBUG5, true);
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
 	}
 	else plantParams.u = 0;
-
+	set_debug(DEBUG5, false);
 	writeDAC(plantParams.u);
 
 	++plantParams.cycle_count;

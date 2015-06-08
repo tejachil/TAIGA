@@ -420,7 +420,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: production_controller, and set properties
   set production_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 production_controller ]
-  set_property -dict [ list CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/ZYBO_zynq_def-TAIGA.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
+  set_property -dict [ list CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/ZYBO_zynq_def-TAIGA.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 12 .. 13}  ] $production_controller
 
   # Create instance: rst_production_controller_200M, and set properties
   set rst_production_controller_200M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_production_controller_200M ]
