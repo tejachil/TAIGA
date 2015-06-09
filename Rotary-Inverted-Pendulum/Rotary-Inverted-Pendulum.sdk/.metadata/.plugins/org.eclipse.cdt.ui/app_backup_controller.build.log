@@ -1,26 +1,6 @@
-22:37:21 **** Auto Build of configuration Debug for project app_backup_controller ****
+22:10:38 **** Incremental Build of configuration Debug for project app_backup_controller ****
 make all 
-Building file: ../src/backup_controller.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
-Finished building: ../src/backup_controller.c
- 
-Building file: ../src/main_backup.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_backup.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
-Finished building: ../src/main_backup.c
- 
-Building target: app_backup_controller.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: app_backup_controller.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  23898	    372	   2578	  26848	   68e0	app_backup_controller.elf
-Finished building: app_backup_controller.elf.size
- 
+make: Nothing to be done for `all'.
 
-22:37:21 Build Finished (took 166ms)
+22:10:38 Build Finished (took 65ms)
 
