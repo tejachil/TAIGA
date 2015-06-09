@@ -209,7 +209,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">142857132</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
@@ -339,7 +339,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STR_TXD.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STR_TXD.FREQ_HZ">142857132</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
@@ -591,7 +591,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STR_RXD.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STR_RXD.FREQ_HZ">142857132</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
@@ -636,7 +636,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>AXI clock frequency</spirit:displayName>
           <spirit:description>specify frequency of the clock connected to port s_axi_aclk</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ACLK_S_AXI.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ACLK_S_AXI.FREQ_HZ">142857132</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
@@ -1140,7 +1140,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>b1b3a938</spirit:value>
+            <spirit:value>47419534</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -1148,7 +1148,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Jun 07 20:24:26 UTC 2015</spirit:value>
+            <spirit:value>Tue Jun 09 00:18:26 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1174,7 +1174,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>b1b3a938</spirit:value>
+            <spirit:value>47419534</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -1182,7 +1182,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Jun 07 20:24:32 UTC 2015</spirit:value>
+            <spirit:value>Tue Jun 09 01:40:58 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1209,7 +1209,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>b1b3a938</spirit:value>
+            <spirit:value>47419534</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -1217,7 +1217,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Jun 07 20:24:32 UTC 2015</spirit:value>
+            <spirit:value>Tue Jun 09 01:40:58 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>

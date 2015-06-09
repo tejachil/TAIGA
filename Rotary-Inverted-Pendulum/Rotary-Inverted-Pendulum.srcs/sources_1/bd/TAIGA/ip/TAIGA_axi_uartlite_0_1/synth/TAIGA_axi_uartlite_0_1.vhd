@@ -128,7 +128,7 @@ ARCHITECTURE TAIGA_axi_uartlite_0_1_arch OF TAIGA_axi_uartlite_0_1 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF TAIGA_axi_uartlite_0_1_arch : ARCHITECTURE IS "TAIGA_axi_uartlite_0_1,axi_uartlite,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_axi_uartlite_0_1_arch: ARCHITECTURE IS "TAIGA_axi_uartlite_0_1,axi_uartlite,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_uartlite,x_ipVersion=2.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ACLK_FREQ_HZ=200000000,C_S_AXI_ADDR_WIDTH=4,C_S_AXI_DATA_WIDTH=32,C_BAUDRATE=921600,C_DATA_BITS=8,C_USE_PARITY=0,C_ODD_PARITY=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF TAIGA_axi_uartlite_0_1_arch: ARCHITECTURE IS "TAIGA_axi_uartlite_0_1,axi_uartlite,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_uartlite,x_ipVersion=2.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ACLK_FREQ_HZ=142857132,C_S_AXI_ADDR_WIDTH=4,C_S_AXI_DATA_WIDTH=32,C_BAUDRATE=921600,C_DATA_BITS=8,C_USE_PARITY=0,C_ODD_PARITY=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 ACLK CLK";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 ARESETN RST";
@@ -156,7 +156,7 @@ BEGIN
   U0 : axi_uartlite
     GENERIC MAP (
       C_FAMILY => "zynq",
-      C_S_AXI_ACLK_FREQ_HZ => 200000000,
+      C_S_AXI_ACLK_FREQ_HZ => 142857132,
       C_S_AXI_ADDR_WIDTH => 4,
       C_S_AXI_DATA_WIDTH => 32,
       C_BAUDRATE => 921600,

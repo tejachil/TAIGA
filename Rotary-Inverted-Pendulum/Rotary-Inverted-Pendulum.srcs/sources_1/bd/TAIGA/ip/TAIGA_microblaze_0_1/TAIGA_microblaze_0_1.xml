@@ -35,7 +35,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>Clk frequency</spirit:displayName>
           <spirit:description>Clk frequency</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.CLK.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.CLK.FREQ_HZ">142857132</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
@@ -694,7 +694,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_DP.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_DP.FREQ_HZ">142857132</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
@@ -1101,11 +1101,53 @@
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.TDATA_NUM_BYTES">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.TUSER_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.TID_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.TDEST_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.HAS_TREADY">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.HAS_TSTRB">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.HAS_TKEEP">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.HAS_TLAST">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.FREQ_HZ">142857132</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M0_AXIS.CLK_DOMAIN">TAIGA_processing_system7_0_0_FCLK_CLK0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -1151,11 +1193,53 @@
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.TDATA_NUM_BYTES">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.TUSER_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.TID_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.TDEST_WIDTH">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.HAS_TREADY">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.HAS_TSTRB">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.HAS_TKEEP">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.HAS_TLAST">1</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.FREQ_HZ">142857132</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:format="string" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_AXIS.CLK_DOMAIN">TAIGA_processing_system7_0_0_FCLK_CLK0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -5064,7 +5148,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>96fba2b5</spirit:value>
+            <spirit:value>a5f43a70</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -5072,7 +5156,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>aa76284a</spirit:value>
+            <spirit:value>6ccde89c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -5080,7 +5164,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Jun 07 20:24:28 UTC 2015</spirit:value>
+            <spirit:value>Tue Jun 09 00:18:26 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -5098,7 +5182,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>96fba2b5</spirit:value>
+            <spirit:value>a5f43a70</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -5106,7 +5190,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>aa76284a</spirit:value>
+            <spirit:value>6ccde89c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -5114,7 +5198,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Jun 07 20:24:30 UTC 2015</spirit:value>
+            <spirit:value>Tue Jun 09 01:40:57 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -5133,7 +5217,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>96fba2b5</spirit:value>
+            <spirit:value>a5f43a70</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -5141,7 +5225,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>aa76284a</spirit:value>
+            <spirit:value>6ccde89c</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -5149,7 +5233,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Jun 07 20:24:30 UTC 2015</spirit:value>
+            <spirit:value>Tue Jun 09 01:40:57 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -8877,7 +8961,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -8901,7 +8985,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -8921,7 +9005,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -8944,7 +9028,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -10272,7 +10356,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -10299,7 +10383,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -10322,7 +10406,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -10342,7 +10426,7 @@
           <xilinx:portInfo>
             <xilinx:enablement>
               <xilinx:presence>optional</xilinx:presence>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_FSL_LINKS&apos;)) > 0">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -14656,7 +14740,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_FREQ</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FREQ">200000000</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FREQ">142857132</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_CONFIG_RESET</spirit:name>
@@ -14882,7 +14966,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_PCMP_INSTR</spirit:name>
         <spirit:displayName>Enable Pattern Comparator</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_PCMP_INSTR" spirit:choiceRef="choices_118">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_PCMP_INSTR" spirit:choiceRef="choices_118">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_BARREL</spirit:name>
@@ -14907,7 +14991,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_REORDER_INSTR</spirit:name>
         <spirit:displayName>Enable Reversed Load/Store and Swap Instructions</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_REORDER_INSTR" spirit:choiceRef="choices_123">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_REORDER_INSTR" spirit:choiceRef="choices_123">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_UNALIGNED_EXCEPTIONS</spirit:name>
@@ -14948,7 +15032,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_FSL_LINKS</spirit:name>
         <spirit:displayName>Number of Stream Links</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FSL_LINKS" spirit:minimum="0" spirit:maximum="16">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FSL_LINKS" spirit:minimum="0" spirit:maximum="16">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_EXTENDED_FSL_INSTR</spirit:name>
@@ -15022,7 +15106,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_MMU_DTLB_SIZE</spirit:name>
         <spirit:displayName>Data Shadow Translation Look-Aside Buffer Size</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMU_DTLB_SIZE" spirit:choiceRef="choices_136">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMU_DTLB_SIZE" spirit:choiceRef="choices_136">2</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -15035,7 +15119,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_MMU_ITLB_SIZE</spirit:name>
         <spirit:displayName>Instruction Shadow Translation Look-Aside Buffer Size</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMU_ITLB_SIZE" spirit:choiceRef="choices_137">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMU_ITLB_SIZE" spirit:choiceRef="choices_137">1</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -15061,7 +15145,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_MMU_ZONES</spirit:name>
         <spirit:displayName>Number of Memory Protection Zones</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMU_ZONES" spirit:minimum="0" spirit:maximum="16">16</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMU_ZONES" spirit:minimum="0" spirit:maximum="16">2</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -15100,7 +15184,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_BRANCH_TARGET_CACHE_SIZE</spirit:name>
         <spirit:displayName>Branch Target Cache Size</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE" spirit:choiceRef="choices_141">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE" spirit:choiceRef="choices_141">3</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -15343,7 +15427,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector(0 to 31)">
         <spirit:name>C_ICACHE_HIGHADDR</spirit:name>
         <spirit:displayName>High Address</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ICACHE_HIGHADDR" spirit:bitStringLength="32">0x3FFFFFFF</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ICACHE_HIGHADDR" spirit:bitStringLength="32">0x3fffffff</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_ICACHE</spirit:name>
@@ -15357,12 +15441,12 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ADDR_TAG_BITS</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ADDR_TAG_BITS" spirit:minimum="0" spirit:maximum="25">17</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ADDR_TAG_BITS" spirit:minimum="0" spirit:maximum="25">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_CACHE_BYTE_SIZE</spirit:name>
         <spirit:displayName>Size in Bytes</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CACHE_BYTE_SIZE" spirit:choiceRef="choices_155">8192</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CACHE_BYTE_SIZE" spirit:choiceRef="choices_155">4096</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ICACHE_LINE_LEN</spirit:name>
@@ -15534,7 +15618,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector(0 to 31)">
         <spirit:name>C_DCACHE_HIGHADDR</spirit:name>
         <spirit:displayName>High Address</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_HIGHADDR" spirit:bitStringLength="32">0x3FFFFFFF</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_HIGHADDR" spirit:bitStringLength="32">0x3fffffff</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_USE_DCACHE</spirit:name>
@@ -15548,12 +15632,12 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DCACHE_ADDR_TAG</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:minimum="0" spirit:maximum="25">17</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_ADDR_TAG" spirit:minimum="0" spirit:maximum="25">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DCACHE_BYTE_SIZE</spirit:name>
         <spirit:displayName>Size in Bytes</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_BYTE_SIZE" spirit:choiceRef="choices_164">8192</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DCACHE_BYTE_SIZE" spirit:choiceRef="choices_164">4096</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DCACHE_LINE_LEN</spirit:name>
@@ -16748,7 +16832,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_FREQ</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_FREQ" spirit:order="1130" spirit:configGroups="1 NoDisplay">200000000</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_FREQ" spirit:order="1130" spirit:configGroups="1 NoDisplay">142857132</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17176,7 +17260,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>G_TEMPLATE_LIST</spirit:name>
       <spirit:displayName>Select Configuration</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.G_TEMPLATE_LIST" spirit:choiceRef="choices_13" spirit:order="10" spirit:configGroups="9 GUI">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.G_TEMPLATE_LIST" spirit:choiceRef="choices_13" spirit:order="10" spirit:configGroups="9 GUI">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17215,7 +17299,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_USE_PCMP_INSTR</spirit:name>
       <spirit:displayName>Enable Pattern Comparator</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_PCMP_INSTR" spirit:choiceRef="choices_16" spirit:order="1050" spirit:configGroups="1 Instructions">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_PCMP_INSTR" spirit:choiceRef="choices_16" spirit:order="1050" spirit:configGroups="1 Instructions">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17228,7 +17312,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_USE_REORDER_INSTR</spirit:name>
       <spirit:displayName>Enable Reversed Load/Store and Swap Instructions</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_REORDER_INSTR" spirit:choiceRef="choices_17" spirit:order="1060" spirit:configGroups="1 Instructions">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_USE_REORDER_INSTR" spirit:choiceRef="choices_17" spirit:order="1060" spirit:configGroups="1 Instructions">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -17376,7 +17460,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17428,7 +17512,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17441,7 +17525,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17506,7 +17590,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17519,7 +17603,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17532,7 +17616,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17545,7 +17629,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17558,7 +17642,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17571,7 +17655,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -17643,7 +17727,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_FSL_LINKS</spirit:name>
       <spirit:displayName>Number of Stream Links</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_FSL_LINKS" spirit:order="8000" spirit:configGroups="8 NoDisplay" spirit:minimum="0" spirit:maximum="16">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_FSL_LINKS" spirit:order="8000" spirit:configGroups="8 NoDisplay" spirit:minimum="0" spirit:maximum="16">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -18442,7 +18526,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18455,7 +18539,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18481,7 +18565,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18502,12 +18586,12 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_CACHE_BYTE_SIZE</spirit:name>
       <spirit:displayName>Size in Bytes</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CACHE_BYTE_SIZE" spirit:choiceRef="choices_77" spirit:order="3010" spirit:configGroups="3 Instruction Cache Feature">8192</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CACHE_BYTE_SIZE" spirit:choiceRef="choices_77" spirit:order="3010" spirit:configGroups="3 Instruction Cache Feature">4096</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18520,7 +18604,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18533,7 +18617,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18546,7 +18630,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18559,7 +18643,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18572,7 +18656,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18585,7 +18669,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18694,7 +18778,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18707,7 +18791,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18733,7 +18817,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18754,12 +18838,12 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_DCACHE_BYTE_SIZE</spirit:name>
       <spirit:displayName>Size in Bytes</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_BYTE_SIZE" spirit:choiceRef="choices_86" spirit:order="3110" spirit:configGroups="3 Data Cache Feature">8192</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DCACHE_BYTE_SIZE" spirit:choiceRef="choices_86" spirit:order="3110" spirit:configGroups="3 Data Cache Feature">4096</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18772,7 +18856,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18785,7 +18869,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18798,7 +18882,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18811,7 +18895,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18824,7 +18908,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18837,7 +18921,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18966,12 +19050,12 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_MMU_DTLB_SIZE</spirit:name>
       <spirit:displayName>Data Shadow Translation Look-Aside Buffer Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MMU_DTLB_SIZE" spirit:choiceRef="choices_94" spirit:order="4100" spirit:configGroups="4 Memory Management Unit">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MMU_DTLB_SIZE" spirit:choiceRef="choices_94" spirit:order="4100" spirit:configGroups="4 Memory Management Unit">2</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18979,12 +19063,12 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_MMU_ITLB_SIZE</spirit:name>
       <spirit:displayName>Instruction Shadow Translation Look-Aside Buffer Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MMU_ITLB_SIZE" spirit:choiceRef="choices_95" spirit:order="4200" spirit:configGroups="4 Memory Management Unit">2</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MMU_ITLB_SIZE" spirit:choiceRef="choices_95" spirit:order="4200" spirit:configGroups="4 Memory Management Unit">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -18997,7 +19081,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -19005,12 +19089,12 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_MMU_ZONES</spirit:name>
       <spirit:displayName>Number of Memory Protection Zones</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MMU_ZONES" spirit:order="4400" spirit:configGroups="4 Memory Management Unit" spirit:minimum="0" spirit:maximum="16">16</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MMU_ZONES" spirit:order="4400" spirit:configGroups="4 Memory Management Unit" spirit:minimum="0" spirit:maximum="16">2</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -19023,7 +19107,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:parameterInfo>
           <xilinx:enablement>
             <xilinx:presence>optional</xilinx:presence>
-            <xilinx:isEnabled xilinx:resolve="dependent">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -19083,7 +19167,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_BRANCH_TARGET_CACHE_SIZE</spirit:name>
       <spirit:displayName>Branch Target Cache Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE" spirit:choiceRef="choices_102" spirit:order="1100" spirit:configGroups="1 Optimization">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE" spirit:choiceRef="choices_102" spirit:order="1100" spirit:configGroups="1 Optimization">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -19167,6 +19251,32 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_INTERRUPT" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_EXT_BRK" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_EXT_NM_BRK" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_CACHE_BYTE_SIZE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_DCACHE_BYTE_SIZE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_FSL_LINKS" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_MMU_DTLB_SIZE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_MMU_ITLB_SIZE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_MMU_ZONES" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_REORDER_INSTR" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.G_TEMPLATE_LIST" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.TDATA_NUM_BYTES" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.TUSER_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.TID_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.TDEST_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.HAS_TREADY" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.HAS_TSTRB" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.HAS_TKEEP" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.HAS_TLAST" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.TUSER_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.TID_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.TDEST_WIDTH" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TSTRB" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TKEEP" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M0_AXIS.FREQ_HZ" xilinx:valueSource="user_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.FREQ_HZ" xilinx:valueSource="user_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

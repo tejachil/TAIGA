@@ -399,3 +399,29 @@ java.lang.RuntimeException: No Target with ID 1 in the System
 23:14:24 INFO  : Processor reset is completed for IO_intermediary
 23:14:30 INFO  : Processor reset is completed for ps7_cortexa9_1
 23:22:30 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:02:42 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+22:02:43 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+22:02:43 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:02:43 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+22:02:44 INFO  : XSDB server has started successfully.
+22:02:45 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1433814989000,  Project:1433722354000
+22:02:45 INFO  : The hardware specification for project 'TAIGA_wrapper_hw_platform_0' is different from /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+22:02:45 INFO  : Copied contents of /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf into /TAIGA_wrapper_hw_platform_0/system.hdf.
+22:02:51 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:02:56 INFO  : 
+22:02:59 INFO  : 
+22:03:02 INFO  : 
+22:03:03 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+22:03:04 INFO  : Updating hardware inferred compiler options for app_ioi.
+22:03:05 INFO  : Updating hardware inferred compiler options for app_production_controller.
+22:03:05 INFO  : Clearing existing target manager status.
+22:03:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:06:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+22:06:39 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+22:10:07 INFO  : ps7_init is completed.
+22:10:07 INFO  : ps7_post_config is completed.
+22:10:08 INFO  : Processor reset is completed for IO_intermediary
+22:10:12 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:10:40 INFO  : Processor reset is completed for backup_controller
