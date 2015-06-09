@@ -198,19 +198,3 @@ if {$rc} {
   end_step route_design
 }
 
-start_step write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force TAIGA_wrapper.mmi }
-  catch { write_bmm -force TAIGA_wrapper_bd.bmm }
-  write_bitstream -force TAIGA_wrapper.bit 
-  catch { write_sysdef -hwdef TAIGA_wrapper.hwdef -bitfile TAIGA_wrapper.bit -meminfo TAIGA_wrapper.mmi -ltxfile debug_nets.ltx -file TAIGA_wrapper.sysdef }
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-}
-

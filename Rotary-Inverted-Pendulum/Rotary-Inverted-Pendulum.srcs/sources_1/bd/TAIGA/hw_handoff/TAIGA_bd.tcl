@@ -315,7 +315,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: IO_intermediary, and set properties
   set IO_intermediary [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 IO_intermediary ]
-  set_property -dict [ list CONFIG.C_BRANCH_TARGET_CACHE_SIZE {3} CONFIG.C_CACHE_BYTE_SIZE {4096} CONFIG.C_DCACHE_BYTE_SIZE {4096} CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_FSL_LINKS {1} CONFIG.C_I_LMB {1} CONFIG.C_MMU_DTLB_SIZE {2} CONFIG.C_MMU_ITLB_SIZE {1} CONFIG.C_MMU_ZONES {2} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DIV {1} CONFIG.C_USE_FPU {2} CONFIG.C_USE_HW_MUL {1} CONFIG.C_USE_MSR_INSTR {1} CONFIG.C_USE_PCMP_INSTR {0} CONFIG.C_USE_REORDER_INSTR {0} CONFIG.G_TEMPLATE_LIST {3}  ] $IO_intermediary
+  set_property -dict [ list CONFIG.C_BRANCH_TARGET_CACHE_SIZE {2} CONFIG.C_CACHE_BYTE_SIZE {4096} CONFIG.C_DCACHE_BYTE_SIZE {4096} CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_FSL_LINKS {1} CONFIG.C_I_LMB {1} CONFIG.C_MMU_DTLB_SIZE {2} CONFIG.C_MMU_ITLB_SIZE {1} CONFIG.C_MMU_ZONES {2} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DIV {0} CONFIG.C_USE_FPU {2} CONFIG.C_USE_HW_MUL {0} CONFIG.C_USE_MSR_INSTR {0} CONFIG.C_USE_PCMP_INSTR {0} CONFIG.C_USE_REORDER_INSTR {0} CONFIG.G_TEMPLATE_LIST {3}  ] $IO_intermediary
 
   # Create instance: IO_intermediary_local_memory
   create_hier_cell_IO_intermediary_local_memory [current_bd_instance .] IO_intermediary_local_memory
@@ -393,16 +393,16 @@ proc create_root_design { parentCell } {
 
   # Create instance: backup_controller, and set properties
   set backup_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 backup_controller ]
-  set_property -dict [ list CONFIG.C_BRANCH_TARGET_CACHE_SIZE {3} \
+  set_property -dict [ list CONFIG.C_BRANCH_TARGET_CACHE_SIZE {2} \
 CONFIG.C_CACHE_BYTE_SIZE {4096} CONFIG.C_DCACHE_BYTE_SIZE {4096} \
 CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} \
 CONFIG.C_D_LMB {1} CONFIG.C_FSL_LINKS {1} \
 CONFIG.C_I_LMB {1} CONFIG.C_MMU_DTLB_SIZE {2} \
 CONFIG.C_MMU_ITLB_SIZE {1} CONFIG.C_MMU_ZONES {2} \
 CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DCACHE {0} \
-CONFIG.C_USE_DIV {1} CONFIG.C_USE_FPU {2} \
-CONFIG.C_USE_HW_MUL {1} CONFIG.C_USE_ICACHE {0} \
-CONFIG.C_USE_MSR_INSTR {1} CONFIG.C_USE_PCMP_INSTR {0} \
+CONFIG.C_USE_DIV {0} CONFIG.C_USE_FPU {2} \
+CONFIG.C_USE_HW_MUL {0} CONFIG.C_USE_ICACHE {0} \
+CONFIG.C_USE_MSR_INSTR {0} CONFIG.C_USE_PCMP_INSTR {0} \
 CONFIG.C_USE_REORDER_INSTR {0} CONFIG.G_TEMPLATE_LIST {3} \
  ] $backup_controller
 
@@ -431,7 +431,7 @@ CONFIG.C_USE_REORDER_INSTR {0} CONFIG.G_TEMPLATE_LIST {3} \
 
   # Create instance: production_controller, and set properties
   set production_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 production_controller ]
-  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {150.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/ZYBO_zynq_def-TAIGA.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 12 .. 13}  ] $production_controller
+  set_property -dict [ list CONFIG.PCW_FCLK0_PERIPHERAL_CLKSRC {DDR PLL} CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {150} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/ZYBO_zynq_def-TAIGA.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 12 .. 13}  ] $production_controller
 
   # Create instance: rst_production_controller_200M, and set properties
   set rst_production_controller_200M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_production_controller_200M ]
