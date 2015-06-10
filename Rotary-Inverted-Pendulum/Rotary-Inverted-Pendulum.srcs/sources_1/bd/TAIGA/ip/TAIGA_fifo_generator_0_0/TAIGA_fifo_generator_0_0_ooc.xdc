@@ -52,7 +52,7 @@
 # #########################################################
 
 
-create_clock -period 7 -name s_aclk [get_ports s_aclk]
+create_clock -period 6.923 -name s_aclk [get_ports s_aclk]
 set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports s_aclk]
 
 
