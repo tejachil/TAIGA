@@ -1,0 +1,35 @@
+/*
+ * adversary.c
+ *
+ *  Created on: Jun 10, 2015
+ *      Author: teja
+ */
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "timers.h"
+#include "projdefs.h"
+#include "semphr.h"
+#include "production_controller.h"
+#include "utilities/axi_gpio.h"
+
+static void adversaryTask(void * param);
+
+typedef enum {DEBUG1=0x1, DEBUG2=0x2, DEBUG3=0x4, DEBUG4=0x8} debug;
+
+void startAdversaryTask(){
+	xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, (xTaskHandle *) NULL);
+}
+
+static void adversaryTask(void * param){
+	bool DoS_executed = false;
+
+	for(;;){
+		if(!DoS_executed && cycleCounter >= 10000){
+			DoS_executed = true;
+			xTimerStop(ProductionControlTimer, 0);
+		}
+		taskYIELD();
+	}
+}

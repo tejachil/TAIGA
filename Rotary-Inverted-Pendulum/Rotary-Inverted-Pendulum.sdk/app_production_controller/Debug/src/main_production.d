@@ -17,7 +17,8 @@ src/main_production.o src/main_production.d: ../src/main_production.c \
  ../src/production_controller.h ../src/utilities/axi_gpio.h \
  ../../bsp_production_freertos/ps7_cortexa9_1/include/xparameters.h \
  ../src/utilities/fifo_queue.h \
- /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes/taiga_rip_parameters.h
+ /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes/taiga_rip_parameters.h \
+ ../src/adversary.h
 
 ../../bsp_production_freertos/ps7_cortexa9_1/include/FreeRTOS.h:
 
@@ -58,3 +59,5 @@ src/main_production.o src/main_production.d: ../src/main_production.c \
 ../src/utilities/fifo_queue.h:
 
 /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes/taiga_rip_parameters.h:
+
+../src/adversary.h:

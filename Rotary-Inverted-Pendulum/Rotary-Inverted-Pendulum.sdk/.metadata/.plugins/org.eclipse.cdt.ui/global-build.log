@@ -6494,3 +6494,2108 @@ make: Nothing to be done for `all'.
 17:09:04 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
 make: Nothing to be done for `all'.
+17:25:03 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/main_production.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_production.o" -MMD -MP -MF"src/main_production.d" -MT"src/main_production.d" -o "src/main_production.o" "../src/main_production.c"
+Finished building: ../src/main_production.c
+ 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:38:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74288	   3144	  23340	 100772	  189a4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:25:08 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:38:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74288	   3144	  23340	 100772	  189a4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:25:09 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:25:09 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:25:09 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:25:23 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:25:24 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:25:24 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:25:37 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:25:38 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:25:38 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:30:50 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:31:37 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74288	   3144	  23324	 100756	  18994	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:31:52 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/main_production.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_production.o" -MMD -MP -MF"src/main_production.d" -MT"src/main_production.d" -o "src/main_production.o" "../src/main_production.c"
+Finished building: ../src/main_production.c
+ 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74288	   3144	  23340	 100772	  189a4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:32:26 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:32:27 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:32:27 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:32:27 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:32:41 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:32:58 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:33:05 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:35:36 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:35:39 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:35:44 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:36:26 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:8:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * params);
+             ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:36:29 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:8:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74352	   3144	  23340	 100836	  189e4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:37:19 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:16:2: error: 'x' undeclared (first use in this function)
+  x
+  ^
+../src/adversary.c:16:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:17:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:13:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:37:31 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:17:2: error: 'x' undeclared (first use in this function)
+  x
+  ^
+../src/adversary.c:17:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:18:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:14:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:37:38 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:13:2: error: invalid preprocessing directive #incldue
+ #incldue "semphr.h"
+  ^
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:18:2: error: 'x' undeclared (first use in this function)
+  x
+  ^
+../src/adversary.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:19:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:37:42 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:37:42 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:37:42 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:13:2: error: invalid preprocessing directive #incldue
+ #incldue "semphr.h"
+  ^
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:18:2: error: 'x' undeclared (first use in this function)
+  x
+  ^
+../src/adversary.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:19:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:37:48 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:18:2: error: 'x' undeclared (first use in this function)
+  x
+  ^
+../src/adversary.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:19:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:39:13 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:18:92: error: macro "xTaskCreate" requires 6 arguments, but only 4 given
+  xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL)
+                                                                                            ^
+../src/adversary.c:18:2: error: 'xTaskCreate' undeclared (first use in this function)
+  xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL)
+  ^
+../src/adversary.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:19:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:39:24 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:18:110: error: macro "xTaskCreate" requires 6 arguments, but only 5 given
+  xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY)
+                                                                                                              ^
+../src/adversary.c:18:2: error: 'xTaskCreate' undeclared (first use in this function)
+  xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY)
+  ^
+../src/adversary.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:19:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' declared 'static' but never defined [-Wunused-function]
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:39:26 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+In file included from ../src/adversary.c:9:0:
+../src/adversary.c: In function 'startAdversaryTask':
+../../bsp_production_freertos/ps7_cortexa9_1/include/task.h:270:214: error: expected expression before ')' token
+ #define xTaskCreate( pvTaskCode, pcName, usStackDepth, pvParameters, uxPriority, pxCreatedTask ) xTaskGenericCreate( ( pvTaskCode ), ( pcName ), ( usStackDepth ), ( pvParameters ), ( uxPriority ), ( pxCreatedTask ), ( NULL ), ( NULL ) )
+                                                                                                                                                                                                                      ^
+../src/adversary.c:18:2: note: in expansion of macro 'xTaskCreate'
+  xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, )
+  ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' used but never defined
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:39:45 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'startAdversaryTask':
+../src/adversary.c:19:1: error: expected ';' before '}' token
+ }
+ ^
+../src/adversary.c: At top level:
+../src/adversary.c:15:13: warning: 'adversaryTask' used but never defined
+ static void adversaryTask(void * param);
+             ^
+make: *** [src/adversary.o] Error 1
+17:39:48 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:15:13: warning: 'adversaryTask' used but never defined
+ static void adversaryTask(void * param);
+             ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/adversary.o: In function `startAdversaryTask':
+/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/app_production_controller/Debug/../src/adversary.c:18: undefined reference to `adversaryTask'
+/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/app_production_controller/Debug/../src/adversary.c:18: undefined reference to `adversaryTask'
+collect2: error: ld returned 1 exit status
+make: *** [app_production_controller.elf] Error 1
+17:39:49 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:39:50 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:39:50 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/adversary.o: In function `startAdversaryTask':
+/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/app_production_controller/Debug/../src/adversary.c:18: undefined reference to `adversaryTask'
+/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/app_production_controller/Debug/../src/adversary.c:18: undefined reference to `adversaryTask'
+collect2: error: ld returned 1 exit status
+make: *** [app_production_controller.elf] Error 1
+17:40:01 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74432	   3144	  23340	 100916	  18a34	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:41:19 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74432	   3144	  23340	 100916	  18a34	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:41:20 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:41:20 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:41:20 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:41:42 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/main_production.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_production.o" -MMD -MP -MF"src/main_production.d" -MT"src/main_production.d" -o "src/main_production.o" "../src/main_production.c"
+Finished building: ../src/main_production.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74432	   3144	  23340	 100916	  18a34	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:41:42 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:41:43 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:41:43 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:41:55 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/main_production.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_production.o" -MMD -MP -MF"src/main_production.d" -MT"src/main_production.d" -o "src/main_production.o" "../src/main_production.c"
+Finished building: ../src/main_production.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74432	   3144	  23340	 100916	  18a34	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:41:55 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:41:56 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:41:56 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:42:59 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:42:59 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:42:59 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:43:59 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:23:6: error: 'cycleCounter' undeclared (first use in this function)
+   if(cycleCounter == 10000)
+      ^
+../src/adversary.c:23:6: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/adversary.o] Error 1
+17:44:37 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:23:6: error: 'cycleCounter' undeclared (first use in this function)
+   if(cycleCounter == 10000) xTimerStop(ProductionControlTimer, 0);
+      ^
+../src/adversary.c:23:6: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/adversary.c:11:0:
+../src/adversary.c:23:40: error: 'ProductionControlTimer' undeclared (first use in this function)
+   if(cycleCounter == 10000) xTimerStop(ProductionControlTimer, 0);
+                                        ^
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:382:66: note: in definition of macro 'xTimerStop'
+ #define xTimerStop( xTimer, xBlockTime ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP, 0U, NULL, ( xBlockTime ) )
+                                                                  ^
+make: *** [src/adversary.o] Error 1
+17:44:37 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:44:38 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:44:38 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:23:6: error: 'cycleCounter' undeclared (first use in this function)
+   if(cycleCounter == 10000) xTimerStop(ProductionControlTimer, 0);
+      ^
+../src/adversary.c:23:6: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/adversary.c:11:0:
+../src/adversary.c:23:40: error: 'ProductionControlTimer' undeclared (first use in this function)
+   if(cycleCounter == 10000) xTimerStop(ProductionControlTimer, 0);
+                                        ^
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:382:66: note: in definition of macro 'xTimerStop'
+ #define xTimerStop( xTimer, xBlockTime ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP, 0U, NULL, ( xBlockTime ) )
+                                                                  ^
+make: *** [src/adversary.o] Error 1
+17:44:47 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74496	   3144	  23340	 100980	  18a74	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:44:47 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:44:47 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:44:48 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:45:01 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:23:2: error: 'bool' undeclared (first use in this function)
+  bool
+  ^
+../src/adversary.c:23:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:25:2: error: expected ';' before 'for'
+  for(;;){
+  ^
+make: *** [src/adversary.o] Error 1
+17:45:16 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:26:2: error: expected identifier or '(' before 'for'
+  for(;;){
+  ^
+../src/adversary.c:26:8: error: expected statement before ')' token
+  for(;;){
+        ^
+make: *** [src/adversary.o] Error 1
+17:45:17 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:45:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:45:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:26:2: error: expected identifier or '(' before 'for'
+  for(;;){
+  ^
+../src/adversary.c:26:8: error: expected statement before ')' token
+  for(;;){
+        ^
+make: *** [src/adversary.o] Error 1
+17:45:35 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:24:7: warning: unused variable 'DoS_executed' [-Wunused-variable]
+  bool DoS_executed = false;
+       ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74496	   3144	  23340	 100980	  18a74	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:45:45 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:45:48 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:45:59 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:46:00 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:46:00 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:46:00 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:46:05 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:46:05 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:46:06 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:47:10 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:47:28 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:19:63: error: conflicting types for 'debug'
+ typedef enum {DEBUG1=0x1, DEBUG2=0x2, DEBUG3=0x4, DEBUG4=0x8} debug;
+                                                               ^
+In file included from ../src/adversary.c:15:0:
+../src/utilities/axi_gpio.h:19:39: note: previous declaration of 'debug' was here
+ typedef enum {DEBUG7=0x1, DEBUG8=0x2} debug;
+                                       ^
+make: *** [src/adversary.o] Error 1
+17:47:30 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:47:30 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:47:30 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:19:63: error: conflicting types for 'debug'
+ typedef enum {DEBUG1=0x1, DEBUG2=0x2, DEBUG3=0x4, DEBUG4=0x8} debug;
+                                                               ^
+In file included from ../src/adversary.c:15:0:
+../src/utilities/axi_gpio.h:19:39: note: previous declaration of 'debug' was here
+ typedef enum {DEBUG7=0x1, DEBUG8=0x2} debug;
+                                       ^
+make: *** [src/adversary.o] Error 1
+17:47:41 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:47:49 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:48:28 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:48:59 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:29:7: error: 'DoS_executed' undeclared (first use in this function)
+   if(!DoS_executed && cycleCounter >= 10000){
+       ^
+../src/adversary.c:29:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:26:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+make: *** [src/adversary.o] Error 1
+17:49:05 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:29:23: warning: comparison between pointer and integer
+   if( && cycleCounter >= 10000){
+                       ^
+../src/adversary.c:30:4: error: 'DoS_executed' undeclared (first use in this function)
+    DoS_executed = true;
+    ^
+../src/adversary.c:30:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:29:3: error: label 'cycleCounter' used but not defined
+   if( && cycleCounter >= 10000){
+   ^
+../src/adversary.c:26:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+make: *** [src/adversary.o] Error 1
+17:49:23 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:29:23: warning: comparison between pointer and integer
+   if( && cycleCounter >= 10000){
+                       ^
+../src/adversary.c:29:3: error: label 'cycleCounter' used but not defined
+   if( && cycleCounter >= 10000){
+   ^
+make: *** [src/adversary.o] Error 1
+17:49:31 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:29:23: warning: comparison between pointer and integer
+   if( && cycleCounter >= 10000){
+                       ^
+../src/adversary.c:29:3: error: label 'cycleCounter' used but not defined
+   if( && cycleCounter >= 10000){
+   ^
+make: *** [src/adversary.o] Error 1
+17:49:53 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:49:54 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:49:54 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:49:54 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:50:04 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:50:23 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:50:29 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:50:48 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:50:49 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:50:49 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:50:49 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:50:57 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:50:58 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:50:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:51:04 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:51:04 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:51:05 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:51:47 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:26:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74432	   3144	  23340	 100916	  18a34	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:52:32 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:26:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74432	   3144	  23340	 100916	  18a34	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:52:42 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:39:5: error: expected expression before '/' token
+   }*/
+     ^
+make: *** [src/adversary.o] Error 1
+17:53:10 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:40:5: error: expected expression before '/' token
+   }*/
+     ^
+make: *** [src/adversary.o] Error 1
+17:53:16 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:55:19 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:50:2: warning: implicit declaration of function 'readEncoder' [-Wimplicit-function-declaration]
+  readEncoder(SS_ENCODER_S);
+  ^
+../src/adversary.c:50:14: error: 'SS_ENCODER_S' undeclared (first use in this function)
+  readEncoder(SS_ENCODER_S);
+              ^
+../src/adversary.c:50:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:51:14: error: 'SS_ENCODER_P' undeclared (first use in this function)
+  readEncoder(SS_ENCODER_P);
+              ^
+../src/adversary.c:53:2: warning: implicit declaration of function 'writeDAC' [-Wimplicit-function-declaration]
+  writeDAC();
+  ^
+../src/adversary.c:47:15: warning: unused variable 'voltage' [-Wunused-variable]
+  static float voltage = 0;
+               ^
+make: *** [src/adversary.o] Error 1
+17:55:42 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c:21:48: error: redeclaration of enumerator 'SET_POINT'
+ typedef enum {NONE = 0, DoS=0x1, LIVELOCK=0x2, SET_POINT=0x4, VOLT_SWEET=0x8, COVERT=0x16} attack_menu;
+                                                ^
+In file included from ../src/utilities/fifo_queue.h:12:0,
+                 from ../src/pendulum_control.h:11,
+                 from ../src/adversary.c:16:
+/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes/taiga_rip_parameters.h:13:22: note: previous definition of 'SET_POINT' was here
+ typedef enum {PLANT, SET_POINT, STATE_VECTOR} command_type;
+                      ^
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:54:2: error: too few arguments to function 'writeDAC'
+  writeDAC();
+  ^
+In file included from ../src/adversary.c:16:0:
+../src/pendulum_control.h:19:5: note: declared here
+ int writeDAC(float voltage);
+     ^
+../src/adversary.c:48:15: warning: unused variable 'voltage' [-Wunused-variable]
+  static float voltage = 0;
+               ^
+make: *** [src/adversary.o] Error 1
+17:55:54 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:54:2: error: too few arguments to function 'writeDAC'
+  writeDAC();
+  ^
+In file included from ../src/adversary.c:16:0:
+../src/pendulum_control.h:19:5: note: declared here
+ int writeDAC(float voltage);
+     ^
+../src/adversary.c:48:15: warning: unused variable 'voltage' [-Wunused-variable]
+  static float voltage = 0;
+               ^
+make: *** [src/adversary.o] Error 1
+17:56:04 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:54:2: error: too few arguments to function 'writeDAC'
+  writeDAC();
+  ^
+In file included from ../src/adversary.c:16:0:
+../src/pendulum_control.h:19:5: note: declared here
+ int writeDAC(float voltage);
+     ^
+../src/adversary.c:48:15: warning: unused variable 'voltage' [-Wunused-variable]
+  static float voltage = 0;
+               ^
+make: *** [src/adversary.o] Error 1
+17:56:09 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:54:2: error: too few arguments to function 'writeDAC'
+  writeDAC();
+  ^
+In file included from ../src/adversary.c:16:0:
+../src/pendulum_control.h:19:5: note: declared here
+ int writeDAC(float voltage);
+     ^
+../src/adversary.c:48:15: warning: unused variable 'voltage' [-Wunused-variable]
+  static float voltage = 0;
+               ^
+make: *** [src/adversary.o] Error 1
+17:56:13 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:54:2: error: too few arguments to function 'writeDAC'
+  writeDAC();
+  ^
+In file included from ../src/adversary.c:16:0:
+../src/pendulum_control.h:19:5: note: declared here
+ int writeDAC(float voltage);
+     ^
+../src/adversary.c:48:15: warning: unused variable 'voltage' [-Wunused-variable]
+  static float voltage = 0;
+               ^
+make: *** [src/adversary.o] Error 1
+17:56:18 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74624	   3144	  23340	 101108	  18af4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:56:29 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74624	   3144	  23340	 101108	  18af4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:56:33 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74624	   3144	  23340	 101108	  18af4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:57:26 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74560	   3144	  23340	 101044	  18ab4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:57:36 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74552	   3144	  23340	 101036	  18aac	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:57:43 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74552	   3144	  23340	 101036	  18aac	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:57:44 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:57:44 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:57:44 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:58:03 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74624	   3144	  23340	 101108	  18af4	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:58:11 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:40:4: error: unknown type name 'XTimerHandle'
+    XTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+    ^
+../src/adversary.c:40:130: error: 'production_control_timer' undeclared (first use in this function)
+    XTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+                                                                                                                                  ^
+../src/adversary.c:40:130: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/adversary.c:11:0:
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:340:43: warning: passing argument 1 of 'xTimerGenericCommand' makes pointer from integer without a cast
+ #define xTimerStart( xTimer, xBlockTime ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xBlockTime ) )
+                                           ^
+../src/adversary.c:41:4: note: in expansion of macro 'xTimerStart'
+    xTimerStart(ProductionControlTimer, 0);
+    ^
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:932:15: note: expected 'xTimerHandle' but argument is of type 'int'
+ portBASE_TYPE xTimerGenericCommand( xTimerHandle xTimer, portBASE_TYPE xCommandID, portTickType xOptionalValue, portBASE_TYPE *pxHigherPriorityTaskWoken, portTickType xBlockTime ) PRIVILEGED_FUNCTION;
+               ^
+make: *** [src/adversary.o] Error 1
+17:58:21 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:40:4: error: unknown type name 'XTimerHandle'
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+    ^
+../src/adversary.c:40:125: error: 'production_control_timer' undeclared (first use in this function)
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+                                                                                                                             ^
+../src/adversary.c:40:125: note: each undeclared identifier is reported only once for each function it appears in
+../src/adversary.c:40:17: warning: unused variable 'voltageSweepTimer' [-Wunused-variable]
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+                 ^
+make: *** [src/adversary.o] Error 1
+17:58:23 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:40:4: error: unknown type name 'XTimerHandle'
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+    ^
+../src/adversary.c:40:125: error: 'production_control_timer' undeclared (first use in this function)
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+                                                                                                                             ^
+../src/adversary.c:40:125: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/adversary.c:11:0:
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:340:43: warning: passing argument 1 of 'xTimerGenericCommand' makes pointer from integer without a cast
+ #define xTimerStart( xTimer, xBlockTime ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xBlockTime ) )
+                                           ^
+../src/adversary.c:41:4: note: in expansion of macro 'xTimerStart'
+    xTimerStart(voltageSweepTimer, 0);
+    ^
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:932:15: note: expected 'xTimerHandle' but argument is of type 'int'
+ portBASE_TYPE xTimerGenericCommand( xTimerHandle xTimer, portBASE_TYPE xCommandID, portTickType xOptionalValue, portBASE_TYPE *pxHigherPriorityTaskWoken, portTickType xBlockTime ) PRIVILEGED_FUNCTION;
+               ^
+make: *** [src/adversary.o] Error 1
+17:58:28 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:40:4: error: unknown type name 'XTimerHandle'
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Voltage Sweep Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+    ^
+../src/adversary.c:40:117: error: 'production_control_timer' undeclared (first use in this function)
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Voltage Sweep Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+                                                                                                                     ^
+../src/adversary.c:40:117: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/adversary.c:11:0:
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:340:43: warning: passing argument 1 of 'xTimerGenericCommand' makes pointer from integer without a cast
+ #define xTimerStart( xTimer, xBlockTime ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xBlockTime ) )
+                                           ^
+../src/adversary.c:41:4: note: in expansion of macro 'xTimerStart'
+    xTimerStart(voltageSweepTimer, 0);
+    ^
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:932:15: note: expected 'xTimerHandle' but argument is of type 'int'
+ portBASE_TYPE xTimerGenericCommand( xTimerHandle xTimer, portBASE_TYPE xCommandID, portTickType xOptionalValue, portBASE_TYPE *pxHigherPriorityTaskWoken, portTickType xBlockTime ) PRIVILEGED_FUNCTION;
+               ^
+make: *** [src/adversary.o] Error 1
+17:58:33 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:40:4: error: unknown type name 'XTimerHandle'
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Voltage Sweep Timer",1,pdTRUE,(void *) NULL, voltSweep_timer);
+    ^
+../src/adversary.c:40:37: warning: initialization makes integer from pointer without a cast
+    XTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Voltage Sweep Timer",1,pdTRUE,(void *) NULL, voltSweep_timer);
+                                     ^
+In file included from ../src/adversary.c:11:0:
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:340:43: warning: passing argument 1 of 'xTimerGenericCommand' makes pointer from integer without a cast
+ #define xTimerStart( xTimer, xBlockTime ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xBlockTime ) )
+                                           ^
+../src/adversary.c:41:4: note: in expansion of macro 'xTimerStart'
+    xTimerStart(voltageSweepTimer, 0);
+    ^
+../../bsp_production_freertos/ps7_cortexa9_1/include/timers.h:932:15: note: expected 'xTimerHandle' but argument is of type 'int'
+ portBASE_TYPE xTimerGenericCommand( xTimerHandle xTimer, portBASE_TYPE xCommandID, portTickType xOptionalValue, portBASE_TYPE *pxHigherPriorityTaskWoken, portTickType xBlockTime ) PRIVILEGED_FUNCTION;
+               ^
+make: *** [src/adversary.o] Error 1
+17:58:48 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74704	   3144	  23340	 101188	  18b44	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+17:58:51 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:58:51 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+17:58:51 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+17:58:56 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74704	   3144	  23340	 101188	  18b44	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:00:03 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:60:1: error: expected expression before '}' token
+ }
+ ^
+../src/adversary.c:51:14: warning: unused variable 'positive' [-Wunused-variable]
+  static bool positive = true;
+              ^
+make: *** [src/adversary.o] Error 1
+18:00:37 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:61:1: error: expected expression before '}' token
+ }
+ ^
+make: *** [src/adversary.o] Error 1
+18:00:44 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'voltSweep_timer':
+../src/adversary.c:61:1: error: expected expression before '}' token
+ }
+ ^
+make: *** [src/adversary.o] Error 1
+18:01:01 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74896	   3152	  23340	 101388	  18c0c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:01:14 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74896	   3152	  23340	 101388	  18c0c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:01:15 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:01:15 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:01:15 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:01:25 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:01:25 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:01:26 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:01:29 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:01:30 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:01:30 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:02:49 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74896	   3152	  23340	 101388	  18c0c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:03:33 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74896	   3152	  23340	 101388	  18c0c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:03:35 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:03:35 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:03:35 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:03:44 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74896	   3152	  23340	 101388	  18c0c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:03:45 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:03:46 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:03:46 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:04:06 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74896	   3152	  23340	 101388	  18c0c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:04:09 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74960	   3152	  23340	 101452	  18c4c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:04:12 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74960	   3152	  23340	 101452	  18c4c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:04:13 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:04:13 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:04:13 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:04:25 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:04:25 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:04:26 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:22:27 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74832	   3152	  23340	 101324	  18bcc	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:22:28 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:22:28 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:22:28 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:29:53 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:29:53 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:29:54 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:30:27 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:28:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:30:32 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:30:49 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:30:53 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:30:53 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:30:54 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:30:54 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:34:09 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:34:09 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:34:10 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:34:33 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:34:33 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:34:34 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:34:44 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:34:44 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:34:44 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:36:03 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:36:03 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:36:04 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:36:11 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:36:11 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:36:11 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:36:13 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:36:14 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:36:14 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:38:09 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+18:38:25 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:38:25 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:38:26 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:38:34 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:38:35 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:38:35 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:38:38 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:38:38 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:38:39 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:41:19 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:41:19 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:41:20 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:41:27 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:41:27 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:41:27 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:41:30 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+18:41:30 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+18:41:31 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.

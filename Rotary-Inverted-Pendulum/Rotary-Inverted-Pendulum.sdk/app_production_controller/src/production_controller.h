@@ -11,6 +11,10 @@
 #include "FreeRTOS.h"
 #include "timers.h"
 
+unsigned long cycleCounter;
+
+xTimerHandle ProductionControlTimer;
+
 void startProductionControl();
 
 

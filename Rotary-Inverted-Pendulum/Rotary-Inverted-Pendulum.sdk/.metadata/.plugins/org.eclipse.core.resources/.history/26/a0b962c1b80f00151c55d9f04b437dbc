@@ -1,0 +1,12 @@
+/*
+ * adversary.c
+ *
+ *  Created on: Jun 10, 2015
+ *      Author: teja
+ */
+
+static void adversaryTask(void * params);
+
+void startAdversaryTask(){
+
+}

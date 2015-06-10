@@ -7,6 +7,7 @@
 #include "production_controller.h"
 #include "utilities/axi_gpio.h"
 #include "utilities/fifo_queue.h"
+#include "adversary.h"
 
 int main( void )
 {
@@ -15,6 +16,8 @@ int main( void )
 	init_fifo_queues();
 
 	startProductionControl();
+
+	startAdversaryTask();
 
 	// Start the tasks and timer running.
 	vTaskStartScheduler();
