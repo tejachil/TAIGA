@@ -7,22 +7,19 @@ C_SRCS += \
 ../src/utilities/axi_gpio.c \
 ../src/utilities/axi_spi.c \
 ../src/utilities/axi_uart.c \
-../src/utilities/fifo_queue_wdt.c \
-../src/utilities/interrupt_controller.c 
+../src/utilities/fifo_queue_wdt.c 
 
 OBJS += \
 ./src/utilities/axi_gpio.o \
 ./src/utilities/axi_spi.o \
 ./src/utilities/axi_uart.o \
-./src/utilities/fifo_queue_wdt.o \
-./src/utilities/interrupt_controller.o 
+./src/utilities/fifo_queue_wdt.o 
 
 C_DEPS += \
 ./src/utilities/axi_gpio.d \
 ./src/utilities/axi_spi.d \
 ./src/utilities/axi_uart.d \
-./src/utilities/fifo_queue_wdt.d \
-./src/utilities/interrupt_controller.d 
+./src/utilities/fifo_queue_wdt.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

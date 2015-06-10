@@ -39,6 +39,7 @@ void startProductionControl(){
 }
 
 void production_control_timer(xTimerHandle pxTimer){
+	set_debug(DEBUG8, true);
 	set_led(LED3, true);
 
 	set_debug(DEBUG7, true);
@@ -63,13 +64,11 @@ void production_control_timer(xTimerHandle pxTimer){
 	set_debug(DEBUG7, true);
 	writeDAC(plantParams.u);
 	set_debug(DEBUG7, false);
-	static bool state = true;
-	set_debug(DEBUG8, state);
-	state = !state;
 
 	++plantParams.cycle_count;
 
 	set_led(LED3, false);
+	set_debug(DEBUG8, false);
 }
 
 

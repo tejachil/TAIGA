@@ -74,6 +74,7 @@ int startBackupControl(){
 }
 
 void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
+	set_debug(DEBUG6, true);
 	set_led(LED2, true);
 
 	plantParams.theta_des = 0*pi/180;
@@ -94,6 +95,7 @@ void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 	++plantParams.cycle_count;
 
 	set_led(LED2, false);
+	set_debug(DEBUG6, false);
 }
 
 

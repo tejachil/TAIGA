@@ -73,8 +73,8 @@ int writeDAC(float voltage){
     short hex;
 
     // Clip voltage to 10 volts
-    if(voltage > 10)	voltage = 10;
-    else if(voltage < -10)	voltage = -10;
+    //if(voltage > 10)	voltage = 10;
+    //else if(voltage < -10)	voltage = -10;
 
     // scale voltage from -10V --- +10V to 0V --- +3.3V
     voltage /= 6.0; // gain of op amp
