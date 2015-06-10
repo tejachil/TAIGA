@@ -37,7 +37,7 @@ int startBackupControl(){
 	// Initialize xpre and xhat
 	getStateInformation(plantParams.xpre);
 
-	backup_control_timer(NULL, 0);	// Execute first before starting timer
+	backup_control_timer(NULL, 0);
 
 	int Status;
 
