@@ -598,3 +598,47 @@ java.lang.RuntimeException: No Target with ID 1 in the System
 18:57:49 INFO  : Processor reset is completed for ps7_cortexa9_1
 18:57:52 INFO  : Processor reset is completed for backup_controller
 19:05:18 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:20:03 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+20:20:03 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+20:20:03 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+20:20:04 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+20:20:04 INFO  : XSDB server has started successfully.
+20:21:24 INFO  : Processor reset is completed for IO_intermediary
+20:21:31 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:22:18 INFO  : Processor reset is completed for ps7_cortexa9_1
+21:19:02 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:25:45 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+22:25:45 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+22:25:46 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:25:46 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+22:25:47 INFO  : XSDB server has started successfully.
+22:35:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:35:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+22:35:58 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+22:38:41 INFO  : ps7_init is completed.
+22:38:41 INFO  : ps7_post_config is completed.
+22:38:42 INFO  : Processor reset is completed for IO_intermediary
+22:38:47 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:58:04 INFO  : Processor reset is completed for backup_controller
+06:24:48 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:14:50 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+19:14:51 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+19:14:51 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+19:14:51 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+19:14:52 INFO  : XSDB server has started successfully.
+19:15:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:15:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+19:15:58 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+19:21:08 INFO  : ps7_init is completed.
+19:21:08 INFO  : ps7_post_config is completed.
+19:21:09 INFO  : Processor reset is completed for IO_intermediary
+19:21:14 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:21:18 INFO  : Processor reset is completed for backup_controller
+19:24:56 INFO  : Processor reset is completed for IO_intermediary
+19:25:11 INFO  : Processor reset is completed for IO_intermediary
+19:25:15 INFO  : Processor reset is completed for ps7_cortexa9_1
+19:25:19 INFO  : Processor reset is completed for backup_controller
+21:24:37 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

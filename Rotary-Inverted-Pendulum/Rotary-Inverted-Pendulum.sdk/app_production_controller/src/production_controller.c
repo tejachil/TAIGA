@@ -41,27 +41,25 @@ void production_control_timer(xTimerHandle pxTimer){
 	set_debug(DEBUG8, true);
 	set_led(LED3, true);
 
-
+	set_debug(DEBUG7, true);
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;
-
+	set_debug(DEBUG7, false);
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
-
+	set_debug(DEBUG7, true);
 	plantParams.encoder_alpha= 4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
-
+	set_debug(DEBUG7, false);
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
-		//xil_printf("S %d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
 	}
 	else {
-		//xil_printf("%d %d\n", plantParams.encoder_theta, plantParams.encoder_alpha);
 		plantParams.u = 0;
 	}
-
+	set_debug(DEBUG7, true);
 	writeDAC(plantParams.u);
-
+	set_debug(DEBUG7, false);
 	++plantParams.cycle_count;
 
 	++cycleCounter;

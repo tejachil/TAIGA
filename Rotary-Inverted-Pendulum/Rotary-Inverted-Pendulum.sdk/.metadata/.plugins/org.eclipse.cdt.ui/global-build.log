@@ -8680,3 +8680,995 @@ make: Nothing to be done for `all'.
 18:57:50 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
 make: Nothing to be done for `all'.
+20:20:57 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+20:21:07 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74832	   3152	  23340	 101324	  18bcc	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+20:21:07 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:21:08 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+20:21:08 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:21:12 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74832	   3152	  23340	 101324	  18bcc	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+20:21:17 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:21:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+20:21:18 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:21:30 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:21:30 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+20:21:31 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:22:08 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74832	   3152	  23340	 101324	  18bcc	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+20:22:08 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:22:08 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+20:22:09 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:22:16 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:22:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+20:22:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:29:21 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:28:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:26:17 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:28:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:26:27 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:28:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:26:29 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/adversary.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/adversary.o" -MMD -MP -MF"src/adversary.d" -MT"src/adversary.d" -o "src/adversary.o" "../src/adversary.c"
+../src/adversary.c: In function 'adversaryTask':
+../src/adversary.c:28:14: warning: unused variable 'attacksExecuted' [-Wunused-variable]
+  attack_menu attacksExecuted = NONE;
+              ^
+Finished building: ../src/adversary.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:27:40 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:27:47 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74688	   3152	  23340	 101180	  18b3c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:27:49 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:27:53 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:28:03 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:28:04 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:28:05 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:28:05 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:28:37 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23974	    372	   2572	  26918	   6926	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+22:28:41 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23974	    372	   2572	  26918	   6926	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+22:28:45 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23974	    372	   2572	  26918	   6926	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+22:28:48 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23974	    372	   2572	  26918	   6926	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+22:28:52 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23994	    372	   2578	  26944	   6940	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+22:30:36 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23994	    372	   2578	  26944	   6940	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+22:30:47 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:37:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/adversary.o ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74752	   3152	  23340	 101244	  18b7c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+22:30:48 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:30:49 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:30:49 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:31:46 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:99:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45152	    472	   2760	  48384	   bd00	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+22:31:58 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45120	    472	   2760	  48352	   bce0	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+22:33:02 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+../src/main_ioi.c:101:12: error: 'LED3' undeclared (first use in this function)
+    set_led(LED3, true);
+            ^
+../src/main_ioi.c:101:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main_ioi.o] Error 1
+22:33:06 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+../src/main_ioi.c:101:12: error: 'LED2' undeclared (first use in this function)
+    set_led(LED2, true);
+            ^
+../src/main_ioi.c:101:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main_ioi.o] Error 1
+22:33:07 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:33:08 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+../src/main_ioi.c:101:12: error: 'LED2' undeclared (first use in this function)
+    set_led(LED2, true);
+            ^
+../src/main_ioi.c:101:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main_ioi.o] Error 1
+22:33:08 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:33:22 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45140	    472	   2764	  48376	   bcf8	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+22:33:31 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45160	    472	   2760	  48392	   bd08	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+22:33:32 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:33:32 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:33:32 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:33:59 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45156	    472	   2764	  48392	   bd08	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+22:33:59 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:34:00 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:34:00 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:34:51 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/pendulum_control.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+Finished building: ../src/pendulum_control.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45156	    472	   2764	  48392	   bd08	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+22:34:51 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:34:52 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:34:52 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:35:23 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:35:23 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:35:23 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:38:39 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:38:40 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:38:40 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:38:46 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:38:46 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:38:46 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:58:02 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+22:58:03 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+22:58:03 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+06:24:47 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c: In function 'startBackupControl':
+../src/backup_controller.c:41:2: warning: statement with no effect [-Wunused-value]
+  true
+  ^
+../src/backup_controller.c:42:2: error: expected ';' before 'int'
+  int Status;
+  ^
+../src/backup_controller.c:45:2: error: 'Status' undeclared (first use in this function)
+  Status = XTmrCtr_Initialize(&TimerCounterInst, TMRCTR_DEVICE_ID);
+  ^
+../src/backup_controller.c:45:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/backup_controller.o] Error 1
+19:15:16 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+../src/backup_controller.c: In function 'startBackupControl':
+../src/backup_controller.c:41:2: warning: statement with no effect [-Wunused-value]
+  true
+  ^
+../src/backup_controller.c:42:2: error: expected ';' before 'int'
+  int Status;
+  ^
+../src/backup_controller.c:45:2: error: 'Status' undeclared (first use in this function)
+  Status = XTmrCtr_Initialize(&TimerCounterInst, TMRCTR_DEVICE_ID);
+  ^
+../src/backup_controller.c:45:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/backup_controller.o] Error 1
+19:15:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:15:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:15:25 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23994	    372	   2578	  26944	   6940	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+19:15:26 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:15:26 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:15:27 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:21:02 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:21:02 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:21:02 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:21:13 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:21:13 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:21:13 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:21:16 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:21:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:21:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:23:52 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45204	    472	   2764	  48440	   bd38	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+19:23:52 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:23:53 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:23:53 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:24:04 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23994	    372	   2578	  26944	   6940	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+19:24:19 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/pendulum_control.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+Finished building: ../src/pendulum_control.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45164	    472	   2764	  48400	   bd10	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+19:24:20 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:24:20 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:24:20 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:24:41 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45164	    472	   2764	  48400	   bd10	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+19:24:54 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:24:54 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:24:55 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:06 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:06 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:25:06 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:09 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:09 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:25:09 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:13 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:14 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:25:14 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:17 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+19:25:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+19:25:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:25:41 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45176	    472	   2760	  48408	   bd18	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+20:25:41 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:25:41 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+20:25:42 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+20:35:55 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:98:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45176	    472	   2760	  48408	   bd18	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 

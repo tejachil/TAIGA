@@ -28,21 +28,21 @@ static void adversaryTask(void * param){
 	attack_menu attacksExecuted = NONE;
 
 	for(;;){
-		// Execute DoS attack at time 30s
+		/*// Execute DoS attack at time 30s
 		if(!(attacksExecuted & DoS) && cycleCounter >= 60000){
 			xTimerStop(ProductionControlTimer, 0);
 			attacksExecuted |= DoS;
-		}
+		}*/
 
-		// Execute Voltage Sweep at time 30s
-		/*if(!(attacksExecuted & VOLT_SWEEP_ATTACK) && cycleCounter >= 10000){
+		/*// Execute Voltage Sweep at time 30s
+		if(!(attacksExecuted & VOLT_SWEEP_ATTACK) && cycleCounter >= 20000){
 			xTimerStop(ProductionControlTimer, 0);
 			xTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Voltage Sweep Timer",1,pdTRUE,(void *) NULL, voltSweep_timer);
 			xTimerStart(voltageSweepTimer, 0);
 			attacksExecuted |= VOLT_SWEEP_ATTACK;
 		}*/
 
-		taskYIELD();
+		taskYIELD(); // This task runs infinitely in this loop. Make sure you always yield for other processes and tasks to run
 	}
 }
 

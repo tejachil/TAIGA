@@ -89,9 +89,9 @@ void write_voltage(u32 voltage_data){
 	if(voltage_data > (DAC_CONFIG_BITS | 0xF84))	voltage_data = (DAC_CONFIG_BITS | 0xF84); // 0xF84 = 3.2/3.3 * 4096
 
 	u32_to_buffer(voltage_data, writeBuffer, BITS_16);
-	set_debug(DEBUG4, true);
+
 	spi_transfer(SS_DAC, writeBuffer, NULL, BITS_16);
-	set_debug(DEBUG4, false);
+
 	cycle_flag |= SS_DAC;
 }
 

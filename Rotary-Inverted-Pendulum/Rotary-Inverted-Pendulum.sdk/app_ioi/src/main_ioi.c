@@ -75,7 +75,7 @@ int main()
 	init_wdt();
 
 	assert_trigger(PRODUCTION);
-	set_set_point(0);
+	set_set_point(10);
 
 	Status = init_interrupt_system();
 	if (Status != XST_SUCCESS) {
@@ -93,12 +93,12 @@ int main()
 			startTAIGA = true;
 			start_wdt();
 		}
-		set_debug(DEBUG3, check_wdt());
 		assert_trigger(startTAIGA & (check_wdt() | assertTrigger));
 
 		supervisor_update_set_point();
 
 		if(check_control_cycle()){
+			set_led(LED1, true);
 			set_debug(DEBUG2, true);
 			reset_control_cycle();
 
@@ -111,16 +111,17 @@ int main()
 				reset_wdt();
 				set_debug(DEBUG4, true);
 				if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180)){
-					if(prediction_trigger_mechanism(get_plant_state_instance(), 50)){
-						//assertTrigger = true;
-						//set_debug(DEBUG3, true);
+					if(trivial_trigger_mechanism(get_plant_state_instance())){
+						assertTrigger = true;
+						set_debug(DEBUG3, true);
 					}
-					else	;//set_debug(DEBUG3, false);
+					else	set_debug(DEBUG3, false);
 				}
 				set_debug(DEBUG4, false);
 			}
 			supervisor_send_tail(get_plant_state_instance()->u, startTAIGA, assertTrigger, check_wdt());
 			set_debug(DEBUG2, false);
+			set_led(LED1, false);
 		}
 	}
 
