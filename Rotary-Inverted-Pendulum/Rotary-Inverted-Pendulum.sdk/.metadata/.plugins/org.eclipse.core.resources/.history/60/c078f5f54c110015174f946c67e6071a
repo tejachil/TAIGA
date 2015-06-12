@@ -85,8 +85,6 @@ int main()
 
 	start_ioi();
 
-	set_led(LED1, true);
-
 	static bool startTAIGA = false;
 	static bool assertTrigger = false;
 
