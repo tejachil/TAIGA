@@ -80,10 +80,7 @@ void set_debug(debug pin, bool state){
 
 void assert_trigger(controller control){
 	static bool triggerAsserted = false;
-	if(triggerAsserted == false){
-		XGpio_DiscreteWrite(&XGpio_Guard_Trigger, GUARD_TRIGGER_CHANNEL, control);
-		triggerAsserted = control;
-	}
+	XGpio_DiscreteWrite(&XGpio_Guard_Trigger, GUARD_TRIGGER_CHANNEL, control);
 }
 
 bool read_btn(u8 btn){

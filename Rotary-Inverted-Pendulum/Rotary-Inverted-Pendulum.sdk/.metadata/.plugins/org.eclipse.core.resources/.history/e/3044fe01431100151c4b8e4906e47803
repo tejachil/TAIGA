@@ -82,7 +82,7 @@ void assert_trigger(controller control){
 	static bool triggerAsserted = false;
 	if(triggerAsserted == false){
 		XGpio_DiscreteWrite(&XGpio_Guard_Trigger, GUARD_TRIGGER_CHANNEL, control);
-		triggerAsserted = control;
+		triggerAsserted = true;
 	}
 }
 
