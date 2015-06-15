@@ -10175,3 +10175,577 @@ make: Nothing to be done for `all'.
 17:49:58 **** Incremental Build of configuration Debug for project app_production_controller ****
 make all 
 make: Nothing to be done for `all'.
+14:23:45 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:23:46 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:23:47 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:24:04 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:24:04 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:24:04 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:24:09 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:24:10 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:24:10 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:27:43 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:27:43 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:27:44 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:27:51 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:27:51 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:27:51 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:27:57 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:27:57 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:27:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:29:03 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:29:03 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:29:04 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:29:10 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:29:10 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:29:10 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:29:16 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:29:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:29:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:31:57 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:31:57 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:31:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:32:06 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:32:06 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:32:06 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:32:19 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:32:20 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:32:20 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:33:24 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:33:24 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:33:24 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:33:28 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:33:29 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:33:29 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:33:34 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:33:34 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:33:34 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:34:30 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:34:30 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:34:31 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:34:34 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:34:35 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:34:35 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:34:38 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:34:39 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:34:39 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:35:20 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:35:20 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:35:20 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:35:23 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:35:23 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:35:24 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:35:28 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:35:28 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:35:28 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:37:01 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:37:01 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:37:01 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:37:05 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:37:05 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:37:06 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:37:09 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:37:10 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:37:10 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:39:14 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:39:14 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:39:14 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:39:19 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:39:19 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:39:19 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:39:24 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:39:24 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:39:24 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:43:17 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:43:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:43:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:00 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:00 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:44:00 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:04 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:04 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:44:05 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:08 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:09 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:44:09 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:39 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:39 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:44:39 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:43 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:44 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:44:44 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:48 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:44:48 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+14:44:49 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:40:43 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:40:44 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:40:44 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:40:54 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:40:54 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:40:54 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:40:58 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:40:58 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:40:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:43:28 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:43:28 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:43:28 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:43:35 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:43:35 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:43:35 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:43:41 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:43:41 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:43:42 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:45:15 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:100:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45192	    472	   2768	  48432	   bd30	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+15:45:21 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:45:22 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:45:22 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:45:25 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:45:25 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:45:25 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:47:01 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+../src/utilities/axi_gpio.c: In function 'assert_trigger':
+../src/utilities/axi_gpio.c:82:14: warning: variable 'triggerAsserted' set but not used [-Wunused-but-set-variable]
+  static bool triggerAsserted = false;
+              ^
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45192	    472	   2768	  48432	   bd30	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+15:47:02 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:47:03 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:47:03 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:47:13 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45180	    472	   2764	  48416	   bd20	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+15:48:11 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:100:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45164	    472	   2764	  48400	   bd10	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+15:48:17 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:48:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:48:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:48:22 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:48:23 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:48:23 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:48:25 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:48:25 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:48:25 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:49:11 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:99:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45164	    472	   2764	  48400	   bd10	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+15:49:20 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/ioi_handler.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/ioi_handler.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/ioi_handler.d" -MT"src/ioi_handler.d" -o "src/ioi_handler.o" "../src/ioi_handler.c"
+../src/ioi_handler.c: In function 'ioi_handler':
+../src/ioi_handler.c:38:21: warning: passing argument 1 of 'get_state_vector' from incompatible pointer type
+    get_state_vector(returnData);
+                     ^
+In file included from ../src/ioi_handler.h:11:0,
+                 from ../src/ioi_handler.c:8:
+../src/pendulum_control.h:35:6: note: expected 'u32 *' but argument is of type 'unsigned int *'
+ void get_state_vector(u32* buffer);
+      ^
+Finished building: ../src/ioi_handler.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45192	    472	   2760	  48424	   bd28	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+15:49:39 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:49:39 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:49:40 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:49:47 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:49:47 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:49:47 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:49:51 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:49:52 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:49:52 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.

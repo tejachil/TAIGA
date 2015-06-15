@@ -43,7 +43,7 @@ void ioi_handler(QueuePacket fifo_packet){
 
 	enqueue(returnData, fifo_packet.operation > 4 ? 4 : fifo_packet.operation);
 
-	assert_trigger(check_wdt());
+	//assert_trigger(check_wdt());
 
 	set_debug(DEBUG1, false);
 }

@@ -705,3 +705,82 @@ java.lang.RuntimeException: No Target with ID 1 in the System
 17:50:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
 17:50:55 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
 17:52:31 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:22:56 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+14:22:58 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:22:59 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+14:23:05 INFO  : XSDB server has started successfully.
+14:23:08 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+14:23:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:23:37 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+14:23:54 INFO  : ps7_init is completed.
+14:23:54 INFO  : ps7_post_config is completed.
+14:23:55 INFO  : Processor reset is completed for IO_intermediary
+14:24:05 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:24:11 INFO  : Processor reset is completed for backup_controller
+14:27:45 INFO  : Processor reset is completed for IO_intermediary
+14:27:52 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:27:59 INFO  : Processor reset is completed for backup_controller
+14:29:05 INFO  : Processor reset is completed for IO_intermediary
+14:29:11 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:29:18 INFO  : Processor reset is completed for backup_controller
+14:31:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:31:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:31:52 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+14:31:59 INFO  : Processor reset is completed for IO_intermediary
+14:32:07 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:32:21 INFO  : Processor reset is completed for backup_controller
+14:33:26 INFO  : Processor reset is completed for IO_intermediary
+14:33:30 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:33:36 INFO  : Processor reset is completed for backup_controller
+14:34:32 INFO  : Processor reset is completed for IO_intermediary
+14:34:36 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:34:40 INFO  : Processor reset is completed for backup_controller
+14:35:22 INFO  : Processor reset is completed for IO_intermediary
+14:35:25 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:35:29 INFO  : Processor reset is completed for backup_controller
+14:37:03 INFO  : Processor reset is completed for IO_intermediary
+14:37:07 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:37:11 INFO  : Processor reset is completed for backup_controller
+14:39:16 INFO  : Processor reset is completed for IO_intermediary
+14:39:20 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:39:25 INFO  : Processor reset is completed for backup_controller
+14:43:18 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:44:02 INFO  : Processor reset is completed for IO_intermediary
+14:44:05 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:44:10 INFO  : Processor reset is completed for backup_controller
+14:44:41 INFO  : Processor reset is completed for IO_intermediary
+14:44:45 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:44:50 INFO  : Processor reset is completed for backup_controller
+15:39:52 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:40:01 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+15:40:02 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+15:40:02 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:40:03 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+15:40:03 INFO  : XSDB server has started successfully.
+15:40:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:40:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+15:40:37 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:40:50 INFO  : ps7_init is completed.
+15:40:50 INFO  : ps7_post_config is completed.
+15:40:51 INFO  : Processor reset is completed for IO_intermediary
+15:40:55 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:41:00 INFO  : Processor reset is completed for backup_controller
+15:43:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+15:43:21 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:43:29 INFO  : ps7_init is completed.
+15:43:29 INFO  : ps7_post_config is completed.
+15:43:30 INFO  : Processor reset is completed for IO_intermediary
+15:43:36 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:43:43 INFO  : Processor reset is completed for backup_controller
+15:45:23 INFO  : Processor reset is completed for IO_intermediary
+15:45:27 INFO  : Processor reset is completed for backup_controller
+15:48:19 INFO  : Processor reset is completed for IO_intermediary
+15:48:24 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:48:27 INFO  : Processor reset is completed for backup_controller
+15:49:41 INFO  : Processor reset is completed for IO_intermediary
+15:49:48 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:49:53 INFO  : Processor reset is completed for backup_controller

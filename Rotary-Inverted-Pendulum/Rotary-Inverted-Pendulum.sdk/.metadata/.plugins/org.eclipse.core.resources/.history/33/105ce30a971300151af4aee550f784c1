@@ -74,6 +74,7 @@ int main()
 	init_fifo_queues();
 	init_wdt();
 
+	assert_trigger(PRODUCTION);
 	set_set_point(10);
 
 	Status = init_interrupt_system();
