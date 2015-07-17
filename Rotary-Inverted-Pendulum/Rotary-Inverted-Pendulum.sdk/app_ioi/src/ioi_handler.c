@@ -17,13 +17,15 @@ bool plant_filter(QueuePacket* packet);
 void ioi_handler(QueuePacket fifo_packet){
 	set_debug(DEBUG1, true);
 
-	unsigned int returnData[4];
+	unsigned int returnData[4]; // Data to send back to controller on FIFO
 
 	switch (fifo_packet.command){
 		case (PLANT): // SPI
+			// SPI Filter
 			if(!plant_filter(&fifo_packet)) return; // ERROR HANDLING HERE FOR FILTERING SPI
 			if(!fifo_packet.bytes)	return;	// ERROR HANDLING IF TRANSFER BYTES IS 0
 
+			// only accept voltage writes or sensor reads
 			if( (fifo_packet.slave == SS_DAC) && (fifo_packet.operation == WRITE) && (fifo_packet.bytes == BITS_16)
 					&& ((fifo_packet.data[0] & DAC_CONFIG_BITS) == DAC_CONFIG_BITS) ) // write voltage
 				write_voltage(fifo_packet.data[0]);
@@ -41,9 +43,10 @@ void ioi_handler(QueuePacket fifo_packet){
 			break;
 	}
 
+	// Send the return data back to controller; maximum of 4 bytes returned
 	enqueue(returnData, fifo_packet.operation > 4 ? 4 : fifo_packet.operation);
 
-	assert_trigger(check_wdt());
+	//assert_trigger(check_wdt()); // backup was not working with this; initially had it to detect livelock attack
 
 	set_debug(DEBUG1, false);
 }

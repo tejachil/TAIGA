@@ -784,3 +784,771 @@ java.lang.RuntimeException: No Target with ID 1 in the System
 15:49:41 INFO  : Processor reset is completed for IO_intermediary
 15:49:48 INFO  : Processor reset is completed for ps7_cortexa9_1
 15:49:53 INFO  : Processor reset is completed for backup_controller
+17:53:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:53:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+17:53:51 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+17:53:57 INFO  : ps7_init is completed.
+17:53:57 INFO  : ps7_post_config is completed.
+17:53:57 INFO  : Processor reset is completed for IO_intermediary
+17:54:00 INFO  : Processor reset is completed for ps7_cortexa9_1
+17:54:33 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:06:23 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+22:06:23 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+22:06:24 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:06:24 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+22:06:25 INFO  : XSDB server has started successfully.
+22:06:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+22:06:57 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+22:07:55 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+22:07:55 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+22:07:56 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+22:07:56 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+22:07:57 INFO  : XSDB server has started successfully.
+22:08:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:08:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+22:08:33 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+22:08:56 INFO  : ps7_init is completed.
+22:08:56 INFO  : ps7_post_config is completed.
+22:08:57 INFO  : Processor reset is completed for IO_intermediary
+22:09:04 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:09:09 INFO  : Processor reset is completed for backup_controller
+22:10:15 INFO  : Processor reset is completed for IO_intermediary
+22:10:20 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:11:07 INFO  : Processor reset is completed for IO_intermediary
+22:11:12 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:11:16 INFO  : Processor reset is completed for backup_controller
+22:13:00 INFO  : Processor reset is completed for IO_intermediary
+22:13:07 INFO  : Processor reset is completed for ps7_cortexa9_1
+22:13:27 INFO  : Processor reset is completed for backup_controller
+22:20:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:20:28 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+22:20:29 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+22:20:29 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+22:20:30 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+22:20:30 INFO  : XSDB server has started successfully.
+16:21:56 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+16:21:57 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+16:21:58 INFO  : XSDB server has started successfully.
+16:22:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+16:22:28 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+16:24:18 INFO  : ps7_init is completed.
+16:24:18 INFO  : ps7_post_config is completed.
+16:24:19 INFO  : Processor reset is completed for IO_intermediary
+16:24:25 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:31:08 INFO  : Processor reset is completed for IO_intermediary
+16:31:12 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:37:13 INFO  : Processor reset is completed for IO_intermediary
+16:37:37 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:38:34 INFO  : Processor reset is completed for IO_intermediary
+16:38:36 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:44:49 INFO  : Processor reset is completed for IO_intermediary
+16:44:53 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:48:45 INFO  : Processor reset is completed for IO_intermediary
+16:48:46 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '1' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.setBreakPoint(TM.java:714)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:140)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:606)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:48:46 ERROR : Disconnect target failed.No Target with ID 1 in the System
+
+
+16:48:47 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:49:07 INFO  : Processor reset is completed for IO_intermediary
+16:49:11 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:50:53 INFO  : Processor reset is completed for backup_controller
+16:52:25 INFO  : Processor reset is completed for IO_intermediary
+16:52:27 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:52:31 INFO  : Processor reset is completed for backup_controller
+16:53:57 INFO  : Processor reset is completed for IO_intermediary
+16:53:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:54:02 INFO  : Processor reset is completed for backup_controller
+12:55:07 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:46:53 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+14:46:56 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:46:56 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+14:47:04 INFO  : XSDB server has started successfully.
+14:47:06 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+14:47:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:47:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:47:58 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+14:49:06 INFO  : ps7_init is completed.
+14:49:06 INFO  : ps7_post_config is completed.
+14:49:06 INFO  : Processor reset is completed for IO_intermediary
+14:49:13 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:49:20 INFO  : Processor reset is completed for backup_controller
+14:51:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:51:36 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+14:52:09 INFO  : Processor reset is completed for IO_intermediary
+14:52:13 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:52:18 INFO  : Processor reset is completed for backup_controller
+14:58:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:58:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:59:31 ERROR : 'fpga -file /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit' is cancelled.
+14:59:36 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:59:46 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+14:59:46 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:59:47 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+14:59:47 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+14:59:47 INFO  : XSDB server has started successfully.
+15:00:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+15:00:36 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:02:07 INFO  : ps7_init is completed.
+15:02:07 INFO  : ps7_post_config is completed.
+15:02:08 INFO  : Processor reset is completed for IO_intermediary
+15:02:13 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:38:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:43:57 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper.hdf.
+15:44:02 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+15:44:03 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+15:44:12 INFO  : XSDB server has started successfully.
+15:44:35 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+15:45:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+15:45:15 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:46:02 INFO  : ps7_init is completed.
+15:46:02 INFO  : ps7_post_config is completed.
+15:46:03 INFO  : Processor reset is completed for IO_intermediary
+15:46:11 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:47:37 INFO  : Processor reset is completed for IO_intermediary
+15:47:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:51:09 INFO  : Processor reset is completed for IO_intermediary
+15:51:14 INFO  : Processor reset is completed for backup_controller
+15:51:18 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:52:27 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:52:50 INFO  : Processor reset is completed for IO_intermediary
+15:52:54 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:52:58 INFO  : Processor reset is completed for backup_controller
+15:53:45 INFO  : Processor reset is completed for IO_intermediary
+15:53:49 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:53:57 INFO  : Processor reset is completed for backup_controller
+15:55:17 INFO  : Processor reset is completed for IO_intermediary
+15:55:22 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:55:29 INFO  : Processor reset is completed for backup_controller
+22:29:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:29:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654460A" && level==0} -index 1' command is executed.
+22:29:07 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+22:29:49 INFO  : ps7_init is completed.
+22:29:49 INFO  : ps7_post_config is completed.
+22:29:49 INFO  : Processor reset is completed for ps7_cortexa9_1
+00:22:30 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:48:57 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+12:49:03 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+12:49:04 INFO  : XSDB server has started successfully.
+12:50:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:50:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+12:50:52 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+12:54:14 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+12:54:14 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use
+12:54:20 INFO  : ps7_init is completed.
+12:54:20 INFO  : ps7_post_config is completed.
+12:54:21 INFO  : Processor reset is completed for IO_intermediary
+12:54:26 INFO  : Processor reset is completed for ps7_cortexa9_1
+12:55:47 INFO  : Processor reset is completed for backup_controller
+12:57:45 INFO  : Processor reset is completed for ps7_cortexa9_1
+12:58:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+12:58:48 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+12:59:02 INFO  : Processor reset is completed for IO_intermediary
+12:59:06 INFO  : Processor reset is completed for ps7_cortexa9_1
+12:59:35 INFO  : Processor reset is completed for backup_controller
+13:02:39 INFO  : Processor reset is completed for IO_intermediary
+13:02:44 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:02:50 INFO  : Processor reset is completed for backup_controller
+13:03:28 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:07:29 INFO  : Processor reset is completed for IO_intermediary
+13:07:34 INFO  : IO_intermediary Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:07:41 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:07:48 INFO  : Processor reset is completed for backup_controller
+13:08:20 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:09:48 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+13:09:48 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 1"
+13:09:48 ERROR : Disconnect target failed.
+13:09:48 ERROR : Disconnect target failed.No Target with ID 1 in the System
+
+
+13:09:48 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No Target with ID 1 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:327)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:306)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:210)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:60)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+13:09:48 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:09:48 ERROR : Unexpected error while launching program.
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(XMDJSONProcess.java:144)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:347)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:498)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:585)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+13:10:12 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+13:10:18 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+13:10:19 INFO  : XSDB server has started successfully.
+13:10:31 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+13:10:31 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use
+13:10:37 INFO  : Processor reset is completed for IO_intermediary
+13:10:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:11:18 INFO  : Processor reset is completed for backup_controller
+13:14:41 INFO  : Processor reset is completed for IO_intermediary
+13:14:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:15:15 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:15:50 INFO  : Processor reset is completed for IO_intermediary
+13:15:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:16:26 INFO  : Processor reset is completed for backup_controller
+13:22:25 INFO  : Processor reset is completed for IO_intermediary
+13:22:33 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:22:38 INFO  : Processor reset is completed for backup_controller
+13:23:18 INFO  : Processor reset is completed for IO_intermediary
+13:23:39 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:25:43 INFO  : Processor reset is completed for IO_intermediary
+13:25:46 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:25:49 INFO  : Processor reset is completed for backup_controller
+13:26:35 INFO  : Processor reset is completed for IO_intermediary
+13:26:40 INFO  : Processor reset is completed for backup_controller
+13:40:51 INFO  : Processor reset is completed for IO_intermediary
+13:40:56 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:41:01 INFO  : Processor reset is completed for backup_controller
+14:01:11 INFO  : Processor reset is completed for IO_intermediary
+14:01:17 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:35:39 INFO  : Processor reset is completed for IO_intermediary
+14:35:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:36:18 INFO  : Processor reset is completed for IO_intermediary
+14:36:21 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:36:24 INFO  : Processor reset is completed for backup_controller
+14:37:09 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:37:13 INFO  : Processor reset is completed for backup_controller
+14:37:51 INFO  : Processor reset is completed for IO_intermediary
+14:37:55 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:39:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:39:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:39:16 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+14:39:50 INFO  : Processor reset is completed for IO_intermediary
+14:39:57 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:40:22 INFO  : Processor reset is completed for backup_controller
+14:43:45 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:44:38 INFO  : Processor reset is completed for IO_intermediary
+14:44:42 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:45:19 INFO  : Processor reset is completed for backup_controller
+14:46:23 INFO  : Processor reset is completed for IO_intermediary
+14:46:28 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:47:08 INFO  : Processor reset is completed for backup_controller
+14:55:09 INFO  : Processor reset is completed for IO_intermediary
+14:55:11 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:55:15 INFO  : Processor reset is completed for backup_controller
+14:57:17 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+14:57:17 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
+14:57:17 ERROR : Disconnect target failed.
+14:57:17 INFO  : Processor reset is completed for IO_intermediary
+14:57:29 INFO  : Processor reset is completed for IO_intermediary
+14:57:35 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:58:16 INFO  : Processor reset is completed for IO_intermediary
+14:58:21 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '0' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:503)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:585)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:58:21 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+14:58:30 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:58:35 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '0' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:503)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:585)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:58:35 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+14:59:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:59:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+14:59:16 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+14:59:23 INFO  : Processor reset is completed for IO_intermediary
+14:59:36 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:00:18 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '0' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:503)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:585)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:00:18 ERROR : Disconnect target failed.No Target with ID 0 in the System
+
+
+15:00:28 ERROR : Disconnect target failed.No active Target 0
+
+15:00:28 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No active Target 0
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:327)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:306)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:210)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:60)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+15:00:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:00:39 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+15:00:45 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+15:00:46 INFO  : XSDB server has started successfully.
+15:01:05 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+15:01:05 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use
+15:01:13 INFO  : Processor reset is completed for IO_intermediary
+15:01:17 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:01:26 INFO  : Processor reset is completed for backup_controller
+15:02:54 INFO  : Processor reset is completed for IO_intermediary
+15:02:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:03:03 INFO  : Processor reset is completed for backup_controller
+15:03:34 INFO  : Processor reset is completed for IO_intermediary
+15:03:37 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:03:39 INFO  : Processor reset is completed for backup_controller
+15:07:59 INFO  : Processor reset is completed for IO_intermediary
+15:08:02 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:08:06 INFO  : Processor reset is completed for backup_controller
+15:09:38 INFO  : Processor reset is completed for IO_intermediary
+15:09:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:09:45 INFO  : Processor reset is completed for backup_controller
+15:11:45 INFO  : Processor reset is completed for IO_intermediary
+15:11:48 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:11:55 INFO  : Processor reset is completed for backup_controller
+15:12:46 INFO  : Processor reset is completed for IO_intermediary
+15:12:51 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:12:56 INFO  : Processor reset is completed for backup_controller
+15:23:31 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+15:23:39 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:23:40 INFO  : XSDB server has started successfully.
+15:24:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+15:24:30 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:24:42 INFO  : ps7_init is completed.
+15:24:42 INFO  : ps7_post_config is completed.
+15:24:43 INFO  : Processor reset is completed for IO_intermediary
+15:24:47 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:24:55 INFO  : Processor reset is completed for backup_controller
+15:28:03 INFO  : Processor reset is completed for IO_intermediary
+15:28:06 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:28:11 INFO  : Processor reset is completed for backup_controller
+15:39:12 INFO  : Processor reset is completed for IO_intermediary
+15:39:17 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:39:21 INFO  : Processor reset is completed for backup_controller
+15:39:56 INFO  : Processor reset is completed for IO_intermediary
+15:40:00 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:40:03 INFO  : Processor reset is completed for backup_controller
+15:42:17 INFO  : Processor reset is completed for IO_intermediary
+15:42:20 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:42:23 INFO  : Processor reset is completed for backup_controller
+15:47:37 INFO  : Processor reset is completed for IO_intermediary
+15:47:40 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:47:44 INFO  : Processor reset is completed for backup_controller
+15:49:43 INFO  : Processor reset is completed for IO_intermediary
+15:49:45 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:49:49 INFO  : Processor reset is completed for backup_controller
+16:11:00 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+16:11:00 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+16:11:01 INFO  : XSDB server has started successfully.
+16:13:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+16:13:15 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+16:13:34 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+16:13:40 INFO  : ps7_init is completed.
+16:13:40 INFO  : ps7_post_config is completed.
+16:13:41 INFO  : Processor reset is completed for IO_intermediary
+16:13:53 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:13:59 INFO  : Processor reset is completed for backup_controller
+11:41:17 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:41:36 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+11:41:36 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+11:41:37 INFO  : XSDB server has started successfully.
+11:42:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:42:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+11:42:53 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+11:43:08 INFO  : ps7_init is completed.
+11:43:08 INFO  : ps7_post_config is completed.
+11:43:09 INFO  : Processor reset is completed for IO_intermediary
+11:43:28 INFO  : Processor reset is completed for ps7_cortexa9_1
+11:43:36 INFO  : Processor reset is completed for backup_controller
+11:45:40 INFO  : Processor reset is completed for IO_intermediary
+11:45:44 INFO  : Processor reset is completed for ps7_cortexa9_1
+11:45:51 INFO  : Processor reset is completed for backup_controller
+21:00:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:13:03 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+13:13:04 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:13:05 INFO  : XSDB server has started successfully.
+13:14:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+13:14:11 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+13:16:01 INFO  : ps7_init is completed.
+13:16:02 INFO  : ps7_post_config is completed.
+13:16:02 INFO  : Processor reset is completed for IO_intermediary
+13:16:07 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:16:11 INFO  : Processor reset is completed for backup_controller
+13:22:02 INFO  : Processor reset is completed for IO_intermediary
+13:22:08 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:22:21 INFO  : Processor reset is completed for backup_controller
+13:34:42 INFO  : Processor reset is completed for IO_intermediary
+13:34:46 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:34:51 INFO  : Processor reset is completed for backup_controller
+13:38:32 INFO  : Processor reset is completed for IO_intermediary
+13:38:37 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:38:44 INFO  : Processor reset is completed for backup_controller
+13:45:28 INFO  : Processor reset is completed for backup_controller
+14:15:38 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:42:33 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+16:42:33 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+16:42:34 INFO  : XSDB server has started successfully.
+16:44:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+16:44:16 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+16:44:38 INFO  : ps7_init is completed.
+16:44:38 INFO  : ps7_post_config is completed.
+16:44:39 INFO  : ps7_init is completed.
+16:44:39 INFO  : ps7_post_config is completed.
+16:44:39 WARN  : Error clearing Zynq reset status. Unknown Error Occured
+    Target '65' Does NOT exist in the Current System
+
+
+16:44:39 INFO  : Processor reset is completed for IO_intermediary
+16:44:39 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '65' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:503)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:585)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:44:39 ERROR : Disconnect target failed.No Target with ID 65 in the System
+
+
+16:44:45 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:45:04 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+16:45:04 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2457
+16:45:05 INFO  : XSDB server has started successfully.
+16:45:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+16:45:46 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+16:46:23 INFO  : ps7_init is completed.
+16:46:23 INFO  : ps7_post_config is completed.
+16:46:23 INFO  : Processor reset is completed for IO_intermediary
+16:46:35 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:46:41 INFO  : Processor reset is completed for backup_controller
+16:47:27 INFO  : Processor reset is completed for IO_intermediary
+16:47:32 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:47:37 INFO  : Processor reset is completed for backup_controller
+16:48:36 INFO  : Processor reset is completed for IO_intermediary
+16:48:39 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:54:08 INFO  : Processor reset is completed for IO_intermediary
+16:54:10 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:54:15 INFO  : Processor reset is completed for backup_controller
+20:01:02 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:02:42 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+13:02:43 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2471
+13:02:44 INFO  : XSDB server has started successfully.
+13:06:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:06:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+13:06:22 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+13:06:29 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+13:06:35 INFO  : ps7_init is completed.
+13:06:35 INFO  : ps7_post_config is completed.
+13:06:36 INFO  : Processor reset is completed for IO_intermediary
+13:06:42 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:06:46 INFO  : Processor reset is completed for backup_controller
+13:08:38 INFO  : Processor reset is completed for IO_intermediary
+13:08:42 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:12:59 INFO  : Processor reset is completed for IO_intermediary
+13:13:05 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:19:09 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:19:22 INFO  : Processor reset is completed for IO_intermediary
+13:19:26 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:34:06 INFO  : Processor reset is completed for IO_intermediary
+13:34:09 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:36:47 INFO  : Processor reset is completed for IO_intermediary
+13:36:50 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:43:45 INFO  : Processor reset is completed for backup_controller
+13:46:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:46:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+13:46:13 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+13:47:52 INFO  : ps7_init is completed.
+13:47:53 INFO  : ps7_post_config is completed.
+13:47:53 INFO  : Processor reset is completed for IO_intermediary
+13:48:17 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:48:21 INFO  : Processor reset is completed for backup_controller
+13:50:52 INFO  : Processor reset is completed for IO_intermediary
+13:50:59 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:51:03 INFO  : Processor reset is completed for backup_controller
+13:52:37 INFO  : Processor reset is completed for IO_intermediary
+13:53:10 INFO  : Processor reset is completed for IO_intermediary
+13:53:32 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:53:37 INFO  : Processor reset is completed for backup_controller
+13:57:12 INFO  : Processor reset is completed for IO_intermediary
+13:57:21 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:57:24 INFO  : Processor reset is completed for backup_controller
+13:59:52 INFO  : Processor reset is completed for IO_intermediary
+14:00:04 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:00:51 INFO  : Processor reset is completed for IO_intermediary
+14:00:55 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:15:06 INFO  : Processor reset is completed for IO_intermediary
+14:15:12 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:24:04 INFO  : Processor reset is completed for IO_intermediary
+14:24:07 INFO  : Processor reset is completed for ps7_cortexa9_1
+14:25:09 INFO  : Processor reset is completed for IO_intermediary
+14:25:13 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:52:30 INFO  : Processor reset is completed for IO_intermediary
+15:52:33 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:52:36 INFO  : Processor reset is completed for backup_controller
+16:14:28 INFO  : Processor reset is completed for IO_intermediary
+16:14:32 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:30:31 ERROR : Disconnect target failed.No Target with ID 1 in the System
+
+
+    Failed to lock the JTAG Cable for exclusive access
+
+
+16:35:27 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+16:35:27 ERROR : Timeout occured while waiting to get reply for command "xfpga_isconfigured -cable type xilinx_tcf url TCP:127.0.0.1:3121 "
+16:35:27 ERROR : Checking FPGA configuration failed..
+16:35:27 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:379)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:288)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:35:40 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA/repo
+16:35:41 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2471
+16:35:42 INFO  : XSDB server has started successfully.
+16:35:48 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use
+16:35:48 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use
+16:35:49 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+16:35:49 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 1"
+16:35:49 ERROR : Disconnect target failed.
+16:35:49 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:327)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:306)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:210)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:60)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+16:35:49 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+16:35:49 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+16:35:55 INFO  : Processor reset is completed for IO_intermediary
+16:36:01 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:47:04 INFO  : Processor reset is completed for IO_intermediary
+16:47:06 INFO  : Processor reset is completed for ps7_cortexa9_1
+16:50:23 INFO  : Processor reset is completed for ps7_cortexa9_1
+17:03:57 INFO  : Processor reset is completed for backup_controller
+18:51:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+18:51:48 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+18:52:14 INFO  : ps7_init is completed.
+18:52:14 INFO  : ps7_post_config is completed.
+18:52:15 INFO  : Processor reset is completed for IO_intermediary
+18:52:19 INFO  : Processor reset is completed for ps7_cortexa9_1
+18:52:23 INFO  : Processor reset is completed for backup_controller
+20:21:39 INFO  : Processor reset is completed for IO_intermediary
+20:21:41 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:21:45 INFO  : Processor reset is completed for backup_controller
+20:23:44 INFO  : Processor reset is completed for IO_intermediary
+20:23:47 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:23:51 INFO  : Processor reset is completed for backup_controller
+20:25:13 INFO  : Processor reset is completed for IO_intermediary
+20:25:18 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:25:23 INFO  : Processor reset is completed for backup_controller
+20:27:26 INFO  : Processor reset is completed for IO_intermediary
+20:27:31 INFO  : Processor reset is completed for ps7_cortexa9_1
+20:27:35 INFO  : Processor reset is completed for backup_controller
+09:02:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:02:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+09:02:57 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+09:03:18 INFO  : ps7_init is completed.
+09:03:18 INFO  : ps7_post_config is completed.
+09:03:19 INFO  : Processor reset is completed for IO_intermediary
+09:03:22 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:03:25 INFO  : Processor reset is completed for backup_controller
+09:04:49 INFO  : Processor reset is completed for IO_intermediary
+09:04:52 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:04:56 INFO  : Processor reset is completed for backup_controller
+09:06:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:06:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+09:06:36 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+09:06:47 INFO  : ps7_init is completed.
+09:06:47 INFO  : ps7_post_config is completed.
+09:06:47 INFO  : Processor reset is completed for IO_intermediary
+09:06:51 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:06:54 INFO  : Processor reset is completed for backup_controller
+09:08:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:08:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279539496A" && level==0} -index 1' command is executed.
+09:08:20 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+09:08:25 INFO  : ps7_init is completed.
+09:08:25 INFO  : ps7_post_config is completed.
+09:08:26 INFO  : Processor reset is completed for IO_intermediary
+09:08:31 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:08:37 INFO  : Processor reset is completed for backup_controller
+09:09:40 INFO  : Processor reset is completed for IO_intermediary
+09:09:43 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:09:47 INFO  : Processor reset is completed for backup_controller
+09:11:06 INFO  : Processor reset is completed for IO_intermediary
+09:11:15 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:11:19 INFO  : Processor reset is completed for backup_controller
+09:13:24 INFO  : Processor reset is completed for IO_intermediary
+09:13:26 INFO  : Processor reset is completed for ps7_cortexa9_1
+09:13:30 INFO  : Processor reset is completed for backup_controller
+15:05:20 INFO  : Processor reset is completed for IO_intermediary
+15:05:24 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:05:27 INFO  : Processor reset is completed for backup_controller
+15:09:49 INFO  : Processor reset is completed for IO_intermediary
+15:09:55 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:09:58 INFO  : Processor reset is completed for backup_controller

@@ -12,6 +12,7 @@
 
 
 float calculateKalmanControlSignal(PlantParameters *params);
+float calculateStateFeedbackControlSignal(PlantParameters *params);
 void production_control_timer(xTimerHandle pxTimer);
 
 /****************** Common Global variables for all ******************/
@@ -41,22 +42,33 @@ void production_control_timer(xTimerHandle pxTimer){
 	set_debug(DEBUG8, true);
 	set_led(LED3, true);
 
+	// Get Set-Point from supervisor through IOI
 	set_debug(DEBUG7, true);
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;
+
+	//xil_printf("%d\n\r", plantParams.set_point); // uncomment if you want to print set-point at each control cycle to reconfig UART
+
+	// Read the two encoder sensors
 	set_debug(DEBUG7, false);
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 	set_debug(DEBUG7, true);
 	plantParams.encoder_alpha= 4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
+
+	// Calculate the control algorithm if pendulum is upright
 	set_debug(DEBUG7, false);
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
-		plantParams.u = -calculateKalmanControlSignal(&plantParams);
+		// Comment out whatever controller you don't want to use
+		plantParams.u = calculateKalmanControlSignal(&plantParams);
+		//plantParams.u = calculateStateFeedbackControlSignal(&plantParams);
 	}
 	else {
 		plantParams.u = 0;
 	}
+
+	// Write voltage to the servo
 	set_debug(DEBUG7, true);
 	writeDAC(plantParams.u);
 	set_debug(DEBUG7, false);
@@ -106,6 +118,7 @@ float calculateKalmanControlSignal(PlantParameters *params){
 	if(u > 5.)	 u = 5.;
 	else if(u < -5.)	u = -5.;
 
+
 	//precompute the part of xhat we can
 	for(ind = 0; ind < 4; ind++){
 		params->xpre[ind] = 0.;
@@ -115,5 +128,21 @@ float calculateKalmanControlSignal(PlantParameters *params){
 		}
 		params->xpre[ind] += Bup[ind]*u;
 	}
-	return u;
+
+	params->u = -u;
+	return -u; // don't need to negate u externally to the function
+}
+
+float calculateStateFeedbackControlSignal(PlantParameters *params){
+	if (params->thetaR < -pi)	params->thetaR += 2*pi; // correction for encoder zeroing error
+
+	params->xhat[2] = 0.9391*params->xhat[2] + 60.92*(params->thetaR - params->xhat[0]);
+	params->xhat[3] = 0.9391*params->xhat[3] + 60.92*(params->alphaR - params->xhat[1]);
+
+	params->u = -5.38*(params->thetaR - params->theta_des) + 30.14*params->alphaR-2.65*params->xhat[2] + 3.35*params->xhat[3];
+
+	params->xhat[0] = params->thetaR;
+	params->xhat[1] = params->alphaR;
+
+	return params->u;
 }

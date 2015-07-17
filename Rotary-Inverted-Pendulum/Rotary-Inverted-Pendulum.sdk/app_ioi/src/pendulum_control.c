@@ -109,9 +109,9 @@ u32 read_sensor(slave_select sensor, u32 data){
 	value = (value >> 8);
 
 	if(sensor == SS_ENCODER_S)
-		stateVector.encoder_theta = -(value % 4096);
+		stateVector.encoder_theta = -(value % 4096); // Syntax for putting the counts to the accepted format
 	else if (sensor == SS_ENCODER_P)
-		stateVector.encoder_alpha = 4096 + (-((int)(value)) % 4096);
+		stateVector.encoder_alpha = 4096 + (-((int)(value)) % 4096); // Had to do this when we fixed the flipped channels in board
 
 	return rawSensor;
 }
@@ -142,8 +142,6 @@ void reset_control_cycle(){
 	cycle_flag = 0;
 
 	//xil_printf("et:%d ea:%d t:%d a:%d\n", stateVector.encoder_theta, stateVector.encoder_alpha, (int)(stateVector.thetaR*1800/pi), (int)(stateVector.alphaR*1800/pi));
-
-	// TODO: Method to reset the WDT
 }
 
 float get_thetaR(){

@@ -14,4 +14,6 @@ void supervisor_send_state_vector(float stateVector[4]);
 
 void supervisor_send_tail(float u, bool startTAIGA, bool trigger, bool wdt);
 
+void supervisor_update_set_point();
+
 #endif /* SUPERVISORY_COMMUNICATION_H_ */

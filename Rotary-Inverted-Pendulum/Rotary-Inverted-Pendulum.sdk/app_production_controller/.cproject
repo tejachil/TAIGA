@@ -25,9 +25,9 @@
 							<tool id="xilinx.gnu.arm.c.toolchain.compiler.debug.941612563" name="ARM gcc compiler" superClass="xilinx.gnu.arm.c.toolchain.compiler.debug">
 								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1930978334" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.option.debugging.level.336501588" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
-								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.2073512932" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.2073512932" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
 								<option id="xilinx.gnu.compiler.inferred.swplatform.flags.961282287" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
-								<option id="xilinx.gnu.compiler.dircategory.includes.1766797858" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<option id="xilinx.gnu.compiler.dircategory.includes.1766797858" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../bsp_production_freertos/ps7_cortexa9_1/include"/>
 									<listOptionValue builtIn="false" value="/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes"/>
 								</option>
@@ -70,6 +70,7 @@
 							<tool id="xilinx.gnu.arm.size.debug.317058244" name="ARM Print Size" superClass="xilinx.gnu.arm.size.debug"/>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="xilinx.gnu.arm.exe.debug.409085058.719437531" name="app_production_controller.elf" rcbsApplicability="disable" resourcePath="Debug/app_production_controller.elf" toolsToInvoke=""/>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>

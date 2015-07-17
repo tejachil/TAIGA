@@ -14,6 +14,7 @@
 void supervisor_send_state_vector(float stateVector[4]){
 	u8 uartBuffer[20];
 
+	// First send the 4 process states
 	u32_to_buffer((u32)(stateVector[0]*10000), &uartBuffer[0], 4);
 	u32_to_buffer((u32)(stateVector[1]*10000), &uartBuffer[4], 4);
 	u32_to_buffer((u32)(stateVector[2]*1000), &uartBuffer[8], 4);
@@ -26,12 +27,17 @@ void supervisor_send_state_vector(float stateVector[4]){
 void supervisor_send_tail(float u, bool startTAIGA, bool trigger, bool wdt){
 	u8 uartBuffer[8];
 
+	// Send the voltage
 	u32_to_buffer((u32)(u*10000), &uartBuffer[0], 4);
-	if(trigger && wdt)	uartBuffer[4] = 'T';
-	else if (trigger)	uartBuffer[4] = 'G';
-	else if (wdt)	uartBuffer[4] = 'W';
-	else if (startTAIGA)	uartBuffer[4] = 'S';
-	else uartBuffer[4] = 'P';
+
+	// Send a flag representing the state of the system
+	if(trigger && wdt)	uartBuffer[4] = 'T';	// WDT and trigger mechanism asserted trigger
+	else if (trigger)	uartBuffer[4] = 'G';	// Trigger asserted by trigger mechanism
+	else if (wdt)	uartBuffer[4] = 'W';		// Trigger asserted by WDT
+	else if (startTAIGA)	uartBuffer[4] = 'S';	// IOI methods started with button press, guards being enforced
+	else uartBuffer[4] = 'P';					// Operation under production control, guards not being enforced
+
+	// Packet delimiter tail
 	uartBuffer[5] = '-';
 	uartBuffer[6] = '-';
 	uartBuffer[7] = '\n';
@@ -45,6 +51,8 @@ void supervisor_update_set_point(){
 
 	if(receiveCount == 0) return;
 
+	// Set-point command is of syntax SP# where # contains magnitude and sign data of new set-point
+	// This syntax is handled and implemented using this FSM
 	int setPoint;
 	static char stateChar = 'x';
 	int i = 0;

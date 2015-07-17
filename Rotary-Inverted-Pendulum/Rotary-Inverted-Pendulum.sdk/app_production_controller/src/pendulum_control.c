@@ -72,6 +72,7 @@ int writeDAC(float voltage){
     float vref = 3.3;
     short hex;
 
+    // I uncommented this so I can execute bias-injection voltage sweep attacks outside actuator limits
     // Clip voltage to 10 volts
     //if(voltage > 10)	voltage = 10;
     //else if(voltage < -10)	voltage = -10;

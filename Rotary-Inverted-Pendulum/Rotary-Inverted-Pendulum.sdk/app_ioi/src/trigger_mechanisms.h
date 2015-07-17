@@ -21,4 +21,6 @@ bool classifier_trigger_mechanism(PlantParameters* params);
 
 float calculateKalmanControlSignal(PlantParameters *params);
 
+float calculateStateFeedbackControlSignal(PlantParameters *params);
+
 #endif /* TRIGGER_MECHANISMS_H_ */

@@ -1,4 +1,4 @@
-22:03:23 **** Build of project bsp_ioi_standalone ****
+16:22:33 **** Build of project bsp_ioi_standalone ****
 make -k all 
 Running Make include in IO_intermediary/libsrc/bram_v4_0/src
 make -C IO_intermediary/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
@@ -21,7 +21,6 @@ make -C IO_intermediary/libsrc/wdttb_v3_0/src -s include  "SHELL=/bin/sh" "COMPI
 Running Make libs in IO_intermediary/libsrc/bram_v4_0/src
 make -C IO_intermediary/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
 Compiling bram
-mb-ar: creating ../../../lib/libxil.a
 Running Make libs in IO_intermediary/libsrc/cpu_v2_3/src
 make -C IO_intermediary/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
 Compiling cpu
@@ -48,5 +47,5 @@ make -C IO_intermediary/libsrc/wdttb_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling wdttb
 Finished building libraries
 
-22:03:26 Build Finished (took 2s.584ms)
+16:22:36 Build Finished (took 2s.820ms)
 

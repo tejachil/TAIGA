@@ -14,6 +14,7 @@
 
 
 float calculateKalmanControlSignal(PlantParameters *params);
+float calculateStateFeedbackControlSignal(PlantParameters *params);
 void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber);
 void stopBackupControl();
 
@@ -79,19 +80,28 @@ void backup_control_timer(void *CallBackRef, u8 TmrCtrNumber){
 	set_debug(DEBUG6, true);
 	set_led(LED2, true);
 
+	// Pre-configure set-point to 0 degrees
 	set_debug(DEBUG5, true);
 	plantParams.theta_des = 0*pi/180;
+
+	// Read the two encoders
 	set_debug(DEBUG5, false);
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 	set_debug(DEBUG5, true);
 	plantParams.encoder_alpha =  4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
+
+	// Calculate the control algorithm if the pendulum is upright
 	set_debug(DEBUG5, false);
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (45.*pi/180)){
-		plantParams.u = -calculateKalmanControlSignal(&plantParams);
+		// Comment out whatever controller you don't want to use
+		plantParams.u = calculateKalmanControlSignal(&plantParams);
+		//plantParams.u = calculateStateFeedbackControlSignal(&plantParams);
 	}
 	else plantParams.u = 0;
+
+	// Write the calculated servo voltage
 	set_debug(DEBUG5, true);
 	writeDAC(plantParams.u);
 	set_debug(DEBUG5, false);
@@ -188,5 +198,21 @@ float calculateKalmanControlSignal(PlantParameters *params){
 		}
 		params->xpre[ind] += Bup[ind]*u;
 	}
-	return u;
+
+	params->u = -u;
+	return -u;
+}
+
+float calculateStateFeedbackControlSignal(PlantParameters *params){
+	if (params->thetaR < -pi)	params->thetaR += 2*pi; // correction for encoder zeroing error
+
+	params->xhat[2] = 0.9391*params->xhat[2] + 60.92*(params->thetaR - params->xhat[0]);
+	params->xhat[3] = 0.9391*params->xhat[3] + 60.92*(params->alphaR - params->xhat[1]);
+
+	params->u = -5.38*(params->thetaR - params->theta_des) + 30.14*params->alphaR-2.65*params->xhat[2] + 3.35*params->xhat[3];
+
+	params->xhat[0] = params->thetaR;
+	params->xhat[1] = params->alphaR;
+
+	return params->u;
 }

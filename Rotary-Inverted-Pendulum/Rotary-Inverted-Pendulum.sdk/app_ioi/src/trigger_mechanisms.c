@@ -52,8 +52,9 @@ bool prediction_trigger_mechanism(PlantParameters* params, unsigned int numIter)
 		predictionParams.alphaR = yplant[1];
 
 		// calculate the control signal with the virtual sensor measurement
+		// Comment out whatever controller you don't want to use
 		predictionParams.u = calculateKalmanControlSignal(&predictionParams);
-
+		//predictionParams.u = calculateStateFeedbackControlSignal(&predictionParams);
         for (j = 0; j < 4; j++) {
             predictionParams.xhat[j] =
             		A[j][0] * predictionParams.xhat[0]
@@ -174,6 +175,20 @@ float calculateKalmanControlSignal(PlantParameters *params){
 	}
 
 	params->u = -u;
-	return u;
+	return -u;
+}
+
+float calculateStateFeedbackControlSignal(PlantParameters *params){
+	if (params->thetaR < -pi)	params->thetaR += 2*pi; // correction for encoder zeroing error
+
+	params->xhat[2] = 0.9391*params->xhat[2] + 60.92*(params->thetaR - params->xhat[0]);
+	params->xhat[3] = 0.9391*params->xhat[3] + 60.92*(params->alphaR - params->xhat[1]);
+
+	params->u = -5.38*(params->thetaR - params->theta_des) + 30.14*params->alphaR-2.65*params->xhat[2] + 3.35*params->xhat[3];
+
+	params->xhat[0] = params->thetaR;
+	params->xhat[1] = params->alphaR;
+
+	return params->u;
 }
 

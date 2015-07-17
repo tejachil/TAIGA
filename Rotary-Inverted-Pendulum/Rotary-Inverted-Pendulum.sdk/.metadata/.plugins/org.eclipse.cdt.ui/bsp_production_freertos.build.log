@@ -1,4 +1,4 @@
-22:03:26 **** Build of project bsp_production_freertos ****
+16:22:37 **** Build of project bsp_production_freertos ****
 make -k all 
 Running Make include in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src
 make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -43,7 +43,6 @@ make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s include  "SHELL=/bin/sh" "COMPI
 Running Make libs in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src
 make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Compiling coresightps_dcc
-arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
 Running Make libs in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src
 make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Compiling cpu_cortexa9
@@ -105,5 +104,5 @@ Running Make libs in ps7_cortexa9_1/libsrc/xilmfs_v2_0/src
 make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Finished building libraries
 
-22:03:40 Build Finished (took 13s.508ms)
+16:22:54 Build Finished (took 17s.72ms)
 

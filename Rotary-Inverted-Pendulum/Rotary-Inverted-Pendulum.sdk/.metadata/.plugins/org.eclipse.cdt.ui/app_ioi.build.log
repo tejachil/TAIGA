@@ -1,6 +1,44 @@
-15:49:52 **** Incremental Build of configuration Debug for project app_ioi ****
+15:40:27 **** Auto Build of configuration Debug for project app_ioi ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/ioi_handler.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/ioi_handler.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/ioi_handler.d" -MT"src/ioi_handler.d" -o "src/ioi_handler.o" "../src/ioi_handler.c"
+../src/ioi_handler.c: In function 'ioi_handler':
+../src/ioi_handler.c:40:21: warning: passing argument 1 of 'get_state_vector' from incompatible pointer type
+    get_state_vector(returnData);
+                     ^
+In file included from ../src/ioi_handler.h:11:0,
+                 from ../src/ioi_handler.c:8:
+../src/pendulum_control.h:35:6: note: expected 'u32 *' but argument is of type 'unsigned int *'
+ void get_state_vector(u32* buffer);
+      ^
+Finished building: ../src/ioi_handler.c
+ 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+Finished building: ../src/main_ioi.c
+ 
+Building file: ../src/supervisory_communication.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.sdk/global_includes -c -fmessage-length=0 -MT"src/supervisory_communication.o" -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -MMD -MP -MF"src/supervisory_communication.d" -MT"src/supervisory_communication.d" -o "src/supervisory_communication.o" "../src/supervisory_communication.c"
+../src/supervisory_communication.c: In function 'supervisor_update_set_point':
+../src/supervisory_communication.c:67:5: warning: implicit declaration of function 'set_set_point' [-Wimplicit-function-declaration]
+     set_set_point(setPoint);
+     ^
+Finished building: ../src/supervisory_communication.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.5 -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46324	    472	   2764	  49560	   c198	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
 
-15:49:52 Build Finished (took 64ms)
+15:40:27 Build Finished (took 217ms)
 

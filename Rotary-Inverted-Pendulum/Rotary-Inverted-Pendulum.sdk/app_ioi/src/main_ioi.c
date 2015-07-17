@@ -67,6 +67,7 @@ int main()
 {
 	int Status;
 
+	// Initialize everything. Order is important since some depend on others
 	init_axi_uart();
 	init_axi_gpio();
 	init_spi();
@@ -74,44 +75,60 @@ int main()
 	init_fifo_queues();
 	init_wdt();
 
-	set_set_point(10);
+	set_set_point(10); // Set the starting set-point to 10. Will be updated with supervisory input
 
+	// Start interrupts for FIFO and WDT
 	Status = init_interrupt_system();
 	if (Status != XST_SUCCESS) {
 		xil_printf("Failed intr setup\r\n");
 		return XST_FAILURE;
 	}
 
-	start_ioi();
+	start_ioi(); // Set the start IOI flag to true so that control cycle can be checked
 
 	set_led(LED1, true);
 
-	static bool startTAIGA = false;
-	static bool assertTrigger = false;
+	static bool startTAIGA = false;		// Flag to execute IOI methods such as trigger mechanism and WDT
+	static bool assertTrigger = false;	// Flag for whether the trigger has been asserted or not by trigger mechanism
 
 	while(true){
+		// IOI methods started once BTN0 has been pressed
 		if(!startTAIGA && read_btn(BTN0)){
 			startTAIGA = true;
 			start_wdt();
 		}
+
+		// Assert the trigger if WDT expires or trigger has been asserted by trigger mechanism
 		assert_trigger(startTAIGA & (check_wdt() | assertTrigger));
 
-		supervisor_update_set_point();
+		supervisor_update_set_point(); // Check for new set-point from supervisory
 
+		// If a control cycle has been completed: 2 encododer reads and voltage write
 		if(check_control_cycle()){
 			set_led(LED1, true);
 			set_debug(DEBUG2, true);
-			reset_control_cycle();
+			reset_control_cycle(); // Clear control cycle flag
 
-			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180))
+			// Execute control algorithm to determine process state vector
+			if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180)){
+				// Comment out whatever controller you don't want to use
 				calculateKalmanControlSignal(get_plant_state_instance());
+				//calculateStateFeedbackControlSignal(get_plant_state_instance());
+			}
+
+			// Send the process state vector to UART controller. Packet is split into 2, this is first half
 			set_debug(DEBUG2, false);
 			supervisor_send_state_vector(get_plant_state_instance()->xhat);
 			set_debug(DEBUG2, true);
+
+			// Run a trigger mechanism
 			if(startTAIGA){
 				reset_wdt();
 				set_debug(DEBUG4, true);
 				if((get_alphaR() >= 0 ? get_alphaR():-get_alphaR()) < (20.*pi/180)){
+					// This can be changed to trivial, prediction, or classifier.
+					// For prediction, need to specify iterations (50): prediction_trigger_mechanism(get_plant_state_instance(), 50)
+					// Classifier: classifier_trigger_mechanism(get_plant_state_instance())
 					if(trivial_trigger_mechanism(get_plant_state_instance())){
 						assertTrigger = true;
 						set_debug(DEBUG3, true);
@@ -120,6 +137,8 @@ int main()
 				}
 				set_debug(DEBUG4, false);
 			}
+
+			// Send the remaining process state vector packet. Packet is split into 2, this is the second half
 			supervisor_send_tail(get_plant_state_instance()->u, startTAIGA, assertTrigger, check_wdt());
 			set_debug(DEBUG2, false);
 			set_led(LED1, false);
