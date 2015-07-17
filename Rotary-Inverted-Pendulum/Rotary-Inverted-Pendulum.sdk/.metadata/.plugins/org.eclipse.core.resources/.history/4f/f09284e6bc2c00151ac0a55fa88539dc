@@ -43,7 +43,7 @@ void production_control_timer(xTimerHandle pxTimer){ // Executed every milliseco
 	set_debug(DEBUG8, true);
 	set_led(LED3, true);
 
-	// Get Set-Point from supervisor through IOI though FIFO
+	// Get Set-Point from supervisor through IOI
 	set_debug(DEBUG7, true);
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;

@@ -11,7 +11,7 @@
 
 int main( void )
 {
-//	prvInitializeExceptions(); // TODO: Not sure why i commented this out. Uncomment and verify
+	//	prvInitializeExceptions(); // TODO: Not sure why i commented this out. Uncomment and verify
 
 	// Initialize GPIO and FIFOs
 	init_axi_gpio();

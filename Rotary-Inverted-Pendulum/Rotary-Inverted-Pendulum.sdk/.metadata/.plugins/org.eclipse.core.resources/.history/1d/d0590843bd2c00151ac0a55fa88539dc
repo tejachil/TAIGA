@@ -21,22 +21,24 @@ void voltSweep_timer(xTimerHandle pxTimer);
 typedef enum {NONE = 0, DoS=0x1, LIVELOCK_ATTACK=0x2, SET_POINT_ATTACK=0x4, VOLT_SWEEP_ATTACK=0x8, COVERT_ATTACK=0x16} attack_menu;
 
 void startAdversaryTask(){
+	// Starts the adversary task that constantly runs
 	xTaskCreate(adversaryTask, (signed char*) "Adversary Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, (xTaskHandle *) NULL);
 }
 
 static void adversaryTask(void * param){
 	attack_menu attacksExecuted = NONE;
 
+	// All continuous execution parts of this task must be included within this infinite for-loop
 	for(;;){
 		/*// Execute DoS attack at time 30s
 		if(!(attacksExecuted & DoS) && cycleCounter >= 60000){
-			xTimerStop(ProductionControlTimer, 0);
+			xTimerStop(ProductionControlTimer, 0); // The production control timer is stopped
 			attacksExecuted |= DoS;
 		}*/
 
 		/*// Execute Voltage Sweep at time 30s
 		if(!(attacksExecuted & VOLT_SWEEP_ATTACK) && cycleCounter >= 20000){
-			xTimerStop(ProductionControlTimer, 0);
+			xTimerStop(ProductionControlTimer, 0); // The production control timer is stopped
 			xTimerHandle voltageSweepTimer = xTimerCreate((const signed char *)"Voltage Sweep Timer",1,pdTRUE,(void *) NULL, voltSweep_timer);
 			xTimerStart(voltageSweepTimer, 0);
 			attacksExecuted |= VOLT_SWEEP_ATTACK;

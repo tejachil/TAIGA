@@ -1552,3 +1552,4 @@ java.net.SocketException: Connection reset
 15:09:49 INFO  : Processor reset is completed for IO_intermediary
 15:09:55 INFO  : Processor reset is completed for ps7_cortexa9_1
 15:09:58 INFO  : Processor reset is completed for backup_controller
+16:31:36 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

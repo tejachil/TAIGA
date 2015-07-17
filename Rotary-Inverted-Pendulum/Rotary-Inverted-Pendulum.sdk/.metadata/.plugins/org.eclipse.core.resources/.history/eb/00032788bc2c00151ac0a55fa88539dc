@@ -33,17 +33,16 @@ void startProductionControl(){
 	}
 	plantParams.cycle_count = 0;
 
-	// Make sure tick_count is set to 1000 so that each tick is 1 millisecond as seen bellow
 	ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
 	xTimerStart(ProductionControlTimer, 0);
 	xil_printf("Production Controller Timer started\n");
 }
 
-void production_control_timer(xTimerHandle pxTimer){ // Executed every millisecond
+void production_control_timer(xTimerHandle pxTimer){
 	set_debug(DEBUG8, true);
 	set_led(LED3, true);
 
-	// Get Set-Point from supervisor through IOI though FIFO
+	// Get Set-Point from supervisor through IOI
 	set_debug(DEBUG7, true);
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;

@@ -30,7 +30,7 @@ static void adversaryTask(void * param){
 
 	// All continuous execution parts of this task must be included within this infinite for-loop
 	for(;;){
-		/*// Execute DoS attack at time 30s
+		/*// Execute DoS attack at time 60s
 		if(!(attacksExecuted & DoS) && cycleCounter >= 60000){
 			xTimerStop(ProductionControlTimer, 0); // The production control timer is stopped
 			attacksExecuted |= DoS;
